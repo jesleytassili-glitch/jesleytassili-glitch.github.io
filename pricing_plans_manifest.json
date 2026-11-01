@@ -1,7 +1,7 @@
 {
   "manifestVersion": "3.0.0",
   "githubReleaseTag": "v2.2.0",
-  "generatedAtUtc": "2026-11-01T22:02:44.267161+00:00",
+  "generatedAtUtc": "2026-11-01T22:18:13.854908+00:00",
   "publicDiscovery": {
     "specsBaseUrl": "https://jesleytassili-glitch.github.io/specs_openapi_31",
     "suiteSpecsBaseUrl": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31",
