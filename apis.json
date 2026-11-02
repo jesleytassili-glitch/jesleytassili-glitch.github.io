@@ -68,6 +68,10 @@
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/b2b-gov-procurement-pncp-radar.json"
         },
         {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~b2b-gov-procurement-pncp-radar/run-sync-get-dataset-items"
+        },
+        {
           "type": "X-Apify-Sync-POST",
           "url": "https://api.apify.com/v2/acts/b2b-quant-apis~b2b-gov-procurement-pncp-radar/run-sync-get-dataset-items"
         },
@@ -143,6 +147,10 @@
         {
           "type": "OpenAPI-Mirror",
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/brazil-tax-reform-ncm-classtrib-auditor.json"
+        },
+        {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~brazil-tax-reform-ncm-classtrib-auditor/run-sync-get-dataset-items"
         },
         {
           "type": "X-Apify-Sync-POST",
@@ -222,6 +230,10 @@
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/healthcare-tiss-xml-validator.json"
         },
         {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~healthcare-tiss-xml-validator/run-sync-get-dataset-items"
+        },
+        {
           "type": "X-Apify-Sync-POST",
           "url": "https://api.apify.com/v2/acts/b2b-quant-apis~healthcare-tiss-xml-validator/run-sync-get-dataset-items"
         },
@@ -297,6 +309,10 @@
         {
           "type": "OpenAPI-Mirror",
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/brazil-antt-freight-cte-auditor.json"
+        },
+        {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~brazil-antt-freight-cte-auditor/run-sync-get-dataset-items"
         },
         {
           "type": "X-Apify-Sync-POST",
@@ -376,6 +392,10 @@
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/us-healthcare-npi-provider-lead-enricher.json"
         },
         {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~us-healthcare-npi-provider-lead-enricher/run-sync-get-dataset-items"
+        },
+        {
           "type": "X-Apify-Sync-POST",
           "url": "https://api.apify.com/v2/acts/b2b-quant-apis~us-healthcare-npi-provider-lead-enricher/run-sync-get-dataset-items"
         },
@@ -451,6 +471,10 @@
         {
           "type": "OpenAPI-Mirror",
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/us-fda-recalls-safety-monitor.json"
+        },
+        {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~us-fda-recalls-safety-monitor/run-sync-get-dataset-items"
         },
         {
           "type": "X-Apify-Sync-POST",
@@ -530,6 +554,10 @@
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/global-b2b-email-domain-security-auditor.json"
         },
         {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~global-b2b-email-domain-security-auditor/run-sync-get-dataset-items"
+        },
+        {
           "type": "X-Apify-Sync-POST",
           "url": "https://api.apify.com/v2/acts/b2b-quant-apis~global-b2b-email-domain-security-auditor/run-sync-get-dataset-items"
         },
@@ -605,6 +633,10 @@
         {
           "type": "OpenAPI-Mirror",
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/us-clinical-trials-biotech-radar.json"
+        },
+        {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~us-clinical-trials-biotech-radar/run-sync-get-dataset-items"
         },
         {
           "type": "X-Apify-Sync-POST",
@@ -684,6 +716,10 @@
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/us-nhtsa-vehicle-vin-recall-auditor.json"
         },
         {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~us-nhtsa-vehicle-vin-recall-auditor/run-sync-get-dataset-items"
+        },
+        {
           "type": "X-Apify-Sync-POST",
           "url": "https://api.apify.com/v2/acts/b2b-quant-apis~us-nhtsa-vehicle-vin-recall-auditor/run-sync-get-dataset-items"
         },
@@ -759,6 +795,10 @@
         {
           "type": "OpenAPI-Mirror",
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/brazil-b2b-cnpj-qsa-lead-enricher.json"
+        },
+        {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~brazil-b2b-cnpj-qsa-lead-enricher/run-sync-get-dataset-items"
         },
         {
           "type": "X-Apify-Sync-POST",
@@ -838,6 +878,10 @@
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/us-sec-edgar-filings-insider-radar.json"
         },
         {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~us-sec-edgar-filings-insider-radar/run-sync-get-dataset-items"
+        },
+        {
           "type": "X-Apify-Sync-POST",
           "url": "https://api.apify.com/v2/acts/b2b-quant-apis~us-sec-edgar-filings-insider-radar/run-sync-get-dataset-items"
         },
@@ -913,6 +957,10 @@
         {
           "type": "OpenAPI-Mirror",
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/eu-vies-vat-tax-compliance-auditor.json"
+        },
+        {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~eu-vies-vat-tax-compliance-auditor/run-sync-get-dataset-items"
         },
         {
           "type": "X-Apify-Sync-POST",
@@ -992,6 +1040,10 @@
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/us-epa-echo-environmental-compliance-auditor.json"
         },
         {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~us-epa-echo-environmental-compliance-auditor/run-sync-get-dataset-items"
+        },
+        {
           "type": "X-Apify-Sync-POST",
           "url": "https://api.apify.com/v2/acts/b2b-quant-apis~us-epa-echo-environmental-compliance-auditor/run-sync-get-dataset-items"
         },
@@ -1067,6 +1119,10 @@
         {
           "type": "OpenAPI-Mirror",
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/us-fdic-bankfind-institution-financial-auditor.json"
+        },
+        {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~us-fdic-bankfind-institution-financial-auditor/run-sync-get-dataset-items"
         },
         {
           "type": "X-Apify-Sync-POST",
@@ -1146,6 +1202,10 @@
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/us-sam-gov-federal-procurement-auditor.json"
         },
         {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~us-sam-gov-federal-procurement-auditor/run-sync-get-dataset-items"
+        },
+        {
           "type": "X-Apify-Sync-POST",
           "url": "https://api.apify.com/v2/acts/b2b-quant-apis~us-sam-gov-federal-procurement-auditor/run-sync-get-dataset-items"
         },
@@ -1221,6 +1281,10 @@
         {
           "type": "OpenAPI-Mirror",
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/multi-ats-tech-job-board-hiring-radar.json"
+        },
+        {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~multi-ats-tech-job-board-hiring-radar/run-sync-get-dataset-items"
         },
         {
           "type": "X-Apify-Sync-POST",
@@ -1300,6 +1364,10 @@
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/global-gleif-lei-corporate-ownership-kyb.json"
         },
         {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~global-gleif-lei-corporate-ownership-kyb/run-sync-get-dataset-items"
+        },
+        {
           "type": "X-Apify-Sync-POST",
           "url": "https://api.apify.com/v2/acts/b2b-quant-apis~global-gleif-lei-corporate-ownership-kyb/run-sync-get-dataset-items"
         },
@@ -1375,6 +1443,10 @@
         {
           "type": "OpenAPI-Mirror",
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/us-census-fcc-real-estate-geo-enricher.json"
+        },
+        {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~us-census-fcc-real-estate-geo-enricher/run-sync-get-dataset-items"
         },
         {
           "type": "X-Apify-Sync-POST",
@@ -1454,6 +1526,10 @@
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/icann-rdap-domain-whois-brand-recon.json"
         },
         {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~icann-rdap-domain-whois-brand-recon/run-sync-get-dataset-items"
+        },
+        {
           "type": "X-Apify-Sync-POST",
           "url": "https://api.apify.com/v2/acts/b2b-quant-apis~icann-rdap-domain-whois-brand-recon/run-sync-get-dataset-items"
         },
@@ -1529,6 +1605,10 @@
         {
           "type": "OpenAPI-Mirror",
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/cisa-kev-ransomware-vulnerability-auditor.json"
+        },
+        {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~cisa-kev-ransomware-vulnerability-auditor/run-sync-get-dataset-items"
         },
         {
           "type": "X-Apify-Sync-POST",
@@ -1608,6 +1688,10 @@
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/brazil-bcb-ptax-sgs-financial-contract-indexer.json"
         },
         {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~brazil-bcb-ptax-sgs-financial-contract-indexer/run-sync-get-dataset-items"
+        },
+        {
           "type": "X-Apify-Sync-POST",
           "url": "https://api.apify.com/v2/acts/b2b-quant-apis~brazil-bcb-ptax-sgs-financial-contract-indexer/run-sync-get-dataset-items"
         },
@@ -1683,6 +1767,10 @@
         {
           "type": "OpenAPI-Mirror",
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/brazil-pix-ispb-cvm-financial-kyb-auditor.json"
+        },
+        {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~brazil-pix-ispb-cvm-financial-kyb-auditor/run-sync-get-dataset-items"
         },
         {
           "type": "X-Apify-Sync-POST",
@@ -1762,6 +1850,10 @@
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/brazil-ibge-cnae-municipal-b2b-expansion-enricher.json"
         },
         {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~brazil-ibge-cnae-municipal-b2b-expansion-enricher/run-sync-get-dataset-items"
+        },
+        {
           "type": "X-Apify-Sync-POST",
           "url": "https://api.apify.com/v2/acts/b2b-quant-apis~brazil-ibge-cnae-municipal-b2b-expansion-enricher/run-sync-get-dataset-items"
         },
@@ -1837,6 +1929,10 @@
         {
           "type": "OpenAPI-Mirror",
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/brazil-cep-geocoordinates-logistics-auditor.json"
+        },
+        {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~brazil-cep-geocoordinates-logistics-auditor/run-sync-get-dataset-items"
         },
         {
           "type": "X-Apify-Sync-POST",
@@ -1916,6 +2012,10 @@
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/brazil-camara-legislative-regulatory-risk-radar.json"
         },
         {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~brazil-camara-legislative-regulatory-risk-radar/run-sync-get-dataset-items"
+        },
+        {
           "type": "X-Apify-Sync-POST",
           "url": "https://api.apify.com/v2/acts/b2b-quant-apis~brazil-camara-legislative-regulatory-risk-radar/run-sync-get-dataset-items"
         },
@@ -1991,6 +2091,10 @@
         {
           "type": "OpenAPI-Mirror",
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/us-osha-workplace-safety-violation-auditor.json"
+        },
+        {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~us-osha-workplace-safety-violation-auditor/run-sync-get-dataset-items"
         },
         {
           "type": "X-Apify-Sync-POST",
@@ -2070,6 +2174,10 @@
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/eu-ted-public-tenders-procurement-radar.json"
         },
         {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~eu-ted-public-tenders-procurement-radar/run-sync-get-dataset-items"
+        },
+        {
           "type": "X-Apify-Sync-POST",
           "url": "https://api.apify.com/v2/acts/b2b-quant-apis~eu-ted-public-tenders-procurement-radar/run-sync-get-dataset-items"
         },
@@ -2145,6 +2253,10 @@
         {
           "type": "OpenAPI-Mirror",
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/uk-fca-companies-house-kyb-compliance-auditor.json"
+        },
+        {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~uk-fca-companies-house-kyb-compliance-auditor/run-sync-get-dataset-items"
         },
         {
           "type": "X-Apify-Sync-POST",
@@ -2224,6 +2336,10 @@
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/global-sanctions-pep-interpol-watchlist-screener.json"
         },
         {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~global-sanctions-pep-interpol-watchlist-screener/run-sync-get-dataset-items"
+        },
+        {
           "type": "X-Apify-Sync-POST",
           "url": "https://api.apify.com/v2/acts/b2b-quant-apis~global-sanctions-pep-interpol-watchlist-screener/run-sync-get-dataset-items"
         },
@@ -2301,6 +2417,10 @@
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/b2b-ssl-tls-ct-log-subdomain-attack-surface-auditor.json"
         },
         {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~b2b-ssl-tls-ct-log-subdomain-attack-surface-auditor/run-sync-get-dataset-items"
+        },
+        {
           "type": "X-Apify-Sync-POST",
           "url": "https://api.apify.com/v2/acts/b2b-quant-apis~b2b-ssl-tls-ct-log-subdomain-attack-surface-auditor/run-sync-get-dataset-items"
         },
@@ -2376,6 +2496,10 @@
         {
           "type": "OpenAPI-Mirror",
           "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/specs_openapi_31/b2b-quant-mcp-server.json"
+        },
+        {
+          "type": "Apify-Cloud-Sync",
+          "url": "https://api.apify.com/v2/acts/b2b-quant-apis~b2b-quant-mcp-server/run-sync-get-dataset-items"
         },
         {
           "type": "X-Apify-Sync-POST",

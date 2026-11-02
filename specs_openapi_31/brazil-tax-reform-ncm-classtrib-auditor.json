@@ -67,9 +67,12 @@
       "Node.js": "// Primary Synchronous Endpoint (Gateway Route: https://b2b-quant-rapidapi-gateway.jesleytassili.workers.dev/v1/brazil-tax-reform-ncm-classtrib-auditor)\nconst url = \"https://api.apify.com/v2/acts/b2b-quant-apis~brazil-tax-reform-ncm-classtrib-auditor/run-sync-get-dataset-items\";\nconst options = {\n  method: \"POST\",\n  headers: {\n    \"Content-Type\": \"application/json\",\n    \"X-RapidAPI-Host\": \"brazil-tax-reform-ncm-classtrib-auditor.p.rapidapi.com\",\n    \"X-RapidAPI-Key\": \"<YOUR_RAPIDAPI_OR_ZYLA_KEY>\"\n  },\n  body: JSON.stringify({\"catalogItems\": [{\"sku\": \"ITEM-001\", \"ncm\": \"10063021\", \"description\": \"Arroz beneficiado parboilizado tipo 1\"}, {\"sku\": \"ITEM-002\", \"ncm\": \"30049099\", \"description\": \"Medicamento para uso humano em doses\"}, {\"sku\": \"ITEM-003\", \"ncm\": \"22030000\", \"description\": \"Cerveja de malte em lata 350ml\"}, {\"sku\": \"ITEM-004\", \"ncm\": \"84713012\", \"description\": \"Notebook portátil para processamento de dados\"}], \"nfeXmlList\": [], \"uf\": \"SP\"})\n};\n\nconst response = await fetch(url, options);\nconst data = await response.json();\nconsole.log(data);\n"
     },
     "x-primary-backend-url": "https://api.apify.com",
+    "x-primary-backend-base-url": "https://api.apify.com",
     "x-apify-sync-endpoint": "https://api.apify.com/v2/acts/b2b-quant-apis~brazil-tax-reform-ncm-classtrib-auditor/run-sync-get-dataset-items",
     "x-apify-health-endpoint": "https://api.apify.com/v2/acts/b2b-quant-apis~brazil-tax-reform-ncm-classtrib-auditor",
     "x-backend-secret-header": {
+      "name": "Authorization",
+      "valueTemplate": "Bearer <APIFY_API_TOKEN>",
       "headerName": "Authorization",
       "headerValueTemplate": "Bearer <APIFY_API_TOKEN>",
       "injectedByProxy": true,
