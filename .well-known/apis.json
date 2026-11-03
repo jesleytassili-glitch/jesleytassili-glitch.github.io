@@ -97,7 +97,7 @@
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/b2b-gov-procurement-pncp-radar"
+          "url": "https://zylalabs.com/api-marketplace/legal+%26+compliance/b2b+gov+procurement+pncp+radar+api/14642"
         },
         {
           "type": "X-Apify-Actor",
@@ -178,7 +178,7 @@
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/brazil-tax-reform-ncm-classtrib-auditor"
+          "url": "https://zylalabs.com/api-marketplace/legal+%26+compliance/brazil+tax+reform+ncm+classtrib+auditor+api/14643"
         },
         {
           "type": "X-Apify-Actor",
@@ -259,7 +259,7 @@
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/healthcare-tiss-xml-validator"
+          "url": "https://zylalabs.com/api-marketplace/health+%26+fitness/healthcare+tiss+xml+validator+api/14644"
         },
         {
           "type": "X-Apify-Actor",
@@ -340,7 +340,7 @@
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/brazil-antt-freight-cte-auditor"
+          "url": "https://zylalabs.com/api-marketplace/legal+%26+compliance/brazil+antt+minimum+freight+calculator+ct+e+api/14645"
         },
         {
           "type": "X-Apify-Actor",
@@ -417,11 +417,11 @@
         },
         {
           "type": "X-RapidAPI-Category",
-          "url": "https://rapidapi.com/b2bquantapis/api/us-healthcare-npi-provider-lead-enricher"
+          "url": "https://rapidapi.com/b2bquantapis/api/b2b-quant-mcp-server"
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/us-healthcare-npi-provider-lead-enricher"
+          "url": "https://zylalabs.com/api-marketplace/health+%26+fitness/us+healthcare+npi+provider+lead+enricher+api/14661"
         },
         {
           "type": "X-Apify-Actor",
@@ -498,11 +498,11 @@
         },
         {
           "type": "X-RapidAPI-Category",
-          "url": "https://rapidapi.com/b2bquantapis/api/us-fda-recalls-safety-monitor"
+          "url": "https://rapidapi.com/b2bquantapis/api/b2b-quant-mcp-server"
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/us-fda-recalls-safety-monitor"
+          "url": "https://zylalabs.com/api-marketplace/legal+%26+compliance/us+fda+recalls+safety+monitor+food+drug+api/14646"
         },
         {
           "type": "X-Apify-Actor",
@@ -583,7 +583,7 @@
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/global-b2b-email-domain-security-auditor"
+          "url": "https://zylalabs.com/api-marketplace/legal+%26+compliance/us+fda+recalls+safety+monitor+food+drug+api/14646"
         },
         {
           "type": "X-Apify-Actor",
@@ -660,11 +660,11 @@
         },
         {
           "type": "X-RapidAPI-Category",
-          "url": "https://rapidapi.com/b2bquantapis/api/us-clinical-trials-biotech-radar"
+          "url": "https://rapidapi.com/b2bquantapis/api/b2b-quant-mcp-server"
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/us-clinical-trials-biotech-radar"
+          "url": "https://zylalabs.com/api-marketplace/health+%26+fitness/us+clinical+trials+biotech+radar+api/14662"
         },
         {
           "type": "X-Apify-Actor",
@@ -741,11 +741,11 @@
         },
         {
           "type": "X-RapidAPI-Category",
-          "url": "https://rapidapi.com/b2bquantapis/api/us-nhtsa-vehicle-vin-recall-auditor"
+          "url": "https://rapidapi.com/b2bquantapis/api/b2b-quant-mcp-server"
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/us-nhtsa-vehicle-vin-recall-auditor"
+          "url": "https://zylalabs.com/api-marketplace/legal+%26+compliance/us+nhtsa+vehicle+vin+decoder+safety+recall+api/14664"
         },
         {
           "type": "X-Apify-Actor",
@@ -826,7 +826,7 @@
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/brazil-b2b-cnpj-qsa-lead-enricher"
+          "url": "https://zylalabs.com/api-marketplace/legal+%26+compliance/brazil+antt+minimum+freight+calculator+ct+e+api/14645"
         },
         {
           "type": "X-Apify-Actor",
@@ -903,11 +903,11 @@
         },
         {
           "type": "X-RapidAPI-Category",
-          "url": "https://rapidapi.com/b2bquantapis/api/us-sec-edgar-filings-insider-radar"
+          "url": "https://rapidapi.com/b2bquantapis/api/b2b-quant-mcp-server"
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/us-sec-edgar-filings-insider-radar"
+          "url": "https://zylalabs.com/api-marketplace/legal+%26+compliance/us+sec+edgar+filings+insider+radar+api/14655"
         },
         {
           "type": "X-Apify-Actor",
@@ -988,7 +988,7 @@
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/eu-vies-vat-tax-compliance-auditor"
+          "url": "https://zylalabs.com/api-marketplace/legal+%26+compliance/eu+vies+vat+tax+compliance+auditor+api/14654"
         },
         {
           "type": "X-Apify-Actor",
@@ -1065,11 +1065,11 @@
         },
         {
           "type": "X-RapidAPI-Category",
-          "url": "https://rapidapi.com/b2bquantapis/api/us-epa-echo-environmental-compliance-auditor"
+          "url": "https://rapidapi.com/b2bquantapis/api/b2b-quant-mcp-server"
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/us-epa-echo-environmental-compliance-auditor"
+          "url": "https://zylalabs.com/api-marketplace/other/us+epa+echo+environmental+compliance+auditor+api/14651"
         },
         {
           "type": "X-Apify-Actor",
@@ -1146,11 +1146,11 @@
         },
         {
           "type": "X-RapidAPI-Category",
-          "url": "https://rapidapi.com/b2bquantapis/api/us-fdic-bankfind-institution-financial-auditor"
+          "url": "https://rapidapi.com/b2bquantapis/api/b2b-quant-mcp-server"
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/us-fdic-bankfind-institution-financial-auditor"
+          "url": "https://zylalabs.com/api-marketplace/legal+%26+compliance/us+fdic+bankfind+institution+financial+api/14656"
         },
         {
           "type": "X-Apify-Actor",
@@ -1227,11 +1227,11 @@
         },
         {
           "type": "X-RapidAPI-Category",
-          "url": "https://rapidapi.com/b2bquantapis/api/us-sam-gov-federal-procurement-auditor"
+          "url": "https://rapidapi.com/b2bquantapis/api/b2b-quant-mcp-server"
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/us-sam-gov-federal-procurement-auditor"
+          "url": "https://zylalabs.com/api-marketplace/other/us+sam+gov+federal+procurement+auditor+api/14647"
         },
         {
           "type": "X-Apify-Actor",
@@ -1312,7 +1312,7 @@
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/multi-ats-tech-job-board-hiring-radar"
+          "url": "https://zylalabs.com/api-marketplace/legal+%26+compliance/brazil+antt+minimum+freight+calculator+ct+e+api/14645"
         },
         {
           "type": "X-Apify-Actor",
@@ -1393,7 +1393,7 @@
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/global-gleif-lei-corporate-ownership-kyb"
+          "url": "https://zylalabs.com/api-marketplace/legal+%26+compliance/global+gleif+lei+corporate+ownership+kyb+api/14657"
         },
         {
           "type": "X-Apify-Actor",
@@ -1470,11 +1470,11 @@
         },
         {
           "type": "X-RapidAPI-Category",
-          "url": "https://rapidapi.com/b2bquantapis/api/us-census-fcc-real-estate-geo-enricher"
+          "url": "https://rapidapi.com/b2bquantapis/api/b2b-quant-mcp-server"
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/us-census-fcc-real-estate-geo-enricher"
+          "url": "https://zylalabs.com/api-marketplace/legal+%26+compliance/brazil+antt+minimum+freight+calculator+ct+e+api/14645"
         },
         {
           "type": "X-Apify-Actor",
@@ -1555,7 +1555,7 @@
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/icann-rdap-domain-whois-brand-recon"
+          "url": "https://zylalabs.com/api-marketplace/legal+%26+compliance/us+fda+recalls+safety+monitor+food+drug+api/14646"
         },
         {
           "type": "X-Apify-Actor",
@@ -1636,7 +1636,7 @@
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/cisa-kev-ransomware-vulnerability-auditor"
+          "url": "https://zylalabs.com/api-marketplace/legal+%26+compliance/us+cisa+kev+exploited+vulnerabilities+api/14665"
         },
         {
           "type": "X-Apify-Actor",
@@ -1717,7 +1717,7 @@
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/brazil-bcb-ptax-sgs-financial-contract-indexer"
+          "url": "https://zylalabs.com/api-marketplace/legal+%26+compliance/brazil+bcb+ptax+sgs+financial+contract+indexer+api/14658"
         },
         {
           "type": "X-Apify-Actor",
@@ -1798,7 +1798,7 @@
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/brazil-pix-ispb-cvm-financial-kyb-auditor"
+          "url": "https://zylalabs.com/api-marketplace/legal+%26+compliance/brazil+pix+ispb+cvm+financial+kyb+auditor+api/14659"
         },
         {
           "type": "X-Apify-Actor",
@@ -1879,7 +1879,7 @@
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/brazil-ibge-cnae-municipal-b2b-expansion-enricher"
+          "url": "https://zylalabs.com/api-marketplace/legal+%26+compliance/brazil+antt+minimum+freight+calculator+ct+e+api/14645"
         },
         {
           "type": "X-Apify-Actor",
@@ -1960,7 +1960,7 @@
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/brazil-cep-geocoordinates-logistics-auditor"
+          "url": "https://zylalabs.com/api-marketplace/legal+%26+compliance/brazil+cep+geocoordinates+ibge+code+api/14663"
         },
         {
           "type": "X-Apify-Actor",
@@ -2041,7 +2041,7 @@
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/brazil-camara-legislative-regulatory-risk-radar"
+          "url": "https://zylalabs.com/api-marketplace/other/brazil+camara+legislative+regulatory+risk+rada+api/14649"
         },
         {
           "type": "X-Apify-Actor",
@@ -2118,11 +2118,11 @@
         },
         {
           "type": "X-RapidAPI-Category",
-          "url": "https://rapidapi.com/b2bquantapis/api/us-osha-workplace-safety-violation-auditor"
+          "url": "https://rapidapi.com/b2bquantapis/api/b2b-quant-mcp-server"
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/us-osha-workplace-safety-violation-auditor"
+          "url": "https://zylalabs.com/api-marketplace/other/us+osha+workplace+safety+violation+auditor+api/14650"
         },
         {
           "type": "X-Apify-Actor",
@@ -2203,7 +2203,7 @@
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/eu-ted-public-tenders-procurement-radar"
+          "url": "https://zylalabs.com/api-marketplace/other/eu+ted+public+tenders+procurement+radar+api/14648"
         },
         {
           "type": "X-Apify-Actor",
@@ -2280,11 +2280,11 @@
         },
         {
           "type": "X-RapidAPI-Category",
-          "url": "https://rapidapi.com/b2bquantapis/api/uk-fca-companies-house-kyb-compliance-auditor"
+          "url": "https://rapidapi.com/b2bquantapis/api/b2b-quant-mcp-server"
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/uk-fca-companies-house-kyb-compliance-auditor"
+          "url": "https://zylalabs.com/api-marketplace/legal+%26+compliance/uk+fca+companies+house+kyb+compliance+api/14660"
         },
         {
           "type": "X-Apify-Actor",
@@ -2365,7 +2365,7 @@
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/global-sanctions-pep-interpol-watchlist-screener"
+          "url": "https://zylalabs.com/api-marketplace/legal+%26+compliance/us+fda+recalls+safety+monitor+food+drug+api/14646"
         },
         {
           "type": "X-Apify-Actor",
@@ -2446,7 +2446,7 @@
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/b2b-ssl-tls-ct-log-subdomain-attack-surface-auditor"
+          "url": "https://zylalabs.com/api-marketplace/legal+%26+compliance/b2b+ssl+tls+ct+log+subdomain+attack+surface+api/14666"
         },
         {
           "type": "X-Apify-Actor",
@@ -2527,7 +2527,7 @@
         },
         {
           "type": "X-Zyla-Category",
-          "url": "https://zylalabs.com/api-marketplace/b2b-quant-mcp-server"
+          "url": "https://zylalabs.com/api-marketplace/legal+%26+compliance/us+fda+recalls+safety+monitor+food+drug+api/14646"
         },
         {
           "type": "X-Apify-Actor",

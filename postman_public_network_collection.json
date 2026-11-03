@@ -62,7 +62,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"uf\": \"SP\",\n  \"keywords\": [\n    \"software\",\n    \"cloud\",\n    \"licenciamento\"\n  ],\n  \"codigoModalidadeContratacao\": \"6\",\n  \"dataInicial\": \"\",\n  \"dataFinal\": \"\",\n  \"maxResults\": 20,\n  \"fetchItems\": true\n}",
+              "raw": "{\n  \"uf\": \"SP\",\n  \"keywords\": [\n    \"software\",\n    \"cloud\",\n    \"licenciamento\"\n  ],\n  \"codigoModalidadeContratacao\": \"6\",\n  \"dataInicial\": \"\",\n  \"dataFinal\": \"\",\n  \"maxResults\": 10,\n  \"fetchItems\": false\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -129,7 +129,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"uf\": \"SP\",\n  \"keywords\": [\n    \"software\",\n    \"cloud\",\n    \"licenciamento\"\n  ],\n  \"codigoModalidadeContratacao\": \"6\",\n  \"dataInicial\": \"\",\n  \"dataFinal\": \"\",\n  \"maxResults\": 20,\n  \"fetchItems\": true\n}",
+              "raw": "{\n  \"uf\": \"SP\",\n  \"keywords\": [\n    \"software\",\n    \"cloud\",\n    \"licenciamento\"\n  ],\n  \"codigoModalidadeContratacao\": \"6\",\n  \"dataInicial\": \"\",\n  \"dataFinal\": \"\",\n  \"maxResults\": 10,\n  \"fetchItems\": false\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -494,7 +494,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"routes\": [\n    {\n      \"origin_uf\": \"SP\",\n      \"dest_uf\": \"RJ\",\n      \"distance_km\": 430,\n      \"axles\": 6,\n      \"cargo_type\": \"geral\"\n    }\n  ],\n  \"cteXmlList\": [],\n  \"defaultAxles\": 6\n}",
+              "raw": "{\n  \"routes\": [\n    {\n      \"routeId\": \"ROT-001\",\n      \"origin\": \"Campinas/SP\",\n      \"destination\": \"Goiânia/GO\",\n      \"distanceKm\": 815,\n      \"axles\": 6,\n      \"cargoType\": \"carga_geral\",\n      \"chargedFreightBRL\": 6800.0\n    }\n  ],\n  \"cteXmlList\": [],\n  \"defaultAxles\": 6\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -561,7 +561,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"routes\": [\n    {\n      \"origin_uf\": \"SP\",\n      \"dest_uf\": \"RJ\",\n      \"distance_km\": 430,\n      \"axles\": 6,\n      \"cargo_type\": \"geral\"\n    }\n  ],\n  \"cteXmlList\": [],\n  \"defaultAxles\": 6\n}",
+              "raw": "{\n  \"routes\": [\n    {\n      \"routeId\": \"ROT-001\",\n      \"origin\": \"Campinas/SP\",\n      \"destination\": \"Goiânia/GO\",\n      \"distanceKm\": 815,\n      \"axles\": 6,\n      \"cargoType\": \"carga_geral\",\n      \"chargedFreightBRL\": 6800.0\n    }\n  ],\n  \"cteXmlList\": [],\n  \"defaultAxles\": 6\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -638,7 +638,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"state\": \"FL\",\n  \"city\": \"Miami\",\n  \"taxonomyDescription\": \"Dentist\",\n  \"enumerationType\": \"ALL\",\n  \"postalCode\": \"\",\n  \"maxResults\": 15\n}",
+              "raw": "{\n  \"state\": \"FL\",\n  \"city\": \"Miami\",\n  \"taxonomyDescription\": \"Dentist\",\n  \"enumerationType\": \"ALL\",\n  \"postalCode\": \"\",\n  \"maxResults\": 10\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -705,7 +705,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"state\": \"FL\",\n  \"city\": \"Miami\",\n  \"taxonomyDescription\": \"Dentist\",\n  \"enumerationType\": \"ALL\",\n  \"postalCode\": \"\",\n  \"maxResults\": 15\n}",
+              "raw": "{\n  \"state\": \"FL\",\n  \"city\": \"Miami\",\n  \"taxonomyDescription\": \"Dentist\",\n  \"enumerationType\": \"ALL\",\n  \"postalCode\": \"\",\n  \"maxResults\": 10\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -782,7 +782,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"domain\": \"food\",\n  \"classification\": \"ALL\",\n  \"keyword\": \"\",\n  \"state\": \"\",\n  \"maxResults\": 15\n}",
+              "raw": "{\n  \"domain\": \"drug\",\n  \"classification\": \"ALL\",\n  \"keyword\": \"semaglutide\",\n  \"state\": \"\",\n  \"maxResults\": 10\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -849,7 +849,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"domain\": \"food\",\n  \"classification\": \"ALL\",\n  \"keyword\": \"\",\n  \"state\": \"\",\n  \"maxResults\": 15\n}",
+              "raw": "{\n  \"domain\": \"drug\",\n  \"classification\": \"ALL\",\n  \"keyword\": \"semaglutide\",\n  \"state\": \"\",\n  \"maxResults\": 10\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1214,7 +1214,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"vins\": [\n    \"5UXWX7C5*BA\",\n    \"1HGCM82633A004352\"\n  ],\n  \"checkRecalls\": true,\n  \"maxResults\": 50\n}",
+              "raw": "{\n  \"vins\": [\n    \"5UXWX7C5*BA\",\n    \"1HGCM82633A004352\"\n  ],\n  \"checkRecalls\": true,\n  \"maxResults\": 10\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1281,7 +1281,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"vins\": [\n    \"5UXWX7C5*BA\",\n    \"1HGCM82633A004352\"\n  ],\n  \"checkRecalls\": true,\n  \"maxResults\": 50\n}",
+              "raw": "{\n  \"vins\": [\n    \"5UXWX7C5*BA\",\n    \"1HGCM82633A004352\"\n  ],\n  \"checkRecalls\": true,\n  \"maxResults\": 10\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1358,7 +1358,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"cnpjs\": [\n    \"00.000.000/0001-91\",\n    \"33.000.167/0001-01\"\n  ],\n  \"includeSecondaryCnaes\": true,\n  \"timeoutSeconds\": 15,\n  \"maxResults\": 100\n}",
+              "raw": "{\n  \"cnpjs\": [\n    \"00.000.000/0001-91\",\n    \"33.000.167/0001-01\"\n  ],\n  \"includeSecondaryCnaes\": true,\n  \"timeoutSeconds\": 15,\n  \"maxResults\": 10\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1425,7 +1425,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"cnpjs\": [\n    \"00.000.000/0001-91\",\n    \"33.000.167/0001-01\"\n  ],\n  \"includeSecondaryCnaes\": true,\n  \"timeoutSeconds\": 15,\n  \"maxResults\": 100\n}",
+              "raw": "{\n  \"cnpjs\": [\n    \"00.000.000/0001-91\",\n    \"33.000.167/0001-01\"\n  ],\n  \"includeSecondaryCnaes\": true,\n  \"timeoutSeconds\": 15,\n  \"maxResults\": 10\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1502,7 +1502,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"tickerOrCik\": \"AAPL\",\n  \"formType\": \"ALL\",\n  \"keyword\": \"\",\n  \"maxResults\": 15\n}",
+              "raw": "{\n  \"tickerOrCik\": \"AAPL\",\n  \"formType\": \"10-K\",\n  \"keyword\": \"\",\n  \"maxResults\": 5\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1569,7 +1569,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"tickerOrCik\": \"AAPL\",\n  \"formType\": \"ALL\",\n  \"keyword\": \"\",\n  \"maxResults\": 15\n}",
+              "raw": "{\n  \"tickerOrCik\": \"AAPL\",\n  \"formType\": \"10-K\",\n  \"keyword\": \"\",\n  \"maxResults\": 5\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1646,7 +1646,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"vatNumbers\": \"IE6388047V, DE811128135\",\n  \"requesterCountryCode\": \"DE\",\n  \"maxResults\": 20\n}",
+              "raw": "{\n  \"vatNumbers\": \"IE6388047V, DE811128135, FR40303265045\",\n  \"requesterCountryCode\": \"DE\",\n  \"maxResults\": 10\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1713,7 +1713,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"vatNumbers\": \"IE6388047V, DE811128135\",\n  \"requesterCountryCode\": \"DE\",\n  \"maxResults\": 20\n}",
+              "raw": "{\n  \"vatNumbers\": \"IE6388047V, DE811128135, FR40303265045\",\n  \"requesterCountryCode\": \"DE\",\n  \"maxResults\": 10\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1790,7 +1790,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"state\": \"TX\",\n  \"facilityName\": \"\",\n  \"zipCode\": \"\",\n  \"significantViolatorsOnly\": false,\n  \"maxResults\": 15\n}",
+              "raw": "{\n  \"state\": \"TX\",\n  \"facilityName\": \"ExxonMobil\",\n  \"zipCode\": \"\",\n  \"significantViolatorsOnly\": false,\n  \"maxResults\": 10\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1857,7 +1857,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"state\": \"TX\",\n  \"facilityName\": \"\",\n  \"zipCode\": \"\",\n  \"significantViolatorsOnly\": false,\n  \"maxResults\": 15\n}",
+              "raw": "{\n  \"state\": \"TX\",\n  \"facilityName\": \"ExxonMobil\",\n  \"zipCode\": \"\",\n  \"significantViolatorsOnly\": false,\n  \"maxResults\": 10\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1934,7 +1934,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"institutionName\": \"\",\n  \"state\": \"NY\",\n  \"activeOnly\": true,\n  \"maxResults\": 15\n}",
+              "raw": "{\n  \"institutionName\": \"JPMorgan Chase Bank\",\n  \"state\": \"NY\",\n  \"activeOnly\": true,\n  \"maxResults\": 10\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -2001,7 +2001,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"institutionName\": \"\",\n  \"state\": \"NY\",\n  \"activeOnly\": true,\n  \"maxResults\": 15\n}",
+              "raw": "{\n  \"institutionName\": \"JPMorgan Chase Bank\",\n  \"state\": \"NY\",\n  \"activeOnly\": true,\n  \"maxResults\": 10\n}",
               "options": {
                 "raw": {
                   "language": "json"
