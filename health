@@ -6,5 +6,5 @@
   "wallet": "DuaKjymBXrmawGgg5gK8D1zT2w1NCqjmb7B1XKHRYc5T",
   "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
   "asset": "USDC",
-  "freeTierDiscoveryEndpoint": "https://jesleytassili-glitch.github.io/v1/free-catalog-status"
+  "freeTierDiscoveryEndpoint": "https://jesleytassili-glitch.github.io/v1/free-catalog-status.json"
 }
