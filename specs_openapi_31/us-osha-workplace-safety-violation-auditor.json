@@ -234,25 +234,22 @@
                 "example": {
                   "status": "succeeded",
                   "actor": "us-osha-workplace-safety-violation-auditor",
-                  "marketplace": "rapidapi_zyla_hub",
                   "engineVersion": "3.0.0",
                   "count": 1,
                   "data": [
                     {
-                      "activityNumber": "Verified OSHA Activity Number (us-osha-workplace-safety-violation-auditor)",
-                      "establishmentName": "Verified Establishment Name (us-osha-workplace-safety-violation-auditor)",
-                      "siteCity": "Verified Site City (us-osha-workplace-safety-violation-auditor)",
-                      "siteState": "Verified Site State (us-osha-workplace-safety-violation-auditor)",
-                      "naicsCode": "Verified NAICS Industry Code (us-osha-workplace-safety-violation-auditor)",
-                      "inspectionType": "Verified Inspection Type (us-osha-workplace-safety-violation-auditor)",
-                      "openDate": "Verified Inspection Open Date (us-osha-workplace-safety-violation-auditor)",
-                      "totalViolations": 88,
-                      "seriousWillfulRepeatCount": 88,
-                      "currentPenaltyUsd": 94.5,
-                      "workplaceRiskScore": 88,
-                      "markdownSafetyBrief": "Verified Markdown EHS & Underwriting Audit Brief (us-osha-workplace-safety-violation-auditor)",
-                      "quantScore": 91.5,
-                      "ragMarkdownBrief": "### Executive Audit Brief — US OSHA Workplace Safety & Violation Compliance Auditor\n- **Status:** VERIFIED\n- **Quantitative Score:** 91.5/100"
+                      "activityNumber": "317019842",
+                      "establishmentName": "AMAZON.COM SERVICES LLC - FULFILLMENT CENTER DFW7",
+                      "siteCity": "Fort Worth",
+                      "siteState": "TX",
+                      "naicsCode": "493110",
+                      "inspectionType": "Complaint",
+                      "openDate": "2026-06-14",
+                      "totalViolations": 4,
+                      "seriousWillfulRepeatCount": 3,
+                      "currentPenaltyUsd": 64500,
+                      "workplaceRiskScore": 84,
+                      "markdownSafetyBrief": "# US OSHA WORKPLACE SAFETY & COMPLIANCE DOSSIER: 317019842\n\n## 1. Establishment & Inspection Profile\n- **Establishment Name:** **AMAZON.COM SERVICES LLC - FULFILLMENT CENTER DFW7**\n- **Location:** `Fort Worth, TX`\n- **NAICS Industry Code:** `493110`\n- **Inspection Type:** `Complaint`\n- **Inspection Open Date:** `2026-06-14`\n\n## 2. Citations, Penalties & Underwriting Risk\n- **Workplace Safety Risk Score:** **84/100**\n- **Total OSHA Violations Cited:** `4`\n- **Serious / Willful / Repeat Citations:** **`3`**\n- **Assessed Civil Monetary Penalty:** **$64,500.00 USD**"
                     }
                   ]
                 }
@@ -269,25 +266,22 @@
                 "example": {
                   "status": "succeeded",
                   "actor": "us-osha-workplace-safety-violation-auditor",
-                  "marketplace": "rapidapi_zyla_hub",
                   "engineVersion": "3.0.0",
                   "count": 1,
                   "data": [
                     {
-                      "activityNumber": "Verified OSHA Activity Number (us-osha-workplace-safety-violation-auditor)",
-                      "establishmentName": "Verified Establishment Name (us-osha-workplace-safety-violation-auditor)",
-                      "siteCity": "Verified Site City (us-osha-workplace-safety-violation-auditor)",
-                      "siteState": "Verified Site State (us-osha-workplace-safety-violation-auditor)",
-                      "naicsCode": "Verified NAICS Industry Code (us-osha-workplace-safety-violation-auditor)",
-                      "inspectionType": "Verified Inspection Type (us-osha-workplace-safety-violation-auditor)",
-                      "openDate": "Verified Inspection Open Date (us-osha-workplace-safety-violation-auditor)",
-                      "totalViolations": 88,
-                      "seriousWillfulRepeatCount": 88,
-                      "currentPenaltyUsd": 94.5,
-                      "workplaceRiskScore": 88,
-                      "markdownSafetyBrief": "Verified Markdown EHS & Underwriting Audit Brief (us-osha-workplace-safety-violation-auditor)",
-                      "quantScore": 91.5,
-                      "ragMarkdownBrief": "### Executive Audit Brief — US OSHA Workplace Safety & Violation Compliance Auditor\n- **Status:** VERIFIED\n- **Quantitative Score:** 91.5/100"
+                      "activityNumber": "317019842",
+                      "establishmentName": "AMAZON.COM SERVICES LLC - FULFILLMENT CENTER DFW7",
+                      "siteCity": "Fort Worth",
+                      "siteState": "TX",
+                      "naicsCode": "493110",
+                      "inspectionType": "Complaint",
+                      "openDate": "2026-06-14",
+                      "totalViolations": 4,
+                      "seriousWillfulRepeatCount": 3,
+                      "currentPenaltyUsd": 64500,
+                      "workplaceRiskScore": 84,
+                      "markdownSafetyBrief": "# US OSHA WORKPLACE SAFETY & COMPLIANCE DOSSIER: 317019842\n\n## 1. Establishment & Inspection Profile\n- **Establishment Name:** **AMAZON.COM SERVICES LLC - FULFILLMENT CENTER DFW7**\n- **Location:** `Fort Worth, TX`\n- **NAICS Industry Code:** `493110`\n- **Inspection Type:** `Complaint`\n- **Inspection Open Date:** `2026-06-14`\n\n## 2. Citations, Penalties & Underwriting Risk\n- **Workplace Safety Risk Score:** **84/100**\n- **Total OSHA Violations Cited:** `4`\n- **Serious / Willful / Repeat Citations:** **`3`**\n- **Assessed Civil Monetary Penalty:** **$64,500.00 USD**"
                     }
                   ]
                 }
@@ -485,25 +479,22 @@
                 "example": {
                   "status": "succeeded",
                   "actor": "us-osha-workplace-safety-violation-auditor",
-                  "marketplace": "rapidapi_zyla_hub",
                   "engineVersion": "3.0.0",
                   "count": 1,
                   "data": [
                     {
-                      "activityNumber": "Verified OSHA Activity Number (us-osha-workplace-safety-violation-auditor)",
-                      "establishmentName": "Verified Establishment Name (us-osha-workplace-safety-violation-auditor)",
-                      "siteCity": "Verified Site City (us-osha-workplace-safety-violation-auditor)",
-                      "siteState": "Verified Site State (us-osha-workplace-safety-violation-auditor)",
-                      "naicsCode": "Verified NAICS Industry Code (us-osha-workplace-safety-violation-auditor)",
-                      "inspectionType": "Verified Inspection Type (us-osha-workplace-safety-violation-auditor)",
-                      "openDate": "Verified Inspection Open Date (us-osha-workplace-safety-violation-auditor)",
-                      "totalViolations": 88,
-                      "seriousWillfulRepeatCount": 88,
-                      "currentPenaltyUsd": 94.5,
-                      "workplaceRiskScore": 88,
-                      "markdownSafetyBrief": "Verified Markdown EHS & Underwriting Audit Brief (us-osha-workplace-safety-violation-auditor)",
-                      "quantScore": 91.5,
-                      "ragMarkdownBrief": "### Executive Audit Brief — US OSHA Workplace Safety & Violation Compliance Auditor\n- **Status:** VERIFIED\n- **Quantitative Score:** 91.5/100"
+                      "activityNumber": "317019842",
+                      "establishmentName": "AMAZON.COM SERVICES LLC - FULFILLMENT CENTER DFW7",
+                      "siteCity": "Fort Worth",
+                      "siteState": "TX",
+                      "naicsCode": "493110",
+                      "inspectionType": "Complaint",
+                      "openDate": "2026-06-14",
+                      "totalViolations": 4,
+                      "seriousWillfulRepeatCount": 3,
+                      "currentPenaltyUsd": 64500,
+                      "workplaceRiskScore": 84,
+                      "markdownSafetyBrief": "# US OSHA WORKPLACE SAFETY & COMPLIANCE DOSSIER: 317019842\n\n## 1. Establishment & Inspection Profile\n- **Establishment Name:** **AMAZON.COM SERVICES LLC - FULFILLMENT CENTER DFW7**\n- **Location:** `Fort Worth, TX`\n- **NAICS Industry Code:** `493110`\n- **Inspection Type:** `Complaint`\n- **Inspection Open Date:** `2026-06-14`\n\n## 2. Citations, Penalties & Underwriting Risk\n- **Workplace Safety Risk Score:** **84/100**\n- **Total OSHA Violations Cited:** `4`\n- **Serious / Willful / Repeat Citations:** **`3`**\n- **Assessed Civil Monetary Penalty:** **$64,500.00 USD**"
                     }
                   ]
                 }
@@ -520,25 +511,22 @@
                 "example": {
                   "status": "succeeded",
                   "actor": "us-osha-workplace-safety-violation-auditor",
-                  "marketplace": "rapidapi_zyla_hub",
                   "engineVersion": "3.0.0",
                   "count": 1,
                   "data": [
                     {
-                      "activityNumber": "Verified OSHA Activity Number (us-osha-workplace-safety-violation-auditor)",
-                      "establishmentName": "Verified Establishment Name (us-osha-workplace-safety-violation-auditor)",
-                      "siteCity": "Verified Site City (us-osha-workplace-safety-violation-auditor)",
-                      "siteState": "Verified Site State (us-osha-workplace-safety-violation-auditor)",
-                      "naicsCode": "Verified NAICS Industry Code (us-osha-workplace-safety-violation-auditor)",
-                      "inspectionType": "Verified Inspection Type (us-osha-workplace-safety-violation-auditor)",
-                      "openDate": "Verified Inspection Open Date (us-osha-workplace-safety-violation-auditor)",
-                      "totalViolations": 88,
-                      "seriousWillfulRepeatCount": 88,
-                      "currentPenaltyUsd": 94.5,
-                      "workplaceRiskScore": 88,
-                      "markdownSafetyBrief": "Verified Markdown EHS & Underwriting Audit Brief (us-osha-workplace-safety-violation-auditor)",
-                      "quantScore": 91.5,
-                      "ragMarkdownBrief": "### Executive Audit Brief — US OSHA Workplace Safety & Violation Compliance Auditor\n- **Status:** VERIFIED\n- **Quantitative Score:** 91.5/100"
+                      "activityNumber": "317019842",
+                      "establishmentName": "AMAZON.COM SERVICES LLC - FULFILLMENT CENTER DFW7",
+                      "siteCity": "Fort Worth",
+                      "siteState": "TX",
+                      "naicsCode": "493110",
+                      "inspectionType": "Complaint",
+                      "openDate": "2026-06-14",
+                      "totalViolations": 4,
+                      "seriousWillfulRepeatCount": 3,
+                      "currentPenaltyUsd": 64500,
+                      "workplaceRiskScore": 84,
+                      "markdownSafetyBrief": "# US OSHA WORKPLACE SAFETY & COMPLIANCE DOSSIER: 317019842\n\n## 1. Establishment & Inspection Profile\n- **Establishment Name:** **AMAZON.COM SERVICES LLC - FULFILLMENT CENTER DFW7**\n- **Location:** `Fort Worth, TX`\n- **NAICS Industry Code:** `493110`\n- **Inspection Type:** `Complaint`\n- **Inspection Open Date:** `2026-06-14`\n\n## 2. Citations, Penalties & Underwriting Risk\n- **Workplace Safety Risk Score:** **84/100**\n- **Total OSHA Violations Cited:** `4`\n- **Serious / Willful / Repeat Citations:** **`3`**\n- **Assessed Civil Monetary Penalty:** **$64,500.00 USD**"
                     }
                   ]
                 }
@@ -729,102 +717,88 @@
             "type": "string",
             "title": "OSHA Activity Number",
             "description": "Official OSHA inspection activity identifier.",
-            "example": "Verified OSHA Activity Number (us-osha-workplace-safety-violation-auditor)"
+            "example": "317019842"
           },
           "establishmentName": {
             "type": "string",
             "title": "Establishment Name",
             "description": "Inspected employer or facility name.",
-            "example": "Verified Establishment Name (us-osha-workplace-safety-violation-auditor)"
+            "example": "AMAZON.COM SERVICES LLC - FULFILLMENT CENTER DFW7"
           },
           "siteCity": {
             "type": "string",
             "title": "Site City",
             "description": "City where the inspected facility is located.",
-            "example": "Verified Site City (us-osha-workplace-safety-violation-auditor)"
+            "example": "Fort Worth"
           },
           "siteState": {
             "type": "string",
             "title": "Site State",
             "description": "2-letter U.S. state abbreviation.",
-            "example": "Verified Site State (us-osha-workplace-safety-violation-auditor)"
+            "example": "TX"
           },
           "naicsCode": {
             "type": "string",
             "title": "NAICS Industry Code",
             "description": "6-digit North American Industry Classification System code.",
-            "example": "Verified NAICS Industry Code (us-osha-workplace-safety-violation-auditor)"
+            "example": "493110"
           },
           "inspectionType": {
             "type": "string",
             "title": "Inspection Type",
             "description": "Complaint, Referral, Fatality/Catastrophe, or Planned inspection.",
-            "example": "Verified Inspection Type (us-osha-workplace-safety-violation-auditor)"
+            "example": "Complaint"
           },
           "openDate": {
             "type": "string",
             "title": "Inspection Open Date",
             "description": "ISO date when the OSHA inspection opened.",
-            "example": "Verified Inspection Open Date (us-osha-workplace-safety-violation-auditor)"
+            "example": "2026-06-14"
           },
           "totalViolations": {
             "type": "integer",
             "title": "Total Citations",
             "description": "Total number of OSHA standards cited.",
-            "example": 88
+            "example": 4
           },
           "seriousWillfulRepeatCount": {
             "type": "integer",
             "title": "Serious / Willful / Repeat Citations",
             "description": "Count of high-severity (Serious, Willful, or Repeat) citations.",
-            "example": 88
+            "example": 3
           },
           "currentPenaltyUsd": {
             "type": "number",
             "title": "Current Penalty (USD)",
             "description": "Assessed OSHA civil monetary penalty in USD.",
-            "example": 94.5
+            "example": 64500
           },
           "workplaceRiskScore": {
             "type": "integer",
             "title": "Workplace Safety Risk Score (0-100)",
             "description": "Quantitative EHS and supply-chain underwriting risk score (0-100).",
-            "example": 88
+            "example": 84
           },
           "markdownSafetyBrief": {
             "type": "string",
             "title": "Markdown EHS & Underwriting Audit Brief",
             "description": "Executive Markdown dossier for ESG auditors, insurance underwriters, and M&A due diligence.",
-            "example": "Verified Markdown EHS & Underwriting Audit Brief (us-osha-workplace-safety-violation-auditor)"
-          },
-          "quantScore": {
-            "type": "number",
-            "title": "Quantitative Compliance & Opportunity Score (0-100)",
-            "description": "Normalized deterministic score from 0 to 100 generated by the quantitative engine.",
-            "example": 91.5
-          },
-          "ragMarkdownBrief": {
-            "type": "string",
-            "title": "Executive RAG Markdown Brief",
-            "description": "LLM-ready executive summary formatted in Markdown for RAG pipelines and compliance dossiers.",
-            "example": "### Executive Audit Brief — US OSHA Workplace Safety & Violation Compliance Auditor\n- **Status:** VERIFIED\n- **Quantitative Score:** 91.5/100"
+            "example": "# US OSHA WORKPLACE SAFETY & COMPLIANCE DOSSIER: 317019842\n\n## 1. Establishment & Inspection Profile\n- **Establishment Name:** **AMAZON.COM SERVICES LLC - FULFILLMENT CENTER DFW7**\n- **Location:** `Fort Worth, TX`\n- **NAICS Industry Code:** `493110`\n- **Inspection Type:** `Complaint`\n- **Inspection Open Date:** `2026-06-14`\n\n## 2. Citations, Penalties & Underwriting Risk\n- **Workplace Safety Risk Score:** **84/100**\n- **Total OSHA Violations Cited:** `4`\n- **Serious / Willful / Repeat Citations:** **`3`**\n- **Assessed Civil Monetary Penalty:** **$64,500.00 USD**"
           }
         },
         "example": {
-          "activityNumber": "Verified OSHA Activity Number (us-osha-workplace-safety-violation-auditor)",
-          "establishmentName": "Verified Establishment Name (us-osha-workplace-safety-violation-auditor)",
-          "siteCity": "Verified Site City (us-osha-workplace-safety-violation-auditor)",
-          "siteState": "Verified Site State (us-osha-workplace-safety-violation-auditor)",
-          "naicsCode": "Verified NAICS Industry Code (us-osha-workplace-safety-violation-auditor)",
-          "inspectionType": "Verified Inspection Type (us-osha-workplace-safety-violation-auditor)",
-          "openDate": "Verified Inspection Open Date (us-osha-workplace-safety-violation-auditor)",
-          "totalViolations": 88,
-          "seriousWillfulRepeatCount": 88,
-          "currentPenaltyUsd": 94.5,
-          "workplaceRiskScore": 88,
-          "markdownSafetyBrief": "Verified Markdown EHS & Underwriting Audit Brief (us-osha-workplace-safety-violation-auditor)",
-          "quantScore": 91.5,
-          "ragMarkdownBrief": "### Executive Audit Brief — US OSHA Workplace Safety & Violation Compliance Auditor\n- **Status:** VERIFIED\n- **Quantitative Score:** 91.5/100"
+          "activityNumber": "317019842",
+          "establishmentName": "AMAZON.COM SERVICES LLC - FULFILLMENT CENTER DFW7",
+          "siteCity": "Fort Worth",
+          "siteState": "TX",
+          "naicsCode": "493110",
+          "inspectionType": "Complaint",
+          "openDate": "2026-06-14",
+          "totalViolations": 4,
+          "seriousWillfulRepeatCount": 3,
+          "currentPenaltyUsd": 64500,
+          "workplaceRiskScore": 84,
+          "markdownSafetyBrief": "# US OSHA WORKPLACE SAFETY & COMPLIANCE DOSSIER: 317019842\n\n## 1. Establishment & Inspection Profile\n- **Establishment Name:** **AMAZON.COM SERVICES LLC - FULFILLMENT CENTER DFW7**\n- **Location:** `Fort Worth, TX`\n- **NAICS Industry Code:** `493110`\n- **Inspection Type:** `Complaint`\n- **Inspection Open Date:** `2026-06-14`\n\n## 2. Citations, Penalties & Underwriting Risk\n- **Workplace Safety Risk Score:** **84/100**\n- **Total OSHA Violations Cited:** `4`\n- **Serious / Willful / Repeat Citations:** **`3`**\n- **Assessed Civil Monetary Penalty:** **$64,500.00 USD**"
         }
       },
       "UsOshaWorkplaceSafetyViolationAuditorResponseEnvelope": {
@@ -867,25 +841,22 @@
         "example": {
           "status": "succeeded",
           "actor": "us-osha-workplace-safety-violation-auditor",
-          "marketplace": "rapidapi_zyla_hub",
           "engineVersion": "3.0.0",
           "count": 1,
           "data": [
             {
-              "activityNumber": "Verified OSHA Activity Number (us-osha-workplace-safety-violation-auditor)",
-              "establishmentName": "Verified Establishment Name (us-osha-workplace-safety-violation-auditor)",
-              "siteCity": "Verified Site City (us-osha-workplace-safety-violation-auditor)",
-              "siteState": "Verified Site State (us-osha-workplace-safety-violation-auditor)",
-              "naicsCode": "Verified NAICS Industry Code (us-osha-workplace-safety-violation-auditor)",
-              "inspectionType": "Verified Inspection Type (us-osha-workplace-safety-violation-auditor)",
-              "openDate": "Verified Inspection Open Date (us-osha-workplace-safety-violation-auditor)",
-              "totalViolations": 88,
-              "seriousWillfulRepeatCount": 88,
-              "currentPenaltyUsd": 94.5,
-              "workplaceRiskScore": 88,
-              "markdownSafetyBrief": "Verified Markdown EHS & Underwriting Audit Brief (us-osha-workplace-safety-violation-auditor)",
-              "quantScore": 91.5,
-              "ragMarkdownBrief": "### Executive Audit Brief — US OSHA Workplace Safety & Violation Compliance Auditor\n- **Status:** VERIFIED\n- **Quantitative Score:** 91.5/100"
+              "activityNumber": "317019842",
+              "establishmentName": "AMAZON.COM SERVICES LLC - FULFILLMENT CENTER DFW7",
+              "siteCity": "Fort Worth",
+              "siteState": "TX",
+              "naicsCode": "493110",
+              "inspectionType": "Complaint",
+              "openDate": "2026-06-14",
+              "totalViolations": 4,
+              "seriousWillfulRepeatCount": 3,
+              "currentPenaltyUsd": 64500,
+              "workplaceRiskScore": 84,
+              "markdownSafetyBrief": "# US OSHA WORKPLACE SAFETY & COMPLIANCE DOSSIER: 317019842\n\n## 1. Establishment & Inspection Profile\n- **Establishment Name:** **AMAZON.COM SERVICES LLC - FULFILLMENT CENTER DFW7**\n- **Location:** `Fort Worth, TX`\n- **NAICS Industry Code:** `493110`\n- **Inspection Type:** `Complaint`\n- **Inspection Open Date:** `2026-06-14`\n\n## 2. Citations, Penalties & Underwriting Risk\n- **Workplace Safety Risk Score:** **84/100**\n- **Total OSHA Violations Cited:** `4`\n- **Serious / Willful / Repeat Citations:** **`3`**\n- **Assessed Civil Monetary Penalty:** **$64,500.00 USD**"
             }
           ]
         }

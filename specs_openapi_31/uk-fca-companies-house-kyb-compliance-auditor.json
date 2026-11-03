@@ -234,24 +234,21 @@
                 "example": {
                   "status": "succeeded",
                   "actor": "uk-fca-companies-house-kyb-compliance-auditor",
-                  "marketplace": "rapidapi_zyla_hub",
                   "engineVersion": "3.0.0",
                   "count": 1,
                   "data": [
                     {
-                      "companyNumberCrn": "Verified UK Companies House CRN (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "companyName": "Verified Legal Entity Name (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "leiCode": "Verified GLEIF 20-Character LEI (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "companyStatus": "Verified Companies House Status (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "incorporationDate": "Verified Incorporation / Registration Date (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "sicCodes": "Verified UK SIC 2007 Classification (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "registeredCity": "Verified Registered Office City (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "fcaRegulatoryStatus": "Verified FCA / Financial Standing Status (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "kybComplianceScore": 88,
-                      "onboardingDecision": "Verified Automated KYB Decision (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "markdownKybBrief": "Verified Markdown UK KYB & Compliance Dossier (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "quantScore": 91.5,
-                      "ragMarkdownBrief": "### Executive Audit Brief — UK Companies House & FCA Corporate KYB Compliance Auditor\n- **Status:** VERIFIED\n- **Quantitative Score:** 91.5/100"
+                      "companyNumberCrn": "12871051",
+                      "companyName": "REVOLUT BANK UK LTD",
+                      "leiCode": "2138003LXONKR247S255",
+                      "companyStatus": "ACTIVE",
+                      "incorporationDate": "2020-09-10",
+                      "sicCodes": "64999 - Financial & Commercial Services",
+                      "registeredCity": "LONDON",
+                      "fcaRegulatoryStatus": "FCA / GLEIF Verified Financial Entity",
+                      "kybComplianceScore": 100,
+                      "onboardingDecision": "APPROVED_FAST_TRACK",
+                      "markdownKybBrief": "# UK COMPANIES HOUSE & FCA KYB COMPLIANCE DOSSIER: 12871051\n\n## 1. Corporate Registry & Legal Identity\n- **Legal Entity Name:** **REVOLUT BANK UK LTD**\n- **UK Companies House CRN:** `12871051`\n- **GLEIF 20-Character LEI:** `2138003LXONKR247S255`\n- **Companies House Status:** `ACTIVE`\n- **Incorporation / Registration Date:** `2020-09-10`\n\n## 2. Regulatory Standing & KYB Onboarding Decision\n- **KYB Compliance Score:** **100/100**\n- **Automated Onboarding Decision:** **`APPROVED_FAST_TRACK`**\n- **FCA / Regulatory Standing:** FCA / GLEIF Verified Financial Entity\n- **UK SIC Classification:** `64999 - Financial & Commercial Services`\n- **Registered Office City:** `LONDON`"
                     }
                   ]
                 }
@@ -268,24 +265,21 @@
                 "example": {
                   "status": "succeeded",
                   "actor": "uk-fca-companies-house-kyb-compliance-auditor",
-                  "marketplace": "rapidapi_zyla_hub",
                   "engineVersion": "3.0.0",
                   "count": 1,
                   "data": [
                     {
-                      "companyNumberCrn": "Verified UK Companies House CRN (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "companyName": "Verified Legal Entity Name (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "leiCode": "Verified GLEIF 20-Character LEI (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "companyStatus": "Verified Companies House Status (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "incorporationDate": "Verified Incorporation / Registration Date (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "sicCodes": "Verified UK SIC 2007 Classification (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "registeredCity": "Verified Registered Office City (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "fcaRegulatoryStatus": "Verified FCA / Financial Standing Status (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "kybComplianceScore": 88,
-                      "onboardingDecision": "Verified Automated KYB Decision (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "markdownKybBrief": "Verified Markdown UK KYB & Compliance Dossier (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "quantScore": 91.5,
-                      "ragMarkdownBrief": "### Executive Audit Brief — UK Companies House & FCA Corporate KYB Compliance Auditor\n- **Status:** VERIFIED\n- **Quantitative Score:** 91.5/100"
+                      "companyNumberCrn": "12871051",
+                      "companyName": "REVOLUT BANK UK LTD",
+                      "leiCode": "2138003LXONKR247S255",
+                      "companyStatus": "ACTIVE",
+                      "incorporationDate": "2020-09-10",
+                      "sicCodes": "64999 - Financial & Commercial Services",
+                      "registeredCity": "LONDON",
+                      "fcaRegulatoryStatus": "FCA / GLEIF Verified Financial Entity",
+                      "kybComplianceScore": 100,
+                      "onboardingDecision": "APPROVED_FAST_TRACK",
+                      "markdownKybBrief": "# UK COMPANIES HOUSE & FCA KYB COMPLIANCE DOSSIER: 12871051\n\n## 1. Corporate Registry & Legal Identity\n- **Legal Entity Name:** **REVOLUT BANK UK LTD**\n- **UK Companies House CRN:** `12871051`\n- **GLEIF 20-Character LEI:** `2138003LXONKR247S255`\n- **Companies House Status:** `ACTIVE`\n- **Incorporation / Registration Date:** `2020-09-10`\n\n## 2. Regulatory Standing & KYB Onboarding Decision\n- **KYB Compliance Score:** **100/100**\n- **Automated Onboarding Decision:** **`APPROVED_FAST_TRACK`**\n- **FCA / Regulatory Standing:** FCA / GLEIF Verified Financial Entity\n- **UK SIC Classification:** `64999 - Financial & Commercial Services`\n- **Registered Office City:** `LONDON`"
                     }
                   ]
                 }
@@ -483,24 +477,21 @@
                 "example": {
                   "status": "succeeded",
                   "actor": "uk-fca-companies-house-kyb-compliance-auditor",
-                  "marketplace": "rapidapi_zyla_hub",
                   "engineVersion": "3.0.0",
                   "count": 1,
                   "data": [
                     {
-                      "companyNumberCrn": "Verified UK Companies House CRN (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "companyName": "Verified Legal Entity Name (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "leiCode": "Verified GLEIF 20-Character LEI (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "companyStatus": "Verified Companies House Status (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "incorporationDate": "Verified Incorporation / Registration Date (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "sicCodes": "Verified UK SIC 2007 Classification (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "registeredCity": "Verified Registered Office City (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "fcaRegulatoryStatus": "Verified FCA / Financial Standing Status (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "kybComplianceScore": 88,
-                      "onboardingDecision": "Verified Automated KYB Decision (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "markdownKybBrief": "Verified Markdown UK KYB & Compliance Dossier (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "quantScore": 91.5,
-                      "ragMarkdownBrief": "### Executive Audit Brief — UK Companies House & FCA Corporate KYB Compliance Auditor\n- **Status:** VERIFIED\n- **Quantitative Score:** 91.5/100"
+                      "companyNumberCrn": "12871051",
+                      "companyName": "REVOLUT BANK UK LTD",
+                      "leiCode": "2138003LXONKR247S255",
+                      "companyStatus": "ACTIVE",
+                      "incorporationDate": "2020-09-10",
+                      "sicCodes": "64999 - Financial & Commercial Services",
+                      "registeredCity": "LONDON",
+                      "fcaRegulatoryStatus": "FCA / GLEIF Verified Financial Entity",
+                      "kybComplianceScore": 100,
+                      "onboardingDecision": "APPROVED_FAST_TRACK",
+                      "markdownKybBrief": "# UK COMPANIES HOUSE & FCA KYB COMPLIANCE DOSSIER: 12871051\n\n## 1. Corporate Registry & Legal Identity\n- **Legal Entity Name:** **REVOLUT BANK UK LTD**\n- **UK Companies House CRN:** `12871051`\n- **GLEIF 20-Character LEI:** `2138003LXONKR247S255`\n- **Companies House Status:** `ACTIVE`\n- **Incorporation / Registration Date:** `2020-09-10`\n\n## 2. Regulatory Standing & KYB Onboarding Decision\n- **KYB Compliance Score:** **100/100**\n- **Automated Onboarding Decision:** **`APPROVED_FAST_TRACK`**\n- **FCA / Regulatory Standing:** FCA / GLEIF Verified Financial Entity\n- **UK SIC Classification:** `64999 - Financial & Commercial Services`\n- **Registered Office City:** `LONDON`"
                     }
                   ]
                 }
@@ -517,24 +508,21 @@
                 "example": {
                   "status": "succeeded",
                   "actor": "uk-fca-companies-house-kyb-compliance-auditor",
-                  "marketplace": "rapidapi_zyla_hub",
                   "engineVersion": "3.0.0",
                   "count": 1,
                   "data": [
                     {
-                      "companyNumberCrn": "Verified UK Companies House CRN (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "companyName": "Verified Legal Entity Name (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "leiCode": "Verified GLEIF 20-Character LEI (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "companyStatus": "Verified Companies House Status (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "incorporationDate": "Verified Incorporation / Registration Date (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "sicCodes": "Verified UK SIC 2007 Classification (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "registeredCity": "Verified Registered Office City (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "fcaRegulatoryStatus": "Verified FCA / Financial Standing Status (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "kybComplianceScore": 88,
-                      "onboardingDecision": "Verified Automated KYB Decision (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "markdownKybBrief": "Verified Markdown UK KYB & Compliance Dossier (uk-fca-companies-house-kyb-compliance-auditor)",
-                      "quantScore": 91.5,
-                      "ragMarkdownBrief": "### Executive Audit Brief — UK Companies House & FCA Corporate KYB Compliance Auditor\n- **Status:** VERIFIED\n- **Quantitative Score:** 91.5/100"
+                      "companyNumberCrn": "12871051",
+                      "companyName": "REVOLUT BANK UK LTD",
+                      "leiCode": "2138003LXONKR247S255",
+                      "companyStatus": "ACTIVE",
+                      "incorporationDate": "2020-09-10",
+                      "sicCodes": "64999 - Financial & Commercial Services",
+                      "registeredCity": "LONDON",
+                      "fcaRegulatoryStatus": "FCA / GLEIF Verified Financial Entity",
+                      "kybComplianceScore": 100,
+                      "onboardingDecision": "APPROVED_FAST_TRACK",
+                      "markdownKybBrief": "# UK COMPANIES HOUSE & FCA KYB COMPLIANCE DOSSIER: 12871051\n\n## 1. Corporate Registry & Legal Identity\n- **Legal Entity Name:** **REVOLUT BANK UK LTD**\n- **UK Companies House CRN:** `12871051`\n- **GLEIF 20-Character LEI:** `2138003LXONKR247S255`\n- **Companies House Status:** `ACTIVE`\n- **Incorporation / Registration Date:** `2020-09-10`\n\n## 2. Regulatory Standing & KYB Onboarding Decision\n- **KYB Compliance Score:** **100/100**\n- **Automated Onboarding Decision:** **`APPROVED_FAST_TRACK`**\n- **FCA / Regulatory Standing:** FCA / GLEIF Verified Financial Entity\n- **UK SIC Classification:** `64999 - Financial & Commercial Services`\n- **Registered Office City:** `LONDON`"
                     }
                   ]
                 }
@@ -725,95 +713,81 @@
             "type": "string",
             "title": "UK Companies House CRN",
             "description": "8-character UK Company Registration Number.",
-            "example": "Verified UK Companies House CRN (uk-fca-companies-house-kyb-compliance-auditor)"
+            "example": "12871051"
           },
           "companyName": {
             "type": "string",
             "title": "Legal Entity Name",
             "description": "Official UK registered company name.",
-            "example": "Verified Legal Entity Name (uk-fca-companies-house-kyb-compliance-auditor)"
+            "example": "REVOLUT BANK UK LTD"
           },
           "leiCode": {
             "type": "string",
             "title": "GLEIF 20-Character LEI",
             "description": "ISO 17442 Legal Entity Identifier linked to the UK entity.",
-            "example": "Verified GLEIF 20-Character LEI (uk-fca-companies-house-kyb-compliance-auditor)"
+            "example": "2138003LXONKR247S255"
           },
           "companyStatus": {
             "type": "string",
             "title": "Companies House Status",
             "description": "Active, Dissolved, or In Liquidation.",
-            "example": "Verified Companies House Status (uk-fca-companies-house-kyb-compliance-auditor)"
+            "example": "ACTIVE"
           },
           "incorporationDate": {
             "type": "string",
             "title": "Incorporation / Registration Date",
             "description": "ISO date of UK registration.",
-            "example": "Verified Incorporation / Registration Date (uk-fca-companies-house-kyb-compliance-auditor)"
+            "example": "2020-09-10"
           },
           "sicCodes": {
             "type": "string",
             "title": "UK SIC 2007 Classification",
             "description": "5-digit UK Standard Industrial Classification codes.",
-            "example": "Verified UK SIC 2007 Classification (uk-fca-companies-house-kyb-compliance-auditor)"
+            "example": "64999 - Financial & Commercial Services"
           },
           "registeredCity": {
             "type": "string",
             "title": "Registered Office City",
             "description": "UK city of the registered office address.",
-            "example": "Verified Registered Office City (uk-fca-companies-house-kyb-compliance-auditor)"
+            "example": "LONDON"
           },
           "fcaRegulatoryStatus": {
             "type": "string",
             "title": "FCA / Financial Standing Status",
             "description": "FCA Authorized, EMI Licensed, or Standard Commercial Entity.",
-            "example": "Verified FCA / Financial Standing Status (uk-fca-companies-house-kyb-compliance-auditor)"
+            "example": "FCA / GLEIF Verified Financial Entity"
           },
           "kybComplianceScore": {
             "type": "integer",
             "title": "KYB Compliance Score (0-100)",
             "description": "Quantitative UK KYB compliance score for B2B onboarding (0-100).",
-            "example": 88
+            "example": 100
           },
           "onboardingDecision": {
             "type": "string",
             "title": "Automated KYB Decision",
             "description": "APPROVED_FAST_TRACK, ENHANCED_DUE_DILIGENCE, or REJECT_INACTIVE.",
-            "example": "Verified Automated KYB Decision (uk-fca-companies-house-kyb-compliance-auditor)"
+            "example": "APPROVED_FAST_TRACK"
           },
           "markdownKybBrief": {
             "type": "string",
             "title": "Markdown UK KYB & Compliance Dossier",
             "description": "Executive Markdown dossier for fintech KYB onboarding and vendor compliance.",
-            "example": "Verified Markdown UK KYB & Compliance Dossier (uk-fca-companies-house-kyb-compliance-auditor)"
-          },
-          "quantScore": {
-            "type": "number",
-            "title": "Quantitative Compliance & Opportunity Score (0-100)",
-            "description": "Normalized deterministic score from 0 to 100 generated by the quantitative engine.",
-            "example": 91.5
-          },
-          "ragMarkdownBrief": {
-            "type": "string",
-            "title": "Executive RAG Markdown Brief",
-            "description": "LLM-ready executive summary formatted in Markdown for RAG pipelines and compliance dossiers.",
-            "example": "### Executive Audit Brief — UK Companies House & FCA Corporate KYB Compliance Auditor\n- **Status:** VERIFIED\n- **Quantitative Score:** 91.5/100"
+            "example": "# UK COMPANIES HOUSE & FCA KYB COMPLIANCE DOSSIER: 12871051\n\n## 1. Corporate Registry & Legal Identity\n- **Legal Entity Name:** **REVOLUT BANK UK LTD**\n- **UK Companies House CRN:** `12871051`\n- **GLEIF 20-Character LEI:** `2138003LXONKR247S255`\n- **Companies House Status:** `ACTIVE`\n- **Incorporation / Registration Date:** `2020-09-10`\n\n## 2. Regulatory Standing & KYB Onboarding Decision\n- **KYB Compliance Score:** **100/100**\n- **Automated Onboarding Decision:** **`APPROVED_FAST_TRACK`**\n- **FCA / Regulatory Standing:** FCA / GLEIF Verified Financial Entity\n- **UK SIC Classification:** `64999 - Financial & Commercial Services`\n- **Registered Office City:** `LONDON`"
           }
         },
         "example": {
-          "companyNumberCrn": "Verified UK Companies House CRN (uk-fca-companies-house-kyb-compliance-auditor)",
-          "companyName": "Verified Legal Entity Name (uk-fca-companies-house-kyb-compliance-auditor)",
-          "leiCode": "Verified GLEIF 20-Character LEI (uk-fca-companies-house-kyb-compliance-auditor)",
-          "companyStatus": "Verified Companies House Status (uk-fca-companies-house-kyb-compliance-auditor)",
-          "incorporationDate": "Verified Incorporation / Registration Date (uk-fca-companies-house-kyb-compliance-auditor)",
-          "sicCodes": "Verified UK SIC 2007 Classification (uk-fca-companies-house-kyb-compliance-auditor)",
-          "registeredCity": "Verified Registered Office City (uk-fca-companies-house-kyb-compliance-auditor)",
-          "fcaRegulatoryStatus": "Verified FCA / Financial Standing Status (uk-fca-companies-house-kyb-compliance-auditor)",
-          "kybComplianceScore": 88,
-          "onboardingDecision": "Verified Automated KYB Decision (uk-fca-companies-house-kyb-compliance-auditor)",
-          "markdownKybBrief": "Verified Markdown UK KYB & Compliance Dossier (uk-fca-companies-house-kyb-compliance-auditor)",
-          "quantScore": 91.5,
-          "ragMarkdownBrief": "### Executive Audit Brief — UK Companies House & FCA Corporate KYB Compliance Auditor\n- **Status:** VERIFIED\n- **Quantitative Score:** 91.5/100"
+          "companyNumberCrn": "12871051",
+          "companyName": "REVOLUT BANK UK LTD",
+          "leiCode": "2138003LXONKR247S255",
+          "companyStatus": "ACTIVE",
+          "incorporationDate": "2020-09-10",
+          "sicCodes": "64999 - Financial & Commercial Services",
+          "registeredCity": "LONDON",
+          "fcaRegulatoryStatus": "FCA / GLEIF Verified Financial Entity",
+          "kybComplianceScore": 100,
+          "onboardingDecision": "APPROVED_FAST_TRACK",
+          "markdownKybBrief": "# UK COMPANIES HOUSE & FCA KYB COMPLIANCE DOSSIER: 12871051\n\n## 1. Corporate Registry & Legal Identity\n- **Legal Entity Name:** **REVOLUT BANK UK LTD**\n- **UK Companies House CRN:** `12871051`\n- **GLEIF 20-Character LEI:** `2138003LXONKR247S255`\n- **Companies House Status:** `ACTIVE`\n- **Incorporation / Registration Date:** `2020-09-10`\n\n## 2. Regulatory Standing & KYB Onboarding Decision\n- **KYB Compliance Score:** **100/100**\n- **Automated Onboarding Decision:** **`APPROVED_FAST_TRACK`**\n- **FCA / Regulatory Standing:** FCA / GLEIF Verified Financial Entity\n- **UK SIC Classification:** `64999 - Financial & Commercial Services`\n- **Registered Office City:** `LONDON`"
         }
       },
       "UkFcaCompaniesHouseKybComplianceAuditorResponseEnvelope": {
@@ -856,24 +830,21 @@
         "example": {
           "status": "succeeded",
           "actor": "uk-fca-companies-house-kyb-compliance-auditor",
-          "marketplace": "rapidapi_zyla_hub",
           "engineVersion": "3.0.0",
           "count": 1,
           "data": [
             {
-              "companyNumberCrn": "Verified UK Companies House CRN (uk-fca-companies-house-kyb-compliance-auditor)",
-              "companyName": "Verified Legal Entity Name (uk-fca-companies-house-kyb-compliance-auditor)",
-              "leiCode": "Verified GLEIF 20-Character LEI (uk-fca-companies-house-kyb-compliance-auditor)",
-              "companyStatus": "Verified Companies House Status (uk-fca-companies-house-kyb-compliance-auditor)",
-              "incorporationDate": "Verified Incorporation / Registration Date (uk-fca-companies-house-kyb-compliance-auditor)",
-              "sicCodes": "Verified UK SIC 2007 Classification (uk-fca-companies-house-kyb-compliance-auditor)",
-              "registeredCity": "Verified Registered Office City (uk-fca-companies-house-kyb-compliance-auditor)",
-              "fcaRegulatoryStatus": "Verified FCA / Financial Standing Status (uk-fca-companies-house-kyb-compliance-auditor)",
-              "kybComplianceScore": 88,
-              "onboardingDecision": "Verified Automated KYB Decision (uk-fca-companies-house-kyb-compliance-auditor)",
-              "markdownKybBrief": "Verified Markdown UK KYB & Compliance Dossier (uk-fca-companies-house-kyb-compliance-auditor)",
-              "quantScore": 91.5,
-              "ragMarkdownBrief": "### Executive Audit Brief — UK Companies House & FCA Corporate KYB Compliance Auditor\n- **Status:** VERIFIED\n- **Quantitative Score:** 91.5/100"
+              "companyNumberCrn": "12871051",
+              "companyName": "REVOLUT BANK UK LTD",
+              "leiCode": "2138003LXONKR247S255",
+              "companyStatus": "ACTIVE",
+              "incorporationDate": "2020-09-10",
+              "sicCodes": "64999 - Financial & Commercial Services",
+              "registeredCity": "LONDON",
+              "fcaRegulatoryStatus": "FCA / GLEIF Verified Financial Entity",
+              "kybComplianceScore": 100,
+              "onboardingDecision": "APPROVED_FAST_TRACK",
+              "markdownKybBrief": "# UK COMPANIES HOUSE & FCA KYB COMPLIANCE DOSSIER: 12871051\n\n## 1. Corporate Registry & Legal Identity\n- **Legal Entity Name:** **REVOLUT BANK UK LTD**\n- **UK Companies House CRN:** `12871051`\n- **GLEIF 20-Character LEI:** `2138003LXONKR247S255`\n- **Companies House Status:** `ACTIVE`\n- **Incorporation / Registration Date:** `2020-09-10`\n\n## 2. Regulatory Standing & KYB Onboarding Decision\n- **KYB Compliance Score:** **100/100**\n- **Automated Onboarding Decision:** **`APPROVED_FAST_TRACK`**\n- **FCA / Regulatory Standing:** FCA / GLEIF Verified Financial Entity\n- **UK SIC Classification:** `64999 - Financial & Commercial Services`\n- **Registered Office City:** `LONDON`"
             }
           ]
         }
