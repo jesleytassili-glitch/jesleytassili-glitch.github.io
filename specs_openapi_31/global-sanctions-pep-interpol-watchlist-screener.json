@@ -1,9 +1,9 @@
 {
   "openapi": "3.0.3",
   "info": {
-    "title": "Global OFAC, UN, EU Sanctions & PEP Watchlist AML Screener",
+    "title": "Global OFAC & UN Sanctions Watchlist AML Screener",
     "version": "3.0.0",
-    "description": "Screens individuals, companies, and crypto/banking counterparties against consolidated OFAC SDN, UN Security Council, EU Financial Sanctions, and Politically Exposed Persons (PEP) watchlists. Computes fuzzy similarity and AML Risk Scores (0-100).\n\n### Enterprise B2B Value Proposition (Global OFAC, UN, EU Sanctions & PEP Watchlist AML Screener)\n- **Target B2B Buyers:** Crypto Exchanges, Cross-Border Payment Gateways, Neobanks, and AML/KYC Compliance Officers.\n- **Zero External API Keys Required:** Connects directly to authoritative government, regulatory, and financial primary registries with built-in retry/backoff and deterministic schema normalization.\n- **Quantitative Scoring & RAG Briefs:** Every record is enriched with a quantitative 0-100 risk/viability score and an LLM-ready Markdown executive brief (`Global OFAC / UN / EU Sanctions & PEP Entity Screened`).\n- **Backend Proxy Secret Injection:** RapidAPI Studio and Zyla API Hub inject `Authorization: Bearer <APIFY_API_TOKEN>` invisibly at the proxy layer when forwarding synchronous calls to `https://api.apify.com/v2/acts/b2b-quant-apis~global-sanctions-pep-interpol-watchlist-screener/run-sync-get-dataset-items`.\n- **Marketplace Categories:** RapidAPI `Cybersecurity` | Zyla API Hub `Security`.\n- **Subscription Tiers (USD):** `BASIC` ($0.00/mo, 15 req/mo hard cap), `PRO` ($19.00/mo, 1,000 req/mo + $0.02/extra), `ULTRA` ($49.00/mo, 5,000 req/mo + $0.015/extra), `MEGA` ($149.00/mo, 25,000 req/mo + $0.010/extra).\n- **SEO Keywords:** ofac-sdn-sanctions, aml-kyc-screening, pep-watchlist, eu-un-sanctions, financial-crime-compliance, entity-screening, regtech-aml.",
+    "description": "Screens individuals, companies, vessels and crypto counterparties against the official US OFAC SDN, OFAC Consolidated (Non-SDN) and UN Security Council lists, downloaded live. Fuzzy match + AML Risk Score (0-100). EU, UK and PEP lists are not covered.\n\n### Enterprise B2B Value Proposition (Global OFAC & UN Sanctions Watchlist AML Screener)\n- **Target B2B Buyers:** Crypto Exchanges, Cross-Border Payment Gateways, Neobanks, and AML/KYC Compliance Officers.\n- **Zero External API Keys Required:** Connects directly to authoritative government, regulatory, and financial primary registries with built-in retry/backoff and deterministic schema normalization.\n- **Quantitative Scoring & RAG Briefs:** Every record is enriched with a quantitative 0-100 risk/viability score and an LLM-ready Markdown executive brief (`Global OFAC / UN / EU Sanctions & PEP Entity Screened`).\n- **Backend Proxy Secret Injection:** RapidAPI Studio and Zyla API Hub inject `Authorization: Bearer <APIFY_API_TOKEN>` invisibly at the proxy layer when forwarding synchronous calls to `https://api.apify.com/v2/acts/b2b-quant-apis~global-sanctions-pep-interpol-watchlist-screener/run-sync-get-dataset-items`.\n- **Marketplace Categories:** RapidAPI `Cybersecurity` | Zyla API Hub `Security`.\n- **Subscription Tiers (USD):** `BASIC` ($0.00/mo, 15 req/mo hard cap), `PRO` ($19.00/mo, 1,000 req/mo + $0.02/extra), `ULTRA` ($49.00/mo, 5,000 req/mo + $0.015/extra), `MEGA` ($149.00/mo, 25,000 req/mo + $0.010/extra).\n- **SEO Keywords:** ofac-sdn-sanctions, aml-kyc-screening, pep-watchlist, eu-un-sanctions, financial-crime-compliance, entity-screening, regtech-aml.",
     "termsOfService": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/",
     "contact": {
       "name": "B2B Quant APIs (@b2b-quant-apis)",
@@ -85,7 +85,7 @@
     "x-github-release-tag": "v2.2.0"
   },
   "externalDocs": {
-    "description": "Official B2B Documentation & Schema Reference for Global OFAC, UN, EU Sanctions & PEP Watchlist AML Screener",
+    "description": "Official B2B Documentation & Schema Reference for Global OFAC & UN Sanctions Watchlist AML Screener",
     "url": "https://jesleytassili-glitch.github.io/b2b-quant-mcp-n8n-suite/actors/global-sanctions-pep-interpol-watchlist-screener.html"
   },
   "servers": [
@@ -154,8 +154,8 @@
     "/v2/acts/b2b-quant-apis~global-sanctions-pep-interpol-watchlist-screener/run-sync-get-dataset-items": {
       "post": {
         "operationId": "run_sync_global_sanctions_pep_interpol_watchlist_screener",
-        "summary": "Execute Global OFAC, UN, EU Sanctions & PEP Watchlist AML Screener (Apify Cloud Synchronous POST)",
-        "description": "Synchronous stateless execution of **Global OFAC, UN, EU Sanctions & PEP Watchlist AML Screener**. RapidAPI Studio and Zyla API Hub inject the backend secret header `Authorization: Bearer <APIFY_API_TOKEN>` invisibly to the end user, validate `X-RapidAPI-Proxy-Secret` / `X-Zyla-Proxy-Secret` in constant time (`hmac.compare_digest`), inject quota headers (`X-RateLimit-Remaining`, `X-Engine-Version`), and return deterministic JSON records.",
+        "summary": "Execute Global OFAC & UN Sanctions Watchlist AML Screener (Apify Cloud Synchronous POST)",
+        "description": "Synchronous stateless execution of **Global OFAC & UN Sanctions Watchlist AML Screener**. RapidAPI Studio and Zyla API Hub inject the backend secret header `Authorization: Bearer <APIFY_API_TOKEN>` invisibly to the end user, validate `X-RapidAPI-Proxy-Secret` / `X-Zyla-Proxy-Secret` in constant time (`hmac.compare_digest`), inject quota headers (`X-RateLimit-Remaining`, `X-Engine-Version`), and return deterministic JSON records.",
         "tags": [
           "Cybersecurity",
           "ofac-sdn-sanctions",
@@ -337,7 +337,7 @@
     "/v2/acts/b2b-quant-apis~global-sanctions-pep-interpol-watchlist-screener": {
       "get": {
         "operationId": "status_global_sanctions_pep_interpol_watchlist_screener",
-        "summary": "Actor Metadata & Live Connectivity Check for Global OFAC, UN, EU Sanctions & PEP Watchlist AML Screener",
+        "summary": "Actor Metadata & Live Connectivity Check for Global OFAC & UN Sanctions Watchlist AML Screener",
         "description": "Immediate `HTTP 200` status and metadata health check for `global-sanctions-pep-interpol-watchlist-screener` on RapidAPI Studio and Zyla API Hub (`GET https://api.apify.com/v2/acts/b2b-quant-apis~global-sanctions-pep-interpol-watchlist-screener` and `GET /v1/global-sanctions-pep-interpol-watchlist-screener/health`) without starting a container build or run.",
         "tags": [
           "Cybersecurity"
@@ -397,8 +397,8 @@
     "/v1/global-sanctions-pep-interpol-watchlist-screener": {
       "post": {
         "operationId": "execute_global_sanctions_pep_interpol_watchlist_screener",
-        "summary": "Execute Global OFAC, UN, EU Sanctions & PEP Watchlist AML Screener",
-        "description": "Synchronous stateless execution of **Global OFAC, UN, EU Sanctions & PEP Watchlist AML Screener**. RapidAPI Studio and Zyla API Hub inject the backend secret header `Authorization: Bearer <APIFY_API_TOKEN>` invisibly to the end user, validate `X-RapidAPI-Proxy-Secret` / `X-Zyla-Proxy-Secret` in constant time (`hmac.compare_digest`), inject quota headers (`X-RateLimit-Remaining`, `X-Engine-Version`), and return deterministic JSON records.",
+        "summary": "Execute Global OFAC & UN Sanctions Watchlist AML Screener",
+        "description": "Synchronous stateless execution of **Global OFAC & UN Sanctions Watchlist AML Screener**. RapidAPI Studio and Zyla API Hub inject the backend secret header `Authorization: Bearer <APIFY_API_TOKEN>` invisibly to the end user, validate `X-RapidAPI-Proxy-Secret` / `X-Zyla-Proxy-Secret` in constant time (`hmac.compare_digest`), inject quota headers (`X-RateLimit-Remaining`, `X-Engine-Version`), and return deterministic JSON records.",
         "tags": [
           "Cybersecurity",
           "ofac-sdn-sanctions",
@@ -580,7 +580,7 @@
     "/v1/global-sanctions-pep-interpol-watchlist-screener/health": {
       "get": {
         "operationId": "health_global_sanctions_pep_interpol_watchlist_screener",
-        "summary": "Health & SLA Check for Global OFAC, UN, EU Sanctions & PEP Watchlist AML Screener",
+        "summary": "Health & SLA Check for Global OFAC & UN Sanctions Watchlist AML Screener",
         "description": "Immediate `HTTP 200` status and metadata health check for `global-sanctions-pep-interpol-watchlist-screener` on RapidAPI Studio and Zyla API Hub (`GET https://api.apify.com/v2/acts/b2b-quant-apis~global-sanctions-pep-interpol-watchlist-screener` and `GET /v1/global-sanctions-pep-interpol-watchlist-screener/health`) without starting a container build or run.",
         "tags": [
           "Cybersecurity"
@@ -668,7 +668,7 @@
     "schemas": {
       "GlobalSanctionsPepInterpolWatchlistScreenerRequest": {
         "type": "object",
-        "title": "Global OFAC, UN, EU Sanctions & PEP Watchlist AML Screener Request Schema",
+        "title": "Global OFAC & UN Sanctions Watchlist AML Screener Request Schema",
         "description": "Configure target individual or organization name, optional entity type filter, and maximum watchlist screening records to return.",
         "properties": {
           "entityName": {
@@ -688,7 +688,7 @@
           "maxResults": {
             "type": "integer",
             "title": "Maximum Screening Records",
-            "description": "Maximum number of sanctions & PEP watchlist hits to return and score (1 to 100).",
+            "description": "Maximum number of sanctions watchlist hits to return and score (1 to 100).",
             "default": 15,
             "minimum": 1,
             "maximum": 100,
@@ -706,13 +706,13 @@
       },
       "GlobalSanctionsPepInterpolWatchlistScreenerRecord": {
         "type": "object",
-        "title": "Global OFAC, UN, EU Sanctions & PEP Watchlist AML Screener Output Record",
+        "title": "Global OFAC & UN Sanctions Watchlist AML Screener Output Record",
         "description": "Enriched B2B dataset item returned by `global-sanctions-pep-interpol-watchlist-screener`.",
         "properties": {
           "watchlistRecordId": {
             "type": "string",
             "title": "Watchlist Record ID",
-            "description": "Official OFAC/UN/EU/OpenSanctions identifier.",
+            "description": "Official OFAC / UN list identifier.",
             "example": "OFAC-SDN-27307"
           },
           "entityQuery": {
@@ -724,7 +724,7 @@
           "matchedName": {
             "type": "string",
             "title": "Matched Watchlist Entity Name",
-            "description": "Official designated name on the sanctions or PEP list.",
+            "description": "Official designated name on the OFAC or UN sanctions list.",
             "example": "LAZARUS GROUP"
           },
           "entityType": {
@@ -736,7 +736,7 @@
           "listSource": {
             "type": "string",
             "title": "Sanctions Authority / List Source",
-            "description": "US OFAC SDN, UN Security Council, EU FSF, UK OFSI, or Global PEP.",
+            "description": "US OFAC SDN, US OFAC Consolidated (Non-SDN) or UN Security Council.",
             "example": "US OFAC SDN & UN Security Council"
           },
           "sanctionsProgram": {
@@ -792,7 +792,7 @@
       },
       "GlobalSanctionsPepInterpolWatchlistScreenerResponseEnvelope": {
         "type": "object",
-        "title": "Global OFAC, UN, EU Sanctions & PEP Watchlist AML Screener Synchronous Response Envelope",
+        "title": "Global OFAC & UN Sanctions Watchlist AML Screener Synchronous Response Envelope",
         "required": [
           "status",
           "actor",

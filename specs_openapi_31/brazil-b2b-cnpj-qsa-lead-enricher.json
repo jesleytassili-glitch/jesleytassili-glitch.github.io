@@ -246,7 +246,7 @@
                       "cnpjFormatted": "00.000.000/0001-91",
                       "isValidMod11": true,
                       "status": "ENRICHED",
-                      "dataSource": "BrasilAPI",
+                      "dataSource": "Brazilian federal CNPJ public registry",
                       "razaoSocial": "BANCO DO BRASIL SA",
                       "nomeFantasia": "DIRECAO GERAL",
                       "situacaoCadastral": "ATIVA",
@@ -302,7 +302,7 @@
                         }
                       ],
                       "enrichedAt": "2026-11-03T21:16:52.999962+00:00",
-                      "markdownCompanyDossier": "# Dossiê Corporativo B2B — BANCO DO BRASIL SA (00.000.000/0001-91)\n\n## 1. Identificação Cadastral e Tributária\n- **CNPJ:** `00.000.000/0001-91` (Módulo 11: `VÁLIDO`)\n- **Razão Social:** BANCO DO BRASIL SA\n- **Nome Fantasia:** DIRECAO GERAL\n- **Situação Cadastral:** `ATIVA`\n- **Data de Abertura:** 1966-08-01\n- **Porte / Natureza Jurídica:** DEMAIS | Sociedade de Economia Mista\n- **Capital Social:** R$ 120,000,000,000.00\n- **Optante pelo Simples Nacional:** Não\n- **Enquadrado como MEI:** Não\n- **Fonte Primária dos Dados:** `BrasilAPI`\n\n## 2. Atividade Econômica (CNAE)\n- **CNAE Principal:** `6422100` — Bancos múltiplos, com carteira comercial\n- **CNAEs Secundários (1):**\n  - `6499999`: Outras atividades de serviços financeiros não especificadas anteriormente\n\n## 3. Localização e Contatos Públicos\n- **Município / UF:** BRASILIA / DF\n- **Endereço Registrado:** SAUN QUADRA 5 BLOCO B TORRE I..."
+                      "markdownCompanyDossier": "# Dossiê Corporativo B2B — BANCO DO BRASIL SA (00.000.000/0001-91)\n\n## 1. Identificação Cadastral e Tributária\n- **CNPJ:** `00.000.000/0001-91` (Módulo 11: `VÁLIDO`)\n- **Razão Social:** BANCO DO BRASIL SA\n- **Nome Fantasia:** DIRECAO GERAL\n- **Situação Cadastral:** `ATIVA`\n- **Data de Abertura:** 1966-08-01\n- **Porte / Natureza Jurídica:** DEMAIS | Sociedade de Economia Mista\n- **Capital Social:** R$ 120,000,000,000.00\n- **Optante pelo Simples Nacional:** Não\n- **Enquadrado como MEI:** Não\n- **Fonte Primária dos Dados:** `Brazilian federal CNPJ public registry`\n\n## 2. Atividade Econômica (CNAE)\n- **CNAE Principal:** `6422100` — Bancos múltiplos, com carteira comercial\n- **CNAEs Secundários (1):**\n  - `6499999`: Outras atividades de serviços financeiros não especificadas anteriormente\n\n## 3. Localização e Contatos Públicos\n- **Município / UF:** BRASILIA / DF\n- **Endereço Registrado:** SAUN QUADRA 5 BLOCO B TORRE I..."
                     }
                   ]
                 }
@@ -327,7 +327,7 @@
                       "cnpjFormatted": "00.000.000/0001-91",
                       "isValidMod11": true,
                       "status": "ENRICHED",
-                      "dataSource": "BrasilAPI",
+                      "dataSource": "Brazilian federal CNPJ public registry",
                       "razaoSocial": "BANCO DO BRASIL SA",
                       "nomeFantasia": "DIRECAO GERAL",
                       "situacaoCadastral": "ATIVA",
@@ -383,7 +383,7 @@
                         }
                       ],
                       "enrichedAt": "2026-11-03T21:16:52.999962+00:00",
-                      "markdownCompanyDossier": "# Dossiê Corporativo B2B — BANCO DO BRASIL SA (00.000.000/0001-91)\n\n## 1. Identificação Cadastral e Tributária\n- **CNPJ:** `00.000.000/0001-91` (Módulo 11: `VÁLIDO`)\n- **Razão Social:** BANCO DO BRASIL SA\n- **Nome Fantasia:** DIRECAO GERAL\n- **Situação Cadastral:** `ATIVA`\n- **Data de Abertura:** 1966-08-01\n- **Porte / Natureza Jurídica:** DEMAIS | Sociedade de Economia Mista\n- **Capital Social:** R$ 120,000,000,000.00\n- **Optante pelo Simples Nacional:** Não\n- **Enquadrado como MEI:** Não\n- **Fonte Primária dos Dados:** `BrasilAPI`\n\n## 2. Atividade Econômica (CNAE)\n- **CNAE Principal:** `6422100` — Bancos múltiplos, com carteira comercial\n- **CNAEs Secundários (1):**\n  - `6499999`: Outras atividades de serviços financeiros não especificadas anteriormente\n\n## 3. Localização e Contatos Públicos\n- **Município / UF:** BRASILIA / DF\n- **Endereço Registrado:** SAUN QUADRA 5 BLOCO B TORRE I..."
+                      "markdownCompanyDossier": "# Dossiê Corporativo B2B — BANCO DO BRASIL SA (00.000.000/0001-91)\n\n## 1. Identificação Cadastral e Tributária\n- **CNPJ:** `00.000.000/0001-91` (Módulo 11: `VÁLIDO`)\n- **Razão Social:** BANCO DO BRASIL SA\n- **Nome Fantasia:** DIRECAO GERAL\n- **Situação Cadastral:** `ATIVA`\n- **Data de Abertura:** 1966-08-01\n- **Porte / Natureza Jurídica:** DEMAIS | Sociedade de Economia Mista\n- **Capital Social:** R$ 120,000,000,000.00\n- **Optante pelo Simples Nacional:** Não\n- **Enquadrado como MEI:** Não\n- **Fonte Primária dos Dados:** `Brazilian federal CNPJ public registry`\n\n## 2. Atividade Econômica (CNAE)\n- **CNAE Principal:** `6422100` — Bancos múltiplos, com carteira comercial\n- **CNAEs Secundários (1):**\n  - `6499999`: Outras atividades de serviços financeiros não especificadas anteriormente\n\n## 3. Localização e Contatos Públicos\n- **Município / UF:** BRASILIA / DF\n- **Endereço Registrado:** SAUN QUADRA 5 BLOCO B TORRE I..."
                     }
                   ]
                 }
@@ -593,7 +593,7 @@
                       "cnpjFormatted": "00.000.000/0001-91",
                       "isValidMod11": true,
                       "status": "ENRICHED",
-                      "dataSource": "BrasilAPI",
+                      "dataSource": "Brazilian federal CNPJ public registry",
                       "razaoSocial": "BANCO DO BRASIL SA",
                       "nomeFantasia": "DIRECAO GERAL",
                       "situacaoCadastral": "ATIVA",
@@ -649,7 +649,7 @@
                         }
                       ],
                       "enrichedAt": "2026-11-03T21:16:52.999962+00:00",
-                      "markdownCompanyDossier": "# Dossiê Corporativo B2B — BANCO DO BRASIL SA (00.000.000/0001-91)\n\n## 1. Identificação Cadastral e Tributária\n- **CNPJ:** `00.000.000/0001-91` (Módulo 11: `VÁLIDO`)\n- **Razão Social:** BANCO DO BRASIL SA\n- **Nome Fantasia:** DIRECAO GERAL\n- **Situação Cadastral:** `ATIVA`\n- **Data de Abertura:** 1966-08-01\n- **Porte / Natureza Jurídica:** DEMAIS | Sociedade de Economia Mista\n- **Capital Social:** R$ 120,000,000,000.00\n- **Optante pelo Simples Nacional:** Não\n- **Enquadrado como MEI:** Não\n- **Fonte Primária dos Dados:** `BrasilAPI`\n\n## 2. Atividade Econômica (CNAE)\n- **CNAE Principal:** `6422100` — Bancos múltiplos, com carteira comercial\n- **CNAEs Secundários (1):**\n  - `6499999`: Outras atividades de serviços financeiros não especificadas anteriormente\n\n## 3. Localização e Contatos Públicos\n- **Município / UF:** BRASILIA / DF\n- **Endereço Registrado:** SAUN QUADRA 5 BLOCO B TORRE I..."
+                      "markdownCompanyDossier": "# Dossiê Corporativo B2B — BANCO DO BRASIL SA (00.000.000/0001-91)\n\n## 1. Identificação Cadastral e Tributária\n- **CNPJ:** `00.000.000/0001-91` (Módulo 11: `VÁLIDO`)\n- **Razão Social:** BANCO DO BRASIL SA\n- **Nome Fantasia:** DIRECAO GERAL\n- **Situação Cadastral:** `ATIVA`\n- **Data de Abertura:** 1966-08-01\n- **Porte / Natureza Jurídica:** DEMAIS | Sociedade de Economia Mista\n- **Capital Social:** R$ 120,000,000,000.00\n- **Optante pelo Simples Nacional:** Não\n- **Enquadrado como MEI:** Não\n- **Fonte Primária dos Dados:** `Brazilian federal CNPJ public registry`\n\n## 2. Atividade Econômica (CNAE)\n- **CNAE Principal:** `6422100` — Bancos múltiplos, com carteira comercial\n- **CNAEs Secundários (1):**\n  - `6499999`: Outras atividades de serviços financeiros não especificadas anteriormente\n\n## 3. Localização e Contatos Públicos\n- **Município / UF:** BRASILIA / DF\n- **Endereço Registrado:** SAUN QUADRA 5 BLOCO B TORRE I..."
                     }
                   ]
                 }
@@ -674,7 +674,7 @@
                       "cnpjFormatted": "00.000.000/0001-91",
                       "isValidMod11": true,
                       "status": "ENRICHED",
-                      "dataSource": "BrasilAPI",
+                      "dataSource": "Brazilian federal CNPJ public registry",
                       "razaoSocial": "BANCO DO BRASIL SA",
                       "nomeFantasia": "DIRECAO GERAL",
                       "situacaoCadastral": "ATIVA",
@@ -730,7 +730,7 @@
                         }
                       ],
                       "enrichedAt": "2026-11-03T21:16:52.999962+00:00",
-                      "markdownCompanyDossier": "# Dossiê Corporativo B2B — BANCO DO BRASIL SA (00.000.000/0001-91)\n\n## 1. Identificação Cadastral e Tributária\n- **CNPJ:** `00.000.000/0001-91` (Módulo 11: `VÁLIDO`)\n- **Razão Social:** BANCO DO BRASIL SA\n- **Nome Fantasia:** DIRECAO GERAL\n- **Situação Cadastral:** `ATIVA`\n- **Data de Abertura:** 1966-08-01\n- **Porte / Natureza Jurídica:** DEMAIS | Sociedade de Economia Mista\n- **Capital Social:** R$ 120,000,000,000.00\n- **Optante pelo Simples Nacional:** Não\n- **Enquadrado como MEI:** Não\n- **Fonte Primária dos Dados:** `BrasilAPI`\n\n## 2. Atividade Econômica (CNAE)\n- **CNAE Principal:** `6422100` — Bancos múltiplos, com carteira comercial\n- **CNAEs Secundários (1):**\n  - `6499999`: Outras atividades de serviços financeiros não especificadas anteriormente\n\n## 3. Localização e Contatos Públicos\n- **Município / UF:** BRASILIA / DF\n- **Endereço Registrado:** SAUN QUADRA 5 BLOCO B TORRE I..."
+                      "markdownCompanyDossier": "# Dossiê Corporativo B2B — BANCO DO BRASIL SA (00.000.000/0001-91)\n\n## 1. Identificação Cadastral e Tributária\n- **CNPJ:** `00.000.000/0001-91` (Módulo 11: `VÁLIDO`)\n- **Razão Social:** BANCO DO BRASIL SA\n- **Nome Fantasia:** DIRECAO GERAL\n- **Situação Cadastral:** `ATIVA`\n- **Data de Abertura:** 1966-08-01\n- **Porte / Natureza Jurídica:** DEMAIS | Sociedade de Economia Mista\n- **Capital Social:** R$ 120,000,000,000.00\n- **Optante pelo Simples Nacional:** Não\n- **Enquadrado como MEI:** Não\n- **Fonte Primária dos Dados:** `Brazilian federal CNPJ public registry`\n\n## 2. Atividade Econômica (CNAE)\n- **CNAE Principal:** `6422100` — Bancos múltiplos, com carteira comercial\n- **CNAEs Secundários (1):**\n  - `6499999`: Outras atividades de serviços financeiros não especificadas anteriormente\n\n## 3. Localização e Contatos Públicos\n- **Município / UF:** BRASILIA / DF\n- **Endereço Registrado:** SAUN QUADRA 5 BLOCO B TORRE I..."
                     }
                   ]
                 }
@@ -967,7 +967,7 @@
             "type": "string",
             "title": "dataSource",
             "description": "Primary source of enrichment (BrasilAPI, OpenCNPJA, FallbackCache, LOCAL_MOD11_VALIDATOR).",
-            "example": "BrasilAPI"
+            "example": "Brazilian federal CNPJ public registry"
           },
           "razaoSocial": {
             "type": "string",
@@ -1089,7 +1089,7 @@
             "type": "string",
             "title": "markdownCompanyDossier",
             "description": "Structured Markdown company dossier ready for LLM/AI agents and CRM ingestion.",
-            "example": "# Dossiê Corporativo B2B — BANCO DO BRASIL SA (00.000.000/0001-91)\n\n## 1. Identificação Cadastral e Tributária\n- **CNPJ:** `00.000.000/0001-91` (Módulo 11: `VÁLIDO`)\n- **Razão Social:** BANCO DO BRASIL SA\n- **Nome Fantasia:** DIRECAO GERAL\n- **Situação Cadastral:** `ATIVA`\n- **Data de Abertura:** 1966-08-01\n- **Porte / Natureza Jurídica:** DEMAIS | Sociedade de Economia Mista\n- **Capital Social:** R$ 120,000,000,000.00\n- **Optante pelo Simples Nacional:** Não\n- **Enquadrado como MEI:** Não\n- **Fonte Primária dos Dados:** `BrasilAPI`\n\n## 2. Atividade Econômica (CNAE)\n- **CNAE Principal:** `6422100` — Bancos múltiplos, com carteira comercial\n- **CNAEs Secundários (1):**\n  - `6499999`: Outras atividades de serviços financeiros não especificadas anteriormente\n\n## 3. Localização e Contatos Públicos\n- **Município / UF:** BRASILIA / DF\n- **Endereço Registrado:** SAUN QUADRA 5 BLOCO B TORRE I..."
+            "example": "# Dossiê Corporativo B2B — BANCO DO BRASIL SA (00.000.000/0001-91)\n\n## 1. Identificação Cadastral e Tributária\n- **CNPJ:** `00.000.000/0001-91` (Módulo 11: `VÁLIDO`)\n- **Razão Social:** BANCO DO BRASIL SA\n- **Nome Fantasia:** DIRECAO GERAL\n- **Situação Cadastral:** `ATIVA`\n- **Data de Abertura:** 1966-08-01\n- **Porte / Natureza Jurídica:** DEMAIS | Sociedade de Economia Mista\n- **Capital Social:** R$ 120,000,000,000.00\n- **Optante pelo Simples Nacional:** Não\n- **Enquadrado como MEI:** Não\n- **Fonte Primária dos Dados:** `Brazilian federal CNPJ public registry`\n\n## 2. Atividade Econômica (CNAE)\n- **CNAE Principal:** `6422100` — Bancos múltiplos, com carteira comercial\n- **CNAEs Secundários (1):**\n  - `6499999`: Outras atividades de serviços financeiros não especificadas anteriormente\n\n## 3. Localização e Contatos Públicos\n- **Município / UF:** BRASILIA / DF\n- **Endereço Registrado:** SAUN QUADRA 5 BLOCO B TORRE I..."
           },
           "dataInicioAtividade": {
             "type": "string",
@@ -1169,7 +1169,7 @@
           "cnpjFormatted": "00.000.000/0001-91",
           "isValidMod11": true,
           "status": "ENRICHED",
-          "dataSource": "BrasilAPI",
+          "dataSource": "Brazilian federal CNPJ public registry",
           "razaoSocial": "BANCO DO BRASIL SA",
           "nomeFantasia": "DIRECAO GERAL",
           "situacaoCadastral": "ATIVA",
@@ -1225,7 +1225,7 @@
             }
           ],
           "enrichedAt": "2026-11-03T21:16:52.999962+00:00",
-          "markdownCompanyDossier": "# Dossiê Corporativo B2B — BANCO DO BRASIL SA (00.000.000/0001-91)\n\n## 1. Identificação Cadastral e Tributária\n- **CNPJ:** `00.000.000/0001-91` (Módulo 11: `VÁLIDO`)\n- **Razão Social:** BANCO DO BRASIL SA\n- **Nome Fantasia:** DIRECAO GERAL\n- **Situação Cadastral:** `ATIVA`\n- **Data de Abertura:** 1966-08-01\n- **Porte / Natureza Jurídica:** DEMAIS | Sociedade de Economia Mista\n- **Capital Social:** R$ 120,000,000,000.00\n- **Optante pelo Simples Nacional:** Não\n- **Enquadrado como MEI:** Não\n- **Fonte Primária dos Dados:** `BrasilAPI`\n\n## 2. Atividade Econômica (CNAE)\n- **CNAE Principal:** `6422100` — Bancos múltiplos, com carteira comercial\n- **CNAEs Secundários (1):**\n  - `6499999`: Outras atividades de serviços financeiros não especificadas anteriormente\n\n## 3. Localização e Contatos Públicos\n- **Município / UF:** BRASILIA / DF\n- **Endereço Registrado:** SAUN QUADRA 5 BLOCO B TORRE I..."
+          "markdownCompanyDossier": "# Dossiê Corporativo B2B — BANCO DO BRASIL SA (00.000.000/0001-91)\n\n## 1. Identificação Cadastral e Tributária\n- **CNPJ:** `00.000.000/0001-91` (Módulo 11: `VÁLIDO`)\n- **Razão Social:** BANCO DO BRASIL SA\n- **Nome Fantasia:** DIRECAO GERAL\n- **Situação Cadastral:** `ATIVA`\n- **Data de Abertura:** 1966-08-01\n- **Porte / Natureza Jurídica:** DEMAIS | Sociedade de Economia Mista\n- **Capital Social:** R$ 120,000,000,000.00\n- **Optante pelo Simples Nacional:** Não\n- **Enquadrado como MEI:** Não\n- **Fonte Primária dos Dados:** `Brazilian federal CNPJ public registry`\n\n## 2. Atividade Econômica (CNAE)\n- **CNAE Principal:** `6422100` — Bancos múltiplos, com carteira comercial\n- **CNAEs Secundários (1):**\n  - `6499999`: Outras atividades de serviços financeiros não especificadas anteriormente\n\n## 3. Localização e Contatos Públicos\n- **Município / UF:** BRASILIA / DF\n- **Endereço Registrado:** SAUN QUADRA 5 BLOCO B TORRE I..."
         }
       },
       "BrazilB2bCnpjQsaLeadEnricherResponseEnvelope": {
@@ -1276,7 +1276,7 @@
               "cnpjFormatted": "00.000.000/0001-91",
               "isValidMod11": true,
               "status": "ENRICHED",
-              "dataSource": "BrasilAPI",
+              "dataSource": "Brazilian federal CNPJ public registry",
               "razaoSocial": "BANCO DO BRASIL SA",
               "nomeFantasia": "DIRECAO GERAL",
               "situacaoCadastral": "ATIVA",
@@ -1332,7 +1332,7 @@
                 }
               ],
               "enrichedAt": "2026-11-03T21:16:52.999962+00:00",
-              "markdownCompanyDossier": "# Dossiê Corporativo B2B — BANCO DO BRASIL SA (00.000.000/0001-91)\n\n## 1. Identificação Cadastral e Tributária\n- **CNPJ:** `00.000.000/0001-91` (Módulo 11: `VÁLIDO`)\n- **Razão Social:** BANCO DO BRASIL SA\n- **Nome Fantasia:** DIRECAO GERAL\n- **Situação Cadastral:** `ATIVA`\n- **Data de Abertura:** 1966-08-01\n- **Porte / Natureza Jurídica:** DEMAIS | Sociedade de Economia Mista\n- **Capital Social:** R$ 120,000,000,000.00\n- **Optante pelo Simples Nacional:** Não\n- **Enquadrado como MEI:** Não\n- **Fonte Primária dos Dados:** `BrasilAPI`\n\n## 2. Atividade Econômica (CNAE)\n- **CNAE Principal:** `6422100` — Bancos múltiplos, com carteira comercial\n- **CNAEs Secundários (1):**\n  - `6499999`: Outras atividades de serviços financeiros não especificadas anteriormente\n\n## 3. Localização e Contatos Públicos\n- **Município / UF:** BRASILIA / DF\n- **Endereço Registrado:** SAUN QUADRA 5 BLOCO B TORRE I..."
+              "markdownCompanyDossier": "# Dossiê Corporativo B2B — BANCO DO BRASIL SA (00.000.000/0001-91)\n\n## 1. Identificação Cadastral e Tributária\n- **CNPJ:** `00.000.000/0001-91` (Módulo 11: `VÁLIDO`)\n- **Razão Social:** BANCO DO BRASIL SA\n- **Nome Fantasia:** DIRECAO GERAL\n- **Situação Cadastral:** `ATIVA`\n- **Data de Abertura:** 1966-08-01\n- **Porte / Natureza Jurídica:** DEMAIS | Sociedade de Economia Mista\n- **Capital Social:** R$ 120,000,000,000.00\n- **Optante pelo Simples Nacional:** Não\n- **Enquadrado como MEI:** Não\n- **Fonte Primária dos Dados:** `Brazilian federal CNPJ public registry`\n\n## 2. Atividade Econômica (CNAE)\n- **CNAE Principal:** `6422100` — Bancos múltiplos, com carteira comercial\n- **CNAEs Secundários (1):**\n  - `6499999`: Outras atividades de serviços financeiros não especificadas anteriormente\n\n## 3. Localização e Contatos Públicos\n- **Município / UF:** BRASILIA / DF\n- **Endereço Registrado:** SAUN QUADRA 5 BLOCO B TORRE I..."
             }
           ]
         }
