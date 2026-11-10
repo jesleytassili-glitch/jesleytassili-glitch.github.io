@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global GLEIF LEI Corporate Ownership &amp; KYB Compliance Auditor — B2B API, MCP Server & Compliance Audit</title>
+  <meta name="description" content="Audits multinational corporate entities via the official GLEIF LEI API v1 (Zero-Key, 2.5M+ companies). Extracts 20-char LEI codes, legal jurisdiction, registrat">
+  <link rel="canonical" href="https://jesleytassili-glitch.github.io/docs/global-gleif-lei-corporate-ownership-kyb.html">
+  <link rel="alternate" type="text/markdown" href="https://jesleytassili-glitch.github.io/docs/global-gleif-lei-corporate-ownership-kyb.md" title="Markdown GEO/RAG Guide">
+  <link rel="alternate" type="application/json" href="https://jesleytassili-glitch.github.io/specs_openapi_31/global-gleif-lei-corporate-ownership-kyb.json" title="OpenAPI 3.0.3 Specification">
+
+  <!-- OpenGraph Metadata -->
+  <meta property="og:title" content="Global GLEIF LEI Corporate Ownership &amp; KYB Compliance Auditor — B2B API & MCP Server">
+  <meta property="og:description" content="Audits multinational corporate entities via the official GLEIF LEI API v1 (Zero-Key, 2.5M+ companies). Extracts 20-char LEI codes, legal jurisdiction, registration status, headquarters, and calculates">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://jesleytassili-glitch.github.io/docs/global-gleif-lei-corporate-ownership-kyb.html">
+  <meta property="og:site_name" content="B2B Quant & Regulatory Compliance Suite">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Global GLEIF LEI Corporate Ownership &amp; KYB Compliance Auditor">
+  <meta name="twitter:description" content="Audits multinational corporate entities via the official GLEIF LEI API v1 (Zero-Key, 2.5M+ companies). Extracts 20-char LEI codes, legal jurisdiction, registration status, headquar">
+
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "TechArticle", "@id": "https://jesleytassili-glitch.github.io/docs/global-gleif-lei-corporate-ownership-kyb.html#techarticle", "headline": "Global GLEIF LEI Corporate Ownership & KYB Compliance Auditor", "description": "Audits multinational corporate entities via the official GLEIF LEI API v1 (Zero-Key, 2.5M+ companies). Extracts 20-char LEI codes, legal jurisdiction, registration status, headquarters, and calculates KYB Trust Scores (0-100).\n\n### Enterprise B2B Val", "url": "https://jesleytassili-glitch.github.io/docs/global-gleif-lei-corporate-ownership-kyb.html", "inLanguage": "en-US", "author": {"@type": "Organization", "name": "B2B Quant & Regulatory Compliance Suite", "url": "https://jesleytassili-glitch.github.io"}, "publisher": {"@type": "Organization", "name": "B2B Quant APIs", "url": "https://jesleytassili-glitch.github.io"}, "datePublished": "2026-01-15T00:00:00Z", "dateModified": "2026-03-30T00:00:00Z"}, {"@type": "SoftwareApplication", "@id": "https://jesleytassili-glitch.github.io/docs/global-gleif-lei-corporate-ownership-kyb.html#softwareapplication", "name": "Global GLEIF LEI Corporate Ownership & KYB Compliance Auditor", "applicationCategory": "DeveloperApplication", "operatingSystem": "Cloud, Linux, macOS, Windows", "offers": {"@type": "AggregateOffer", "priceCurrency": "USD", "lowPrice": "0.00", "highPrice": "149.00", "offerCount": 4, "offers": [{"@type": "Offer", "name": "global-gleif-lei-corporate-ownership-kyb BASIC Free Tier", "price": "0.00", "priceCurrency": "USD", "description": "15 live statutory calls per month for Global GLEIF LEI Corporate Ownership & KYB Compliance Auditor"}, {"@type": "Offer", "name": "global-gleif-lei-corporate-ownership-kyb PRO Developer Tier", "price": "19.00", "priceCurrency": "USD", "description": "1,000 monthly audit executions for Global GLEIF LEI Corporate Ownership & KYB Compliance Auditor"}, {"@type": "Offer", "name": "global-gleif-lei-corporate-ownership-kyb ULTRA Production Tier", "price": "49.00", "priceCurrency": "USD", "description": "5,000 monthly transactions for Global GLEIF LEI Corporate Ownership & KYB Compliance Auditor with 99.9% SLA"}, {"@type": "Offer", "name": "global-gleif-lei-corporate-ownership-kyb MEGA Enterprise Tier", "price": "149.00", "priceCurrency": "USD", "description": "25,000 high-throughput queries for Global GLEIF LEI Corporate Ownership & KYB Compliance Auditor"}]}}, {"@type": "FAQPage", "@id": "https://jesleytassili-glitch.github.io/docs/global-gleif-lei-corporate-ownership-kyb.html#faqpage", "mainEntity": [{"@type": "Question", "name": "What statutory registries and official data sources are integrated into Global GLEIF LEI Corporate Ownership & KYB Compliance Auditor?", "acceptedAnswer": {"@type": "Answer", "text": "The Global GLEIF LEI Corporate Ownership & KYB Compliance Auditor microservice integrates directly with primary statutory sources. Specifically: Audits multinational corporate entities via the official GLEIF LEI API v1 (Zero-Key, 2.5M+ companies). Extracts 20-char LEI codes, legal jurisdiction, registration status, headquarters, and calculates KYB Trust Scores (0-100).\n\n### Enterprise B2B Value Proposition (Global GLEIF LEI Corporate Ownership & KYB Compliance Auditor)\n- **Target B2B Buyers. All queries return authentic, cryptographic-ready audit envelopes containing verified fields such as `leiCode`, `legalName`, `jurisdiction`, `entityStatus`, `registrationStatus`, `registeredAs`."}}, {"@type": "Question", "name": "What are the precise input parameters and validation rules for `global-gleif-lei-corporate-ownership-kyb`?", "acceptedAnswer": {"@type": "Answer", "text": "For `global-gleif-lei-corporate-ownership-kyb`, mandatory execution parameters are: `companyName`. Optional tuning and filtering parameters include: `countryCode`, `maxResults`. Inputs are strictly parsed against OpenAPI 3.0.3 and JSON Schema specifications prior to statutory dispatch."}}, {"@type": "Question", "name": "How does the `global-gleif-lei-corporate-ownership-kyb` API handle HTTP SLA status codes (200, 401, 429, 502)?", "acceptedAnswer": {"@type": "Answer", "text": "The `global-gleif-lei-corporate-ownership-kyb` service provides a 99.9% uptime SLA: HTTP 200 delivers verified audit structures; HTTP 400 denotes payload validation errors; HTTP 401/403 protects proxy authentication boundaries; HTTP 429 signals rate limits with standard `Retry-After` headers; and HTTP 502 triggers upstream resilience, returning an empty dataset with zero charges applied ($0 billed)."}}, {"@type": "Question", "name": "How does monthly subscription on RapidAPI or Zyla Hub compare to Apify Pay-Per-Event for `global-gleif-lei-corporate-ownership-kyb`?", "acceptedAnswer": {"@type": "Answer", "text": "Subscribing to `global-gleif-lei-corporate-ownership-kyb` on RapidAPI or Zyla API Hub provides predictable developer tiers ($0 Free, $19 Pro, $49 Ultra, $149 Mega) with fixed monthly quotas and low-latency API proxy keys. The Apify Store deployment provides elastic Pay-Per-Event execution without commitments, ideal for scheduled batch pipelines."}}]}]}
+  </script>
+
+  <style>
+
+:root{--b:#0a0e17;--c:#111827;--h:#1f2937;--l:#374151;--t:#f9fafb;--m:#9ca3af;--p:#10b981;--y:#06b6d4;--r:#0055ff;--a:#ff7a00;--f:ui-monospace,Consolas,monospace;--s:system-ui,-apple-system,sans-serif;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--b);color:var(--t);font-family:var(--s);line-height:1.6;}
+a{color:var(--y);text-decoration:none;}
+a:hover{text-decoration:underline;}
+header,.site-header{position:sticky;top:0;z-index:99;background:#0a0e17ee;backdrop-filter:blur(8px);border-bottom:1px solid var(--l);padding:.75rem 1.5rem;display:flex;justify-content:space-between;align-items:center;}
+.brand,.header-brand{font-weight:700;color:var(--t);display:flex;align-items:center;gap:.5rem;}
+.dot{width:8px;height:8px;background:var(--p);border-radius:50%;display:inline-block;}
+nav,.nav-links{display:flex;gap:1rem;font-size:.875rem;}
+nav a,.nav-links a{color:var(--m);}
+.container{max-width:1180px;margin:0 auto;padding:2rem 1.5rem;}
+.hero,.bluf-section{background:linear-gradient(180deg,#131c2e,var(--c));border:1px solid var(--l);border-radius:12px;padding:2rem;margin-bottom:2rem;}
+.tag,.badge{display:inline-block;padding:.2rem .6rem;font-size:.75rem;font-weight:600;border-radius:99px;background:#10b98122;color:var(--p);border:1px solid #10b98144;margin-bottom:.75rem;}
+.tag-sla,.badge-sla{background:#06b6d422;color:var(--y);border-color:#06b6d444;}
+h1{font-size:2rem;font-weight:800;margin-bottom:.75rem;line-height:1.25;}
+.lead{font-size:1.05rem;color:var(--m);margin-bottom:1.5rem;}
+.cta-bar,.tri-rail-cta{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid var(--l);}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:.7rem 1.2rem;font-weight:600;font-size:.9rem;border-radius:8px;text-decoration:none;cursor:pointer;}
+.btn-rapid{background:var(--r);color:#fff;}
+.btn-rapid:hover{background:#0044cc;text-decoration:none;}
+.btn-zyla{background:var(--p);color:#0a0e17;}
+.btn-zyla:hover{background:#059669;color:#fff;text-decoration:none;}
+.btn-apify{background:var(--a);color:#fff;}
+.btn-apify:hover{background:#d96200;text-decoration:none;}
+.btn-sub,.btn-secondary{background:var(--h);color:var(--t);border:1px solid var(--l);}
+.card-sec,.section-block{background:var(--c);border:1px solid var(--l);border-radius:12px;padding:1.75rem;margin-bottom:2rem;}
+.field-card{border-left:3px solid var(--l);padding:.5rem .85rem;margin-bottom:.5rem;background:#ffffff05;}
+h2{font-size:1.35rem;font-weight:700;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem;}
+h3{font-size:1.1rem;font-weight:600;margin:1.25rem 0 .5rem 0;}
+table{width:100%;border-collapse:collapse;margin:.75rem 0;font-size:.875rem;}
+th,td{padding:.65rem .85rem;text-align:left;border-bottom:1px solid var(--l);}
+th{background:#0f172a;color:var(--t);}
+code{font-family:var(--f);font-size:.85em;background:#ffffff15;padding:.2rem .4rem;border-radius:4px;color:#38bdf8;}
+pre{background:#0d1117;border:1px solid var(--l);border-radius:8px;padding:1rem;overflow-x:auto;font-family:var(--f);font-size:.825rem;color:#e6edf3;line-height:1.45;margin:.75rem 0;}
+pre code{background:none;padding:0;color:inherit;}
+.faq-box,.faq-card{border-bottom:1px solid var(--l);padding:1rem 0;}
+.faq-box:last-child,.faq-card:last-child{border-bottom:none;}
+.faq-q,.faq-question{font-weight:600;font-size:1rem;margin-bottom:.35rem;color:var(--t);}
+.faq-a,.faq-answer{color:var(--m);font-size:.9rem;line-height:1.6;}
+.grid-cards,.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;}
+.card,.c-item{background:var(--c);border:1px solid var(--l);border-radius:8px;padding:1.25rem;}
+.card-title{font-size:1.05rem;font-weight:700;margin-bottom:.35rem;}
+.card-desc{font-size:.85rem;color:var(--m);margin-bottom:.75rem;}
+footer{border-top:1px solid var(--l);padding:2rem 1.5rem;background:#080c14;color:#6b7280;font-size:.85rem;margin-top:3rem;}
+@media(max-width:768px){.cta-bar,.tri-rail-cta{flex-direction:column;align-items:stretch;}.btn{width:100%;}h1{font-size:1.6rem;}}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <span class="dot"></span>
+      <a href="/docs/index.html" style="color:inherit; text-decoration:none;">B2B Quant Compliance Suite</a>
+    </div>
+    <nav>
+      <a href="/docs/index.html">All 31 APIs</a>
+      <a href="/docs/category-kyb-sanctions-finreg.html">KYB, Sanctions AML, Corporate Ownership &amp; FinReg</a>
+      <a href="https://jesleytassili-glitch.github.io/docs/global-gleif-lei-corporate-ownership-kyb.md">Markdown (RAG)</a>
+      <a href="https://jesleytassili-glitch.github.io/specs_openapi_31/global-gleif-lei-corporate-ownership-kyb.json">OpenAPI JSON</a>
+      <a href="/apis.json">apis.json</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Top BLUF Section -->
+    <section class="hero">
+      <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+        <span class="tag">KYB, Sanctions AML, Corporate Ownership &amp; FinReg</span>
+        <span class="tag tag-sla">99.9% Uptime SLA</span>
+        <span class="tag" style="background:rgba(255,255,255,0.08); color:#e2e8f0; border-color:#4b5563;">Version v4.8</span>
+      </div>
+      <h1>Global GLEIF LEI Corporate Ownership &amp; KYB Compliance Auditor</h1>
+      <p class="lead">Audits multinational corporate entities via the official GLEIF LEI API v1 (Zero-Key, 2.5M+ companies). Extracts 20-char LEI codes, legal jurisdiction, registration status, headquarters, and calculates KYB Trust Scores (0-100).
+
+### Enterprise B2B Value Proposition (Global GLEIF LEI Corporate Ownership &amp; KYB Compliance Auditor)
+- **Target B2B Buyers:** Global Investment Banks, RegTech KYB Platforms, Crypto Institutional Desks, and Trade Finance Systems.
+- **Zero External API Keys Required:** Connects directly to authoritative government, regulatory, and financial primary registries with built-in retry/backoff and deterministic schema normalization.
+- **Quantitative Scoring &amp; RAG Briefs:** Every record is enriched with a quantitative 0-100 risk/viability score and an LLM-ready Markdown executive brief (`Global GLEIF LEI Corporate Entity Audited`).
+- **Backend Proxy Secret Injection:** RapidAPI Studio and Zyla API Hub inject `Authorization: Bearer &lt;TOKEN_REDACTED&gt;` invisibly at the proxy layer when forwarding synchronous calls to `https://api.apify.com/v2/acts/b2b-quant-apis~global-gleif-lei-corporate-ownership-kyb/run-sync-get-dataset-items`.
+- **Marketplace Categories:** RapidAPI `Finance` | Zyla API Hub `Company Data`.
+- **Subscription Tiers (USD):** `BASIC` ($0.00/mo, 15 req/mo hard cap), `PRO` ($19.00/mo, 1,000 req/mo + $0.02/extra), `ULTRA` ($49.00/mo, 5,000 req/mo + $0.015/extra), `MEGA` ($149.00/mo, 25,000 req/mo + $0.010/extra).
+- **SEO Keywords:** gleif-lei, legal-entity-identifier, global-kyb, corporate-ownership, mifid-ii-emir, parent-subsidiary, aml-onboarding.</p>
+
+      <!-- Sticky CTA Tri-Rail -->
+      <div class="cta-bar">
+
+        <a href="https://rapidapi.com/b2bquantapis/api/global-gleif-lei-corporate-ownership-kyb" target="_blank" rel="noopener" class="btn btn-rapid">Subscribe on RapidAPI ($0 Free / $19 PRO / $49 ULTRA)</a>
+        <a href="https://zylalabs.com/api-marketplace/legal+%26+compliance/global+gleif+lei+corporate+ownership+kyb+api/14657" target="_blank" rel="noopener" class="btn btn-zyla">7-Day Free Trial on Zyla API Hub</a>
+        <a href="https://apify.com/b2b-quant-apis/global-gleif-lei-corporate-ownership-kyb" target="_blank" rel="noopener" class="btn btn-apify">Run Bulk Batch on Apify Store</a>
+        <span class="cta-note">Instant Key Provisioning &bull; 99.9% SLA</span>
+        
+      </div>
+    </section>
+
+    <!-- Domain Architecture & Compliance Rules -->
+    <section class="card-sec">
+      <h2><span>&bull;</span> Technical Architecture & Statutory Audit Rules</h2>
+      <p style="color:var(--text-secondary); margin-bottom:1rem; font-size:1rem; line-height:1.7;">
+        Audits multinational corporate entities via the official GLEIF LEI API v1 (Zero-Key, 2.5M+ companies). Extracts 20-char LEI codes, legal jurisdiction, registration status, headquarters, and calculates KYB Trust Scores (0-100).
+
+### Enterprise B2B Value Proposition (Global GLEIF LEI Corporate Ownership &amp; KYB Compliance Auditor)
+- **Target B2B Buyers:** Global Investment Banks, RegTech KYB Platforms, Crypto Institutional Desks, and Trade Finance Systems.
+- **Zero External API Keys Required:** Connects directly to authoritative government, regulatory, and financial primary registries with built-in retry/backoff and deterministic schema normalization.
+- **Quantitative Scoring &amp; RAG Briefs:** Every record is enriched with a quantitative 0-100 risk/viability score and an LLM-ready Markdown executive brief (`Global GLEIF LEI Corporate Entity Audited`).
+- **Backend Proxy Secret Injection:** RapidAPI Studio and Zyla API Hub inject `Authorization: Bearer &lt;TOKEN_REDACTED&gt;` invisibly at the proxy layer when forwarding synchronous calls to `https://api.apify.com/v2/acts/b2b-quant-apis~global-gleif-lei-corporate-ownership-kyb/run-sync-get-dataset-items`.
+- **Marketplace Categories:** RapidAPI `Finance` | Zyla API Hub `Company Data`.
+- **Subscription Tiers (USD):** `BASIC` ($0.00/mo, 15 req/mo hard cap), `PRO` ($19.00/mo, 1,000 req/mo + $0.02/extra), `ULTRA` ($49.00/mo, 5,000 req/mo + $0.015/extra), `MEGA` ($149.00/mo, 25,000 req/mo + $0.010/extra).
+- **SEO Keywords:** gleif-lei, legal-entity-identifier, global-kyb, corporate-ownership, mifid-ii-emir, parent-subsidiary, aml-onboarding.
+      </p>
+      <div style="background:rgba(255,255,255,0.02); border-left:4px solid var(--brand-primary); padding:1rem 1.25rem; border-radius:0 8px 8px 0; margin-top:1rem;">
+        <strong style="color:var(--text-primary); font-size:0.95rem;">Cryptographic Provenance & Compliance Invariants:</strong>
+        <p style="color:var(--text-secondary); font-size:0.9rem; margin-top:0.35rem;">
+          Every transaction executed by <code>global-gleif-lei-corporate-ownership-kyb</code> produces verifiable event envelopes designed for high-stakes regulatory auditing, ERP master data synchronization, and automated continuous compliance workflows.
+        </p>
+      </div>
+    </section>
+
+    <!-- Field-by-Field Schema Inspection -->
+    <section class="card-sec">
+      <h2><span>&bull;</span> Statutory Schema Deep-Dive & Attribute Analysis</h2>
+      <p style="color:var(--text-secondary); margin-bottom:1.25rem; font-size:0.95rem;">
+        Detailed specification of data contracts, domain types, and primary source semantics enforced by <code>global-gleif-lei-corporate-ownership-kyb</code>:
+      </p>
+<div class='field-card'><strong>Input Query Parameter: <code>companyName</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span> &bull; <span style='color:var(--p); font-size:0.8rem;'>Required</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>Corporate legal name to search in the Global LEI Index (e.g., &#x27;Microsoft&#x27;, &#x27;Siemens&#x27;, &#x27;JPMorgan&#x27;, &#x27;Petrobras&#x27;).</p></div>
+<div class='field-card'><strong>Input Query Parameter: <code>countryCode</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span> &bull; <span style='color:var(--p); font-size:0.8rem;'>Optional</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>Optional 2-letter ISO country filter (e.g., &#x27;US&#x27;, &#x27;DE&#x27;, &#x27;GB&#x27;, &#x27;BR&#x27;).</p></div>
+<div class='field-card'><strong>Input Query Parameter: <code>maxResults</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(integer)</span> &bull; <span style='color:var(--p); font-size:0.8rem;'>Optional</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>Maximum number of GLEIF LEI records to extract and score (1 to 100).</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>leiCode</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>ISO 17442 Global Legal Entity Identifier.</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>legalName</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>Registered legal name of the entity.</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>jurisdiction</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>ISO country/subdivision of legal formation.</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>entityStatus</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>ACTIVE or INACTIVE legal entity status.</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>registrationStatus</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>ISSUED, LAPSED, RETIRED, or ANNULLED.</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>registeredAs</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>Local commercial register number.</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>headquartersCity</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>City of corporate headquarters.</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>headquartersCountry</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>ISO country code of headquarters.</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>nextRenewalDate</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>Scheduled annual LEI renewal timestamp.</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>kybTrustScore</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(integer)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>Quantitative KYB compliance and registration validity score (0-100).</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>markdownKybBrief</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>Executive KYB audit dossier for banking, M&amp;A, and vendor onboarding.</p></div>
+    </section>
+
+    <!-- Real Input Schema Table -->
+    <section class="card-sec">
+      <h2><span>&bull;</span> Input Schema Parameters (HTTP POST Request Body)</h2>
+      <p style="color:var(--text-secondary); margin-bottom:1rem; font-size:0.95rem;">
+        Stateless payload attributes validated by JSON Schema and OpenAPI 3.0.3 standards for <code>global-gleif-lei-corporate-ownership-kyb</code>.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Field</th>
+            <th>Type</th>
+            <th>Requirement</th>
+            <th>Description & Audit Rules</th>
+          </tr>
+        </thead>
+        <tbody>
+<tr><td><code>companyName</code></td><td><code>string</code></td><td><span style='color:#ef4444; font-weight:600;'>Required</span></td><td>Corporate legal name to search in the Global LEI Index (e.g., &#x27;Microsoft&#x27;, &#x27;Siemens&#x27;, &#x27;JPMorgan&#x27;, &#x27;Petrobras&#x27;).</td></tr>
+<tr><td><code>countryCode</code></td><td><code>string</code></td><td><span style='color:#9ca3af;'>Optional</span></td><td>Optional 2-letter ISO country filter (e.g., &#x27;US&#x27;, &#x27;DE&#x27;, &#x27;GB&#x27;, &#x27;BR&#x27;).</td></tr>
+<tr><td><code>maxResults</code></td><td><code>integer</code></td><td><span style='color:#9ca3af;'>Optional</span></td><td>Maximum number of GLEIF LEI records to extract and score (1 to 100).</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Real Output Fields Table -->
+    <section class="card-sec">
+      <h2><span>&bull;</span> Verified Response Envelope Attributes</h2>
+      <p style="color:var(--text-secondary); margin-bottom:1rem; font-size:0.95rem;">
+        Primary attributes returned in the audit response envelope with cryptographic audit metadata for <code>global-gleif-lei-corporate-ownership-kyb</code>.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Definition & Source Verifiability</th>
+          </tr>
+        </thead>
+        <tbody>
+<tr><td><code>leiCode</code></td><td><code>string</code></td><td>ISO 17442 Global Legal Entity Identifier.</td></tr>
+<tr><td><code>legalName</code></td><td><code>string</code></td><td>Registered legal name of the entity.</td></tr>
+<tr><td><code>jurisdiction</code></td><td><code>string</code></td><td>ISO country/subdivision of legal formation.</td></tr>
+<tr><td><code>entityStatus</code></td><td><code>string</code></td><td>ACTIVE or INACTIVE legal entity status.</td></tr>
+<tr><td><code>registrationStatus</code></td><td><code>string</code></td><td>ISSUED, LAPSED, RETIRED, or ANNULLED.</td></tr>
+<tr><td><code>registeredAs</code></td><td><code>string</code></td><td>Local commercial register number.</td></tr>
+<tr><td><code>headquartersCity</code></td><td><code>string</code></td><td>City of corporate headquarters.</td></tr>
+<tr><td><code>headquartersCountry</code></td><td><code>string</code></td><td>ISO country code of headquarters.</td></tr>
+<tr><td><code>nextRenewalDate</code></td><td><code>string</code></td><td>Scheduled annual LEI renewal timestamp.</td></tr>
+<tr><td><code>kybTrustScore</code></td><td><code>integer</code></td><td>Quantitative KYB compliance and registration validity score (0-100).</td></tr>
+<tr><td><code>markdownKybBrief</code></td><td><code>string</code></td><td>Executive KYB audit dossier for banking, M&amp;A, and vendor onboarding.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Authentic Verified JSON Payload Block -->
+    <section class="card-sec">
+      <h2><span>&bull;</span> Authentic Verified Response Payload</h2>
+      <p style="color:var(--text-secondary); margin-bottom:1rem; font-size:0.95rem;">
+        Direct extraction captured from primary government or corporate registry endpoints for <code>global-gleif-lei-corporate-ownership-kyb</code>.
+      </p>
+      <pre><code>{
+  &quot;leiCode&quot;: &quot;INR2EJN1ERAN0W5ZP974&quot;,
+  &quot;legalName&quot;: &quot;MICROSOFT CORPORATION&quot;,
+  &quot;jurisdiction&quot;: &quot;US-WA&quot;,
+  &quot;entityStatus&quot;: &quot;ACTIVE&quot;,
+  &quot;registrationStatus&quot;: &quot;ISSUED&quot;,
+  &quot;registeredAs&quot;: &quot;600 413 485&quot;,
+  &quot;headquartersCity&quot;: &quot;REDMOND&quot;,
+  &quot;headquartersCountry&quot;: &quot;US&quot;,
+  &quot;nextRenewalDate&quot;: &quot;2027-05-04T00:00:00Z&quot;,
+  &quot;kybTrustScore&quot;: 100,
+  &quot;markdownKybBrief&quot;: &quot;# GLOBAL GLEIF LEI CORPORATE KYB AUDIT: MICROSOFT CORPORATION\n\n## 1. ISO 17442 LEI &amp; Legal Identity\n- **20-Character LEI Code:** `INR2EJN1ERAN0W5ZP974`\n- **Official Legal Name:** **MICROSOFT CORPORATION**\n- **Legal Jurisdiction:** `US-WA`\n- **Local Commercial Registry ID:** `600 413 485`\n\n## 2. Regulatory Status &amp; Headquarters\n- **Entity Operational Status:** `ACTIVE`\n- **LEI Registration Status:** `ISSUED`\n- **Headquarters Location:** REDMOND, US\n- **Next Annual Renewal Date:** 2027-05-04T00:00:00Z\n- **KYB Compliance Trust Score:** **100/100**&quot;
+}</code></pre>
+    </section>
+
+    <!-- 4 Ready-to-Copy Integration Snippets -->
+    <section class="card-sec">
+      <h2><span>&bull;</span> Enterprise Integration Code Snippets</h2>
+
+      <h3>1. Python 3 (requests / b2b-compliance-sdk)</h3>
+      <pre><code>import requests
+
+url = &quot;https://jesleytassili-glitch.github.io/specs_openapi_31/global-gleif-lei-corporate-ownership-kyb.json&quot; # Direct spec
+endpoint = &quot;https://api.apify.com/v2/acts/b2b-quant-apis~global-gleif-lei-corporate-ownership-kyb/run-sync-get-dataset-items&quot;
+headers = {
+    &quot;Content-Type&quot;: &quot;application/json&quot;,
+    &quot;Authorization&quot;: &quot;Bearer YOUR_API_TOKEN&quot; # RapidAPI or Apify Token
+}
+payload = {
+  &quot;companyName&quot;: &quot;Microsoft&quot;,
+  &quot;countryCode&quot;: &quot;US&quot;,
+  &quot;maxResults&quot;: 5
+}
+
+response = requests.post(endpoint, json=payload, headers=headers, timeout=60)
+print(f&quot;Status Code: {response.status_code}&quot;)
+data = response.json()
+print(&quot;Audit Records Count:&quot;, len(data) if isinstance(data, list) else 1)</code></pre>
+
+      <h3>2. Node.js & MCP CLI (npx -y b2b-compliance-mcp-cli)</h3>
+      <pre><code>// Node.js 18+ Native Fetch or MCP CLI
+import fetch from &quot;node-fetch&quot;;
+
+const payload = {
+  &quot;companyName&quot;: &quot;Microsoft&quot;,
+  &quot;countryCode&quot;: &quot;US&quot;,
+  &quot;maxResults&quot;: 5
+};
+
+const response = await fetch(&quot;https://api.apify.com/v2/acts/b2b-quant-apis~global-gleif-lei-corporate-ownership-kyb/run-sync-get-dataset-items&quot;, {
+  method: &quot;POST&quot;,
+  headers: {
+    &quot;Content-Type&quot;: &quot;application/json&quot;,
+    &quot;Authorization&quot;: &quot;Bearer &quot; + process.env.B2B_API_TOKEN
+  },
+  body: JSON.stringify(payload)
+});
+
+const result = await response.json();
+console.log(&quot;Verified Records:&quot;, result);
+
+// Or run directly via MCP CLI:
+// npx -y b2b-compliance-mcp-cli execute --server global-gleif-lei-corporate-ownership-kyb --payload &#x27;{&quot;companyName&quot;: &quot;Microsoft&quot;, &quot;countryCode&quot;: &quot;US&quot;, &quot;maxResults&quot;: 5}&#x27;</code></pre>
+
+      <h3>3. cURL Stateless REST Call</h3>
+      <pre><code>curl -X POST &quot;https://api.apify.com/v2/acts/b2b-quant-apis~global-gleif-lei-corporate-ownership-kyb/run-sync-get-dataset-items&quot; \
+  -H &quot;Content-Type: application/json&quot; \
+  -H &quot;Authorization: Bearer YOUR_API_TOKEN&quot; \
+  -d &#x27;{&quot;companyName&quot;: &quot;Microsoft&quot;, &quot;countryCode&quot;: &quot;US&quot;, &quot;maxResults&quot;: 5}&#x27;</code></pre>
+
+      <h3>4. GitHub Actions CI/CD & n8n Scheduled Cron</h3>
+      <pre><code>name: Daily Compliance Audit - global-gleif-lei-corporate-ownership-kyb
+on:
+  schedule:
+    - cron: &#x27;0 8 * * 1-5&#x27; # Monday to Friday at 08:00 UTC
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Audit Run
+        run: |
+          curl -f -s -X POST &quot;https://api.apify.com/v2/acts/b2b-quant-apis~global-gleif-lei-corporate-ownership-kyb/run-sync-get-dataset-items&quot; \
+            -H &quot;Content-Type: application/json&quot; \
+            -H &quot;Authorization: Bearer ${{ secrets.B2B_API_TOKEN }}&quot; \
+            -d &#x27;{&quot;companyName&quot;: &quot;Microsoft&quot;, &quot;countryCode&quot;: &quot;US&quot;, &quot;maxResults&quot;: 5}&#x27; &gt; audit_output.json
+      - name: Archive Compliance Evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: global-gleif-lei-corporate-ownership-kyb-evidence
+          path: audit_output.json</code></pre>
+    </section>
+
+    <!-- SLA & Error Codes -->
+    <section class="card-sec">
+      <h2><span>&bull;</span> Enterprise SLA & Error Handling Codes for global-gleif-lei-corporate-ownership-kyb</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>HTTP Status</th>
+            <th>Classification</th>
+            <th>Resolution Behavior for global-gleif-lei-corporate-ownership-kyb</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>200 OK</code></td>
+            <td>Success</td>
+            <td>Query executed successfully; validated Global GLEIF LEI Corporate Ownership &amp; KYB Compliance Auditor records returned.</td>
+          </tr>
+          <tr>
+            <td><code>400 Bad Request</code></td>
+            <td>Schema Validation</td>
+            <td>Payload missing required fields or format mismatch for global-gleif-lei-corporate-ownership-kyb; inspect JSON schema.</td>
+          </tr>
+          <tr>
+            <td><code>401 / 403 Forbidden</code></td>
+            <td>Authentication Failure</td>
+            <td>Invalid proxy API key or direct unauthorized bypass attempt for Global GLEIF LEI Corporate Ownership &amp; KYB Compliance Auditor.</td>
+          </tr>
+          <tr>
+            <td><code>429 Too Many Requests</code></td>
+            <td>Rate Limit Exceeded</td>
+            <td>Tier limits triggered for global-gleif-lei-corporate-ownership-kyb; inspect <code>Retry-After</code> response header.</td>
+          </tr>
+          <tr>
+            <td><code>502 Upstream Resilient</code></td>
+            <td>Graceful Degradation</td>
+            <td>Upstream regulatory portal offline; returns safe empty set with <strong>$0 billed fee</strong>.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Technical FAQs Section -->
+    <section class="card-sec">
+      <h2><span>&bull;</span> Frequently Asked Questions (Technical & Procurement)</h2>
+<div class='faq-box'><div class='faq-q'>What statutory registries and official data sources are integrated into Global GLEIF LEI Corporate Ownership &amp; KYB Compliance Auditor?</div><div class='faq-a'>The Global GLEIF LEI Corporate Ownership &amp; KYB Compliance Auditor microservice integrates directly with primary statutory sources. Specifically: Audits multinational corporate entities via the official GLEIF LEI API v1 (Zero-Key, 2.5M+ companies). Extracts 20-char LEI codes, legal jurisdiction, registration status, headquarters, and calculates KYB Trust Scores (0-100).
+
+### Enterprise B2B Value Proposition (Global GLEIF LEI Corporate Ownership &amp; KYB Compliance Auditor)
+- **Target B2B Buyers. All queries return authentic, cryptographic-ready audit envelopes containing verified fields such as `leiCode`, `legalName`, `jurisdiction`, `entityStatus`, `registrationStatus`, `registeredAs`.</div></div>
+<div class='faq-box'><div class='faq-q'>What are the precise input parameters and validation rules for `global-gleif-lei-corporate-ownership-kyb`?</div><div class='faq-a'>For `global-gleif-lei-corporate-ownership-kyb`, mandatory execution parameters are: `companyName`. Optional tuning and filtering parameters include: `countryCode`, `maxResults`. Inputs are strictly parsed against OpenAPI 3.0.3 and JSON Schema specifications prior to statutory dispatch.</div></div>
+<div class='faq-box'><div class='faq-q'>How does the `global-gleif-lei-corporate-ownership-kyb` API handle HTTP SLA status codes (200, 401, 429, 502)?</div><div class='faq-a'>The `global-gleif-lei-corporate-ownership-kyb` service provides a 99.9% uptime SLA: HTTP 200 delivers verified audit structures; HTTP 400 denotes payload validation errors; HTTP 401/403 protects proxy authentication boundaries; HTTP 429 signals rate limits with standard `Retry-After` headers; and HTTP 502 triggers upstream resilience, returning an empty dataset with zero charges applied ($0 billed).</div></div>
+<div class='faq-box'><div class='faq-q'>How does monthly subscription on RapidAPI or Zyla Hub compare to Apify Pay-Per-Event for `global-gleif-lei-corporate-ownership-kyb`?</div><div class='faq-a'>Subscribing to `global-gleif-lei-corporate-ownership-kyb` on RapidAPI or Zyla API Hub provides predictable developer tiers ($0 Free, $19 Pro, $49 Ultra, $149 Mega) with fixed monthly quotas and low-latency API proxy keys. The Apify Store deployment provides elastic Pay-Per-Event execution without commitments, ideal for scheduled batch pipelines.</div></div>
+    </section>
+
+    <!-- Related Cluster APIs -->
+    <section class="card-sec">
+      <h2><span>&bull;</span> Related Engines in KYB, Sanctions AML, Corporate Ownership &amp; FinReg</h2>
+      <div style="margin-top:1rem;">
+<ul style='list-style-type:square; padding-left:1.5rem; line-height:1.9; color:var(--text-secondary);'><li><a href='/docs/global-sanctions-pep-interpol-watchlist-screener.html'><strong>Global OFAC &amp; UN Sanctions Watchlist AML Screener</strong></a> <span style='color:var(--text-muted); font-size:0.85rem;'>(<code>global-sanctions-pep-interpol-watchlist-screener</code>)</span> &bull; <a href='/docs/global-sanctions-pep-interpol-watchlist-screener.md' style='font-size:0.85rem;'>[Markdown Guide]</a></li>
+<li><a href='/docs/uk-fca-companies-house-kyb-compliance-auditor.html'><strong>UK Corporate Entity GLEIF LEI &amp; Company Number Verifier</strong></a> <span style='color:var(--text-muted); font-size:0.85rem;'>(<code>uk-fca-companies-house-kyb-compliance-auditor</code>)</span> &bull; <a href='/docs/uk-fca-companies-house-kyb-compliance-auditor.md' style='font-size:0.85rem;'>[Markdown Guide]</a></li>
+<li><a href='/docs/us-sec-edgar-filings-insider-radar.html'><strong>US SEC EDGAR Filings &amp; Insider Trading Radar (10-K/8-K/Form 4)</strong></a> <span style='color:var(--text-muted); font-size:0.85rem;'>(<code>us-sec-edgar-filings-insider-radar</code>)</span> &bull; <a href='/docs/us-sec-edgar-filings-insider-radar.md' style='font-size:0.85rem;'>[Markdown Guide]</a></li>
+<li><a href='/docs/us-fdic-bankfind-institution-financial-auditor.html'><strong>US FDIC BankFind Institution &amp; Solvency Risk Auditor</strong></a> <span style='color:var(--text-muted); font-size:0.85rem;'>(<code>us-fdic-bankfind-institution-financial-auditor</code>)</span> &bull; <a href='/docs/us-fdic-bankfind-institution-financial-auditor.md' style='font-size:0.85rem;'>[Markdown Guide]</a></li>
+<li><a href='/docs/brazil-bcb-ptax-sgs-financial-contract-indexer.html'><strong>Brazil Central Bank PTAX, Selic, CDI &amp; IPCA Contract Indexer</strong></a> <span style='color:var(--text-muted); font-size:0.85rem;'>(<code>brazil-bcb-ptax-sgs-financial-contract-indexer</code>)</span> &bull; <a href='/docs/brazil-bcb-ptax-sgs-financial-contract-indexer.md' style='font-size:0.85rem;'>[Markdown Guide]</a></li>
+<li><a href='/docs/brazil-pix-ispb-cvm-financial-kyb-auditor.html'><strong>Brazil Pix ISPB, COMPE &amp; CVM Financial Institution KYB Auditor</strong></a> <span style='color:var(--text-muted); font-size:0.85rem;'>(<code>brazil-pix-ispb-cvm-financial-kyb-auditor</code>)</span> &bull; <a href='/docs/brazil-pix-ispb-cvm-financial-kyb-auditor.md' style='font-size:0.85rem;'>[Markdown Guide]</a></li></ul>
+      </div>
+      <div style="margin-top:1.5rem;">
+        <a href="/docs/category-kyb-sanctions-finreg.html" class="btn btn-sub">Explore all engines in KYB, Sanctions AML, Corporate Ownership &amp; FinReg &rarr;</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div style="max-width:1180px; margin:0 auto; display:flex; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+      <div>
+        <strong style="color:var(--text-primary);">Global GLEIF LEI Corporate Ownership &amp; KYB Compliance Auditor</strong> &bull; B2B Quant Compliance Suite
+      </div>
+      <div>
+        <a href="/apis.json">apis.json</a> &bull; <a href="/openapi.json">OpenAPI</a> &bull; <a href="/sitemap.xml">sitemap.xml</a> &bull; <a href="/llms.txt">llms.txt</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

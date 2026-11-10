@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brazil Tax Reform, Logistics &amp; ERP Master Data — B2B Compliance APIs & MCP Hub</title>
+  <meta name="description" content="Brazil Dual VAT IBS/CBS classtrib auditor, EU VIES VAT validation, ANTT freight rates, CEP geocoding, and corporate CNPJ telemetry.">
+  <link rel="canonical" href="https://jesleytassili-glitch.github.io/docs/category-brazil-tax-erp-logistics.html">
+  <style>
+:root{--b:#0a0e17;--c:#111827;--h:#1f2937;--l:#374151;--t:#f9fafb;--m:#9ca3af;--p:#10b981;--y:#06b6d4;--r:#0055ff;--a:#ff7a00;--f:ui-monospace,Consolas,monospace;--s:system-ui,-apple-system,sans-serif;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--b);color:var(--t);font-family:var(--s);line-height:1.6;}
+a{color:var(--y);text-decoration:none;}
+a:hover{text-decoration:underline;}
+header,.site-header{position:sticky;top:0;z-index:99;background:#0a0e17ee;backdrop-filter:blur(8px);border-bottom:1px solid var(--l);padding:.75rem 1.5rem;display:flex;justify-content:space-between;align-items:center;}
+.brand,.header-brand{font-weight:700;color:var(--t);display:flex;align-items:center;gap:.5rem;}
+.dot{width:8px;height:8px;background:var(--p);border-radius:50%;display:inline-block;}
+nav,.nav-links{display:flex;gap:1rem;font-size:.875rem;}
+nav a,.nav-links a{color:var(--m);}
+.container{max-width:1180px;margin:0 auto;padding:2rem 1.5rem;}
+.hero,.bluf-section{background:linear-gradient(180deg,#131c2e,var(--c));border:1px solid var(--l);border-radius:12px;padding:2rem;margin-bottom:2rem;}
+.tag,.badge{display:inline-block;padding:.2rem .6rem;font-size:.75rem;font-weight:600;border-radius:99px;background:#10b98122;color:var(--p);border:1px solid #10b98144;margin-bottom:.75rem;}
+.tag-sla,.badge-sla{background:#06b6d422;color:var(--y);border-color:#06b6d444;}
+h1{font-size:2rem;font-weight:800;margin-bottom:.75rem;line-height:1.25;}
+.lead{font-size:1.05rem;color:var(--m);margin-bottom:1.5rem;}
+.cta-bar,.tri-rail-cta{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid var(--l);}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:.7rem 1.2rem;font-weight:600;font-size:.9rem;border-radius:8px;text-decoration:none;cursor:pointer;}
+.btn-rapid{background:var(--r);color:#fff;}
+.btn-rapid:hover{background:#0044cc;text-decoration:none;}
+.btn-zyla{background:var(--p);color:#0a0e17;}
+.btn-zyla:hover{background:#059669;color:#fff;text-decoration:none;}
+.btn-apify{background:var(--a);color:#fff;}
+.btn-apify:hover{background:#d96200;text-decoration:none;}
+.btn-sub,.btn-secondary{background:var(--h);color:var(--t);border:1px solid var(--l);}
+.card-sec,.section-block{background:var(--c);border:1px solid var(--l);border-radius:12px;padding:1.75rem;margin-bottom:2rem;}
+.field-card{border-left:3px solid var(--l);padding:.5rem .85rem;margin-bottom:.5rem;background:#ffffff05;}
+h2{font-size:1.35rem;font-weight:700;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem;}
+h3{font-size:1.1rem;font-weight:600;margin:1.25rem 0 .5rem 0;}
+table{width:100%;border-collapse:collapse;margin:.75rem 0;font-size:.875rem;}
+th,td{padding:.65rem .85rem;text-align:left;border-bottom:1px solid var(--l);}
+th{background:#0f172a;color:var(--t);}
+code{font-family:var(--f);font-size:.85em;background:#ffffff15;padding:.2rem .4rem;border-radius:4px;color:#38bdf8;}
+pre{background:#0d1117;border:1px solid var(--l);border-radius:8px;padding:1rem;overflow-x:auto;font-family:var(--f);font-size:.825rem;color:#e6edf3;line-height:1.45;margin:.75rem 0;}
+pre code{background:none;padding:0;color:inherit;}
+.faq-box,.faq-card{border-bottom:1px solid var(--l);padding:1rem 0;}
+.faq-box:last-child,.faq-card:last-child{border-bottom:none;}
+.faq-q,.faq-question{font-weight:600;font-size:1rem;margin-bottom:.35rem;color:var(--t);}
+.faq-a,.faq-answer{color:var(--m);font-size:.9rem;line-height:1.6;}
+.grid-cards,.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;}
+.card,.c-item{background:var(--c);border:1px solid var(--l);border-radius:8px;padding:1.25rem;}
+.card-title{font-size:1.05rem;font-weight:700;margin-bottom:.35rem;}
+.card-desc{font-size:.85rem;color:var(--m);margin-bottom:.75rem;}
+footer{border-top:1px solid var(--l);padding:2rem 1.5rem;background:#080c14;color:#6b7280;font-size:.85rem;margin-top:3rem;}
+@media(max-width:768px){.cta-bar,.tri-rail-cta{flex-direction:column;align-items:stretch;}.btn{width:100%;}h1{font-size:1.6rem;}}
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-brand">
+      <span class="dot"></span>
+      <a href="/docs/index.html" style="color:inherit; text-decoration:none;">B2B Quant Compliance Suite</a>
+    </div>
+    <nav class="nav-links">
+      <a href="/docs/index.html">All 31 APIs</a>
+      <a href="/apis.json">apis.json</a>
+      <a href="/pricing_plans_manifest.json">Pricing</a>
+      <a href="/openapi.json">OpenAPI</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="bluf-section">
+      <span class="badge">Sector Cluster</span>
+      <h1>Brazil Tax Reform, Logistics &amp; ERP Master Data</h1>
+      <p class="lead">Mission-critical engines automating Brazil Tax Reform 2026 (NCM to cClassTrib, IBS/CBS dual VAT tax reform), EU VIES VAT verification, ANTT mandatory minimum freight tables for CT-e, Brazil CEP geocoordinates and IBGE codes, Receita Federal CNPJ QSA lead enrichment, IBGE CNAE municipal mapping, and US NHTSA VIN recall decoding.</p>
+      <div style="margin-top:1rem;"><a href='/docs/category-gov-procurement-esg.html' class='badge' style='margin-right:0.5rem;'>Government Procurement, Tenders &amp; ESG Compliance &rarr;</a><a href='/docs/category-kyb-sanctions-finreg.html' class='badge' style='margin-right:0.5rem;'>KYB, Sanctions AML, Corporate Ownership &amp; FinReg &rarr;</a><a href='/docs/category-healthcare-fda-biotech.html' class='badge' style='margin-right:0.5rem;'>Healthcare, FDA Life Sciences &amp; Clinical Trials &rarr;</a><a href='/docs/category-cybersecurity-easm-hiring.html' class='badge' style='margin-right:0.5rem;'>Cybersecurity, EASM, Attack Surface &amp; B2B Hiring &rarr;</a></div>
+    </section>
+
+    <section class="section-block">
+      <h2><span>&bull;</span> Matrix Comparison & Pricing Tiers</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>API Title</th>
+            <th>Slug Identifier</th>
+            <th>Pricing Tiers</th>
+            <th>Marketplaces</th>
+            <th>Documentation</th>
+          </tr>
+        </thead>
+        <tbody>
+<tr><td><strong><a href='/docs/brazil-tax-reform-ncm-classtrib-auditor.html'>Brazil Tax Reform 2026: NCM to cClassTrib &amp; NF-e Auditor</a></strong></td><td><code>brazil-tax-reform-ncm-classtrib-auditor</code></td><td>$0 Free / $19 Pro</td><td><a href='https://rapidapi.com/b2bquantapis/api/brazil-tax-reform-ncm-classtrib-auditor'>RapidAPI</a> | <a href='https://zylalabs.com/api-marketplace/legal+%26+compliance/eu+vies+vat+tax+compliance+auditor+api/14654'>Zyla Hub</a> | <a href='https://apify.com/b2b-quant-apis/brazil-tax-reform-ncm-classtrib-auditor'>Apify</a></td><td><a href='/docs/brazil-tax-reform-ncm-classtrib-auditor.html'>HTML</a> &bull; <a href='/docs/brazil-tax-reform-ncm-classtrib-auditor.md'>MD</a></td></tr>
+<tr><td><strong><a href='/docs/eu-vies-vat-tax-compliance-auditor.html'>EU VIES VAT Number Validator &amp; Reverse Charge Tax Auditor</a></strong></td><td><code>eu-vies-vat-tax-compliance-auditor</code></td><td>$0 Free / $19 Pro</td><td><a href='https://rapidapi.com/b2bquantapis/api/eu-vies-vat-tax-compliance-auditor'>RapidAPI</a> | <a href='https://zylalabs.com/api-marketplace/legal+%26+compliance/eu+vies+vat+tax+compliance+auditor+api/14654'>Zyla Hub</a> | <a href='https://apify.com/b2b-quant-apis/eu-vies-vat-tax-compliance-auditor'>Apify</a></td><td><a href='/docs/eu-vies-vat-tax-compliance-auditor.html'>HTML</a> &bull; <a href='/docs/eu-vies-vat-tax-compliance-auditor.md'>MD</a></td></tr>
+<tr><td><strong><a href='/docs/brazil-antt-freight-cte-auditor.html'>Brazil ANTT Minimum Freight Calculator &amp; CT-e XML Batch Auditor</a></strong></td><td><code>brazil-antt-freight-cte-auditor</code></td><td>$0 Free / $19 Pro</td><td><a href='https://rapidapi.com/b2bquantapis/api/brazil-antt-freight-cte-auditor'>RapidAPI</a> | <a href='https://zylalabs.com/api-marketplace/travel+%26+transportation/brazil+antt+minimum+freight+calculator+ct+e+api/14645'>Zyla Hub</a> | <a href='https://apify.com/b2b-quant-apis/brazil-antt-freight-cte-auditor'>Apify</a></td><td><a href='/docs/brazil-antt-freight-cte-auditor.html'>HTML</a> &bull; <a href='/docs/brazil-antt-freight-cte-auditor.md'>MD</a></td></tr>
+<tr><td><strong><a href='/docs/brazil-cep-geocoordinates-logistics-auditor.html'>Brazil CEP Geocoordinates, IBGE Code &amp; Logistics Auditor</a></strong></td><td><code>brazil-cep-geocoordinates-logistics-auditor</code></td><td>$0 Free / $19 Pro</td><td><a href='https://rapidapi.com/b2bquantapis/api/brazil-cep-geocoordinates-logistics-auditor'>RapidAPI</a> | <a href='https://zylalabs.com/api-marketplace/location+%26+mapping/brazil+cep+geocoordinates+ibge+code+api/14663'>Zyla Hub</a> | <a href='https://apify.com/b2b-quant-apis/brazil-cep-geocoordinates-logistics-auditor'>Apify</a></td><td><a href='/docs/brazil-cep-geocoordinates-logistics-auditor.html'>HTML</a> &bull; <a href='/docs/brazil-cep-geocoordinates-logistics-auditor.md'>MD</a></td></tr>
+<tr><td><strong><a href='/docs/brazil-b2b-cnpj-qsa-lead-enricher.html'>Brazil B2B CNPJ, Partners (QSA) &amp; CNAE Lead Enricher</a></strong></td><td><code>brazil-b2b-cnpj-qsa-lead-enricher</code></td><td>$0 Free / $19 Pro</td><td><a href='https://rapidapi.com/b2bquantapis/api/brazil-b2b-cnpj-qsa-lead-enricher'>RapidAPI</a> | <a href='https://zylalabs.com/api-marketplace/travel+%26+transportation/brazil+antt+minimum+freight+calculator+ct+e+api/14645'>Zyla Hub</a> | <a href='https://apify.com/b2b-quant-apis/brazil-b2b-cnpj-qsa-lead-enricher'>Apify</a></td><td><a href='/docs/brazil-b2b-cnpj-qsa-lead-enricher.html'>HTML</a> &bull; <a href='/docs/brazil-b2b-cnpj-qsa-lead-enricher.md'>MD</a></td></tr>
+<tr><td><strong><a href='/docs/brazil-ibge-cnae-municipal-b2b-expansion-enricher.html'>Brazil IBGE CNAE 2.3 &amp; Municipal Code B2B Tax Enricher</a></strong></td><td><code>brazil-ibge-cnae-municipal-b2b-expansion-enricher</code></td><td>$0 Free / $19 Pro</td><td><a href='https://rapidapi.com/b2bquantapis/api/brazil-ibge-cnae-municipal-b2b-expansion-enricher'>RapidAPI</a> | <a href='https://zylalabs.com/api-marketplace/location+%26+mapping/brazil+cep+geocoordinates+ibge+code+api/14663'>Zyla Hub</a> | <a href='https://apify.com/b2b-quant-apis/brazil-ibge-cnae-municipal-b2b-expansion-enricher'>Apify</a></td><td><a href='/docs/brazil-ibge-cnae-municipal-b2b-expansion-enricher.html'>HTML</a> &bull; <a href='/docs/brazil-ibge-cnae-municipal-b2b-expansion-enricher.md'>MD</a></td></tr>
+<tr><td><strong><a href='/docs/us-nhtsa-vehicle-vin-recall-auditor.html'>US NHTSA Vehicle VIN Decoder &amp; Safety Recall Auditor</a></strong></td><td><code>us-nhtsa-vehicle-vin-recall-auditor</code></td><td>$0 Free / $19 Pro</td><td>- | <a href='https://zylalabs.com/api-marketplace/automotive+%26+vehicle+data/us+nhtsa+vehicle+vin+decoder+safety+recall+api/14664'>Zyla Hub</a> | <a href='https://apify.com/b2b-quant-apis/us-nhtsa-vehicle-vin-recall-auditor'>Apify</a></td><td><a href='/docs/us-nhtsa-vehicle-vin-recall-auditor.html'>HTML</a> &bull; <a href='/docs/us-nhtsa-vehicle-vin-recall-auditor.md'>MD</a></td></tr>
+<tr><td><strong><a href='/docs/us-census-fcc-real-estate-geo-enricher.html'>US Real Estate Census Tract, FIPS &amp; PropTech Geo Enricher</a></strong></td><td><code>us-census-fcc-real-estate-geo-enricher</code></td><td>$0 Free / $19 Pro</td><td>- | <a href='https://zylalabs.com/api-marketplace/travel+%26+transportation/brazil+antt+minimum+freight+calculator+ct+e+api/14645'>Zyla Hub</a> | <a href='https://apify.com/b2b-quant-apis/us-census-fcc-real-estate-geo-enricher'>Apify</a></td><td><a href='/docs/us-census-fcc-real-estate-geo-enricher.html'>HTML</a> &bull; <a href='/docs/us-census-fcc-real-estate-geo-enricher.md'>MD</a></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section-block">
+      <h2><span>&bull;</span> Individual Compliance Engines in this Domain</h2>
+      <div class="grid-3" style="margin-top:1rem;">
+<div class='card'><div class='card-title'><a href='/docs/brazil-tax-reform-ncm-classtrib-auditor.html'>Brazil Tax Reform 2026: NCM to cClassTrib &amp; NF-e Auditor</a></div><div class='card-desc'>Maps Brazilian NCM product catalogs and audits NF-e XML invoices for the 2026 Tax Reform (LC 214/2025 - IBS, CBS, and Imposto Seletivo). Returns cClas...</div><div style='display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:1rem;'><a href='/docs/brazil-tax-reform-ncm-classtrib-auditor.html' class='btn btn-secondary' style='font-size:0.8rem; padding:0.4rem 0.8rem;'>Docs & Schema</a><a href='https://apify.com/b2b-quant-apis/brazil-tax-reform-ncm-classtrib-auditor' target='_blank' rel='noopener' class='btn btn-apify' style='font-size:0.8rem; padding:0.4rem 0.8rem;'>Run on Apify</a></div></div>
+<div class='card'><div class='card-title'><a href='/docs/eu-vies-vat-tax-compliance-auditor.html'>EU VIES VAT Number Validator &amp; Reverse Charge Tax Auditor</a></div><div class='card-desc'>Validates European Union &amp; Northern Ireland (XI) corporate VAT numbers in real time via the official EU Commission VIES REST API and local regex check...</div><div style='display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:1rem;'><a href='/docs/eu-vies-vat-tax-compliance-auditor.html' class='btn btn-secondary' style='font-size:0.8rem; padding:0.4rem 0.8rem;'>Docs & Schema</a><a href='https://apify.com/b2b-quant-apis/eu-vies-vat-tax-compliance-auditor' target='_blank' rel='noopener' class='btn btn-apify' style='font-size:0.8rem; padding:0.4rem 0.8rem;'>Run on Apify</a></div></div>
+<div class='card'><div class='card-title'><a href='/docs/brazil-antt-freight-cte-auditor.html'>Brazil ANTT Minimum Freight Calculator &amp; CT-e XML Batch Auditor</a></div><div class='card-desc'>Calculates the mandatory Brazilian ANTT minimum road freight floor (Lei 13.703/2018 - CCD x km + CC) and audits CT-e 4.00 XML invoices in batch to pre...</div><div style='display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:1rem;'><a href='/docs/brazil-antt-freight-cte-auditor.html' class='btn btn-secondary' style='font-size:0.8rem; padding:0.4rem 0.8rem;'>Docs & Schema</a><a href='https://apify.com/b2b-quant-apis/brazil-antt-freight-cte-auditor' target='_blank' rel='noopener' class='btn btn-apify' style='font-size:0.8rem; padding:0.4rem 0.8rem;'>Run on Apify</a></div></div>
+<div class='card'><div class='card-title'><a href='/docs/brazil-cep-geocoordinates-logistics-auditor.html'>Brazil CEP Geocoordinates, IBGE Code &amp; Logistics Auditor</a></div><div class='card-desc'>Batch geocodes and validates Brazilian 8-digit postal codes (CEPs) via official Brazilian postal &amp; IBGE registries. Extracts Latitude/Longitude, 7-dig...</div><div style='display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:1rem;'><a href='/docs/brazil-cep-geocoordinates-logistics-auditor.html' class='btn btn-secondary' style='font-size:0.8rem; padding:0.4rem 0.8rem;'>Docs & Schema</a><a href='https://apify.com/b2b-quant-apis/brazil-cep-geocoordinates-logistics-auditor' target='_blank' rel='noopener' class='btn btn-apify' style='font-size:0.8rem; padding:0.4rem 0.8rem;'>Run on Apify</a></div></div>
+<div class='card'><div class='card-title'><a href='/docs/brazil-b2b-cnpj-qsa-lead-enricher.html'>Brazil B2B CNPJ, Partners (QSA) &amp; CNAE Lead Enricher</a></div><div class='card-desc'>Mathematical Modulo 11 validator and batch B2B company lead enricher for Brazilian CNPJs via Brazilian federal corporate registries. Extracts Razao So...</div><div style='display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:1rem;'><a href='/docs/brazil-b2b-cnpj-qsa-lead-enricher.html' class='btn btn-secondary' style='font-size:0.8rem; padding:0.4rem 0.8rem;'>Docs & Schema</a><a href='https://apify.com/b2b-quant-apis/brazil-b2b-cnpj-qsa-lead-enricher' target='_blank' rel='noopener' class='btn btn-apify' style='font-size:0.8rem; padding:0.4rem 0.8rem;'>Run on Apify</a></div></div>
+<div class='card'><div class='card-title'><a href='/docs/brazil-ibge-cnae-municipal-b2b-expansion-enricher.html'>Brazil IBGE CNAE 2.3 &amp; Municipal Code B2B Tax Enricher</a></div><div class='card-desc'>Enriches Brazilian CNAE 2.3 industry codes via official IBGE CONCLA APIs. Extracts permitted activities, tax exclusions, hierarchy (Section/Division/C...</div><div style='display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:1rem;'><a href='/docs/brazil-ibge-cnae-municipal-b2b-expansion-enricher.html' class='btn btn-secondary' style='font-size:0.8rem; padding:0.4rem 0.8rem;'>Docs & Schema</a><a href='https://apify.com/b2b-quant-apis/brazil-ibge-cnae-municipal-b2b-expansion-enricher' target='_blank' rel='noopener' class='btn btn-apify' style='font-size:0.8rem; padding:0.4rem 0.8rem;'>Run on Apify</a></div></div>
+<div class='card'><div class='card-title'><a href='/docs/us-nhtsa-vehicle-vin-recall-auditor.html'>US NHTSA Vehicle VIN Decoder &amp; Safety Recall Auditor</a></div><div class='card-desc'>Batch decode 17-character and partial Vehicle Identification Numbers (VINs), extract official technical specifications, and audit active safety recall...</div><div style='display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:1rem;'><a href='/docs/us-nhtsa-vehicle-vin-recall-auditor.html' class='btn btn-secondary' style='font-size:0.8rem; padding:0.4rem 0.8rem;'>Docs & Schema</a><a href='https://apify.com/b2b-quant-apis/us-nhtsa-vehicle-vin-recall-auditor' target='_blank' rel='noopener' class='btn btn-apify' style='font-size:0.8rem; padding:0.4rem 0.8rem;'>Run on Apify</a></div></div>
+<div class='card'><div class='card-title'><a href='/docs/us-census-fcc-real-estate-geo-enricher.html'>US Real Estate Census Tract, FIPS &amp; PropTech Geo Enricher</a></div><div class='card-desc'>Enriches U.S. commercial and residential real estate coordinates via official FCC &amp; U.S. Census Bureau APIs (Zero-Key). Extracts 15-digit Block FIPS, ...</div><div style='display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:1rem;'><a href='/docs/us-census-fcc-real-estate-geo-enricher.html' class='btn btn-secondary' style='font-size:0.8rem; padding:0.4rem 0.8rem;'>Docs & Schema</a><a href='https://apify.com/b2b-quant-apis/us-census-fcc-real-estate-geo-enricher' target='_blank' rel='noopener' class='btn btn-apify' style='font-size:0.8rem; padding:0.4rem 0.8rem;'>Run on Apify</a></div></div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div>
+        <div style="font-weight:700; color:var(--text-primary); margin-bottom:0.5rem;">B2B Quant Compliance Hub</div>
+        <div>High-throughput, SLA-backed regulatory and quant compliance microservices.</div>
+      </div>
+      <div>
+        <a href="/docs/index.html">Documentation Hub</a> &bull; <a href="/sitemap.xml">sitemap.xml</a> &bull; <a href="/llms.txt">llms.txt</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

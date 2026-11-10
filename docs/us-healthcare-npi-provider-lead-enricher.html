@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API) — B2B API, MCP Server & Compliance Audit</title>
+  <meta name="description" content="B2B healthcare lead extractor and enricher for US doctors, dentists, clinics, and hospitals using the official CMS NPPES NPI Registry API v2.1. Extracts NPI-1 a">
+  <link rel="canonical" href="https://jesleytassili-glitch.github.io/docs/us-healthcare-npi-provider-lead-enricher.html">
+  <link rel="alternate" type="text/markdown" href="https://jesleytassili-glitch.github.io/docs/us-healthcare-npi-provider-lead-enricher.md" title="Markdown GEO/RAG Guide">
+  <link rel="alternate" type="application/json" href="https://jesleytassili-glitch.github.io/specs_openapi_31/us-healthcare-npi-provider-lead-enricher.json" title="OpenAPI 3.0.3 Specification">
+
+  <!-- OpenGraph Metadata -->
+  <meta property="og:title" content="US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API) — B2B API & MCP Server">
+  <meta property="og:description" content="B2B healthcare lead extractor and enricher for US doctors, dentists, clinics, and hospitals using the official CMS NPPES NPI Registry API v2.1. Extracts NPI-1 and NPI-2 records, practice addresses, ph">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://jesleytassili-glitch.github.io/docs/us-healthcare-npi-provider-lead-enricher.html">
+  <meta property="og:site_name" content="B2B Quant & Regulatory Compliance Suite">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API)">
+  <meta name="twitter:description" content="B2B healthcare lead extractor and enricher for US doctors, dentists, clinics, and hospitals using the official CMS NPPES NPI Registry API v2.1. Extracts NPI-1 and NPI-2 records, pr">
+
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "TechArticle", "@id": "https://jesleytassili-glitch.github.io/docs/us-healthcare-npi-provider-lead-enricher.html#techarticle", "headline": "US Healthcare NPI Doctor & Clinic Lead Enricher (CMS API)", "description": "B2B healthcare lead extractor and enricher for US doctors, dentists, clinics, and hospitals using the official CMS NPPES NPI Registry API v2.1. Extracts NPI-1 and NPI-2 records, practice addresses, phone numbers, primary taxonomy, state licenses, and", "url": "https://jesleytassili-glitch.github.io/docs/us-healthcare-npi-provider-lead-enricher.html", "inLanguage": "en-US", "author": {"@type": "Organization", "name": "B2B Quant & Regulatory Compliance Suite", "url": "https://jesleytassili-glitch.github.io"}, "publisher": {"@type": "Organization", "name": "B2B Quant APIs", "url": "https://jesleytassili-glitch.github.io"}, "datePublished": "2026-01-15T00:00:00Z", "dateModified": "2026-03-30T00:00:00Z"}, {"@type": "SoftwareApplication", "@id": "https://jesleytassili-glitch.github.io/docs/us-healthcare-npi-provider-lead-enricher.html#softwareapplication", "name": "US Healthcare NPI Doctor & Clinic Lead Enricher (CMS API)", "applicationCategory": "DeveloperApplication", "operatingSystem": "Cloud, Linux, macOS, Windows", "offers": {"@type": "AggregateOffer", "priceCurrency": "USD", "lowPrice": "0.00", "highPrice": "149.00", "offerCount": 4, "offers": [{"@type": "Offer", "name": "us-healthcare-npi-provider-lead-enricher BASIC Free Tier", "price": "0.00", "priceCurrency": "USD", "description": "15 live statutory calls per month for US Healthcare NPI Doctor & Clinic Lead Enricher (CMS API)"}, {"@type": "Offer", "name": "us-healthcare-npi-provider-lead-enricher PRO Developer Tier", "price": "19.00", "priceCurrency": "USD", "description": "1,000 monthly audit executions for US Healthcare NPI Doctor & Clinic Lead Enricher (CMS API)"}, {"@type": "Offer", "name": "us-healthcare-npi-provider-lead-enricher ULTRA Production Tier", "price": "49.00", "priceCurrency": "USD", "description": "5,000 monthly transactions for US Healthcare NPI Doctor & Clinic Lead Enricher (CMS API) with 99.9% SLA"}, {"@type": "Offer", "name": "us-healthcare-npi-provider-lead-enricher MEGA Enterprise Tier", "price": "149.00", "priceCurrency": "USD", "description": "25,000 high-throughput queries for US Healthcare NPI Doctor & Clinic Lead Enricher (CMS API)"}]}}, {"@type": "FAQPage", "@id": "https://jesleytassili-glitch.github.io/docs/us-healthcare-npi-provider-lead-enricher.html#faqpage", "mainEntity": [{"@type": "Question", "name": "What statutory registries and official data sources are integrated into US Healthcare NPI Doctor & Clinic Lead Enricher (CMS API)?", "acceptedAnswer": {"@type": "Answer", "text": "The US Healthcare NPI Doctor & Clinic Lead Enricher (CMS API) microservice integrates directly with primary statutory sources. Specifically: B2B healthcare lead extractor and enricher for US doctors, dentists, clinics, and hospitals using the official CMS NPPES NPI Registry API v2.1. Extracts NPI-1 and NPI-2 records, practice addresses, phone numbers, primary taxonomy, state licenses, and AI-ready lead dossiers.\n\n### Enterprise B2B Value Proposition (US Healthcare NPI Doctor & Clinic Le. All queries return authentic, cryptographic-ready audit envelopes containing verified fields such as `npiNumber`, `providerType`, `fullNameOrOrgName`, `primarySpecialty`, `LicenseNumber`, `city`."}}, {"@type": "Question", "name": "What are the precise input parameters and validation rules for `us-healthcare-npi-provider-lead-enricher`?", "acceptedAnswer": {"@type": "Answer", "text": "For `us-healthcare-npi-provider-lead-enricher`, mandatory execution parameters are: No mandatory parameters (nationwide or default scan enabled). Optional tuning and filtering parameters include: `state`, `city`, `taxonomyDescription`, `enumerationType`, `postalCode`. Inputs are strictly parsed against OpenAPI 3.0.3 and JSON Schema specifications prior to statutory dispatch."}}, {"@type": "Question", "name": "How does the `us-healthcare-npi-provider-lead-enricher` API handle HTTP SLA status codes (200, 401, 429, 502)?", "acceptedAnswer": {"@type": "Answer", "text": "The `us-healthcare-npi-provider-lead-enricher` service provides a 99.9% uptime SLA: HTTP 200 delivers verified audit structures; HTTP 400 denotes payload validation errors; HTTP 401/403 protects proxy authentication boundaries; HTTP 429 signals rate limits with standard `Retry-After` headers; and HTTP 502 triggers upstream resilience, returning an empty dataset with zero charges applied ($0 billed)."}}, {"@type": "Question", "name": "How does monthly subscription on RapidAPI or Zyla Hub compare to Apify Pay-Per-Event for `us-healthcare-npi-provider-lead-enricher`?", "acceptedAnswer": {"@type": "Answer", "text": "Subscribing to `us-healthcare-npi-provider-lead-enricher` on RapidAPI or Zyla API Hub provides predictable developer tiers ($0 Free, $19 Pro, $49 Ultra, $149 Mega) with fixed monthly quotas and low-latency API proxy keys. The Apify Store deployment provides elastic Pay-Per-Event execution without commitments, ideal for scheduled batch pipelines."}}]}]}
+  </script>
+
+  <style>
+
+:root{--b:#0a0e17;--c:#111827;--h:#1f2937;--l:#374151;--t:#f9fafb;--m:#9ca3af;--p:#10b981;--y:#06b6d4;--r:#0055ff;--a:#ff7a00;--f:ui-monospace,Consolas,monospace;--s:system-ui,-apple-system,sans-serif;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--b);color:var(--t);font-family:var(--s);line-height:1.6;}
+a{color:var(--y);text-decoration:none;}
+a:hover{text-decoration:underline;}
+header,.site-header{position:sticky;top:0;z-index:99;background:#0a0e17ee;backdrop-filter:blur(8px);border-bottom:1px solid var(--l);padding:.75rem 1.5rem;display:flex;justify-content:space-between;align-items:center;}
+.brand,.header-brand{font-weight:700;color:var(--t);display:flex;align-items:center;gap:.5rem;}
+.dot{width:8px;height:8px;background:var(--p);border-radius:50%;display:inline-block;}
+nav,.nav-links{display:flex;gap:1rem;font-size:.875rem;}
+nav a,.nav-links a{color:var(--m);}
+.container{max-width:1180px;margin:0 auto;padding:2rem 1.5rem;}
+.hero,.bluf-section{background:linear-gradient(180deg,#131c2e,var(--c));border:1px solid var(--l);border-radius:12px;padding:2rem;margin-bottom:2rem;}
+.tag,.badge{display:inline-block;padding:.2rem .6rem;font-size:.75rem;font-weight:600;border-radius:99px;background:#10b98122;color:var(--p);border:1px solid #10b98144;margin-bottom:.75rem;}
+.tag-sla,.badge-sla{background:#06b6d422;color:var(--y);border-color:#06b6d444;}
+h1{font-size:2rem;font-weight:800;margin-bottom:.75rem;line-height:1.25;}
+.lead{font-size:1.05rem;color:var(--m);margin-bottom:1.5rem;}
+.cta-bar,.tri-rail-cta{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid var(--l);}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:.7rem 1.2rem;font-weight:600;font-size:.9rem;border-radius:8px;text-decoration:none;cursor:pointer;}
+.btn-rapid{background:var(--r);color:#fff;}
+.btn-rapid:hover{background:#0044cc;text-decoration:none;}
+.btn-zyla{background:var(--p);color:#0a0e17;}
+.btn-zyla:hover{background:#059669;color:#fff;text-decoration:none;}
+.btn-apify{background:var(--a);color:#fff;}
+.btn-apify:hover{background:#d96200;text-decoration:none;}
+.btn-sub,.btn-secondary{background:var(--h);color:var(--t);border:1px solid var(--l);}
+.card-sec,.section-block{background:var(--c);border:1px solid var(--l);border-radius:12px;padding:1.75rem;margin-bottom:2rem;}
+.field-card{border-left:3px solid var(--l);padding:.5rem .85rem;margin-bottom:.5rem;background:#ffffff05;}
+h2{font-size:1.35rem;font-weight:700;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem;}
+h3{font-size:1.1rem;font-weight:600;margin:1.25rem 0 .5rem 0;}
+table{width:100%;border-collapse:collapse;margin:.75rem 0;font-size:.875rem;}
+th,td{padding:.65rem .85rem;text-align:left;border-bottom:1px solid var(--l);}
+th{background:#0f172a;color:var(--t);}
+code{font-family:var(--f);font-size:.85em;background:#ffffff15;padding:.2rem .4rem;border-radius:4px;color:#38bdf8;}
+pre{background:#0d1117;border:1px solid var(--l);border-radius:8px;padding:1rem;overflow-x:auto;font-family:var(--f);font-size:.825rem;color:#e6edf3;line-height:1.45;margin:.75rem 0;}
+pre code{background:none;padding:0;color:inherit;}
+.faq-box,.faq-card{border-bottom:1px solid var(--l);padding:1rem 0;}
+.faq-box:last-child,.faq-card:last-child{border-bottom:none;}
+.faq-q,.faq-question{font-weight:600;font-size:1rem;margin-bottom:.35rem;color:var(--t);}
+.faq-a,.faq-answer{color:var(--m);font-size:.9rem;line-height:1.6;}
+.grid-cards,.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;}
+.card,.c-item{background:var(--c);border:1px solid var(--l);border-radius:8px;padding:1.25rem;}
+.card-title{font-size:1.05rem;font-weight:700;margin-bottom:.35rem;}
+.card-desc{font-size:.85rem;color:var(--m);margin-bottom:.75rem;}
+footer{border-top:1px solid var(--l);padding:2rem 1.5rem;background:#080c14;color:#6b7280;font-size:.85rem;margin-top:3rem;}
+@media(max-width:768px){.cta-bar,.tri-rail-cta{flex-direction:column;align-items:stretch;}.btn{width:100%;}h1{font-size:1.6rem;}}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <span class="dot"></span>
+      <a href="/docs/index.html" style="color:inherit; text-decoration:none;">B2B Quant Compliance Suite</a>
+    </div>
+    <nav>
+      <a href="/docs/index.html">All 31 APIs</a>
+      <a href="/docs/category-healthcare-fda-biotech.html">Healthcare, FDA Life Sciences &amp; Clinical Trials</a>
+      <a href="https://jesleytassili-glitch.github.io/docs/us-healthcare-npi-provider-lead-enricher.md">Markdown (RAG)</a>
+      <a href="https://jesleytassili-glitch.github.io/specs_openapi_31/us-healthcare-npi-provider-lead-enricher.json">OpenAPI JSON</a>
+      <a href="/apis.json">apis.json</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Top BLUF Section -->
+    <section class="hero">
+      <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+        <span class="tag">Healthcare, FDA Life Sciences &amp; Clinical Trials</span>
+        <span class="tag tag-sla">99.9% Uptime SLA</span>
+        <span class="tag" style="background:rgba(255,255,255,0.08); color:#e2e8f0; border-color:#4b5563;">Version v4.8</span>
+      </div>
+      <h1>US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API)</h1>
+      <p class="lead">B2B healthcare lead extractor and enricher for US doctors, dentists, clinics, and hospitals using the official CMS NPPES NPI Registry API v2.1. Extracts NPI-1 and NPI-2 records, practice addresses, phone numbers, primary taxonomy, state licenses, and AI-ready lead dossiers.
+
+### Enterprise B2B Value Proposition (US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API))
+- **Target B2B Buyers:** MedTech Sales Teams, Healthcare CRMs, Credentialing Platforms, and Digital Health Directories.
+- **Zero External API Keys Required:** Connects directly to authoritative government, regulatory, and financial primary registries with built-in retry/backoff and deterministic schema normalization.
+- **Quantitative Scoring &amp; RAG Briefs:** Every record is enriched with a quantitative 0-100 risk/viability score and an LLM-ready Markdown executive brief (`US NPI Healthcare Provider Lead Enriched`).
+- **Backend Proxy Secret Injection:** RapidAPI Studio and Zyla API Hub inject `Authorization: Bearer &lt;TOKEN_REDACTED&gt;` invisibly at the proxy layer when forwarding synchronous calls to `https://api.apify.com/v2/acts/b2b-quant-apis~us-healthcare-npi-provider-lead-enricher/run-sync-get-dataset-items`.
+- **Marketplace Categories:** RapidAPI `Medical` | Zyla API Hub `Healthcare`.
+- **Subscription Tiers (USD):** `BASIC` ($0.00/mo, 15 req/mo hard cap), `PRO` ($19.00/mo, 1,000 req/mo + $0.02/extra), `ULTRA` ($49.00/mo, 5,000 req/mo + $0.015/extra), `MEGA` ($149.00/mo, 25,000 req/mo + $0.010/extra).
+- **SEO Keywords:** npi-registry, nppes-cms, healthcare-leads, medical-providers, doctor-lookup, hipaa-kyb, pharma-crm.</p>
+
+      <!-- Sticky CTA Tri-Rail -->
+      <div class="cta-bar">
+
+        <a href="https://zylalabs.com/api-marketplace/health+%26+fitness/us+healthcare+npi+provider+lead+enricher+api/14661" target="_blank" rel="noopener" class="btn btn-zyla">Start 7-Day Free Trial on Zyla API Hub ($24.99–$99.99/mo)</a>
+        <a href="https://apify.com/b2b-quant-apis/us-healthcare-npi-provider-lead-enricher" target="_blank" rel="noopener" class="btn btn-apify">Run Bulk Batch on Apify Store (Pay-Per-Event)</a>
+        <a href="https://rapidapi.com/user/b2bquantapis" target="_blank" rel="noopener" class="btn btn-secondary">View All 20 Public APIs on RapidAPI (@b2bquantapis)</a>
+        <span class="cta-note">Enterprise Grade &bull; 0-Hop Execution</span>
+        
+      </div>
+    </section>
+
+    <!-- Domain Architecture & Compliance Rules -->
+    <section class="card-sec">
+      <h2><span>&bull;</span> Technical Architecture & Statutory Audit Rules</h2>
+      <p style="color:var(--text-secondary); margin-bottom:1rem; font-size:1rem; line-height:1.7;">
+        B2B healthcare lead extractor and enricher for US doctors, dentists, clinics, and hospitals using the official CMS NPPES NPI Registry API v2.1. Extracts NPI-1 and NPI-2 records, practice addresses, phone numbers, primary taxonomy, state licenses, and AI-ready lead dossiers.
+
+### Enterprise B2B Value Proposition (US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API))
+- **Target B2B Buyers:** MedTech Sales Teams, Healthcare CRMs, Credentialing Platforms, and Digital Health Directories.
+- **Zero External API Keys Required:** Connects directly to authoritative government, regulatory, and financial primary registries with built-in retry/backoff and deterministic schema normalization.
+- **Quantitative Scoring &amp; RAG Briefs:** Every record is enriched with a quantitative 0-100 risk/viability score and an LLM-ready Markdown executive brief (`US NPI Healthcare Provider Lead Enriched`).
+- **Backend Proxy Secret Injection:** RapidAPI Studio and Zyla API Hub inject `Authorization: Bearer &lt;TOKEN_REDACTED&gt;` invisibly at the proxy layer when forwarding synchronous calls to `https://api.apify.com/v2/acts/b2b-quant-apis~us-healthcare-npi-provider-lead-enricher/run-sync-get-dataset-items`.
+- **Marketplace Categories:** RapidAPI `Medical` | Zyla API Hub `Healthcare`.
+- **Subscription Tiers (USD):** `BASIC` ($0.00/mo, 15 req/mo hard cap), `PRO` ($19.00/mo, 1,000 req/mo + $0.02/extra), `ULTRA` ($49.00/mo, 5,000 req/mo + $0.015/extra), `MEGA` ($149.00/mo, 25,000 req/mo + $0.010/extra).
+- **SEO Keywords:** npi-registry, nppes-cms, healthcare-leads, medical-providers, doctor-lookup, hipaa-kyb, pharma-crm.
+      </p>
+      <div style="background:rgba(255,255,255,0.02); border-left:4px solid var(--brand-primary); padding:1rem 1.25rem; border-radius:0 8px 8px 0; margin-top:1rem;">
+        <strong style="color:var(--text-primary); font-size:0.95rem;">Cryptographic Provenance & Compliance Invariants:</strong>
+        <p style="color:var(--text-secondary); font-size:0.9rem; margin-top:0.35rem;">
+          Every transaction executed by <code>us-healthcare-npi-provider-lead-enricher</code> produces verifiable event envelopes designed for high-stakes regulatory auditing, ERP master data synchronization, and automated continuous compliance workflows.
+        </p>
+      </div>
+    </section>
+
+    <!-- Field-by-Field Schema Inspection -->
+    <section class="card-sec">
+      <h2><span>&bull;</span> Statutory Schema Deep-Dive & Attribute Analysis</h2>
+      <p style="color:var(--text-secondary); margin-bottom:1.25rem; font-size:0.95rem;">
+        Detailed specification of data contracts, domain types, and primary source semantics enforced by <code>us-healthcare-npi-provider-lead-enricher</code>:
+      </p>
+<div class='field-card'><strong>Input Query Parameter: <code>state</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span> &bull; <span style='color:var(--p); font-size:0.8rem;'>Optional</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>Two-letter US State code (e.g., FL, NY, CA, TX).</p></div>
+<div class='field-card'><strong>Input Query Parameter: <code>city</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span> &bull; <span style='color:var(--p); font-size:0.8rem;'>Optional</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>Optional city filter (e.g., Miami, Orlando, Los Angeles).</p></div>
+<div class='field-card'><strong>Input Query Parameter: <code>taxonomyDescription</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span> &bull; <span style='color:var(--p); font-size:0.8rem;'>Optional</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>Specialty/Taxonomy e.g. Dentist, Dermatology, Internal Medicine, Physical Therapist.</p></div>
+<div class='field-card'><strong>Input Query Parameter: <code>enumerationType</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span> &bull; <span style='color:var(--p); font-size:0.8rem;'>Optional</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>Filter by Individual Providers (NPI-1), Organizations/Clinics (NPI-2), or All.</p></div>
+<div class='field-card'><strong>Input Query Parameter: <code>postalCode</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span> &bull; <span style='color:var(--p); font-size:0.8rem;'>Optional</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>Optional US ZIP code prefix (e.g., 331, 33131).</p></div>
+<div class='field-card'><strong>Input Query Parameter: <code>maxResults</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(integer)</span> &bull; <span style='color:var(--p); font-size:0.8rem;'>Optional</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>Maximum number of healthcare provider leads to extract and enrich (1 to 200).</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>npiNumber</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>NPI Number</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>providerType</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>Provider Type</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>fullNameOrOrgName</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>Full Name / Organization</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>primarySpecialty</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>Primary Specialty</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>LicenseNumber</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>State License Number</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>city</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>City</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>state</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>State</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>phone</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>Direct Phone</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>addressLine</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>Practice Address</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>leadQualityScore</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(integer)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>Lead Quality Score (0-100)</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>markdownLeadCard</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>Markdown Lead Dossier</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>enumerationType</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>enumerationType returned by US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API).</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>credential</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>credential returned by US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API).</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>taxonomyCode</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>taxonomyCode returned by US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API).</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>licenseNumber</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>licenseNumber returned by US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API).</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>licenseState</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>licenseState returned by US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API).</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>postalCode</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>postalCode returned by US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API).</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>fax</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>fax returned by US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API).</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>authorizedOfficial</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>authorizedOfficial returned by US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API).</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>status</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>status returned by US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API).</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>lastUpdated</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>lastUpdated returned by US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API).</p></div>
+<div class='field-card' style='border-left-color:var(--p);'><strong>Verified Response Field: <code>extractedAt</code></strong> <span style='color:var(--y); font-size:0.8rem;'>(string)</span><p style='color:var(--m); font-size:0.875rem; margin-top:0.25rem;'>extractedAt returned by US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API).</p></div>
+    </section>
+
+    <!-- Real Input Schema Table -->
+    <section class="card-sec">
+      <h2><span>&bull;</span> Input Schema Parameters (HTTP POST Request Body)</h2>
+      <p style="color:var(--text-secondary); margin-bottom:1rem; font-size:0.95rem;">
+        Stateless payload attributes validated by JSON Schema and OpenAPI 3.0.3 standards for <code>us-healthcare-npi-provider-lead-enricher</code>.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Field</th>
+            <th>Type</th>
+            <th>Requirement</th>
+            <th>Description & Audit Rules</th>
+          </tr>
+        </thead>
+        <tbody>
+<tr><td><code>state</code></td><td><code>string</code></td><td><span style='color:#9ca3af;'>Optional</span></td><td>Two-letter US State code (e.g., FL, NY, CA, TX).</td></tr>
+<tr><td><code>city</code></td><td><code>string</code></td><td><span style='color:#9ca3af;'>Optional</span></td><td>Optional city filter (e.g., Miami, Orlando, Los Angeles).</td></tr>
+<tr><td><code>taxonomyDescription</code></td><td><code>string</code></td><td><span style='color:#9ca3af;'>Optional</span></td><td>Specialty/Taxonomy e.g. Dentist, Dermatology, Internal Medicine, Physical Therapist.</td></tr>
+<tr><td><code>enumerationType</code></td><td><code>string</code></td><td><span style='color:#9ca3af;'>Optional</span></td><td>Filter by Individual Providers (NPI-1), Organizations/Clinics (NPI-2), or All.</td></tr>
+<tr><td><code>postalCode</code></td><td><code>string</code></td><td><span style='color:#9ca3af;'>Optional</span></td><td>Optional US ZIP code prefix (e.g., 331, 33131).</td></tr>
+<tr><td><code>maxResults</code></td><td><code>integer</code></td><td><span style='color:#9ca3af;'>Optional</span></td><td>Maximum number of healthcare provider leads to extract and enrich (1 to 200).</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Real Output Fields Table -->
+    <section class="card-sec">
+      <h2><span>&bull;</span> Verified Response Envelope Attributes</h2>
+      <p style="color:var(--text-secondary); margin-bottom:1rem; font-size:0.95rem;">
+        Primary attributes returned in the audit response envelope with cryptographic audit metadata for <code>us-healthcare-npi-provider-lead-enricher</code>.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Attribute</th>
+            <th>Type</th>
+            <th>Definition & Source Verifiability</th>
+          </tr>
+        </thead>
+        <tbody>
+<tr><td><code>npiNumber</code></td><td><code>string</code></td><td>NPI Number</td></tr>
+<tr><td><code>providerType</code></td><td><code>string</code></td><td>Provider Type</td></tr>
+<tr><td><code>fullNameOrOrgName</code></td><td><code>string</code></td><td>Full Name / Organization</td></tr>
+<tr><td><code>primarySpecialty</code></td><td><code>string</code></td><td>Primary Specialty</td></tr>
+<tr><td><code>LicenseNumber</code></td><td><code>string</code></td><td>State License Number</td></tr>
+<tr><td><code>city</code></td><td><code>string</code></td><td>City</td></tr>
+<tr><td><code>state</code></td><td><code>string</code></td><td>State</td></tr>
+<tr><td><code>phone</code></td><td><code>string</code></td><td>Direct Phone</td></tr>
+<tr><td><code>addressLine</code></td><td><code>string</code></td><td>Practice Address</td></tr>
+<tr><td><code>leadQualityScore</code></td><td><code>integer</code></td><td>Lead Quality Score (0-100)</td></tr>
+<tr><td><code>markdownLeadCard</code></td><td><code>string</code></td><td>Markdown Lead Dossier</td></tr>
+<tr><td><code>enumerationType</code></td><td><code>string</code></td><td>enumerationType returned by US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API).</td></tr>
+<tr><td><code>credential</code></td><td><code>string</code></td><td>credential returned by US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API).</td></tr>
+<tr><td><code>taxonomyCode</code></td><td><code>string</code></td><td>taxonomyCode returned by US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API).</td></tr>
+<tr><td><code>licenseNumber</code></td><td><code>string</code></td><td>licenseNumber returned by US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API).</td></tr>
+<tr><td><code>licenseState</code></td><td><code>string</code></td><td>licenseState returned by US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API).</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Authentic Verified JSON Payload Block -->
+    <section class="card-sec">
+      <h2><span>&bull;</span> Authentic Verified Response Payload</h2>
+      <p style="color:var(--text-secondary); margin-bottom:1rem; font-size:0.95rem;">
+        Direct extraction captured from primary government or corporate registry endpoints for <code>us-healthcare-npi-provider-lead-enricher</code>.
+      </p>
+      <pre><code>{
+  &quot;npiNumber&quot;: &quot;1104969039&quot;,
+  &quot;providerType&quot;: &quot;NPI-2 (Organization)&quot;,
+  &quot;enumerationType&quot;: &quot;NPI-2&quot;,
+  &quot;fullNameOrOrgName&quot;: &quot;183 DENTAL GROUP, PA&quot;,
+  &quot;credential&quot;: &quot;N/A&quot;,
+  &quot;primarySpecialty&quot;: &quot;Dentist, General Practice&quot;,
+  &quot;taxonomyCode&quot;: &quot;1223G0001X&quot;,
+  &quot;LicenseNumber&quot;: &quot;DN 12408&quot;,
+  &quot;licenseNumber&quot;: &quot;DN 12408&quot;,
+  &quot;licenseState&quot;: &quot;FL&quot;,
+  &quot;city&quot;: &quot;MIAMI&quot;,
+  &quot;state&quot;: &quot;FL&quot;,
+  &quot;postalCode&quot;: &quot;33169-4470&quot;,
+  &quot;phone&quot;: &quot;305-652-8338&quot;,
+  &quot;fax&quot;: &quot;305-653-5807&quot;,
+  &quot;addressLine&quot;: &quot;636 NW 183RD ST&quot;,
+  &quot;authorizedOfficial&quot;: &quot;TODD SMITH (dentist)&quot;,
+  &quot;status&quot;: &quot;Active&quot;,
+  &quot;lastUpdated&quot;: &quot;2008-06-13&quot;,
+  &quot;leadQualityScore&quot;: 100,
+  &quot;markdownLeadCard&quot;: &quot;### 183 DENTAL GROUP, PA (NPI: 1104969039)\n- **Type:** NPI-2 (Organization) | **Specialty:** Dentist, General Practice (`1223G0001X`)\n- **State License:** `DN 12408` (FL) | **Lead Score:** 100/100\n- **Practice Address:** 636 NW 183RD ST, MIAMI, FL 33169-4470\n- **Direct Phone:** 305-652-8338 | **Fax:** 305-653-5807&quot;,
+  &quot;extractedAt&quot;: &quot;2026-11-03T21:16:47.797009+00:00&quot;
+}</code></pre>
+    </section>
+
+    <!-- 4 Ready-to-Copy Integration Snippets -->
+    <section class="card-sec">
+      <h2><span>&bull;</span> Enterprise Integration Code Snippets</h2>
+
+      <h3>1. Python 3 (requests / b2b-compliance-sdk)</h3>
+      <pre><code>import requests
+
+url = &quot;https://jesleytassili-glitch.github.io/specs_openapi_31/us-healthcare-npi-provider-lead-enricher.json&quot; # Direct spec
+endpoint = &quot;https://api.apify.com/v2/acts/b2b-quant-apis~us-healthcare-npi-provider-lead-enricher/run-sync-get-dataset-items&quot;
+headers = {
+    &quot;Content-Type&quot;: &quot;application/json&quot;,
+    &quot;Authorization&quot;: &quot;Bearer YOUR_API_TOKEN&quot; # RapidAPI or Apify Token
+}
+payload = {
+  &quot;state&quot;: &quot;FL&quot;,
+  &quot;city&quot;: &quot;Miami&quot;,
+  &quot;taxonomyDescription&quot;: &quot;Dentist&quot;,
+  &quot;enumerationType&quot;: &quot;ALL&quot;,
+  &quot;postalCode&quot;: &quot;&quot;,
+  &quot;maxResults&quot;: 10
+}
+
+response = requests.post(endpoint, json=payload, headers=headers, timeout=60)
+print(f&quot;Status Code: {response.status_code}&quot;)
+data = response.json()
+print(&quot;Audit Records Count:&quot;, len(data) if isinstance(data, list) else 1)</code></pre>
+
+      <h3>2. Node.js & MCP CLI (npx -y b2b-compliance-mcp-cli)</h3>
+      <pre><code>// Node.js 18+ Native Fetch or MCP CLI
+import fetch from &quot;node-fetch&quot;;
+
+const payload = {
+  &quot;state&quot;: &quot;FL&quot;,
+  &quot;city&quot;: &quot;Miami&quot;,
+  &quot;taxonomyDescription&quot;: &quot;Dentist&quot;,
+  &quot;enumerationType&quot;: &quot;ALL&quot;,
+  &quot;postalCode&quot;: &quot;&quot;,
+  &quot;maxResults&quot;: 10
+};
+
+const response = await fetch(&quot;https://api.apify.com/v2/acts/b2b-quant-apis~us-healthcare-npi-provider-lead-enricher/run-sync-get-dataset-items&quot;, {
+  method: &quot;POST&quot;,
+  headers: {
+    &quot;Content-Type&quot;: &quot;application/json&quot;,
+    &quot;Authorization&quot;: &quot;Bearer &quot; + process.env.B2B_API_TOKEN
+  },
+  body: JSON.stringify(payload)
+});
+
+const result = await response.json();
+console.log(&quot;Verified Records:&quot;, result);
+
+// Or run directly via MCP CLI:
+// npx -y b2b-compliance-mcp-cli execute --server us-healthcare-npi-provider-lead-enricher --payload &#x27;{&quot;state&quot;: &quot;FL&quot;, &quot;city&quot;: &quot;Miami&quot;, &quot;taxonomyDescription&quot;: &quot;Dentist&quot;, &quot;enumerationType&quot;: &quot;ALL&quot;, &quot;postalCode&quot;: &quot;&quot;, &quot;maxResults&quot;: 10}&#x27;</code></pre>
+
+      <h3>3. cURL Stateless REST Call</h3>
+      <pre><code>curl -X POST &quot;https://api.apify.com/v2/acts/b2b-quant-apis~us-healthcare-npi-provider-lead-enricher/run-sync-get-dataset-items&quot; \
+  -H &quot;Content-Type: application/json&quot; \
+  -H &quot;Authorization: Bearer YOUR_API_TOKEN&quot; \
+  -d &#x27;{&quot;state&quot;: &quot;FL&quot;, &quot;city&quot;: &quot;Miami&quot;, &quot;taxonomyDescription&quot;: &quot;Dentist&quot;, &quot;enumerationType&quot;: &quot;ALL&quot;, &quot;postalCode&quot;: &quot;&quot;, &quot;maxResults&quot;: 10}&#x27;</code></pre>
+
+      <h3>4. GitHub Actions CI/CD & n8n Scheduled Cron</h3>
+      <pre><code>name: Daily Compliance Audit - us-healthcare-npi-provider-lead-enricher
+on:
+  schedule:
+    - cron: &#x27;0 8 * * 1-5&#x27; # Monday to Friday at 08:00 UTC
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Audit Run
+        run: |
+          curl -f -s -X POST &quot;https://api.apify.com/v2/acts/b2b-quant-apis~us-healthcare-npi-provider-lead-enricher/run-sync-get-dataset-items&quot; \
+            -H &quot;Content-Type: application/json&quot; \
+            -H &quot;Authorization: Bearer ${{ secrets.B2B_API_TOKEN }}&quot; \
+            -d &#x27;{&quot;state&quot;: &quot;FL&quot;, &quot;city&quot;: &quot;Miami&quot;, &quot;taxonomyDescription&quot;: &quot;Dentist&quot;, &quot;enumerationType&quot;: &quot;ALL&quot;, &quot;postalCode&quot;: &quot;&quot;, &quot;maxResults&quot;: 10}&#x27; &gt; audit_output.json
+      - name: Archive Compliance Evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: us-healthcare-npi-provider-lead-enricher-evidence
+          path: audit_output.json</code></pre>
+    </section>
+
+    <!-- SLA & Error Codes -->
+    <section class="card-sec">
+      <h2><span>&bull;</span> Enterprise SLA & Error Handling Codes for us-healthcare-npi-provider-lead-enricher</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>HTTP Status</th>
+            <th>Classification</th>
+            <th>Resolution Behavior for us-healthcare-npi-provider-lead-enricher</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>200 OK</code></td>
+            <td>Success</td>
+            <td>Query executed successfully; validated US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API) records returned.</td>
+          </tr>
+          <tr>
+            <td><code>400 Bad Request</code></td>
+            <td>Schema Validation</td>
+            <td>Payload missing required fields or format mismatch for us-healthcare-npi-provider-lead-enricher; inspect JSON schema.</td>
+          </tr>
+          <tr>
+            <td><code>401 / 403 Forbidden</code></td>
+            <td>Authentication Failure</td>
+            <td>Invalid proxy API key or direct unauthorized bypass attempt for US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API).</td>
+          </tr>
+          <tr>
+            <td><code>429 Too Many Requests</code></td>
+            <td>Rate Limit Exceeded</td>
+            <td>Tier limits triggered for us-healthcare-npi-provider-lead-enricher; inspect <code>Retry-After</code> response header.</td>
+          </tr>
+          <tr>
+            <td><code>502 Upstream Resilient</code></td>
+            <td>Graceful Degradation</td>
+            <td>Upstream regulatory portal offline; returns safe empty set with <strong>$0 billed fee</strong>.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Technical FAQs Section -->
+    <section class="card-sec">
+      <h2><span>&bull;</span> Frequently Asked Questions (Technical & Procurement)</h2>
+<div class='faq-box'><div class='faq-q'>What statutory registries and official data sources are integrated into US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API)?</div><div class='faq-a'>The US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API) microservice integrates directly with primary statutory sources. Specifically: B2B healthcare lead extractor and enricher for US doctors, dentists, clinics, and hospitals using the official CMS NPPES NPI Registry API v2.1. Extracts NPI-1 and NPI-2 records, practice addresses, phone numbers, primary taxonomy, state licenses, and AI-ready lead dossiers.
+
+### Enterprise B2B Value Proposition (US Healthcare NPI Doctor &amp; Clinic Le. All queries return authentic, cryptographic-ready audit envelopes containing verified fields such as `npiNumber`, `providerType`, `fullNameOrOrgName`, `primarySpecialty`, `LicenseNumber`, `city`.</div></div>
+<div class='faq-box'><div class='faq-q'>What are the precise input parameters and validation rules for `us-healthcare-npi-provider-lead-enricher`?</div><div class='faq-a'>For `us-healthcare-npi-provider-lead-enricher`, mandatory execution parameters are: No mandatory parameters (nationwide or default scan enabled). Optional tuning and filtering parameters include: `state`, `city`, `taxonomyDescription`, `enumerationType`, `postalCode`. Inputs are strictly parsed against OpenAPI 3.0.3 and JSON Schema specifications prior to statutory dispatch.</div></div>
+<div class='faq-box'><div class='faq-q'>How does the `us-healthcare-npi-provider-lead-enricher` API handle HTTP SLA status codes (200, 401, 429, 502)?</div><div class='faq-a'>The `us-healthcare-npi-provider-lead-enricher` service provides a 99.9% uptime SLA: HTTP 200 delivers verified audit structures; HTTP 400 denotes payload validation errors; HTTP 401/403 protects proxy authentication boundaries; HTTP 429 signals rate limits with standard `Retry-After` headers; and HTTP 502 triggers upstream resilience, returning an empty dataset with zero charges applied ($0 billed).</div></div>
+<div class='faq-box'><div class='faq-q'>How does monthly subscription on RapidAPI or Zyla Hub compare to Apify Pay-Per-Event for `us-healthcare-npi-provider-lead-enricher`?</div><div class='faq-a'>Subscribing to `us-healthcare-npi-provider-lead-enricher` on RapidAPI or Zyla API Hub provides predictable developer tiers ($0 Free, $19 Pro, $49 Ultra, $149 Mega) with fixed monthly quotas and low-latency API proxy keys. The Apify Store deployment provides elastic Pay-Per-Event execution without commitments, ideal for scheduled batch pipelines.</div></div>
+    </section>
+
+    <!-- Related Cluster APIs -->
+    <section class="card-sec">
+      <h2><span>&bull;</span> Related Engines in Healthcare, FDA Life Sciences &amp; Clinical Trials</h2>
+      <div style="margin-top:1rem;">
+<ul style='list-style-type:square; padding-left:1.5rem; line-height:1.9; color:var(--text-secondary);'><li><a href='/docs/healthcare-tiss-xml-validator.html'><strong>Brazil Healthcare TISS 4.03.00 XML Validator &amp; Hash Fixer</strong></a> <span style='color:var(--text-muted); font-size:0.85rem;'>(<code>healthcare-tiss-xml-validator</code>)</span> &bull; <a href='/docs/healthcare-tiss-xml-validator.md' style='font-size:0.85rem;'>[Markdown Guide]</a></li>
+<li><a href='/docs/us-clinical-trials-biotech-radar.html'><strong>US ClinicalTrials.gov Biotech &amp; Pharma Study Radar</strong></a> <span style='color:var(--text-muted); font-size:0.85rem;'>(<code>us-clinical-trials-biotech-radar</code>)</span> &bull; <a href='/docs/us-clinical-trials-biotech-radar.md' style='font-size:0.85rem;'>[Markdown Guide]</a></li>
+<li><a href='/docs/us-fda-recalls-safety-monitor.html'><strong>US FDA Recalls &amp; Safety Monitor (Food, Drug &amp; Devices)</strong></a> <span style='color:var(--text-muted); font-size:0.85rem;'>(<code>us-fda-recalls-safety-monitor</code>)</span> &bull; <a href='/docs/us-fda-recalls-safety-monitor.md' style='font-size:0.85rem;'>[Markdown Guide]</a></li></ul>
+      </div>
+      <div style="margin-top:1.5rem;">
+        <a href="/docs/category-healthcare-fda-biotech.html" class="btn btn-sub">Explore all engines in Healthcare, FDA Life Sciences &amp; Clinical Trials &rarr;</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div style="max-width:1180px; margin:0 auto; display:flex; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+      <div>
+        <strong style="color:var(--text-primary);">US Healthcare NPI Doctor &amp; Clinic Lead Enricher (CMS API)</strong> &bull; B2B Quant Compliance Suite
+      </div>
+      <div>
+        <a href="/apis.json">apis.json</a> &bull; <a href="/openapi.json">OpenAPI</a> &bull; <a href="/sitemap.xml">sitemap.xml</a> &bull; <a href="/llms.txt">llms.txt</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
