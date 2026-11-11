@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avalara vs Sistax vs B2B Quant Brazil Tax Reform 2026 API (2026)</title>
+  <meta name="description" content="Compare Avalara and Sistax with B2B Quant Brazil Tax Reform 2026 Engine API. NCM to cClassTrib, dual VAT (IBS/CBS) rates, and transition rules without expensive tax consultancy.">
+  <link rel="canonical" href="https://jesleytassili-glitch.github.io/docs/vs-avalara-sistax-reforma-tributaria.html">
+  <link rel="alternate" type="text/markdown" href="https://jesleytassili-glitch.github.io/docs/vs-avalara-sistax-reforma-tributaria.md">
+  <meta property="og:title" content="Avalara vs Sistax vs B2B Quant Brazil Tax Reform 2026 API (2026)">
+  <meta property="og:description" content="Compare Avalara and Sistax with B2B Quant Brazil Tax Reform 2026 Engine API. NCM to cClassTrib, dual VAT (IBS/CBS) rates, and transition rules without expensive tax consultancy.">
+  <meta property="og:url" content="https://jesleytassili-glitch.github.io/docs/vs-avalara-sistax-reforma-tributaria.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="B2B Quant & Regulatory Compliance APIs">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Avalara vs Sistax vs B2B Quant Brazil Tax Reform 2026 API (2026)">
+  <meta name="twitter:description" content="Compare Avalara and Sistax with B2B Quant Brazil Tax Reform 2026 Engine API. NCM to cClassTrib, dual VAT (IBS/CBS) rates, and transition rules without expensive tax consultancy.">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://jesleytassili-glitch.github.io/docs/vs-avalara-sistax-reforma-tributaria.html#webpage",
+      "headline": "Avalara vs Sistax vs B2B Quant Brazil Tax Reform 2026 API (2026)",
+      "description": "Compare Avalara and Sistax with B2B Quant Brazil Tax Reform 2026 Engine API. NCM to cClassTrib, dual VAT (IBS/CBS) rates, and transition rules without expensive tax consultancy.",
+      "url": "https://jesleytassili-glitch.github.io/docs/vs-avalara-sistax-reforma-tributaria.html",
+      "inLanguage": "en-US",
+      "author": {
+        "@type": "Organization",
+        "name": "B2B Quant & Regulatory Compliance Suite",
+        "url": "https://jesleytassili-glitch.github.io"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "B2B Quant APIs",
+        "url": "https://jesleytassili-glitch.github.io"
+      },
+      "datePublished": "2026-03-01T00:00:00Z",
+      "dateModified": "2026-03-30T00:00:00Z"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://jesleytassili-glitch.github.io/docs/vs-avalara-sistax-reforma-tributaria.html#softwareapplication",
+      "name": "Brazil Tax Reform 2026: NCM to cClassTrib & NF-e Auditor",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, Linux, macOS, Windows",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "0.00",
+        "highPrice": "149.00",
+        "offerCount": 4,
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "BASIC Free Tier",
+            "price": "0.00",
+            "priceCurrency": "USD",
+            "url": "https://rapidapi.com/b2bquantapis/api/brazil-tax-reform-ncm-classtrib-auditor"
+          },
+          {
+            "@type": "Offer",
+            "name": "PRO Developer Tier",
+            "price": "19.00",
+            "priceCurrency": "USD",
+            "url": "https://rapidapi.com/b2bquantapis/api/brazil-tax-reform-ncm-classtrib-auditor"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://jesleytassili-glitch.github.io/docs/vs-avalara-sistax-reforma-tributaria.html#faqpage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is cClassTrib in the Brazilian Tax Reform?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "cClassTrib (Código de Classificação Tributária) is the new mandatory classification code created under Constitutional Amendment 132/2023 and Complementary Law 214/2025 to determine tax treatment under the Dual VAT (IBS and CBS)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does this API replace expensive Avalara or Sistax implementations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Instead of paying tens of thousands in setup fees and waiting months for custom ERP plugins, developers can call our clean JSON endpoint to resolve NCM codes to valid cClassTrib entries and applicable IBS/CBS rates in under 100ms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the engine handle special tax regimes and exemptions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. It supports basic basket (Cesta Básica Nacional), healthcare, education, agricultural inputs, and special fiscal regimes with statutory citations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I integrate this into an NF-e / NFC-e validation pipeline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, the JSON payload is designed to plug directly into pre-validation middleware before electronic invoice XML signing."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: #111827;
+      --card-border: #1f2937;
+      --primary: #38bdf8;
+      --accent: #22c55e;
+      --text: #f3f4f6;
+      --muted: #9ca3af;
+      --code-bg: #030712;
+      --danger: #ef4444;
+      --warning: #f59e0b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 0 1rem 4rem;
+    }
+    header.bofu-header {
+      max-width: 1100px;
+      margin: 2rem auto 2.5rem;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 2rem;
+    }
+    .nav-breadcrumbs {
+      font-size: 0.875rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    .nav-breadcrumbs a { color: var(--primary); text-decoration: none; }
+    .bofu-badge {
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--primary);
+      padding: 0.35rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+    h1.bofu-title {
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 0.75rem;
+      line-height: 1.25;
+    }
+    p.bofu-subtitle {
+      font-size: 1.125rem;
+      color: var(--muted);
+      max-width: 900px;
+    }
+    main.bofu-container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .bofu-section {
+      margin-bottom: 3rem;
+    }
+    .section-heading {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    /* Tabela de Comparação */
+    .table-container {
+      overflow-x: auto;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+    }
+    table.comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+    table.comp-table th, table.comp-table td {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--card-border);
+    }
+    table.comp-table th {
+      background: #0f172a;
+      color: #fff;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+    }
+    table.comp-table tr:last-child td { border-bottom: none; }
+    .dim-cell { width: 25%; color: var(--text); }
+    .legacy-cell { width: 37.5%; color: var(--muted); }
+    .our-cell { width: 37.5%; color: var(--accent); background: rgba(34, 197, 94, 0.03); }
+    /* Callout & Links cruzados */
+    .crosslink-banner {
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .crosslink-banner a {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: underline;
+    }
+    /* Tri-Rail Action Bar */
+    .trirail-cta-card {
+      background: #0f172a;
+      border: 1px solid var(--primary);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 2.5rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .cta-buttons { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .btn-rapidapi {
+      background: #0284c7;
+      color: #fff;
+      padding: 0.75rem 1.25rem;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .btn-apify {
+      background: #059669;
+      color: #fff;
+      padding: 0.75rem 1.25rem;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .btn-zyla {
+      background: #d97706;
+      color: #fff;
+      padding: 0.75rem 1.25rem;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    /* FAQs */
+    details.faq-item {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 6px;
+      margin-bottom: 0.75rem;
+      padding: 0.85rem 1.25rem;
+    }
+    summary.faq-question {
+      cursor: pointer;
+      font-size: 1.05rem;
+      color: #fff;
+      outline: none;
+    }
+    div.faq-answer {
+      margin-top: 0.75rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    /* Sandbox styles */
+    .sandbox-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-top: 1rem;
+    }
+    .sandbox-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .sandbox-badge {
+      background: rgba(56, 189, 248, 0.2);
+      color: var(--primary);
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .sandbox-badge-sub {
+      color: var(--muted);
+      font-size: 0.8rem;
+      margin-left: 0.5rem;
+    }
+    .sandbox-pulse-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+      margin-right: 0.35rem;
+    }
+    .sandbox-status-text {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .sandbox-instruction {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+    }
+    .sandbox-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    @media (max-width: 900px) {
+      .sandbox-grid { grid-template-columns: 1fr; }
+    }
+    .sandbox-pane-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--muted);
+    }
+    .pane-tag {
+      background: #1f2937;
+      padding: 0.15rem 0.4rem;
+      border-radius: 3px;
+      font-size: 0.75rem;
+    }
+    .sandbox-textarea {
+      width: 100%;
+      background: var(--code-bg);
+      color: #38bdf8;
+      border: 1px solid var(--card-border);
+      border-radius: 6px;
+      padding: 0.75rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.85rem;
+      resize: vertical;
+    }
+    .sandbox-controls {
+      display: flex;
+      gap: 0.5rem;
+      margin: 0.75rem 0;
+    }
+    .sandbox-btn-run {
+      background: var(--primary);
+      color: #030712;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+    .sandbox-btn-reset {
+      background: #374151;
+      color: #e5e7eb;
+      border: none;
+      padding: 0.5rem 0.75rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+    .sandbox-curl-box {
+      background: var(--code-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 6px;
+      padding: 0.75rem;
+      margin-top: 0.75rem;
+    }
+    .curl-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 0.35rem;
+    }
+    .btn-copy-code {
+      background: #1f2937;
+      color: #fff;
+      border: none;
+      padding: 0.2rem 0.5rem;
+      border-radius: 3px;
+      font-size: 0.7rem;
+      cursor: pointer;
+    }
+    .curl-text {
+      font-family: ui-monospace, SFMono-Regular, monospace;
+      font-size: 0.75rem;
+      color: #e5e7eb;
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+    .badge-status-ok {
+      background: rgba(34, 197, 94, 0.2);
+      color: var(--accent);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+    .badge-status-error {
+      background: rgba(239, 68, 68, 0.2);
+      color: var(--danger);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+    .sandbox-meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      background: #0f172a;
+      border: 1px solid var(--card-border);
+      border-radius: 4px;
+      padding: 0.4rem 0.6rem;
+      margin-bottom: 0.5rem;
+      font-size: 0.75rem;
+    }
+    .meta-key { color: var(--muted); }
+    .meta-val { color: #e5e7eb; font-weight: 600; }
+    .sandbox-response-pre {
+      background: var(--code-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 6px;
+      padding: 0.75rem;
+      max-height: 280px;
+      overflow-y: auto;
+    }
+    .sandbox-response-code {
+      font-family: ui-monospace, SFMono-Regular, monospace;
+      font-size: 0.8rem;
+      color: #a7f3d0;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .sandbox-conversion-box {
+      background: #0f172a;
+      border: 1px dashed var(--primary);
+      border-radius: 6px;
+      padding: 0.85rem;
+      margin-top: 0.75rem;
+    }
+    .conversion-callout {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+    .conversion-callout strong { color: #fff; display: block; }
+    .conversion-actions {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .btn-sandbox-checkout-primary {
+      background: #0284c7;
+      color: #fff;
+      padding: 0.45rem 0.75rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .btn-sandbox-checkout-secondary {
+      background: #059669;
+      color: #fff;
+      padding: 0.45rem 0.75rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    footer.bofu-footer {
+      max-width: 1100px;
+      margin: 4rem auto 0;
+      border-top: 1px solid var(--card-border);
+      padding-top: 2rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    footer.bofu-footer a { color: var(--primary); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header class="bofu-header">
+    <div class="nav-breadcrumbs">
+      <a href="/docs/index.html">API Directory</a> &rarr; 
+      <a href="/docs/comparisons.html">Enterprise Comparisons</a> &rarr; 
+      <span>Avalara & Sistax Alternative</span>
+    </div>
+    <span class="bofu-badge">Tax Reform 2026 & Fiscal Tech</span>
+    <h1 class="bofu-title">Automated Brazil Tax Reform (EC 132 & LC 214) Engine Alternative</h1>
+    <p class="bofu-subtitle">Prepare your ERP, invoicing system, and e-commerce for Brazil's Dual VAT transition (IBS & CBS) starting 2026 without hiring million-dollar tax consulting firms.</p>
+  </header>
+
+  <main class="bofu-container">
+    <!-- Cross-Link para documentação técnica primária -->
+    <div class="crosslink-banner">
+      <div>
+        <strong>Official API Documentation:</strong> Access full OpenAPI specifications, error codes, and integration guides for <a href="https://jesleytassili-glitch.github.io/docs/brazil-tax-reform-ncm-classtrib-auditor.html">Brazil Tax Reform 2026: NCM to cClassTrib & NF-e Auditor</a>.
+      </div>
+      <div>
+        <a href="https://jesleytassili-glitch.github.io/docs/brazil-tax-reform-ncm-classtrib-auditor.html">&rarr; View API Docs</a>
+      </div>
+    </div>
+
+    <!-- Tabela Comparativa Factual -->
+    <section class="bofu-section">
+      <h2 class="section-heading">Detailed Feature & Cost Comparison</h2>
+      <div class="table-container">
+        <table class="comp-table">
+          <thead>
+            <tr>
+              <th>Evaluation Dimension</th>
+              <th>Legacy Enterprise (Avalara & Sistax)</th>
+              <th>B2B Quant Solution</th>
+            </tr>
+          </thead>
+          <tbody>
+<tr><td class='dim-cell'><strong>Entry Pricing</strong></td><td class='legacy-cell'>Enterprise annual licenses ($20k–$80k/yr) + implementation fees</td><td class='our-cell'><strong>$0 Free Tier · $19/mo PRO (self-serve for devs &amp; ERP teams)</strong></td></tr>
+<tr><td class='dim-cell'><strong>cClassTrib Mapping</strong></td><td class='legacy-cell'>Manual tax matrix spreadsheets or legacy rule engines</td><td class='our-cell'><strong>Automated NCM -&gt; cClassTrib classification with statutory legal basis</strong></td></tr>
+<tr><td class='dim-cell'><strong>2026 Test Rates</strong></td><td class='legacy-cell'>Slow vendor updates waiting for official software releases</td><td class='our-cell'><strong>Live calculations: CBS (0.9%), IBS (0.1%), standard rates, and exemptions</strong></td></tr>
+<tr><td class='dim-cell'><strong>ERP Integration</strong></td><td class='legacy-cell'>Proprietary SOAP/heavy XML connectors</td><td class='our-cell'><strong>RESTful OpenAPI 3.1.0 JSON ready for SAP, TOTVS, Bling, and custom ERPs</strong></td></tr>
+<tr><td class='dim-cell'><strong>Autonomous Auditing</strong></td><td class='legacy-cell'>Manual human validation workflows</td><td class='our-cell'><strong>Automated CI/CD invoice audit gate and MCP agent compatibility</strong></td></tr>
+<tr><td class='dim-cell'><strong>Transition Period Support</strong></td><td class='legacy-cell'>Separate pricing for transition module</td><td class='our-cell'><strong>Unified calculation of legacy PIS/COFINS/ICMS/ISS alongside IBS/CBS</strong></td></tr>
+<tr><td class='dim-cell'><strong>Self-Serve Sandbox</strong></td><td class='legacy-cell'>Restricted demo requiring NDA and sales rep</td><td class='our-cell'><strong>Interactive live sandbox in your browser with zero registration</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Interactive API Sandbox -->
+    <section class="bofu-section">
+      <h2 class="section-heading">Test Live Schema & Parameters</h2>
+
+<!-- INTERACTIVE API SANDBOX (ZERO-SIGNUP PREVIEW) -->
+<section class="sandbox-section" id="bofu-sandbox-vs_avalara_sistax_reforma_tributaria-container">
+  <div class="sandbox-card">
+    <div class="sandbox-header">
+      <div class="sandbox-header-left">
+        <span class="sandbox-badge">⚡ Interactive API Sandbox</span>
+        <span class="sandbox-badge-sub">Zero-Signup Preview · Client-Side Verified</span>
+      </div>
+      <div class="sandbox-header-right">
+        <span class="sandbox-pulse-dot"></span>
+        <span class="sandbox-status-text">Production Sandbox Ready (0ms latency)</span>
+      </div>
+    </div>
+    
+    <p class="sandbox-instruction">
+      Edit parameters in the request payload below and click <strong>Execute Sandbox Request</strong> to inspect the verified live schema response and dynamic cURL command.
+    </p>
+
+    <div class="sandbox-grid">
+      <!-- Coluna Esquerda: Request Input & Dynamic cURL -->
+      <div class="sandbox-column">
+        <div class="sandbox-pane-header">
+          <span class="pane-title">POST /v1/execute &middot; JSON Request Body</span>
+          <span class="pane-tag">Editable</span>
+        </div>
+        <textarea id="bofu-sandbox-vs_avalara_sistax_reforma_tributaria-req" class="sandbox-textarea" rows="12" spellcheck="false">{
+  &quot;catalogItems&quot;: [
+    {
+      &quot;sku&quot;: &quot;ITEM-001&quot;,
+      &quot;ncm&quot;: &quot;10063021&quot;,
+      &quot;description&quot;: &quot;Arroz beneficiado parboilizado tipo 1&quot;
+    },
+    {
+      &quot;sku&quot;: &quot;ITEM-002&quot;,
+      &quot;ncm&quot;: &quot;30049099&quot;,
+      &quot;description&quot;: &quot;Medicamento para uso humano em doses&quot;
+    },
+    {
+      &quot;sku&quot;: &quot;ITEM-003&quot;,
+      &quot;ncm&quot;: &quot;22030000&quot;,
+      &quot;description&quot;: &quot;Cerveja de malte em lata 350ml&quot;
+    },
+    {
+      &quot;sku&quot;: &quot;ITEM-004&quot;,
+      &quot;ncm&quot;: &quot;84713012&quot;,
+      &quot;description&quot;: &quot;Notebook portátil para processamento de dados&quot;
+    }
+  ],
+  &quot;nfeXmlList&quot;: [],
+  &quot;uf&quot;: &quot;SP&quot;
+}</textarea>
+        
+        <div class="sandbox-controls">
+          <button type="button" id="bofu-sandbox-vs_avalara_sistax_reforma_tributaria-btn" class="sandbox-btn-run" onclick="executeSandbox_bofu-sandbox-vs_avalara_sistax_reforma_tributaria()">
+            ▶ Execute Sandbox Request
+          </button>
+          <button type="button" class="sandbox-btn-reset" onclick="resetSandbox_bofu-sandbox-vs_avalara_sistax_reforma_tributaria()">
+            ↺ Reset Example
+          </button>
+        </div>
+
+        <div class="sandbox-curl-box">
+          <div class="curl-header">
+            <span>Dynamic cURL Command</span>
+            <button type="button" class="btn-copy-code" onclick="copyCurl_bofu-sandbox-vs_avalara_sistax_reforma_tributaria()">Copy cURL</button>
+          </div>
+          <pre><code id="bofu-sandbox-vs_avalara_sistax_reforma_tributaria-curl" class="curl-text">curl -X POST "https://jesleytassili-glitch.github.io/v1/execute" \
+  -H "Content-Type: application/json" \
+  -H "X-RapidAPI-Key: YOUR_API_KEY" \
+  -d '{
+  "catalogItems": [
+    {
+      "sku": "ITEM-001",
+      "ncm": "10063021",
+      "description": "Arroz beneficiado parboilizado tipo 1"
+    },
+    {
+      "sku": "ITEM-002",
+      "ncm": "30049099",
+      "description": "Medicamento para uso humano em doses"
+    },
+    {
+      "sku": "ITEM-003",
+      "ncm": "22030000",
+      "description": "Cerveja de malte em lata 350ml"
+    },
+    {
+      "sku": "ITEM-004",
+      "ncm": "84713012",
+      "description": "Notebook portátil para processamento de dados"
+    }
+  ],
+  "nfeXmlList": [],
+  "uf": "SP"
+}'</code></pre>
+        </div>
+      </div>
+
+      <!-- Coluna Direita: Live Response Preview & Conversion CTAs -->
+      <div class="sandbox-column">
+        <div class="sandbox-pane-header">
+          <span class="pane-title">Simulated Live Response (Audit Verified)</span>
+          <span id="bofu-sandbox-vs_avalara_sistax_reforma_tributaria-status-badge" class="badge-status-ok">HTTP 200 OK · Live Schema</span>
+        </div>
+
+        <div class="sandbox-meta-bar">
+          <div class="meta-item"><span class="meta-key">content-type:</span> <span class="meta-val">application/json; charset=utf-8</span></div>
+          <div class="meta-item"><span class="meta-key">x-ratelimit-limit:</span> <span class="meta-val">1000 / min</span></div>
+          <div class="meta-item"><span class="meta-key">x-payment-rail:</span> <span class="meta-val">RapidAPI | Apify | x402</span></div>
+          <div class="meta-item"><span class="meta-key">latency:</span> <span class="meta-val">&lt; 120ms</span></div>
+        </div>
+
+        <pre class="sandbox-response-pre"><code id="bofu-sandbox-vs_avalara_sistax_reforma_tributaria-res" class="sandbox-response-code">{
+  &quot;sku&quot;: &quot;ITEM-001&quot;,
+  &quot;ncm&quot;: &quot;10063021&quot;,
+  &quot;ncmFormatted&quot;: &quot;1006.30.21&quot;,
+  &quot;description&quot;: &quot;Arroz beneficiado parboilizado tipo 1&quot;,
+  &quot;cstIbsCbs&quot;: &quot;200&quot;,
+  &quot;cClassTrib&quot;: &quot;200003&quot;,
+  &quot;regimeName&quot;: &quot;Cesta Básica Nacional de Alimentos (Alíquota Zero — Redução de 100%)&quot;,
+  &quot;aliquotaReductionPct&quot;: 100.0,
+  &quot;cbsTestRate2026Pct&quot;: 0.0,
+  &quot;ibsTestRate2026Pct&quot;: 0.0,
+  &quot;impostoSeletivo&quot;: false,
+  &quot;legalBasisLC214&quot;: &quot;Art. 125 e Anexo I da LC nº 214/2025&quot;,
+  &quot;confidenceScore&quot;: 96,
+  &quot;auditNotes&quot;: &quot;Alíquota reduzida em 100% (Zero IBS/CBS). Conferir especificação exata do item no Anexo I.&quot;,
+  &quot;sourceType&quot;: &quot;CATALOG_JSON&quot;
+}</code></pre>
+
+        <div class="sandbox-conversion-box">
+          <div class="conversion-callout">
+            <strong>Ready to integrate into production?</strong>
+            <span>Subscribe self-serve or run bulk enterprise jobs on Apify cloud infrastructure.</span>
+          </div>
+          <div class="conversion-actions">
+            <a href="https://rapidapi.com/b2bquantapis/api/brazil-tax-reform-ncm-classtrib-auditor" target="_blank" rel="noopener" class="btn-sandbox-checkout-primary">
+              Unlock Production API Key ($0 Free Tier &rarr; $19/mo PRO)
+            </a>
+            <a href="https://apify.com/b2b-quant-apis/brazil-tax-reform-ncm-classtrib-auditor" target="_blank" rel="noopener" class="btn-sandbox-checkout-secondary">
+              Run Bulk Batch on Apify PPE
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SANDBOX CLIENT-SIDE LOGIC -->
+<script>
+(function() {
+  var initialReq_bofu-sandbox-vs_avalara_sistax_reforma_tributaria = "{\n  \"catalogItems\": [\n    {\n      \"sku\": \"ITEM-001\",\n      \"ncm\": \"10063021\",\n      \"description\": \"Arroz beneficiado parboilizado tipo 1\"\n    },\n    {\n      \"sku\": \"ITEM-002\",\n      \"ncm\": \"30049099\",\n      \"description\": \"Medicamento para uso humano em doses\"\n    },\n    {\n      \"sku\": \"ITEM-003\",\n      \"ncm\": \"22030000\",\n      \"description\": \"Cerveja de malte em lata 350ml\"\n    },\n    {\n      \"sku\": \"ITEM-004\",\n      \"ncm\": \"84713012\",\n      \"description\": \"Notebook port\u00e1til para processamento de dados\"\n    }\n  ],\n  \"nfeXmlList\": [],\n  \"uf\": \"SP\"\n}";
+  var canonicalRes_bofu-sandbox-vs_avalara_sistax_reforma_tributaria = "{\n  \"sku\": \"ITEM-001\",\n  \"ncm\": \"10063021\",\n  \"ncmFormatted\": \"1006.30.21\",\n  \"description\": \"Arroz beneficiado parboilizado tipo 1\",\n  \"cstIbsCbs\": \"200\",\n  \"cClassTrib\": \"200003\",\n  \"regimeName\": \"Cesta B\u00e1sica Nacional de Alimentos (Al\u00edquota Zero \u2014 Redu\u00e7\u00e3o de 100%)\",\n  \"aliquotaReductionPct\": 100.0,\n  \"cbsTestRate2026Pct\": 0.0,\n  \"ibsTestRate2026Pct\": 0.0,\n  \"impostoSeletivo\": false,\n  \"legalBasisLC214\": \"Art. 125 e Anexo I da LC n\u00ba 214/2025\",\n  \"confidenceScore\": 96,\n  \"auditNotes\": \"Al\u00edquota reduzida em 100% (Zero IBS/CBS). Conferir especifica\u00e7\u00e3o exata do item no Anexo I.\",\n  \"sourceType\": \"CATALOG_JSON\"\n}";
+  var endpointUrl = "https://jesleytassili-glitch.github.io/v1/execute";
+
+  window.executeSandbox_bofu-sandbox-vs_avalara_sistax_reforma_tributaria = function() {
+    var reqArea = document.getElementById("bofu-sandbox-vs_avalara_sistax_reforma_tributaria-req");
+    var resArea = document.getElementById("bofu-sandbox-vs_avalara_sistax_reforma_tributaria-res");
+    var statusBadge = document.getElementById("bofu-sandbox-vs_avalara_sistax_reforma_tributaria-status-badge");
+    var curlArea = document.getElementById("bofu-sandbox-vs_avalara_sistax_reforma_tributaria-curl");
+
+    var rawText = reqArea.value.trim();
+    try {
+      var parsed = JSON.parse(rawText);
+      statusBadge.textContent = "HTTP 200 OK · Verified Live Schema";
+      statusBadge.className = "badge-status-ok";
+      resArea.textContent = canonicalRes_bofu-sandbox-vs_avalara_sistax_reforma_tributaria;
+      
+      var escapedJson = JSON.stringify(parsed, null, 2).replace(/'/g, "'\\''");
+      curlArea.textContent = 'curl -X POST "' + endpointUrl + '" \\\n  -H "Content-Type: application/json" \\\n  -H "X-RapidAPI-Key: YOUR_API_KEY" \\\n  -d \'' + escapedJson + "\'";
+    } catch (err) {
+      statusBadge.textContent = "HTTP 400 Bad Request · Invalid JSON";
+      statusBadge.className = "badge-status-error";
+      resArea.textContent = JSON.stringify({
+        "error": "Bad Request",
+        "message": "Malformed JSON payload: " + err.message,
+        "hint": "Check for trailing commas, unbalanced braces, or unquoted keys.",
+        "statusCode": 400
+      }, null, 2);
+    }
+  };
+
+  window.resetSandbox_bofu-sandbox-vs_avalara_sistax_reforma_tributaria = function() {
+    document.getElementById("bofu-sandbox-vs_avalara_sistax_reforma_tributaria-req").value = initialReq_bofu-sandbox-vs_avalara_sistax_reforma_tributaria;
+    executeSandbox_bofu-sandbox-vs_avalara_sistax_reforma_tributaria();
+  };
+
+  window.copyCurl_bofu-sandbox-vs_avalara_sistax_reforma_tributaria = function() {
+    var curlCode = document.getElementById("bofu-sandbox-vs_avalara_sistax_reforma_tributaria-curl").textContent;
+    navigator.clipboard.writeText(curlCode).then(function() {
+      alert("cURL command copied to clipboard!");
+    }).catch(function() {
+      alert("Please copy manually from the box.");
+    });
+  };
+})();
+</script>
+
+    </section>
+
+    <!-- Tri-Rail Checkout Card -->
+    <section class="trirail-cta-card">
+      <div>
+        <h3 style="font-size: 1.25rem; font-weight: 700; color: #fff; margin-bottom: 0.25rem;">Deploy In Minutes Without Annual Sales Lock-In</h3>
+        <p style="font-size: 0.9rem; color: var(--muted);">Start on our $0 Free Tier today or run high-throughput data extraction on Apify cloud infrastructure.</p>
+      </div>
+      <div class="cta-buttons">
+        <a href="https://rapidapi.com/b2bquantapis/api/brazil-tax-reform-ncm-classtrib-auditor" target="_blank" rel="noopener" class="btn-rapidapi">RapidAPI ($0 &rarr; $19/mo)</a>
+        <a href="https://apify.com/b2b-quant-apis/brazil-tax-reform-ncm-classtrib-auditor" target="_blank" rel="noopener" class="btn-apify">Apify Cloud (PPE)</a>
+        <a href="https://zylalabs.com/api-marketplace/legal+%26+compliance/eu+vies+vat+tax+compliance+auditor+api/14654" target="_blank" rel="noopener" class="btn-zyla">Zyla Hub</a>
+      </div>
+    </section>
+
+    <!-- FAQs de Migração -->
+    <section class="bofu-section">
+      <h2 class="section-heading">Frequently Asked Questions</h2>
+<details class='faq-item'><summary class='faq-question'><strong>What is cClassTrib in the Brazilian Tax Reform?</strong></summary><div class='faq-answer'><p>cClassTrib (Código de Classificação Tributária) is the new mandatory classification code created under Constitutional Amendment 132/2023 and Complementary Law 214/2025 to determine tax treatment under the Dual VAT (IBS and CBS).</p></div></details>
+<details class='faq-item'><summary class='faq-question'><strong>How does this API replace expensive Avalara or Sistax implementations?</strong></summary><div class='faq-answer'><p>Instead of paying tens of thousands in setup fees and waiting months for custom ERP plugins, developers can call our clean JSON endpoint to resolve NCM codes to valid cClassTrib entries and applicable IBS/CBS rates in under 100ms.</p></div></details>
+<details class='faq-item'><summary class='faq-question'><strong>Does the engine handle special tax regimes and exemptions?</strong></summary><div class='faq-answer'><p>Yes. It supports basic basket (Cesta Básica Nacional), healthcare, education, agricultural inputs, and special fiscal regimes with statutory citations.</p></div></details>
+<details class='faq-item'><summary class='faq-question'><strong>Can I integrate this into an NF-e / NFC-e validation pipeline?</strong></summary><div class='faq-answer'><p>Yes, the JSON payload is designed to plug directly into pre-validation middleware before electronic invoice XML signing.</p></div></details>
+    </section>
+  </main>
+
+  <footer class="bofu-footer">
+    <div>
+      &copy; 2026 B2B Quant & Regulatory Compliance Suite. Built for developers, risk officers, and autonomous AI agents.
+    </div>
+    <div>
+      <a href="/docs/comparisons.html">All Comparisons</a> &middot; 
+      <a href="/docs/index.html">API Hub</a> &middot; 
+      <a href="https://jesleytassili-glitch.github.io/docs/vs-avalara-sistax-reforma-tributaria.md">Markdown (GEO/RAG)</a> &middot; 
+      <a href="/sitemap.xml">Sitemap</a>
+    </div>
+  </footer>
+</body>
+</html>

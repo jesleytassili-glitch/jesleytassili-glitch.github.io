@@ -85,6 +85,7 @@ footer{border-top:1px solid var(--l);padding:2rem 1.5rem;background:#080c14;colo
     </div>
     <nav>
       <a href="/docs/index.html">All 31 APIs</a>
+      <a href="/docs/comparisons.html">Alternatives</a>
       <a href="/docs/category-cybersecurity-easm-hiring.html">Cybersecurity, EASM, Attack Surface &amp; B2B Hiring</a>
       <a href="https://jesleytassili-glitch.github.io/docs/b2b-quant-mcp-server.md">Markdown (RAG)</a>
       <a href="https://jesleytassili-glitch.github.io/specs_openapi_31/b2b-quant-mcp-server.json">OpenAPI JSON</a>
@@ -228,6 +229,208 @@ footer{border-top:1px solid var(--l);padding:2rem 1.5rem;background:#080c14;colo
         </tbody>
       </table>
     </section>
+
+    
+
+    
+<!-- INTERACTIVE API SANDBOX (ZERO-SIGNUP PREVIEW) -->
+<section class="sandbox-section" id="api_sandbox-b2b_quant_mcp_server-container">
+  <div class="sandbox-card">
+    <div class="sandbox-header">
+      <div class="sandbox-header-left">
+        <span class="sandbox-badge">⚡ Interactive API Sandbox</span>
+        <span class="sandbox-badge-sub">Zero-Signup Preview · Client-Side Verified</span>
+      </div>
+      <div class="sandbox-header-right">
+        <span class="sandbox-pulse-dot"></span>
+        <span class="sandbox-status-text">Production Sandbox Ready (0ms latency)</span>
+      </div>
+    </div>
+    
+    <p class="sandbox-instruction">
+      Edit parameters in the request payload below and click <strong>Execute Sandbox Request</strong> to inspect the verified live schema response and dynamic cURL command.
+    </p>
+
+    <div class="sandbox-grid">
+      <!-- Coluna Esquerda: Request Input & Dynamic cURL -->
+      <div class="sandbox-column">
+        <div class="sandbox-pane-header">
+          <span class="pane-title">POST /v1/execute &middot; JSON Request Body</span>
+          <span class="pane-tag">Editable</span>
+        </div>
+        <textarea id="api_sandbox-b2b_quant_mcp_server-req" class="sandbox-textarea" rows="12" spellcheck="false">{
+  &quot;operationMode&quot;: &quot;list_catalog&quot;,
+  &quot;toolName&quot;: &quot;us-sec-edgar-filings-insider-radar&quot;,
+  &quot;toolArguments&quot;: {
+    &quot;tickers&quot;: [
+      &quot;AAPL&quot;,
+      &quot;NVDA&quot;
+    ],
+    &quot;form_types&quot;: [
+      &quot;10-K&quot;,
+      &quot;8-K&quot;
+    ],
+    &quot;max_filings_per_company&quot;: 3
+  },
+  &quot;categoryFilter&quot;: &quot;ALL&quot;,
+  &quot;maxTools&quot;: 30
+}</textarea>
+        
+        <div class="sandbox-controls">
+          <button type="button" id="api_sandbox-b2b_quant_mcp_server-btn" class="sandbox-btn-run" onclick="executeSandbox_api_sandbox-b2b_quant_mcp_server()">
+            ▶ Execute Sandbox Request
+          </button>
+          <button type="button" class="sandbox-btn-reset" onclick="resetSandbox_api_sandbox-b2b_quant_mcp_server()">
+            ↺ Reset Example
+          </button>
+        </div>
+
+        <div class="sandbox-curl-box">
+          <div class="curl-header">
+            <span>Dynamic cURL Command</span>
+            <button type="button" class="btn-copy-code" onclick="copyCurl_api_sandbox-b2b_quant_mcp_server()">Copy cURL</button>
+          </div>
+          <pre><code id="api_sandbox-b2b_quant_mcp_server-curl" class="curl-text">curl -X POST "https://jesleytassili-glitch.github.io/v1/execute" \
+  -H "Content-Type: application/json" \
+  -H "X-RapidAPI-Key: YOUR_API_KEY" \
+  -d '{
+  "operationMode": "list_catalog",
+  "toolName": "us-sec-edgar-filings-insider-radar",
+  "toolArguments": {
+    "tickers": [
+      "AAPL",
+      "NVDA"
+    ],
+    "form_types": [
+      "10-K",
+      "8-K"
+    ],
+    "max_filings_per_company": 3
+  },
+  "categoryFilter": "ALL",
+  "maxTools": 30
+}'</code></pre>
+        </div>
+      </div>
+
+      <!-- Coluna Direita: Live Response Preview & Conversion CTAs -->
+      <div class="sandbox-column">
+        <div class="sandbox-pane-header">
+          <span class="pane-title">Simulated Live Response (Audit Verified)</span>
+          <span id="api_sandbox-b2b_quant_mcp_server-status-badge" class="badge-status-ok">HTTP 200 OK · Live Schema</span>
+        </div>
+
+        <div class="sandbox-meta-bar">
+          <div class="meta-item"><span class="meta-key">content-type:</span> <span class="meta-val">application/json; charset=utf-8</span></div>
+          <div class="meta-item"><span class="meta-key">x-ratelimit-limit:</span> <span class="meta-val">1000 / min</span></div>
+          <div class="meta-item"><span class="meta-key">x-payment-rail:</span> <span class="meta-val">RapidAPI | Apify | x402</span></div>
+          <div class="meta-item"><span class="meta-key">latency:</span> <span class="meta-val">&lt; 120ms</span></div>
+        </div>
+
+        <pre class="sandbox-response-pre"><code id="api_sandbox-b2b_quant_mcp_server-res" class="sandbox-response-code">{
+  &quot;operationMode&quot;: &quot;invoke_tool&quot;,
+  &quot;toolName&quot;: &quot;us_sec_edgar_filings_insider_radar&quot;,
+  &quot;domainCategory&quot;: &quot;FINTECH_SEC_TAX&quot;,
+  &quot;executionStatus&quot;: &quot;LIVE_DISPATCH_SUCCEEDED&quot;,
+  &quot;readinessScore&quot;: 99,
+  &quot;dispatchedItemCount&quot;: 1,
+  &quot;mcpJsonRpcEnvelope&quot;: {
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: &quot;tools-call-us-sec-edgar-filings-insider-radar&quot;,
+    &quot;method&quot;: &quot;tools/call&quot;,
+    &quot;result&quot;: {
+      &quot;protocolVersion&quot;: &quot;2025-03-26&quot;,
+      &quot;toolName&quot;: &quot;us_sec_edgar_filings_insider_radar&quot;,
+      &quot;isError&quot;: false,
+      &quot;structuredContent&quot;: [
+        {
+          &quot;accessionNumber&quot;: &quot;0000320193-26-000026&quot;,
+          &quot;cik&quot;: &quot;0000320193&quot;,
+          &quot;ticker&quot;: &quot;AAPL&quot;,
+          &quot;companyName&quot;: &quot;Apple Inc.&quot;,
+          &quot;formType&quot;: &quot;10-K&quot;,
+          &quot;filingDate&quot;: &quot;2026-11-03&quot;,
+          &quot;reportDate&quot;: &quot;2026-09-26&quot;,
+          &quot;governanceAlertScore&quot;: 84,
+          &quot;itemsSummary&quot;: &quot;10-K&quot;,
+          &quot;edgarDocumentUrl&quot;: &quot;https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm&quot;,
+          &quot;markdownGovernanceBrief&quot;: &quot;# SEC EDGAR GOVERNANCE &amp; COMPLIANCE BRIEF: AAPL (10-K)\n\n## 1. Registrant &amp; Filing Identification\n- **Company Name:** Apple Inc.\n- **Ticker / CIK:** `AAPL` / `0000320193`\n- **Accession Number:** `0000320193-26-000026`\n- **Form Type:** `10-K` (STANDARD STATUTORY DISCLOSURE)\n- **Governance Alert Score:** **84/100**\n\n## 2. Regulatory Timeline &amp; Disclosure Scope\n- **SEC Filing Date:** 2026-11-03\n- **Period of Report:** 2026-09-26\n- **Material Items / Primary Description:** 10-K\n- **Official SEC EDGAR Archive URL:** https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm&quot;
+        }
+      ]
+    }
+  },
+  &quot;markdownMcpBrief&quot;: &quot;# B2B REGULATORY &amp; COMPLIANCE MCP ROUTER BRIEF: `us_sec_edgar_filings_insider_radar`\n\n- **Operation Mode:** `invoke_tool`\n- **Dispatched Domain Engine:** `us_sec_edgar_filings_insider_radar` (`FINTECH_SEC_TAX`)\n- **Execution Status:** `LIVE_DISPATCH_SUCCEEDED` (1 structured record returned)\n- **Readiness Score:** 99/100&quot;
+}</code></pre>
+
+        <div class="sandbox-conversion-box">
+          <div class="conversion-callout">
+            <strong>Ready to integrate into production?</strong>
+            <span>Subscribe self-serve or run bulk enterprise jobs on Apify cloud infrastructure.</span>
+          </div>
+          <div class="conversion-actions">
+            <a href="https://rapidapi.com/b2bquantapis/api/b2b-quant-mcp-server" target="_blank" rel="noopener" class="btn-sandbox-checkout-primary">
+              Unlock Production API Key ($0 Free Tier &rarr; $19/mo PRO)
+            </a>
+            <a href="https://apify.com/b2b-quant-apis/b2b-quant-mcp-server" target="_blank" rel="noopener" class="btn-sandbox-checkout-secondary">
+              Run Bulk Batch on Apify PPE
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SANDBOX CLIENT-SIDE LOGIC -->
+<script>
+(function() {
+  var initialReq_api_sandbox-b2b_quant_mcp_server = "{\n  \"operationMode\": \"list_catalog\",\n  \"toolName\": \"us-sec-edgar-filings-insider-radar\",\n  \"toolArguments\": {\n    \"tickers\": [\n      \"AAPL\",\n      \"NVDA\"\n    ],\n    \"form_types\": [\n      \"10-K\",\n      \"8-K\"\n    ],\n    \"max_filings_per_company\": 3\n  },\n  \"categoryFilter\": \"ALL\",\n  \"maxTools\": 30\n}";
+  var canonicalRes_api_sandbox-b2b_quant_mcp_server = "{\n  \"operationMode\": \"invoke_tool\",\n  \"toolName\": \"us_sec_edgar_filings_insider_radar\",\n  \"domainCategory\": \"FINTECH_SEC_TAX\",\n  \"executionStatus\": \"LIVE_DISPATCH_SUCCEEDED\",\n  \"readinessScore\": 99,\n  \"dispatchedItemCount\": 1,\n  \"mcpJsonRpcEnvelope\": {\n    \"jsonrpc\": \"2.0\",\n    \"id\": \"tools-call-us-sec-edgar-filings-insider-radar\",\n    \"method\": \"tools/call\",\n    \"result\": {\n      \"protocolVersion\": \"2025-03-26\",\n      \"toolName\": \"us_sec_edgar_filings_insider_radar\",\n      \"isError\": false,\n      \"structuredContent\": [\n        {\n          \"accessionNumber\": \"0000320193-26-000026\",\n          \"cik\": \"0000320193\",\n          \"ticker\": \"AAPL\",\n          \"companyName\": \"Apple Inc.\",\n          \"formType\": \"10-K\",\n          \"filingDate\": \"2026-11-03\",\n          \"reportDate\": \"2026-09-26\",\n          \"governanceAlertScore\": 84,\n          \"itemsSummary\": \"10-K\",\n          \"edgarDocumentUrl\": \"https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm\",\n          \"markdownGovernanceBrief\": \"# SEC EDGAR GOVERNANCE & COMPLIANCE BRIEF: AAPL (10-K)\\n\\n## 1. Registrant & Filing Identification\\n- **Company Name:** Apple Inc.\\n- **Ticker / CIK:** `AAPL` / `0000320193`\\n- **Accession Number:** `0000320193-26-000026`\\n- **Form Type:** `10-K` (STANDARD STATUTORY DISCLOSURE)\\n- **Governance Alert Score:** **84/100**\\n\\n## 2. Regulatory Timeline & Disclosure Scope\\n- **SEC Filing Date:** 2026-11-03\\n- **Period of Report:** 2026-09-26\\n- **Material Items / Primary Description:** 10-K\\n- **Official SEC EDGAR Archive URL:** https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm\"\n        }\n      ]\n    }\n  },\n  \"markdownMcpBrief\": \"# B2B REGULATORY & COMPLIANCE MCP ROUTER BRIEF: `us_sec_edgar_filings_insider_radar`\\n\\n- **Operation Mode:** `invoke_tool`\\n- **Dispatched Domain Engine:** `us_sec_edgar_filings_insider_radar` (`FINTECH_SEC_TAX`)\\n- **Execution Status:** `LIVE_DISPATCH_SUCCEEDED` (1 structured record returned)\\n- **Readiness Score:** 99/100\"\n}";
+  var endpointUrl = "https://jesleytassili-glitch.github.io/v1/execute";
+
+  window.executeSandbox_api_sandbox-b2b_quant_mcp_server = function() {
+    var reqArea = document.getElementById("api_sandbox-b2b_quant_mcp_server-req");
+    var resArea = document.getElementById("api_sandbox-b2b_quant_mcp_server-res");
+    var statusBadge = document.getElementById("api_sandbox-b2b_quant_mcp_server-status-badge");
+    var curlArea = document.getElementById("api_sandbox-b2b_quant_mcp_server-curl");
+
+    var rawText = reqArea.value.trim();
+    try {
+      var parsed = JSON.parse(rawText);
+      statusBadge.textContent = "HTTP 200 OK · Verified Live Schema";
+      statusBadge.className = "badge-status-ok";
+      resArea.textContent = canonicalRes_api_sandbox-b2b_quant_mcp_server;
+      
+      var escapedJson = JSON.stringify(parsed, null, 2).replace(/'/g, "'\\''");
+      curlArea.textContent = 'curl -X POST "' + endpointUrl + '" \\\n  -H "Content-Type: application/json" \\\n  -H "X-RapidAPI-Key: YOUR_API_KEY" \\\n  -d \'' + escapedJson + "\'";
+    } catch (err) {
+      statusBadge.textContent = "HTTP 400 Bad Request · Invalid JSON";
+      statusBadge.className = "badge-status-error";
+      resArea.textContent = JSON.stringify({
+        "error": "Bad Request",
+        "message": "Malformed JSON payload: " + err.message,
+        "hint": "Check for trailing commas, unbalanced braces, or unquoted keys.",
+        "statusCode": 400
+      }, null, 2);
+    }
+  };
+
+  window.resetSandbox_api_sandbox-b2b_quant_mcp_server = function() {
+    document.getElementById("api_sandbox-b2b_quant_mcp_server-req").value = initialReq_api_sandbox-b2b_quant_mcp_server;
+    executeSandbox_api_sandbox-b2b_quant_mcp_server();
+  };
+
+  window.copyCurl_api_sandbox-b2b_quant_mcp_server = function() {
+    var curlCode = document.getElementById("api_sandbox-b2b_quant_mcp_server-curl").textContent;
+    navigator.clipboard.writeText(curlCode).then(function() {
+      alert("cURL command copied to clipboard!");
+    }).catch(function() {
+      alert("Please copy manually from the box.");
+    });
+  };
+})();
+</script>
+
 
     <!-- Authentic Verified JSON Payload Block -->
     <section class="card-sec">

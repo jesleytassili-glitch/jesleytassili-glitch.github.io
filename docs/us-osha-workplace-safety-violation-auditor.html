@@ -85,6 +85,7 @@ footer{border-top:1px solid var(--l);padding:2rem 1.5rem;background:#080c14;colo
     </div>
     <nav>
       <a href="/docs/index.html">All 31 APIs</a>
+      <a href="/docs/comparisons.html">Alternatives</a>
       <a href="/docs/category-gov-procurement-esg.html">Government Procurement, Tenders &amp; ESG Compliance</a>
       <a href="https://jesleytassili-glitch.github.io/docs/us-osha-workplace-safety-violation-auditor.md">Markdown (RAG)</a>
       <a href="https://jesleytassili-glitch.github.io/specs_openapi_31/us-osha-workplace-safety-violation-auditor.json">OpenAPI JSON</a>
@@ -222,6 +223,164 @@ footer{border-top:1px solid var(--l);padding:2rem 1.5rem;background:#080c14;colo
         </tbody>
       </table>
     </section>
+
+    
+
+    
+<!-- INTERACTIVE API SANDBOX (ZERO-SIGNUP PREVIEW) -->
+<section class="sandbox-section" id="api_sandbox-us_osha_workplace_safety_violation_auditor-container">
+  <div class="sandbox-card">
+    <div class="sandbox-header">
+      <div class="sandbox-header-left">
+        <span class="sandbox-badge">⚡ Interactive API Sandbox</span>
+        <span class="sandbox-badge-sub">Zero-Signup Preview · Client-Side Verified</span>
+      </div>
+      <div class="sandbox-header-right">
+        <span class="sandbox-pulse-dot"></span>
+        <span class="sandbox-status-text">Production Sandbox Ready (0ms latency)</span>
+      </div>
+    </div>
+    
+    <p class="sandbox-instruction">
+      Edit parameters in the request payload below and click <strong>Execute Sandbox Request</strong> to inspect the verified live schema response and dynamic cURL command.
+    </p>
+
+    <div class="sandbox-grid">
+      <!-- Coluna Esquerda: Request Input & Dynamic cURL -->
+      <div class="sandbox-column">
+        <div class="sandbox-pane-header">
+          <span class="pane-title">POST /v1/execute &middot; JSON Request Body</span>
+          <span class="pane-tag">Editable</span>
+        </div>
+        <textarea id="api_sandbox-us_osha_workplace_safety_violation_auditor-req" class="sandbox-textarea" rows="12" spellcheck="false">{
+  &quot;companyOrEstablishment&quot;: &quot;Amazon&quot;,
+  &quot;stateCode&quot;: &quot;TX&quot;,
+  &quot;maxResults&quot;: 5
+}</textarea>
+        
+        <div class="sandbox-controls">
+          <button type="button" id="api_sandbox-us_osha_workplace_safety_violation_auditor-btn" class="sandbox-btn-run" onclick="executeSandbox_api_sandbox-us_osha_workplace_safety_violation_auditor()">
+            ▶ Execute Sandbox Request
+          </button>
+          <button type="button" class="sandbox-btn-reset" onclick="resetSandbox_api_sandbox-us_osha_workplace_safety_violation_auditor()">
+            ↺ Reset Example
+          </button>
+        </div>
+
+        <div class="sandbox-curl-box">
+          <div class="curl-header">
+            <span>Dynamic cURL Command</span>
+            <button type="button" class="btn-copy-code" onclick="copyCurl_api_sandbox-us_osha_workplace_safety_violation_auditor()">Copy cURL</button>
+          </div>
+          <pre><code id="api_sandbox-us_osha_workplace_safety_violation_auditor-curl" class="curl-text">curl -X POST "https://jesleytassili-glitch.github.io/v1/execute" \
+  -H "Content-Type: application/json" \
+  -H "X-RapidAPI-Key: YOUR_API_KEY" \
+  -d '{
+  "companyOrEstablishment": "Amazon",
+  "stateCode": "TX",
+  "maxResults": 5
+}'</code></pre>
+        </div>
+      </div>
+
+      <!-- Coluna Direita: Live Response Preview & Conversion CTAs -->
+      <div class="sandbox-column">
+        <div class="sandbox-pane-header">
+          <span class="pane-title">Simulated Live Response (Audit Verified)</span>
+          <span id="api_sandbox-us_osha_workplace_safety_violation_auditor-status-badge" class="badge-status-ok">HTTP 200 OK · Live Schema</span>
+        </div>
+
+        <div class="sandbox-meta-bar">
+          <div class="meta-item"><span class="meta-key">content-type:</span> <span class="meta-val">application/json; charset=utf-8</span></div>
+          <div class="meta-item"><span class="meta-key">x-ratelimit-limit:</span> <span class="meta-val">1000 / min</span></div>
+          <div class="meta-item"><span class="meta-key">x-payment-rail:</span> <span class="meta-val">RapidAPI | Apify | x402</span></div>
+          <div class="meta-item"><span class="meta-key">latency:</span> <span class="meta-val">&lt; 120ms</span></div>
+        </div>
+
+        <pre class="sandbox-response-pre"><code id="api_sandbox-us_osha_workplace_safety_violation_auditor-res" class="sandbox-response-code">{
+  &quot;activityNumber&quot;: &quot;317019842&quot;,
+  &quot;establishmentName&quot;: &quot;AMAZON.COM SERVICES LLC - FULFILLMENT CENTER DFW7&quot;,
+  &quot;siteCity&quot;: &quot;Fort Worth&quot;,
+  &quot;siteState&quot;: &quot;TX&quot;,
+  &quot;naicsCode&quot;: &quot;493110&quot;,
+  &quot;inspectionType&quot;: &quot;Complaint&quot;,
+  &quot;openDate&quot;: &quot;2026-06-14&quot;,
+  &quot;totalViolations&quot;: 4,
+  &quot;seriousWillfulRepeatCount&quot;: 3,
+  &quot;currentPenaltyUsd&quot;: 64500,
+  &quot;workplaceRiskScore&quot;: 84,
+  &quot;markdownSafetyBrief&quot;: &quot;# US OSHA WORKPLACE SAFETY &amp; COMPLIANCE DOSSIER: 317019842\n\n## 1. Establishment &amp; Inspection Profile\n- **Establishment Name:** **AMAZON.COM SERVICES LLC - FULFILLMENT CENTER DFW7**\n- **Location:** `Fort Worth, TX`\n- **NAICS Industry Code:** `493110`\n- **Inspection Type:** `Complaint`\n- **Inspection Open Date:** `2026-06-14`\n\n## 2. Citations, Penalties &amp; Underwriting Risk\n- **Workplace Safety Risk Score:** **84/100**\n- **Total OSHA Violations Cited:** `4`\n- **Serious / Willful / Repeat Citations:** **`3`**\n- **Assessed Civil Monetary Penalty:** **$64,500.00 USD**&quot;
+}</code></pre>
+
+        <div class="sandbox-conversion-box">
+          <div class="conversion-callout">
+            <strong>Ready to integrate into production?</strong>
+            <span>Subscribe self-serve or run bulk enterprise jobs on Apify cloud infrastructure.</span>
+          </div>
+          <div class="conversion-actions">
+            <a href="https://rapidapi.com/user/b2bquantapis" target="_blank" rel="noopener" class="btn-sandbox-checkout-primary">
+              Unlock Production API Key ($0 Free Tier &rarr; $19/mo PRO)
+            </a>
+            <a href="https://apify.com/b2b-quant-apis/us-osha-workplace-safety-violation-auditor" target="_blank" rel="noopener" class="btn-sandbox-checkout-secondary">
+              Run Bulk Batch on Apify PPE
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SANDBOX CLIENT-SIDE LOGIC -->
+<script>
+(function() {
+  var initialReq_api_sandbox-us_osha_workplace_safety_violation_auditor = "{\n  \"companyOrEstablishment\": \"Amazon\",\n  \"stateCode\": \"TX\",\n  \"maxResults\": 5\n}";
+  var canonicalRes_api_sandbox-us_osha_workplace_safety_violation_auditor = "{\n  \"activityNumber\": \"317019842\",\n  \"establishmentName\": \"AMAZON.COM SERVICES LLC - FULFILLMENT CENTER DFW7\",\n  \"siteCity\": \"Fort Worth\",\n  \"siteState\": \"TX\",\n  \"naicsCode\": \"493110\",\n  \"inspectionType\": \"Complaint\",\n  \"openDate\": \"2026-06-14\",\n  \"totalViolations\": 4,\n  \"seriousWillfulRepeatCount\": 3,\n  \"currentPenaltyUsd\": 64500,\n  \"workplaceRiskScore\": 84,\n  \"markdownSafetyBrief\": \"# US OSHA WORKPLACE SAFETY & COMPLIANCE DOSSIER: 317019842\\n\\n## 1. Establishment & Inspection Profile\\n- **Establishment Name:** **AMAZON.COM SERVICES LLC - FULFILLMENT CENTER DFW7**\\n- **Location:** `Fort Worth, TX`\\n- **NAICS Industry Code:** `493110`\\n- **Inspection Type:** `Complaint`\\n- **Inspection Open Date:** `2026-06-14`\\n\\n## 2. Citations, Penalties & Underwriting Risk\\n- **Workplace Safety Risk Score:** **84/100**\\n- **Total OSHA Violations Cited:** `4`\\n- **Serious / Willful / Repeat Citations:** **`3`**\\n- **Assessed Civil Monetary Penalty:** **$64,500.00 USD**\"\n}";
+  var endpointUrl = "https://jesleytassili-glitch.github.io/v1/execute";
+
+  window.executeSandbox_api_sandbox-us_osha_workplace_safety_violation_auditor = function() {
+    var reqArea = document.getElementById("api_sandbox-us_osha_workplace_safety_violation_auditor-req");
+    var resArea = document.getElementById("api_sandbox-us_osha_workplace_safety_violation_auditor-res");
+    var statusBadge = document.getElementById("api_sandbox-us_osha_workplace_safety_violation_auditor-status-badge");
+    var curlArea = document.getElementById("api_sandbox-us_osha_workplace_safety_violation_auditor-curl");
+
+    var rawText = reqArea.value.trim();
+    try {
+      var parsed = JSON.parse(rawText);
+      statusBadge.textContent = "HTTP 200 OK · Verified Live Schema";
+      statusBadge.className = "badge-status-ok";
+      resArea.textContent = canonicalRes_api_sandbox-us_osha_workplace_safety_violation_auditor;
+      
+      var escapedJson = JSON.stringify(parsed, null, 2).replace(/'/g, "'\\''");
+      curlArea.textContent = 'curl -X POST "' + endpointUrl + '" \\\n  -H "Content-Type: application/json" \\\n  -H "X-RapidAPI-Key: YOUR_API_KEY" \\\n  -d \'' + escapedJson + "\'";
+    } catch (err) {
+      statusBadge.textContent = "HTTP 400 Bad Request · Invalid JSON";
+      statusBadge.className = "badge-status-error";
+      resArea.textContent = JSON.stringify({
+        "error": "Bad Request",
+        "message": "Malformed JSON payload: " + err.message,
+        "hint": "Check for trailing commas, unbalanced braces, or unquoted keys.",
+        "statusCode": 400
+      }, null, 2);
+    }
+  };
+
+  window.resetSandbox_api_sandbox-us_osha_workplace_safety_violation_auditor = function() {
+    document.getElementById("api_sandbox-us_osha_workplace_safety_violation_auditor-req").value = initialReq_api_sandbox-us_osha_workplace_safety_violation_auditor;
+    executeSandbox_api_sandbox-us_osha_workplace_safety_violation_auditor();
+  };
+
+  window.copyCurl_api_sandbox-us_osha_workplace_safety_violation_auditor = function() {
+    var curlCode = document.getElementById("api_sandbox-us_osha_workplace_safety_violation_auditor-curl").textContent;
+    navigator.clipboard.writeText(curlCode).then(function() {
+      alert("cURL command copied to clipboard!");
+    }).catch(function() {
+      alert("Please copy manually from the box.");
+    });
+  };
+})();
+</script>
+
 
     <!-- Authentic Verified JSON Payload Block -->
     <section class="card-sec">

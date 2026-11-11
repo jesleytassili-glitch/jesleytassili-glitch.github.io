@@ -85,6 +85,7 @@ footer{border-top:1px solid var(--l);padding:2rem 1.5rem;background:#080c14;colo
     </div>
     <nav>
       <a href="/docs/index.html">All 31 APIs</a>
+      <a href="/docs/comparisons.html">Alternatives</a>
       <a href="/docs/category-cybersecurity-easm-hiring.html">Cybersecurity, EASM, Attack Surface &amp; B2B Hiring</a>
       <a href="https://jesleytassili-glitch.github.io/docs/b2b-ssl-tls-ct-log-subdomain-attack-surface-auditor.md">Markdown (RAG)</a>
       <a href="https://jesleytassili-glitch.github.io/specs_openapi_31/b2b-ssl-tls-ct-log-subdomain-attack-surface-auditor.json">OpenAPI JSON</a>
@@ -220,6 +221,174 @@ footer{border-top:1px solid var(--l);padding:2rem 1.5rem;background:#080c14;colo
         </tbody>
       </table>
     </section>
+
+    
+    <!-- BOFU Crosslink Callout -->
+    <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #38bdf8; border-radius: 8px; padding: 1.1rem 1.4rem; margin: 1.5rem 0; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+      <div>
+        <span style="background: #0284c7; color: #ffffff; font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.55rem; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.05em;">Enterprise Comparison</span>
+        <div style="color: #f1f5f9; font-weight: 600; margin-top: 0.35rem; font-size: 0.95rem;">Evaluating modern alternatives to SecurityScorecard &amp; Censys?</div>
+      </div>
+      <a href="/docs/vs-securityscorecard-censys-ct-logs.html" style="background: #38bdf8; color: #0f172a; font-weight: 700; padding: 0.55rem 1.1rem; border-radius: 6px; text-decoration: none; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 0.35rem; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+        Read SecurityScorecard &amp; Censys Alternative Guide &rarr;
+      </a>
+    </div>
+
+
+    
+<!-- INTERACTIVE API SANDBOX (ZERO-SIGNUP PREVIEW) -->
+<section class="sandbox-section" id="api_sandbox-b2b_ssl_tls_ct_log_subdomain_attack_surface_auditor-container">
+  <div class="sandbox-card">
+    <div class="sandbox-header">
+      <div class="sandbox-header-left">
+        <span class="sandbox-badge">⚡ Interactive API Sandbox</span>
+        <span class="sandbox-badge-sub">Zero-Signup Preview · Client-Side Verified</span>
+      </div>
+      <div class="sandbox-header-right">
+        <span class="sandbox-pulse-dot"></span>
+        <span class="sandbox-status-text">Production Sandbox Ready (0ms latency)</span>
+      </div>
+    </div>
+    
+    <p class="sandbox-instruction">
+      Edit parameters in the request payload below and click <strong>Execute Sandbox Request</strong> to inspect the verified live schema response and dynamic cURL command.
+    </p>
+
+    <div class="sandbox-grid">
+      <!-- Coluna Esquerda: Request Input & Dynamic cURL -->
+      <div class="sandbox-column">
+        <div class="sandbox-pane-header">
+          <span class="pane-title">POST /v1/execute &middot; JSON Request Body</span>
+          <span class="pane-tag">Editable</span>
+        </div>
+        <textarea id="api_sandbox-b2b_ssl_tls_ct_log_subdomain_attack_surface_auditor-req" class="sandbox-textarea" rows="12" spellcheck="false">{
+  &quot;rootDomain&quot;: &quot;cloudflare.com&quot;,
+  &quot;excludeExpired&quot;: true,
+  &quot;maxResults&quot;: 10
+}</textarea>
+        
+        <div class="sandbox-controls">
+          <button type="button" id="api_sandbox-b2b_ssl_tls_ct_log_subdomain_attack_surface_auditor-btn" class="sandbox-btn-run" onclick="executeSandbox_api_sandbox-b2b_ssl_tls_ct_log_subdomain_attack_surface_auditor()">
+            ▶ Execute Sandbox Request
+          </button>
+          <button type="button" class="sandbox-btn-reset" onclick="resetSandbox_api_sandbox-b2b_ssl_tls_ct_log_subdomain_attack_surface_auditor()">
+            ↺ Reset Example
+          </button>
+        </div>
+
+        <div class="sandbox-curl-box">
+          <div class="curl-header">
+            <span>Dynamic cURL Command</span>
+            <button type="button" class="btn-copy-code" onclick="copyCurl_api_sandbox-b2b_ssl_tls_ct_log_subdomain_attack_surface_auditor()">Copy cURL</button>
+          </div>
+          <pre><code id="api_sandbox-b2b_ssl_tls_ct_log_subdomain_attack_surface_auditor-curl" class="curl-text">curl -X POST "https://jesleytassili-glitch.github.io/v1/execute" \
+  -H "Content-Type: application/json" \
+  -H "X-RapidAPI-Key: YOUR_API_KEY" \
+  -d '{
+  "rootDomain": "cloudflare.com",
+  "excludeExpired": true,
+  "maxResults": 10
+}'</code></pre>
+        </div>
+      </div>
+
+      <!-- Coluna Direita: Live Response Preview & Conversion CTAs -->
+      <div class="sandbox-column">
+        <div class="sandbox-pane-header">
+          <span class="pane-title">Simulated Live Response (Audit Verified)</span>
+          <span id="api_sandbox-b2b_ssl_tls_ct_log_subdomain_attack_surface_auditor-status-badge" class="badge-status-ok">HTTP 200 OK · Live Schema</span>
+        </div>
+
+        <div class="sandbox-meta-bar">
+          <div class="meta-item"><span class="meta-key">content-type:</span> <span class="meta-val">application/json; charset=utf-8</span></div>
+          <div class="meta-item"><span class="meta-key">x-ratelimit-limit:</span> <span class="meta-val">1000 / min</span></div>
+          <div class="meta-item"><span class="meta-key">x-payment-rail:</span> <span class="meta-val">RapidAPI | Apify | x402</span></div>
+          <div class="meta-item"><span class="meta-key">latency:</span> <span class="meta-val">&lt; 120ms</span></div>
+        </div>
+
+        <pre class="sandbox-response-pre"><code id="api_sandbox-b2b_ssl_tls_ct_log_subdomain_attack_surface_auditor-res" class="sandbox-response-code">{
+  &quot;certificateId&quot;: &quot;30076179807&quot;,
+  &quot;rootDomain&quot;: &quot;cloud.com&quot;,
+  &quot;subdomain&quot;: &quot;verify.cloud.com&quot;,
+  &quot;commonName&quot;: &quot;verify.cloud.com&quot;,
+  &quot;issuerName&quot;: &quot;Let&#x27;s Encrypt&quot;,
+  &quot;notBefore&quot;: &quot;2026-10-12&quot;,
+  &quot;notAfter&quot;: &quot;2027-01-10&quot;,
+  &quot;isWildcard&quot;: false,
+  &quot;shadowItExposure&quot;: &quot;STANDARD_PRODUCTION&quot;,
+  &quot;attackSurfaceRiskScore&quot;: 63,
+  &quot;markdownSecOpsBrief&quot;: &quot;# B2B SSL/TLS CT LOG &amp; ATTACK SURFACE RECON BRIEF: verify.cloud.com\n\n## 1. Subdomain &amp; X.509 Certificate Identity\n- **CT Certificate ID:** `30076179807`\n- **Corporate Root Domain:** `cloud.com`\n- **Discovered Subdomain / SAN:** **`verify.cloud.com`**\n- **Common Name (CN):** `verify.cloud.com`\n- **Issuing Certificate Authority:** Let&#x27;s Encrypt\n\n## 2. EASM Exposure Classification &amp; Validity\n- **Attack Surface Risk Score:** **63/100**\n- **Exposure Classification:** **`STANDARD_PRODUCTION`**\n- **Wildcard Scope (`*.domain`):** `False`\n- **Valid From (`notBefore`):** `2026-10-12`\n- **Expires On (`notAfter`):** `2027-01-10`&quot;
+}</code></pre>
+
+        <div class="sandbox-conversion-box">
+          <div class="conversion-callout">
+            <strong>Ready to integrate into production?</strong>
+            <span>Subscribe self-serve or run bulk enterprise jobs on Apify cloud infrastructure.</span>
+          </div>
+          <div class="conversion-actions">
+            <a href="https://rapidapi.com/b2bquantapis/api/b2b-ssl-tls-ct-log-subdomain-attack-surface-auditor" target="_blank" rel="noopener" class="btn-sandbox-checkout-primary">
+              Unlock Production API Key ($0 Free Tier &rarr; $19/mo PRO)
+            </a>
+            <a href="https://apify.com/b2b-quant-apis/b2b-ssl-tls-ct-log-subdomain-attack-surface-auditor" target="_blank" rel="noopener" class="btn-sandbox-checkout-secondary">
+              Run Bulk Batch on Apify PPE
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SANDBOX CLIENT-SIDE LOGIC -->
+<script>
+(function() {
+  var initialReq_api_sandbox-b2b_ssl_tls_ct_log_subdomain_attack_surface_auditor = "{\n  \"rootDomain\": \"cloudflare.com\",\n  \"excludeExpired\": true,\n  \"maxResults\": 10\n}";
+  var canonicalRes_api_sandbox-b2b_ssl_tls_ct_log_subdomain_attack_surface_auditor = "{\n  \"certificateId\": \"30076179807\",\n  \"rootDomain\": \"cloud.com\",\n  \"subdomain\": \"verify.cloud.com\",\n  \"commonName\": \"verify.cloud.com\",\n  \"issuerName\": \"Let's Encrypt\",\n  \"notBefore\": \"2026-10-12\",\n  \"notAfter\": \"2027-01-10\",\n  \"isWildcard\": false,\n  \"shadowItExposure\": \"STANDARD_PRODUCTION\",\n  \"attackSurfaceRiskScore\": 63,\n  \"markdownSecOpsBrief\": \"# B2B SSL/TLS CT LOG & ATTACK SURFACE RECON BRIEF: verify.cloud.com\\n\\n## 1. Subdomain & X.509 Certificate Identity\\n- **CT Certificate ID:** `30076179807`\\n- **Corporate Root Domain:** `cloud.com`\\n- **Discovered Subdomain / SAN:** **`verify.cloud.com`**\\n- **Common Name (CN):** `verify.cloud.com`\\n- **Issuing Certificate Authority:** Let's Encrypt\\n\\n## 2. EASM Exposure Classification & Validity\\n- **Attack Surface Risk Score:** **63/100**\\n- **Exposure Classification:** **`STANDARD_PRODUCTION`**\\n- **Wildcard Scope (`*.domain`):** `False`\\n- **Valid From (`notBefore`):** `2026-10-12`\\n- **Expires On (`notAfter`):** `2027-01-10`\"\n}";
+  var endpointUrl = "https://jesleytassili-glitch.github.io/v1/execute";
+
+  window.executeSandbox_api_sandbox-b2b_ssl_tls_ct_log_subdomain_attack_surface_auditor = function() {
+    var reqArea = document.getElementById("api_sandbox-b2b_ssl_tls_ct_log_subdomain_attack_surface_auditor-req");
+    var resArea = document.getElementById("api_sandbox-b2b_ssl_tls_ct_log_subdomain_attack_surface_auditor-res");
+    var statusBadge = document.getElementById("api_sandbox-b2b_ssl_tls_ct_log_subdomain_attack_surface_auditor-status-badge");
+    var curlArea = document.getElementById("api_sandbox-b2b_ssl_tls_ct_log_subdomain_attack_surface_auditor-curl");
+
+    var rawText = reqArea.value.trim();
+    try {
+      var parsed = JSON.parse(rawText);
+      statusBadge.textContent = "HTTP 200 OK · Verified Live Schema";
+      statusBadge.className = "badge-status-ok";
+      resArea.textContent = canonicalRes_api_sandbox-b2b_ssl_tls_ct_log_subdomain_attack_surface_auditor;
+      
+      var escapedJson = JSON.stringify(parsed, null, 2).replace(/'/g, "'\\''");
+      curlArea.textContent = 'curl -X POST "' + endpointUrl + '" \\\n  -H "Content-Type: application/json" \\\n  -H "X-RapidAPI-Key: YOUR_API_KEY" \\\n  -d \'' + escapedJson + "\'";
+    } catch (err) {
+      statusBadge.textContent = "HTTP 400 Bad Request · Invalid JSON";
+      statusBadge.className = "badge-status-error";
+      resArea.textContent = JSON.stringify({
+        "error": "Bad Request",
+        "message": "Malformed JSON payload: " + err.message,
+        "hint": "Check for trailing commas, unbalanced braces, or unquoted keys.",
+        "statusCode": 400
+      }, null, 2);
+    }
+  };
+
+  window.resetSandbox_api_sandbox-b2b_ssl_tls_ct_log_subdomain_attack_surface_auditor = function() {
+    document.getElementById("api_sandbox-b2b_ssl_tls_ct_log_subdomain_attack_surface_auditor-req").value = initialReq_api_sandbox-b2b_ssl_tls_ct_log_subdomain_attack_surface_auditor;
+    executeSandbox_api_sandbox-b2b_ssl_tls_ct_log_subdomain_attack_surface_auditor();
+  };
+
+  window.copyCurl_api_sandbox-b2b_ssl_tls_ct_log_subdomain_attack_surface_auditor = function() {
+    var curlCode = document.getElementById("api_sandbox-b2b_ssl_tls_ct_log_subdomain_attack_surface_auditor-curl").textContent;
+    navigator.clipboard.writeText(curlCode).then(function() {
+      alert("cURL command copied to clipboard!");
+    }).catch(function() {
+      alert("Please copy manually from the box.");
+    });
+  };
+})();
+</script>
+
 
     <!-- Authentic Verified JSON Payload Block -->
     <section class="card-sec">

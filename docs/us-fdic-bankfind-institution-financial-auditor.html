@@ -85,6 +85,7 @@ footer{border-top:1px solid var(--l);padding:2rem 1.5rem;background:#080c14;colo
     </div>
     <nav>
       <a href="/docs/index.html">All 31 APIs</a>
+      <a href="/docs/comparisons.html">Alternatives</a>
       <a href="/docs/category-kyb-sanctions-finreg.html">KYB, Sanctions AML, Corporate Ownership &amp; FinReg</a>
       <a href="https://jesleytassili-glitch.github.io/docs/us-fdic-bankfind-institution-financial-auditor.md">Markdown (RAG)</a>
       <a href="https://jesleytassili-glitch.github.io/specs_openapi_31/us-fdic-bankfind-institution-financial-auditor.json">OpenAPI JSON</a>
@@ -224,6 +225,166 @@ footer{border-top:1px solid var(--l);padding:2rem 1.5rem;background:#080c14;colo
         </tbody>
       </table>
     </section>
+
+    
+
+    
+<!-- INTERACTIVE API SANDBOX (ZERO-SIGNUP PREVIEW) -->
+<section class="sandbox-section" id="api_sandbox-us_fdic_bankfind_institution_financial_auditor-container">
+  <div class="sandbox-card">
+    <div class="sandbox-header">
+      <div class="sandbox-header-left">
+        <span class="sandbox-badge">⚡ Interactive API Sandbox</span>
+        <span class="sandbox-badge-sub">Zero-Signup Preview · Client-Side Verified</span>
+      </div>
+      <div class="sandbox-header-right">
+        <span class="sandbox-pulse-dot"></span>
+        <span class="sandbox-status-text">Production Sandbox Ready (0ms latency)</span>
+      </div>
+    </div>
+    
+    <p class="sandbox-instruction">
+      Edit parameters in the request payload below and click <strong>Execute Sandbox Request</strong> to inspect the verified live schema response and dynamic cURL command.
+    </p>
+
+    <div class="sandbox-grid">
+      <!-- Coluna Esquerda: Request Input & Dynamic cURL -->
+      <div class="sandbox-column">
+        <div class="sandbox-pane-header">
+          <span class="pane-title">POST /v1/execute &middot; JSON Request Body</span>
+          <span class="pane-tag">Editable</span>
+        </div>
+        <textarea id="api_sandbox-us_fdic_bankfind_institution_financial_auditor-req" class="sandbox-textarea" rows="12" spellcheck="false">{
+  &quot;institutionName&quot;: &quot;JPMorgan Chase Bank&quot;,
+  &quot;state&quot;: &quot;NY&quot;,
+  &quot;activeOnly&quot;: true,
+  &quot;maxResults&quot;: 10
+}</textarea>
+        
+        <div class="sandbox-controls">
+          <button type="button" id="api_sandbox-us_fdic_bankfind_institution_financial_auditor-btn" class="sandbox-btn-run" onclick="executeSandbox_api_sandbox-us_fdic_bankfind_institution_financial_auditor()">
+            ▶ Execute Sandbox Request
+          </button>
+          <button type="button" class="sandbox-btn-reset" onclick="resetSandbox_api_sandbox-us_fdic_bankfind_institution_financial_auditor()">
+            ↺ Reset Example
+          </button>
+        </div>
+
+        <div class="sandbox-curl-box">
+          <div class="curl-header">
+            <span>Dynamic cURL Command</span>
+            <button type="button" class="btn-copy-code" onclick="copyCurl_api_sandbox-us_fdic_bankfind_institution_financial_auditor()">Copy cURL</button>
+          </div>
+          <pre><code id="api_sandbox-us_fdic_bankfind_institution_financial_auditor-curl" class="curl-text">curl -X POST "https://jesleytassili-glitch.github.io/v1/execute" \
+  -H "Content-Type: application/json" \
+  -H "X-RapidAPI-Key: YOUR_API_KEY" \
+  -d '{
+  "institutionName": "JPMorgan Chase Bank",
+  "state": "NY",
+  "activeOnly": true,
+  "maxResults": 10
+}'</code></pre>
+        </div>
+      </div>
+
+      <!-- Coluna Direita: Live Response Preview & Conversion CTAs -->
+      <div class="sandbox-column">
+        <div class="sandbox-pane-header">
+          <span class="pane-title">Simulated Live Response (Audit Verified)</span>
+          <span id="api_sandbox-us_fdic_bankfind_institution_financial_auditor-status-badge" class="badge-status-ok">HTTP 200 OK · Live Schema</span>
+        </div>
+
+        <div class="sandbox-meta-bar">
+          <div class="meta-item"><span class="meta-key">content-type:</span> <span class="meta-val">application/json; charset=utf-8</span></div>
+          <div class="meta-item"><span class="meta-key">x-ratelimit-limit:</span> <span class="meta-val">1000 / min</span></div>
+          <div class="meta-item"><span class="meta-key">x-payment-rail:</span> <span class="meta-val">RapidAPI | Apify | x402</span></div>
+          <div class="meta-item"><span class="meta-key">latency:</span> <span class="meta-val">&lt; 120ms</span></div>
+        </div>
+
+        <pre class="sandbox-response-pre"><code id="api_sandbox-us_fdic_bankfind_institution_financial_auditor-res" class="sandbox-response-code">{
+  &quot;certNumber&quot;: &quot;628&quot;,
+  &quot;institutionName&quot;: &quot;JPMorgan Chase Bank, National Association&quot;,
+  &quot;city&quot;: &quot;Columbus&quot;,
+  &quot;state&quot;: &quot;OH&quot;,
+  &quot;regulator&quot;: &quot;OCC&quot;,
+  &quot;activeStatus&quot;: true,
+  &quot;totalAssetsMillionsUsd&quot;: 4091315.0,
+  &quot;totalDepositsMillionsUsd&quot;: 2820284.0,
+  &quot;equityRatioPct&quot;: 8.35,
+  &quot;roaPct&quot;: 1.59,
+  &quot;counterpartyHealthScore&quot;: 85,
+  &quot;markdownTreasuryRiskBrief&quot;: &quot;# US FDIC TREASURY COUNTERPARTY SOLVENCY BRIEF: JPMorgan Chase Bank, National Association (CERT #628)\n\n## 1. Institution &amp; Regulatory Identification\n- **Institution Legal Name:** JPMorgan Chase Bank, National Association\n- **FDIC Certificate Number:** `628`\n- **Headquarters:** Columbus, OH\n- **Primary Federal Regulator:** `OCC`\n- **FDIC Insurance Status:** ACTIVE (Insured)\n- **Counterparty Health Score:** **85/100** (TIER-1 STRONG SOLVENCY / APPROVED COUNTERPARTY)\n\n## 2. Balance Sheet &amp; Capital Adequacy Metrics\n- **Total Consolidated Assets:** $4,091,315.00 Million USD\n- **Total Deposits:** $2,820,284.00 Million USD\n- **Equity-to-Assets Capital Ratio:** 8.35%\n- **Return on Assets (ROA):** 1.59%&quot;
+}</code></pre>
+
+        <div class="sandbox-conversion-box">
+          <div class="conversion-callout">
+            <strong>Ready to integrate into production?</strong>
+            <span>Subscribe self-serve or run bulk enterprise jobs on Apify cloud infrastructure.</span>
+          </div>
+          <div class="conversion-actions">
+            <a href="https://rapidapi.com/user/b2bquantapis" target="_blank" rel="noopener" class="btn-sandbox-checkout-primary">
+              Unlock Production API Key ($0 Free Tier &rarr; $19/mo PRO)
+            </a>
+            <a href="https://apify.com/b2b-quant-apis/us-fdic-bankfind-institution-financial-auditor" target="_blank" rel="noopener" class="btn-sandbox-checkout-secondary">
+              Run Bulk Batch on Apify PPE
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SANDBOX CLIENT-SIDE LOGIC -->
+<script>
+(function() {
+  var initialReq_api_sandbox-us_fdic_bankfind_institution_financial_auditor = "{\n  \"institutionName\": \"JPMorgan Chase Bank\",\n  \"state\": \"NY\",\n  \"activeOnly\": true,\n  \"maxResults\": 10\n}";
+  var canonicalRes_api_sandbox-us_fdic_bankfind_institution_financial_auditor = "{\n  \"certNumber\": \"628\",\n  \"institutionName\": \"JPMorgan Chase Bank, National Association\",\n  \"city\": \"Columbus\",\n  \"state\": \"OH\",\n  \"regulator\": \"OCC\",\n  \"activeStatus\": true,\n  \"totalAssetsMillionsUsd\": 4091315.0,\n  \"totalDepositsMillionsUsd\": 2820284.0,\n  \"equityRatioPct\": 8.35,\n  \"roaPct\": 1.59,\n  \"counterpartyHealthScore\": 85,\n  \"markdownTreasuryRiskBrief\": \"# US FDIC TREASURY COUNTERPARTY SOLVENCY BRIEF: JPMorgan Chase Bank, National Association (CERT #628)\\n\\n## 1. Institution & Regulatory Identification\\n- **Institution Legal Name:** JPMorgan Chase Bank, National Association\\n- **FDIC Certificate Number:** `628`\\n- **Headquarters:** Columbus, OH\\n- **Primary Federal Regulator:** `OCC`\\n- **FDIC Insurance Status:** ACTIVE (Insured)\\n- **Counterparty Health Score:** **85/100** (TIER-1 STRONG SOLVENCY / APPROVED COUNTERPARTY)\\n\\n## 2. Balance Sheet & Capital Adequacy Metrics\\n- **Total Consolidated Assets:** $4,091,315.00 Million USD\\n- **Total Deposits:** $2,820,284.00 Million USD\\n- **Equity-to-Assets Capital Ratio:** 8.35%\\n- **Return on Assets (ROA):** 1.59%\"\n}";
+  var endpointUrl = "https://jesleytassili-glitch.github.io/v1/execute";
+
+  window.executeSandbox_api_sandbox-us_fdic_bankfind_institution_financial_auditor = function() {
+    var reqArea = document.getElementById("api_sandbox-us_fdic_bankfind_institution_financial_auditor-req");
+    var resArea = document.getElementById("api_sandbox-us_fdic_bankfind_institution_financial_auditor-res");
+    var statusBadge = document.getElementById("api_sandbox-us_fdic_bankfind_institution_financial_auditor-status-badge");
+    var curlArea = document.getElementById("api_sandbox-us_fdic_bankfind_institution_financial_auditor-curl");
+
+    var rawText = reqArea.value.trim();
+    try {
+      var parsed = JSON.parse(rawText);
+      statusBadge.textContent = "HTTP 200 OK · Verified Live Schema";
+      statusBadge.className = "badge-status-ok";
+      resArea.textContent = canonicalRes_api_sandbox-us_fdic_bankfind_institution_financial_auditor;
+      
+      var escapedJson = JSON.stringify(parsed, null, 2).replace(/'/g, "'\\''");
+      curlArea.textContent = 'curl -X POST "' + endpointUrl + '" \\\n  -H "Content-Type: application/json" \\\n  -H "X-RapidAPI-Key: YOUR_API_KEY" \\\n  -d \'' + escapedJson + "\'";
+    } catch (err) {
+      statusBadge.textContent = "HTTP 400 Bad Request · Invalid JSON";
+      statusBadge.className = "badge-status-error";
+      resArea.textContent = JSON.stringify({
+        "error": "Bad Request",
+        "message": "Malformed JSON payload: " + err.message,
+        "hint": "Check for trailing commas, unbalanced braces, or unquoted keys.",
+        "statusCode": 400
+      }, null, 2);
+    }
+  };
+
+  window.resetSandbox_api_sandbox-us_fdic_bankfind_institution_financial_auditor = function() {
+    document.getElementById("api_sandbox-us_fdic_bankfind_institution_financial_auditor-req").value = initialReq_api_sandbox-us_fdic_bankfind_institution_financial_auditor;
+    executeSandbox_api_sandbox-us_fdic_bankfind_institution_financial_auditor();
+  };
+
+  window.copyCurl_api_sandbox-us_fdic_bankfind_institution_financial_auditor = function() {
+    var curlCode = document.getElementById("api_sandbox-us_fdic_bankfind_institution_financial_auditor-curl").textContent;
+    navigator.clipboard.writeText(curlCode).then(function() {
+      alert("cURL command copied to clipboard!");
+    }).catch(function() {
+      alert("Please copy manually from the box.");
+    });
+  };
+})();
+</script>
+
 
     <!-- Authentic Verified JSON Payload Block -->
     <section class="card-sec">

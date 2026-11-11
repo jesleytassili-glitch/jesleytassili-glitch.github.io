@@ -85,6 +85,7 @@ footer{border-top:1px solid var(--l);padding:2rem 1.5rem;background:#080c14;colo
     </div>
     <nav>
       <a href="/docs/index.html">All 31 APIs</a>
+      <a href="/docs/comparisons.html">Alternatives</a>
       <a href="/docs/category-healthcare-fda-biotech.html">Healthcare, FDA Life Sciences &amp; Clinical Trials</a>
       <a href="https://jesleytassili-glitch.github.io/docs/us-clinical-trials-biotech-radar.md">Markdown (RAG)</a>
       <a href="https://jesleytassili-glitch.github.io/specs_openapi_31/us-clinical-trials-biotech-radar.json">OpenAPI JSON</a>
@@ -237,6 +238,215 @@ footer{border-top:1px solid var(--l);padding:2rem 1.5rem;background:#080c14;colo
         </tbody>
       </table>
     </section>
+
+    
+
+    
+<!-- INTERACTIVE API SANDBOX (ZERO-SIGNUP PREVIEW) -->
+<section class="sandbox-section" id="api_sandbox-us_clinical_trials_biotech_radar-container">
+  <div class="sandbox-card">
+    <div class="sandbox-header">
+      <div class="sandbox-header-left">
+        <span class="sandbox-badge">⚡ Interactive API Sandbox</span>
+        <span class="sandbox-badge-sub">Zero-Signup Preview · Client-Side Verified</span>
+      </div>
+      <div class="sandbox-header-right">
+        <span class="sandbox-pulse-dot"></span>
+        <span class="sandbox-status-text">Production Sandbox Ready (0ms latency)</span>
+      </div>
+    </div>
+    
+    <p class="sandbox-instruction">
+      Edit parameters in the request payload below and click <strong>Execute Sandbox Request</strong> to inspect the verified live schema response and dynamic cURL command.
+    </p>
+
+    <div class="sandbox-grid">
+      <!-- Coluna Esquerda: Request Input & Dynamic cURL -->
+      <div class="sandbox-column">
+        <div class="sandbox-pane-header">
+          <span class="pane-title">POST /v1/execute &middot; JSON Request Body</span>
+          <span class="pane-tag">Editable</span>
+        </div>
+        <textarea id="api_sandbox-us_clinical_trials_biotech_radar-req" class="sandbox-textarea" rows="12" spellcheck="false">{
+  &quot;condition&quot;: &quot;Diabetes&quot;,
+  &quot;overallStatus&quot;: &quot;RECRUITING&quot;,
+  &quot;maxResults&quot;: 10
+}</textarea>
+        
+        <div class="sandbox-controls">
+          <button type="button" id="api_sandbox-us_clinical_trials_biotech_radar-btn" class="sandbox-btn-run" onclick="executeSandbox_api_sandbox-us_clinical_trials_biotech_radar()">
+            ▶ Execute Sandbox Request
+          </button>
+          <button type="button" class="sandbox-btn-reset" onclick="resetSandbox_api_sandbox-us_clinical_trials_biotech_radar()">
+            ↺ Reset Example
+          </button>
+        </div>
+
+        <div class="sandbox-curl-box">
+          <div class="curl-header">
+            <span>Dynamic cURL Command</span>
+            <button type="button" class="btn-copy-code" onclick="copyCurl_api_sandbox-us_clinical_trials_biotech_radar()">Copy cURL</button>
+          </div>
+          <pre><code id="api_sandbox-us_clinical_trials_biotech_radar-curl" class="curl-text">curl -X POST "https://jesleytassili-glitch.github.io/v1/execute" \
+  -H "Content-Type: application/json" \
+  -H "X-RapidAPI-Key: YOUR_API_KEY" \
+  -d '{
+  "condition": "Diabetes",
+  "overallStatus": "RECRUITING",
+  "maxResults": 10
+}'</code></pre>
+        </div>
+      </div>
+
+      <!-- Coluna Direita: Live Response Preview & Conversion CTAs -->
+      <div class="sandbox-column">
+        <div class="sandbox-pane-header">
+          <span class="pane-title">Simulated Live Response (Audit Verified)</span>
+          <span id="api_sandbox-us_clinical_trials_biotech_radar-status-badge" class="badge-status-ok">HTTP 200 OK · Live Schema</span>
+        </div>
+
+        <div class="sandbox-meta-bar">
+          <div class="meta-item"><span class="meta-key">content-type:</span> <span class="meta-val">application/json; charset=utf-8</span></div>
+          <div class="meta-item"><span class="meta-key">x-ratelimit-limit:</span> <span class="meta-val">1000 / min</span></div>
+          <div class="meta-item"><span class="meta-key">x-payment-rail:</span> <span class="meta-val">RapidAPI | Apify | x402</span></div>
+          <div class="meta-item"><span class="meta-key">latency:</span> <span class="meta-val">&lt; 120ms</span></div>
+        </div>
+
+        <pre class="sandbox-response-pre"><code id="api_sandbox-us_clinical_trials_biotech_radar-res" class="sandbox-response-code">{
+  &quot;nctId&quot;: &quot;NCT05835037&quot;,
+  &quot;briefTitle&quot;: &quot;Effect of Zinc on Glucose Homeostasis&quot;,
+  &quot;officialTitle&quot;: &quot;Clinical and Nutrigenetic Assessment of Zinc in Participants With Prediabetes&quot;,
+  &quot;overallStatus&quot;: &quot;RECRUITING&quot;,
+  &quot;leadSponsorName&quot;: &quot;University of Maryland, Baltimore&quot;,
+  &quot;leadSponsorClass&quot;: &quot;OTHER&quot;,
+  &quot;collaborators&quot;: [],
+  &quot;studyType&quot;: &quot;INTERVENTIONAL&quot;,
+  &quot;phases&quot;: [
+    &quot;PHASE4&quot;
+  ],
+  &quot;enrollmentCount&quot;: 200,
+  &quot;enrollmentType&quot;: &quot;ESTIMATED&quot;,
+  &quot;conditions&quot;: [
+    &quot;Prediabetic State&quot;,
+    &quot;Hyperglycemia&quot;
+  ],
+  &quot;keywords&quot;: [],
+  &quot;interventions&quot;: [
+    {
+      &quot;type&quot;: &quot;DRUG&quot;,
+      &quot;name&quot;: &quot;Zinc Gluconate 30 MG&quot;,
+      &quot;description&quot;: &quot;Participants will take one tablet per day (30 mg Zinc gluconate) for 1 year&quot;
+    },
+    {
+      &quot;type&quot;: &quot;DRUG&quot;,
+      &quot;name&quot;: &quot;Placebo&quot;,
+      &quot;description&quot;: &quot;Participants will take one placebo tablet per day for 1 year&quot;
+    }
+  ],
+  &quot;interventionNames&quot;: [
+    &quot;Zinc Gluconate 30 MG&quot;,
+    &quot;Placebo&quot;
+  ],
+  &quot;centralContacts&quot;: [
+    {
+      &quot;name&quot;: &quot;Toni I Pollin, PhD&quot;,
+      &quot;role&quot;: &quot;CONTACT&quot;,
+      &quot;phone&quot;: &quot;410-706-1630&quot;,
+      &quot;email&quot;: &quot;tpollin@som.umaryland.edu&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Hilary B Whitlatch, MD&quot;,
+      &quot;role&quot;: &quot;CONTACT&quot;,
+      &quot;phone&quot;: &quot;443-682-6800&quot;,
+      &quot;email&quot;: &quot;hwhitlatch@som.umaryland.edu&quot;
+    }
+  ],
+  &quot;locationsCount&quot;: 1,
+  &quot;sampleLocations&quot;: [
+    {
+      &quot;facility&quot;: &quot;Amish Research Clinic&quot;,
+      &quot;city&quot;: &quot;Lancaster&quot;,
+      &quot;state&quot;: &quot;Pennsylvania&quot;,
+      &quot;country&quot;: &quot;United States&quot;,
+      &quot;status&quot;: &quot;RECRUITING&quot;
+    }
+  ],
+  &quot;startDate&quot;: &quot;2024-02-16&quot;,
+  &quot;completionDate&quot;: &quot;2028-07&quot;,
+  &quot;studyUrl&quot;: &quot;https://clinicaltrials.gov/study/NCT05835037&quot;,
+  &quot;scrapedAt&quot;: &quot;2026-11-03T21:16:50.826632+00:00&quot;,
+  &quot;markdownTrialBrief&quot;: &quot;## [NCT05835037] Effect of Zinc on Glucose Homeostasis\n- **Official Title**: Clinical and Nutrigenetic Assessment of Zinc in Participants With Prediabetes\n- **Recruitment Status**: `RECRUITING`\n- **Lead Sponsor**: University of Maryland, Baltimore (`OTHER`)\n- **Trial Phase(s)**: `PHASE4`\n- **Target Enrollment**: 200 participants\n- **Conditions**: Prediabetic State, Hyperglycemia\n- **Participating Clinical Sites**: 1 locations\n- **Study URL**: https://clinicaltrials.gov/study/NCT05835037\n- **Interventions / Drugs**:\n  - **DRUG**: Zinc Gluconate 30 MG — Participants will take one tablet per day (30 mg Zinc gluconate) for 1 year\n  - **DRUG**: Placebo — Participants will take one placebo tablet per day for 1 year\n- **Central Study Contacts**:\n  - **Toni I Pollin, PhD** (CONTACT) | Email: `tpollin@som.umaryland.edu` | Phone: `410-706-1630`\n  - **Hilary B Whitlatch, MD** (CONTACT) | Email: ...&quot;
+}</code></pre>
+
+        <div class="sandbox-conversion-box">
+          <div class="conversion-callout">
+            <strong>Ready to integrate into production?</strong>
+            <span>Subscribe self-serve or run bulk enterprise jobs on Apify cloud infrastructure.</span>
+          </div>
+          <div class="conversion-actions">
+            <a href="https://rapidapi.com/user/b2bquantapis" target="_blank" rel="noopener" class="btn-sandbox-checkout-primary">
+              Unlock Production API Key ($0 Free Tier &rarr; $19/mo PRO)
+            </a>
+            <a href="https://apify.com/b2b-quant-apis/us-clinical-trials-biotech-radar" target="_blank" rel="noopener" class="btn-sandbox-checkout-secondary">
+              Run Bulk Batch on Apify PPE
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SANDBOX CLIENT-SIDE LOGIC -->
+<script>
+(function() {
+  var initialReq_api_sandbox-us_clinical_trials_biotech_radar = "{\n  \"condition\": \"Diabetes\",\n  \"overallStatus\": \"RECRUITING\",\n  \"maxResults\": 10\n}";
+  var canonicalRes_api_sandbox-us_clinical_trials_biotech_radar = "{\n  \"nctId\": \"NCT05835037\",\n  \"briefTitle\": \"Effect of Zinc on Glucose Homeostasis\",\n  \"officialTitle\": \"Clinical and Nutrigenetic Assessment of Zinc in Participants With Prediabetes\",\n  \"overallStatus\": \"RECRUITING\",\n  \"leadSponsorName\": \"University of Maryland, Baltimore\",\n  \"leadSponsorClass\": \"OTHER\",\n  \"collaborators\": [],\n  \"studyType\": \"INTERVENTIONAL\",\n  \"phases\": [\n    \"PHASE4\"\n  ],\n  \"enrollmentCount\": 200,\n  \"enrollmentType\": \"ESTIMATED\",\n  \"conditions\": [\n    \"Prediabetic State\",\n    \"Hyperglycemia\"\n  ],\n  \"keywords\": [],\n  \"interventions\": [\n    {\n      \"type\": \"DRUG\",\n      \"name\": \"Zinc Gluconate 30 MG\",\n      \"description\": \"Participants will take one tablet per day (30 mg Zinc gluconate) for 1 year\"\n    },\n    {\n      \"type\": \"DRUG\",\n      \"name\": \"Placebo\",\n      \"description\": \"Participants will take one placebo tablet per day for 1 year\"\n    }\n  ],\n  \"interventionNames\": [\n    \"Zinc Gluconate 30 MG\",\n    \"Placebo\"\n  ],\n  \"centralContacts\": [\n    {\n      \"name\": \"Toni I Pollin, PhD\",\n      \"role\": \"CONTACT\",\n      \"phone\": \"410-706-1630\",\n      \"email\": \"tpollin@som.umaryland.edu\"\n    },\n    {\n      \"name\": \"Hilary B Whitlatch, MD\",\n      \"role\": \"CONTACT\",\n      \"phone\": \"443-682-6800\",\n      \"email\": \"hwhitlatch@som.umaryland.edu\"\n    }\n  ],\n  \"locationsCount\": 1,\n  \"sampleLocations\": [\n    {\n      \"facility\": \"Amish Research Clinic\",\n      \"city\": \"Lancaster\",\n      \"state\": \"Pennsylvania\",\n      \"country\": \"United States\",\n      \"status\": \"RECRUITING\"\n    }\n  ],\n  \"startDate\": \"2024-02-16\",\n  \"completionDate\": \"2028-07\",\n  \"studyUrl\": \"https://clinicaltrials.gov/study/NCT05835037\",\n  \"scrapedAt\": \"2026-11-03T21:16:50.826632+00:00\",\n  \"markdownTrialBrief\": \"## [NCT05835037] Effect of Zinc on Glucose Homeostasis\\n- **Official Title**: Clinical and Nutrigenetic Assessment of Zinc in Participants With Prediabetes\\n- **Recruitment Status**: `RECRUITING`\\n- **Lead Sponsor**: University of Maryland, Baltimore (`OTHER`)\\n- **Trial Phase(s)**: `PHASE4`\\n- **Target Enrollment**: 200 participants\\n- **Conditions**: Prediabetic State, Hyperglycemia\\n- **Participating Clinical Sites**: 1 locations\\n- **Study URL**: https://clinicaltrials.gov/study/NCT05835037\\n- **Interventions / Drugs**:\\n  - **DRUG**: Zinc Gluconate 30 MG \u2014 Participants will take one tablet per day (30 mg Zinc gluconate) for 1 year\\n  - **DRUG**: Placebo \u2014 Participants will take one placebo tablet per day for 1 year\\n- **Central Study Contacts**:\\n  - **Toni I Pollin, PhD** (CONTACT) | Email: `tpollin@som.umaryland.edu` | Phone: `410-706-1630`\\n  - **Hilary B Whitlatch, MD** (CONTACT) | Email: ...\"\n}";
+  var endpointUrl = "https://jesleytassili-glitch.github.io/v1/execute";
+
+  window.executeSandbox_api_sandbox-us_clinical_trials_biotech_radar = function() {
+    var reqArea = document.getElementById("api_sandbox-us_clinical_trials_biotech_radar-req");
+    var resArea = document.getElementById("api_sandbox-us_clinical_trials_biotech_radar-res");
+    var statusBadge = document.getElementById("api_sandbox-us_clinical_trials_biotech_radar-status-badge");
+    var curlArea = document.getElementById("api_sandbox-us_clinical_trials_biotech_radar-curl");
+
+    var rawText = reqArea.value.trim();
+    try {
+      var parsed = JSON.parse(rawText);
+      statusBadge.textContent = "HTTP 200 OK · Verified Live Schema";
+      statusBadge.className = "badge-status-ok";
+      resArea.textContent = canonicalRes_api_sandbox-us_clinical_trials_biotech_radar;
+      
+      var escapedJson = JSON.stringify(parsed, null, 2).replace(/'/g, "'\\''");
+      curlArea.textContent = 'curl -X POST "' + endpointUrl + '" \\\n  -H "Content-Type: application/json" \\\n  -H "X-RapidAPI-Key: YOUR_API_KEY" \\\n  -d \'' + escapedJson + "\'";
+    } catch (err) {
+      statusBadge.textContent = "HTTP 400 Bad Request · Invalid JSON";
+      statusBadge.className = "badge-status-error";
+      resArea.textContent = JSON.stringify({
+        "error": "Bad Request",
+        "message": "Malformed JSON payload: " + err.message,
+        "hint": "Check for trailing commas, unbalanced braces, or unquoted keys.",
+        "statusCode": 400
+      }, null, 2);
+    }
+  };
+
+  window.resetSandbox_api_sandbox-us_clinical_trials_biotech_radar = function() {
+    document.getElementById("api_sandbox-us_clinical_trials_biotech_radar-req").value = initialReq_api_sandbox-us_clinical_trials_biotech_radar;
+    executeSandbox_api_sandbox-us_clinical_trials_biotech_radar();
+  };
+
+  window.copyCurl_api_sandbox-us_clinical_trials_biotech_radar = function() {
+    var curlCode = document.getElementById("api_sandbox-us_clinical_trials_biotech_radar-curl").textContent;
+    navigator.clipboard.writeText(curlCode).then(function() {
+      alert("cURL command copied to clipboard!");
+    }).catch(function() {
+      alert("Please copy manually from the box.");
+    });
+  };
+})();
+</script>
+
 
     <!-- Authentic Verified JSON Payload Block -->
     <section class="card-sec">

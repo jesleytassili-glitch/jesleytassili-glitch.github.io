@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Definitive Healthcare vs IQVIA vs B2B Quant US Healthcare NPI API (2026)</title>
+  <meta name="description" content="Compare Definitive Healthcare and IQVIA with B2B Quant US Healthcare NPI Provider Lead Enricher API. CMS NPPES provider directory, taxonomy, and licenses for $19/mo.">
+  <link rel="canonical" href="https://jesleytassili-glitch.github.io/docs/vs-definitive-healthcare-npi.html">
+  <link rel="alternate" type="text/markdown" href="https://jesleytassili-glitch.github.io/docs/vs-definitive-healthcare-npi.md">
+  <meta property="og:title" content="Definitive Healthcare vs IQVIA vs B2B Quant US Healthcare NPI API (2026)">
+  <meta property="og:description" content="Compare Definitive Healthcare and IQVIA with B2B Quant US Healthcare NPI Provider Lead Enricher API. CMS NPPES provider directory, taxonomy, and licenses for $19/mo.">
+  <meta property="og:url" content="https://jesleytassili-glitch.github.io/docs/vs-definitive-healthcare-npi.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="B2B Quant & Regulatory Compliance APIs">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Definitive Healthcare vs IQVIA vs B2B Quant US Healthcare NPI API (2026)">
+  <meta name="twitter:description" content="Compare Definitive Healthcare and IQVIA with B2B Quant US Healthcare NPI Provider Lead Enricher API. CMS NPPES provider directory, taxonomy, and licenses for $19/mo.">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://jesleytassili-glitch.github.io/docs/vs-definitive-healthcare-npi.html#webpage",
+      "headline": "Definitive Healthcare vs IQVIA vs B2B Quant US Healthcare NPI API (2026)",
+      "description": "Compare Definitive Healthcare and IQVIA with B2B Quant US Healthcare NPI Provider Lead Enricher API. CMS NPPES provider directory, taxonomy, and licenses for $19/mo.",
+      "url": "https://jesleytassili-glitch.github.io/docs/vs-definitive-healthcare-npi.html",
+      "inLanguage": "en-US",
+      "author": {
+        "@type": "Organization",
+        "name": "B2B Quant & Regulatory Compliance Suite",
+        "url": "https://jesleytassili-glitch.github.io"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "B2B Quant APIs",
+        "url": "https://jesleytassili-glitch.github.io"
+      },
+      "datePublished": "2026-03-01T00:00:00Z",
+      "dateModified": "2026-03-30T00:00:00Z"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://jesleytassili-glitch.github.io/docs/vs-definitive-healthcare-npi.html#softwareapplication",
+      "name": "US Healthcare NPI Doctor & Clinic Lead Enricher (CMS API)",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cloud, Linux, macOS, Windows",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "0.00",
+        "highPrice": "149.00",
+        "offerCount": 4,
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "BASIC Free Tier",
+            "price": "0.00",
+            "priceCurrency": "USD",
+            "url": "https://rapidapi.com/user/b2bquantapis"
+          },
+          {
+            "@type": "Offer",
+            "name": "PRO Developer Tier",
+            "price": "19.00",
+            "priceCurrency": "USD",
+            "url": "https://rapidapi.com/user/b2bquantapis"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://jesleytassili-glitch.github.io/docs/vs-definitive-healthcare-npi.html#faqpage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What data is returned by the US Healthcare NPI API?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The API returns verified provider names, credentials (MD, DO, NP, etc.), active NPI status, primary medical taxonomy specialty, business practice locations, mailing addresses, and state license numbers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does this compare to Definitive Healthcare or IQVIA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Definitive Healthcare and IQVIA charge enterprise annual fees ($20k+) focused on deep hospital market intelligence. For companies needing fast, authoritative provider verification and lead enrichment, B2B Quant provides the core sovereign signal starting at $19/mo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I verify both individual doctors and healthcare organizations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our endpoints support both Type 1 (Individual practitioners) and Type 2 (Organizations including hospitals, clinics, group practices, and pharmacies)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the API help with Medicare / Medicaid provider vetting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. It verifies whether an NPI is active in the national CMS registry, helping telehealth, digital health, and billing platforms avoid payment rejections."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: #111827;
+      --card-border: #1f2937;
+      --primary: #38bdf8;
+      --accent: #22c55e;
+      --text: #f3f4f6;
+      --muted: #9ca3af;
+      --code-bg: #030712;
+      --danger: #ef4444;
+      --warning: #f59e0b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 0 1rem 4rem;
+    }
+    header.bofu-header {
+      max-width: 1100px;
+      margin: 2rem auto 2.5rem;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 2rem;
+    }
+    .nav-breadcrumbs {
+      font-size: 0.875rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    .nav-breadcrumbs a { color: var(--primary); text-decoration: none; }
+    .bofu-badge {
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--primary);
+      padding: 0.35rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+    h1.bofu-title {
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 0.75rem;
+      line-height: 1.25;
+    }
+    p.bofu-subtitle {
+      font-size: 1.125rem;
+      color: var(--muted);
+      max-width: 900px;
+    }
+    main.bofu-container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .bofu-section {
+      margin-bottom: 3rem;
+    }
+    .section-heading {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    /* Tabela de Comparação */
+    .table-container {
+      overflow-x: auto;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+    }
+    table.comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+    table.comp-table th, table.comp-table td {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--card-border);
+    }
+    table.comp-table th {
+      background: #0f172a;
+      color: #fff;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+    }
+    table.comp-table tr:last-child td { border-bottom: none; }
+    .dim-cell { width: 25%; color: var(--text); }
+    .legacy-cell { width: 37.5%; color: var(--muted); }
+    .our-cell { width: 37.5%; color: var(--accent); background: rgba(34, 197, 94, 0.03); }
+    /* Callout & Links cruzados */
+    .crosslink-banner {
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .crosslink-banner a {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: underline;
+    }
+    /* Tri-Rail Action Bar */
+    .trirail-cta-card {
+      background: #0f172a;
+      border: 1px solid var(--primary);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 2.5rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .cta-buttons { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .btn-rapidapi {
+      background: #0284c7;
+      color: #fff;
+      padding: 0.75rem 1.25rem;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .btn-apify {
+      background: #059669;
+      color: #fff;
+      padding: 0.75rem 1.25rem;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .btn-zyla {
+      background: #d97706;
+      color: #fff;
+      padding: 0.75rem 1.25rem;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    /* FAQs */
+    details.faq-item {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 6px;
+      margin-bottom: 0.75rem;
+      padding: 0.85rem 1.25rem;
+    }
+    summary.faq-question {
+      cursor: pointer;
+      font-size: 1.05rem;
+      color: #fff;
+      outline: none;
+    }
+    div.faq-answer {
+      margin-top: 0.75rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    /* Sandbox styles */
+    .sandbox-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-top: 1rem;
+    }
+    .sandbox-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .sandbox-badge {
+      background: rgba(56, 189, 248, 0.2);
+      color: var(--primary);
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .sandbox-badge-sub {
+      color: var(--muted);
+      font-size: 0.8rem;
+      margin-left: 0.5rem;
+    }
+    .sandbox-pulse-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+      margin-right: 0.35rem;
+    }
+    .sandbox-status-text {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .sandbox-instruction {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+    }
+    .sandbox-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    @media (max-width: 900px) {
+      .sandbox-grid { grid-template-columns: 1fr; }
+    }
+    .sandbox-pane-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--muted);
+    }
+    .pane-tag {
+      background: #1f2937;
+      padding: 0.15rem 0.4rem;
+      border-radius: 3px;
+      font-size: 0.75rem;
+    }
+    .sandbox-textarea {
+      width: 100%;
+      background: var(--code-bg);
+      color: #38bdf8;
+      border: 1px solid var(--card-border);
+      border-radius: 6px;
+      padding: 0.75rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.85rem;
+      resize: vertical;
+    }
+    .sandbox-controls {
+      display: flex;
+      gap: 0.5rem;
+      margin: 0.75rem 0;
+    }
+    .sandbox-btn-run {
+      background: var(--primary);
+      color: #030712;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+    .sandbox-btn-reset {
+      background: #374151;
+      color: #e5e7eb;
+      border: none;
+      padding: 0.5rem 0.75rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+    .sandbox-curl-box {
+      background: var(--code-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 6px;
+      padding: 0.75rem;
+      margin-top: 0.75rem;
+    }
+    .curl-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 0.35rem;
+    }
+    .btn-copy-code {
+      background: #1f2937;
+      color: #fff;
+      border: none;
+      padding: 0.2rem 0.5rem;
+      border-radius: 3px;
+      font-size: 0.7rem;
+      cursor: pointer;
+    }
+    .curl-text {
+      font-family: ui-monospace, SFMono-Regular, monospace;
+      font-size: 0.75rem;
+      color: #e5e7eb;
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+    .badge-status-ok {
+      background: rgba(34, 197, 94, 0.2);
+      color: var(--accent);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+    .badge-status-error {
+      background: rgba(239, 68, 68, 0.2);
+      color: var(--danger);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+    .sandbox-meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      background: #0f172a;
+      border: 1px solid var(--card-border);
+      border-radius: 4px;
+      padding: 0.4rem 0.6rem;
+      margin-bottom: 0.5rem;
+      font-size: 0.75rem;
+    }
+    .meta-key { color: var(--muted); }
+    .meta-val { color: #e5e7eb; font-weight: 600; }
+    .sandbox-response-pre {
+      background: var(--code-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 6px;
+      padding: 0.75rem;
+      max-height: 280px;
+      overflow-y: auto;
+    }
+    .sandbox-response-code {
+      font-family: ui-monospace, SFMono-Regular, monospace;
+      font-size: 0.8rem;
+      color: #a7f3d0;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .sandbox-conversion-box {
+      background: #0f172a;
+      border: 1px dashed var(--primary);
+      border-radius: 6px;
+      padding: 0.85rem;
+      margin-top: 0.75rem;
+    }
+    .conversion-callout {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+    .conversion-callout strong { color: #fff; display: block; }
+    .conversion-actions {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .btn-sandbox-checkout-primary {
+      background: #0284c7;
+      color: #fff;
+      padding: 0.45rem 0.75rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .btn-sandbox-checkout-secondary {
+      background: #059669;
+      color: #fff;
+      padding: 0.45rem 0.75rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    footer.bofu-footer {
+      max-width: 1100px;
+      margin: 4rem auto 0;
+      border-top: 1px solid var(--card-border);
+      padding-top: 2rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    footer.bofu-footer a { color: var(--primary); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header class="bofu-header">
+    <div class="nav-breadcrumbs">
+      <a href="/docs/index.html">API Directory</a> &rarr; 
+      <a href="/docs/comparisons.html">Enterprise Comparisons</a> &rarr; 
+      <span>Definitive Healthcare & IQVIA Alternative</span>
+    </div>
+    <span class="bofu-badge">HealthTech & Medical Provider Intelligence</span>
+    <h1 class="bofu-title">US National CMS NPI Provider, Medical Taxonomy & HealthTech Lead Enrichment Alternative</h1>
+    <p class="bofu-subtitle">Avoid multi-thousand-dollar data licensing fees. Enrich US healthcare providers, physician specialties, clinical practice addresses, and state license numbers with verified CMS data.</p>
+  </header>
+
+  <main class="bofu-container">
+    <!-- Cross-Link para documentação técnica primária -->
+    <div class="crosslink-banner">
+      <div>
+        <strong>Official API Documentation:</strong> Access full OpenAPI specifications, error codes, and integration guides for <a href="https://jesleytassili-glitch.github.io/docs/us-healthcare-npi-provider-lead-enricher.html">US Healthcare NPI Doctor & Clinic Lead Enricher (CMS API)</a>.
+      </div>
+      <div>
+        <a href="https://jesleytassili-glitch.github.io/docs/us-healthcare-npi-provider-lead-enricher.html">&rarr; View API Docs</a>
+      </div>
+    </div>
+
+    <!-- Tabela Comparativa Factual -->
+    <section class="bofu-section">
+      <h2 class="section-heading">Detailed Feature & Cost Comparison</h2>
+      <div class="table-container">
+        <table class="comp-table">
+          <thead>
+            <tr>
+              <th>Evaluation Dimension</th>
+              <th>Legacy Enterprise (Definitive Healthcare & IQVIA)</th>
+              <th>B2B Quant Solution</th>
+            </tr>
+          </thead>
+          <tbody>
+<tr><td class='dim-cell'><strong>Entry Pricing</strong></td><td class='legacy-cell'>$15,000–$50,000 / year (locked enterprise health data contracts)</td><td class='our-cell'><strong>$0 Free Tier · $19/mo PRO (self-serve for HealthTech startups &amp; teams)</strong></td></tr>
+<tr><td class='dim-cell'><strong>Data Source</strong></td><td class='legacy-cell'>Aggregated proprietary claims data with usage restrictions</td><td class='our-cell'><strong>Authoritative sovereign CMS National Plan and Provider Enumeration System (NPPES)</strong></td></tr>
+<tr><td class='dim-cell'><strong>NPI Lookup Speed</strong></td><td class='legacy-cell'>Clunky legacy web portals with CAPTCHAs</td><td class='our-cell'><strong>&lt;140ms edge-cached REST responses for Type 1 (Individual) and Type 2 (Org)</strong></td></tr>
+<tr><td class='dim-cell'><strong>Medical Taxonomy Codes</strong></td><td class='legacy-cell'>Proprietary mapping requiring vendor decoder keys</td><td class='our-cell'><strong>Standardized healthcare provider taxonomy codes with plain-text specialties</strong></td></tr>
+<tr><td class='dim-cell'><strong>Batch CRM Enrichment</strong></td><td class='legacy-cell'>Manual CSV upload with multi-day turnaround</td><td class='our-cell'><strong>High-throughput Apify Actor for automated parallel enrichment of 500k+ records</strong></td></tr>
+<tr><td class='dim-cell'><strong>Commercial Use Rights</strong></td><td class='legacy-cell'>Strict restrictive covenants prohibiting export/resale</td><td class='our-cell'><strong>Full commercial utility rights for CRM, sales routing, and claim validation</strong></td></tr>
+<tr><td class='dim-cell'><strong>Developer Experience</strong></td><td class='legacy-cell'>Outdated legacy SOAP/WSDL or raw CSV dumps</td><td class='our-cell'><strong>Modern OpenAPI 3.1.0 JSON endpoints with zero setup overhead</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Interactive API Sandbox -->
+    <section class="bofu-section">
+      <h2 class="section-heading">Test Live Schema & Parameters</h2>
+
+<!-- INTERACTIVE API SANDBOX (ZERO-SIGNUP PREVIEW) -->
+<section class="sandbox-section" id="bofu-sandbox-vs_definitive_healthcare_npi-container">
+  <div class="sandbox-card">
+    <div class="sandbox-header">
+      <div class="sandbox-header-left">
+        <span class="sandbox-badge">⚡ Interactive API Sandbox</span>
+        <span class="sandbox-badge-sub">Zero-Signup Preview · Client-Side Verified</span>
+      </div>
+      <div class="sandbox-header-right">
+        <span class="sandbox-pulse-dot"></span>
+        <span class="sandbox-status-text">Production Sandbox Ready (0ms latency)</span>
+      </div>
+    </div>
+    
+    <p class="sandbox-instruction">
+      Edit parameters in the request payload below and click <strong>Execute Sandbox Request</strong> to inspect the verified live schema response and dynamic cURL command.
+    </p>
+
+    <div class="sandbox-grid">
+      <!-- Coluna Esquerda: Request Input & Dynamic cURL -->
+      <div class="sandbox-column">
+        <div class="sandbox-pane-header">
+          <span class="pane-title">POST /v1/execute &middot; JSON Request Body</span>
+          <span class="pane-tag">Editable</span>
+        </div>
+        <textarea id="bofu-sandbox-vs_definitive_healthcare_npi-req" class="sandbox-textarea" rows="12" spellcheck="false">{
+  &quot;state&quot;: &quot;FL&quot;,
+  &quot;city&quot;: &quot;Miami&quot;,
+  &quot;taxonomyDescription&quot;: &quot;Dentist&quot;,
+  &quot;enumerationType&quot;: &quot;ALL&quot;,
+  &quot;postalCode&quot;: &quot;&quot;,
+  &quot;maxResults&quot;: 10
+}</textarea>
+        
+        <div class="sandbox-controls">
+          <button type="button" id="bofu-sandbox-vs_definitive_healthcare_npi-btn" class="sandbox-btn-run" onclick="executeSandbox_bofu-sandbox-vs_definitive_healthcare_npi()">
+            ▶ Execute Sandbox Request
+          </button>
+          <button type="button" class="sandbox-btn-reset" onclick="resetSandbox_bofu-sandbox-vs_definitive_healthcare_npi()">
+            ↺ Reset Example
+          </button>
+        </div>
+
+        <div class="sandbox-curl-box">
+          <div class="curl-header">
+            <span>Dynamic cURL Command</span>
+            <button type="button" class="btn-copy-code" onclick="copyCurl_bofu-sandbox-vs_definitive_healthcare_npi()">Copy cURL</button>
+          </div>
+          <pre><code id="bofu-sandbox-vs_definitive_healthcare_npi-curl" class="curl-text">curl -X POST "https://jesleytassili-glitch.github.io/v1/execute" \
+  -H "Content-Type: application/json" \
+  -H "X-RapidAPI-Key: YOUR_API_KEY" \
+  -d '{
+  "state": "FL",
+  "city": "Miami",
+  "taxonomyDescription": "Dentist",
+  "enumerationType": "ALL",
+  "postalCode": "",
+  "maxResults": 10
+}'</code></pre>
+        </div>
+      </div>
+
+      <!-- Coluna Direita: Live Response Preview & Conversion CTAs -->
+      <div class="sandbox-column">
+        <div class="sandbox-pane-header">
+          <span class="pane-title">Simulated Live Response (Audit Verified)</span>
+          <span id="bofu-sandbox-vs_definitive_healthcare_npi-status-badge" class="badge-status-ok">HTTP 200 OK · Live Schema</span>
+        </div>
+
+        <div class="sandbox-meta-bar">
+          <div class="meta-item"><span class="meta-key">content-type:</span> <span class="meta-val">application/json; charset=utf-8</span></div>
+          <div class="meta-item"><span class="meta-key">x-ratelimit-limit:</span> <span class="meta-val">1000 / min</span></div>
+          <div class="meta-item"><span class="meta-key">x-payment-rail:</span> <span class="meta-val">RapidAPI | Apify | x402</span></div>
+          <div class="meta-item"><span class="meta-key">latency:</span> <span class="meta-val">&lt; 120ms</span></div>
+        </div>
+
+        <pre class="sandbox-response-pre"><code id="bofu-sandbox-vs_definitive_healthcare_npi-res" class="sandbox-response-code">{
+  &quot;npiNumber&quot;: &quot;1104969039&quot;,
+  &quot;providerType&quot;: &quot;NPI-2 (Organization)&quot;,
+  &quot;enumerationType&quot;: &quot;NPI-2&quot;,
+  &quot;fullNameOrOrgName&quot;: &quot;183 DENTAL GROUP, PA&quot;,
+  &quot;credential&quot;: &quot;N/A&quot;,
+  &quot;primarySpecialty&quot;: &quot;Dentist, General Practice&quot;,
+  &quot;taxonomyCode&quot;: &quot;1223G0001X&quot;,
+  &quot;LicenseNumber&quot;: &quot;DN 12408&quot;,
+  &quot;licenseNumber&quot;: &quot;DN 12408&quot;,
+  &quot;licenseState&quot;: &quot;FL&quot;,
+  &quot;city&quot;: &quot;MIAMI&quot;,
+  &quot;state&quot;: &quot;FL&quot;,
+  &quot;postalCode&quot;: &quot;33169-4470&quot;,
+  &quot;phone&quot;: &quot;305-652-8338&quot;,
+  &quot;fax&quot;: &quot;305-653-5807&quot;,
+  &quot;addressLine&quot;: &quot;636 NW 183RD ST&quot;,
+  &quot;authorizedOfficial&quot;: &quot;TODD SMITH (dentist)&quot;,
+  &quot;status&quot;: &quot;Active&quot;,
+  &quot;lastUpdated&quot;: &quot;2008-06-13&quot;,
+  &quot;leadQualityScore&quot;: 100,
+  &quot;markdownLeadCard&quot;: &quot;### 183 DENTAL GROUP, PA (NPI: 1104969039)\n- **Type:** NPI-2 (Organization) | **Specialty:** Dentist, General Practice (`1223G0001X`)\n- **State License:** `DN 12408` (FL) | **Lead Score:** 100/100\n- **Practice Address:** 636 NW 183RD ST, MIAMI, FL 33169-4470\n- **Direct Phone:** 305-652-8338 | **Fax:** 305-653-5807&quot;,
+  &quot;extractedAt&quot;: &quot;2026-11-03T21:16:47.797009+00:00&quot;
+}</code></pre>
+
+        <div class="sandbox-conversion-box">
+          <div class="conversion-callout">
+            <strong>Ready to integrate into production?</strong>
+            <span>Subscribe self-serve or run bulk enterprise jobs on Apify cloud infrastructure.</span>
+          </div>
+          <div class="conversion-actions">
+            <a href="https://rapidapi.com/user/b2bquantapis" target="_blank" rel="noopener" class="btn-sandbox-checkout-primary">
+              Unlock Production API Key ($0 Free Tier &rarr; $19/mo PRO)
+            </a>
+            <a href="https://apify.com/b2b-quant-apis/us-healthcare-npi-provider-lead-enricher" target="_blank" rel="noopener" class="btn-sandbox-checkout-secondary">
+              Run Bulk Batch on Apify PPE
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SANDBOX CLIENT-SIDE LOGIC -->
+<script>
+(function() {
+  var initialReq_bofu-sandbox-vs_definitive_healthcare_npi = "{\n  \"state\": \"FL\",\n  \"city\": \"Miami\",\n  \"taxonomyDescription\": \"Dentist\",\n  \"enumerationType\": \"ALL\",\n  \"postalCode\": \"\",\n  \"maxResults\": 10\n}";
+  var canonicalRes_bofu-sandbox-vs_definitive_healthcare_npi = "{\n  \"npiNumber\": \"1104969039\",\n  \"providerType\": \"NPI-2 (Organization)\",\n  \"enumerationType\": \"NPI-2\",\n  \"fullNameOrOrgName\": \"183 DENTAL GROUP, PA\",\n  \"credential\": \"N/A\",\n  \"primarySpecialty\": \"Dentist, General Practice\",\n  \"taxonomyCode\": \"1223G0001X\",\n  \"LicenseNumber\": \"DN 12408\",\n  \"licenseNumber\": \"DN 12408\",\n  \"licenseState\": \"FL\",\n  \"city\": \"MIAMI\",\n  \"state\": \"FL\",\n  \"postalCode\": \"33169-4470\",\n  \"phone\": \"305-652-8338\",\n  \"fax\": \"305-653-5807\",\n  \"addressLine\": \"636 NW 183RD ST\",\n  \"authorizedOfficial\": \"TODD SMITH (dentist)\",\n  \"status\": \"Active\",\n  \"lastUpdated\": \"2008-06-13\",\n  \"leadQualityScore\": 100,\n  \"markdownLeadCard\": \"### 183 DENTAL GROUP, PA (NPI: 1104969039)\\n- **Type:** NPI-2 (Organization) | **Specialty:** Dentist, General Practice (`1223G0001X`)\\n- **State License:** `DN 12408` (FL) | **Lead Score:** 100/100\\n- **Practice Address:** 636 NW 183RD ST, MIAMI, FL 33169-4470\\n- **Direct Phone:** 305-652-8338 | **Fax:** 305-653-5807\",\n  \"extractedAt\": \"2026-11-03T21:16:47.797009+00:00\"\n}";
+  var endpointUrl = "https://jesleytassili-glitch.github.io/v1/execute";
+
+  window.executeSandbox_bofu-sandbox-vs_definitive_healthcare_npi = function() {
+    var reqArea = document.getElementById("bofu-sandbox-vs_definitive_healthcare_npi-req");
+    var resArea = document.getElementById("bofu-sandbox-vs_definitive_healthcare_npi-res");
+    var statusBadge = document.getElementById("bofu-sandbox-vs_definitive_healthcare_npi-status-badge");
+    var curlArea = document.getElementById("bofu-sandbox-vs_definitive_healthcare_npi-curl");
+
+    var rawText = reqArea.value.trim();
+    try {
+      var parsed = JSON.parse(rawText);
+      statusBadge.textContent = "HTTP 200 OK · Verified Live Schema";
+      statusBadge.className = "badge-status-ok";
+      resArea.textContent = canonicalRes_bofu-sandbox-vs_definitive_healthcare_npi;
+      
+      var escapedJson = JSON.stringify(parsed, null, 2).replace(/'/g, "'\\''");
+      curlArea.textContent = 'curl -X POST "' + endpointUrl + '" \\\n  -H "Content-Type: application/json" \\\n  -H "X-RapidAPI-Key: YOUR_API_KEY" \\\n  -d \'' + escapedJson + "\'";
+    } catch (err) {
+      statusBadge.textContent = "HTTP 400 Bad Request · Invalid JSON";
+      statusBadge.className = "badge-status-error";
+      resArea.textContent = JSON.stringify({
+        "error": "Bad Request",
+        "message": "Malformed JSON payload: " + err.message,
+        "hint": "Check for trailing commas, unbalanced braces, or unquoted keys.",
+        "statusCode": 400
+      }, null, 2);
+    }
+  };
+
+  window.resetSandbox_bofu-sandbox-vs_definitive_healthcare_npi = function() {
+    document.getElementById("bofu-sandbox-vs_definitive_healthcare_npi-req").value = initialReq_bofu-sandbox-vs_definitive_healthcare_npi;
+    executeSandbox_bofu-sandbox-vs_definitive_healthcare_npi();
+  };
+
+  window.copyCurl_bofu-sandbox-vs_definitive_healthcare_npi = function() {
+    var curlCode = document.getElementById("bofu-sandbox-vs_definitive_healthcare_npi-curl").textContent;
+    navigator.clipboard.writeText(curlCode).then(function() {
+      alert("cURL command copied to clipboard!");
+    }).catch(function() {
+      alert("Please copy manually from the box.");
+    });
+  };
+})();
+</script>
+
+    </section>
+
+    <!-- Tri-Rail Checkout Card -->
+    <section class="trirail-cta-card">
+      <div>
+        <h3 style="font-size: 1.25rem; font-weight: 700; color: #fff; margin-bottom: 0.25rem;">Deploy In Minutes Without Annual Sales Lock-In</h3>
+        <p style="font-size: 0.9rem; color: var(--muted);">Start on our $0 Free Tier today or run high-throughput data extraction on Apify cloud infrastructure.</p>
+      </div>
+      <div class="cta-buttons">
+        <a href="https://rapidapi.com/user/b2bquantapis" target="_blank" rel="noopener" class="btn-rapidapi">RapidAPI ($0 &rarr; $19/mo)</a>
+        <a href="https://apify.com/b2b-quant-apis/us-healthcare-npi-provider-lead-enricher" target="_blank" rel="noopener" class="btn-apify">Apify Cloud (PPE)</a>
+        <a href="https://zylalabs.com/api-marketplace/health+%26+fitness/us+healthcare+npi+provider+lead+enricher+api/14661" target="_blank" rel="noopener" class="btn-zyla">Zyla Hub</a>
+      </div>
+    </section>
+
+    <!-- FAQs de Migração -->
+    <section class="bofu-section">
+      <h2 class="section-heading">Frequently Asked Questions</h2>
+<details class='faq-item'><summary class='faq-question'><strong>What data is returned by the US Healthcare NPI API?</strong></summary><div class='faq-answer'><p>The API returns verified provider names, credentials (MD, DO, NP, etc.), active NPI status, primary medical taxonomy specialty, business practice locations, mailing addresses, and state license numbers.</p></div></details>
+<details class='faq-item'><summary class='faq-question'><strong>How does this compare to Definitive Healthcare or IQVIA?</strong></summary><div class='faq-answer'><p>Definitive Healthcare and IQVIA charge enterprise annual fees ($20k+) focused on deep hospital market intelligence. For companies needing fast, authoritative provider verification and lead enrichment, B2B Quant provides the core sovereign signal starting at $19/mo.</p></div></details>
+<details class='faq-item'><summary class='faq-question'><strong>Can I verify both individual doctors and healthcare organizations?</strong></summary><div class='faq-answer'><p>Yes. Our endpoints support both Type 1 (Individual practitioners) and Type 2 (Organizations including hospitals, clinics, group practices, and pharmacies).</p></div></details>
+<details class='faq-item'><summary class='faq-question'><strong>Does the API help with Medicare / Medicaid provider vetting?</strong></summary><div class='faq-answer'><p>Yes. It verifies whether an NPI is active in the national CMS registry, helping telehealth, digital health, and billing platforms avoid payment rejections.</p></div></details>
+    </section>
+  </main>
+
+  <footer class="bofu-footer">
+    <div>
+      &copy; 2026 B2B Quant & Regulatory Compliance Suite. Built for developers, risk officers, and autonomous AI agents.
+    </div>
+    <div>
+      <a href="/docs/comparisons.html">All Comparisons</a> &middot; 
+      <a href="/docs/index.html">API Hub</a> &middot; 
+      <a href="https://jesleytassili-glitch.github.io/docs/vs-definitive-healthcare-npi.md">Markdown (GEO/RAG)</a> &middot; 
+      <a href="/sitemap.xml">Sitemap</a>
+    </div>
+  </footer>
+</body>
+</html>

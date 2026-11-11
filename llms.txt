@@ -99,3 +99,20 @@
 - https://jesleytassili-glitch.github.io/docs/global-sanctions-pep-interpol-watchlist-screener.md: Global OFAC & UN Sanctions Watchlist AML Screener
 - https://jesleytassili-glitch.github.io/docs/b2b-ssl-tls-ct-log-subdomain-attack-surface-auditor.md: B2B SSL/TLS CT Log & Subdomain Attack Surface Recon Auditor
 - https://jesleytassili-glitch.github.io/docs/b2b-quant-mcp-server.md: B2B Regulatory, KYB, FinTech & SecOps MCP Server (30 Tools)
+
+
+## Enterprise API Alternatives & Comparisons (BOFU)
+
+> In-depth commercial alternative guides and technical benchmarks against legacy data providers:
+
+- https://jesleytassili-glitch.github.io/docs/comparisons.html: Enterprise Alternatives & Comparison Directory
+- https://jesleytassili-glitch.github.io/docs/vs-complyadvantage-opensanctions.md: ComplyAdvantage & OpenSanctions Alternative - Sovereign AML, PEP & Interpol Watchlist Screening Alternative
+- https://jesleytassili-glitch.github.io/docs/vs-sec-api-io-edgar.md: SEC-API.io & EdgarOnline Alternative - Real-Time SEC Filings, Institutional Ownership & Insider Radar Alternative
+- https://jesleytassili-glitch.github.io/docs/vs-serpro-receitaws-cnpj.md: Serpro & ReceitaWS Alternative - Modern Brazilian Federal Revenue (CNPJ & QSA) Data Enrichment Alternative
+- https://jesleytassili-glitch.github.io/docs/vs-avalara-sistax-reforma-tributaria.md: Avalara & Sistax Alternative - Automated Brazil Tax Reform (EC 132 & LC 214) Engine Alternative
+- https://jesleytassili-glitch.github.io/docs/vs-securityscorecard-censys-ct-logs.md: SecurityScorecard & Censys Alternative - Real-Time Certificate Transparency & Attack Surface Reconnaissance Alternative
+- https://jesleytassili-glitch.github.io/docs/vs-whoisxml-domaintools.md: WhoisXML API & DomainTools Alternative - High-Speed Domain Registration WHOIS & Brand Reconnaissance Alternative
+- https://jesleytassili-glitch.github.io/docs/vs-dun-bradstreet-gleif-kyb.md: Dun & Bradstreet (D&B) & Bureau van Dijk (Orbis) Alternative - Sovereign GLEIF LEI Corporate Ownership & Ultimate Parent KYB Alternative
+- https://jesleytassili-glitch.github.io/docs/vs-govwin-deltek-sam-gov.md: GovWin (Deltek) & Bloomberg Government Alternative - Real-Time US Federal Procurement, Bidding Radar & SAM.gov Vetting Alternative
+- https://jesleytassili-glitch.github.io/docs/vs-recorded-future-cisa-kev.md: Recorded Future & Mandiant Alternative - Actionable CISA KEV Ransomware Exploitation & CVE Vulnerability Gate Alternative
+- https://jesleytassili-glitch.github.io/docs/vs-definitive-healthcare-npi.md: Definitive Healthcare & IQVIA Alternative - US National CMS NPI Provider, Medical Taxonomy & HealthTech Lead Enrichment Alternative

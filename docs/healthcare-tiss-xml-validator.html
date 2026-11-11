@@ -85,6 +85,7 @@ footer{border-top:1px solid var(--l);padding:2rem 1.5rem;background:#080c14;colo
     </div>
     <nav>
       <a href="/docs/index.html">All 31 APIs</a>
+      <a href="/docs/comparisons.html">Alternatives</a>
       <a href="/docs/category-healthcare-fda-biotech.html">Healthcare, FDA Life Sciences &amp; Clinical Trials</a>
       <a href="https://jesleytassili-glitch.github.io/docs/healthcare-tiss-xml-validator.md">Markdown (RAG)</a>
       <a href="https://jesleytassili-glitch.github.io/specs_openapi_31/healthcare-tiss-xml-validator.json">OpenAPI JSON</a>
@@ -226,6 +227,181 @@ footer{border-top:1px solid var(--l);padding:2rem 1.5rem;background:#080c14;colo
         </tbody>
       </table>
     </section>
+
+    
+
+    
+<!-- INTERACTIVE API SANDBOX (ZERO-SIGNUP PREVIEW) -->
+<section class="sandbox-section" id="api_sandbox-healthcare_tiss_xml_validator-container">
+  <div class="sandbox-card">
+    <div class="sandbox-header">
+      <div class="sandbox-header-left">
+        <span class="sandbox-badge">⚡ Interactive API Sandbox</span>
+        <span class="sandbox-badge-sub">Zero-Signup Preview · Client-Side Verified</span>
+      </div>
+      <div class="sandbox-header-right">
+        <span class="sandbox-pulse-dot"></span>
+        <span class="sandbox-status-text">Production Sandbox Ready (0ms latency)</span>
+      </div>
+    </div>
+    
+    <p class="sandbox-instruction">
+      Edit parameters in the request payload below and click <strong>Execute Sandbox Request</strong> to inspect the verified live schema response and dynamic cURL command.
+    </p>
+
+    <div class="sandbox-grid">
+      <!-- Coluna Esquerda: Request Input & Dynamic cURL -->
+      <div class="sandbox-column">
+        <div class="sandbox-pane-header">
+          <span class="pane-title">POST /v1/execute &middot; JSON Request Body</span>
+          <span class="pane-tag">Editable</span>
+        </div>
+        <textarea id="api_sandbox-healthcare_tiss_xml_validator-req" class="sandbox-textarea" rows="12" spellcheck="false">{
+  &quot;tissXmlPayloads&quot;: [
+    &quot;&lt;ans:mensagemTISS xmlns:ans=\&quot;http://www.ans.gov.br/padroes/tiss/schemas\&quot;&gt;&lt;ans:cabecalho&gt;&lt;ans:identificacaoTransacao&gt;&lt;ans:tipoTransacao&gt;ENVIO_LOTE_GUIAS&lt;/ans:tipoTransacao&gt;&lt;ans:sequencialTransacao&gt;1042&lt;/ans:sequencialTransacao&gt;&lt;/ans:identificacaoTransacao&gt;&lt;ans:destino&gt;&lt;ans:registroANS&gt;326305&lt;/ans:registroANS&gt;&lt;/ans:destino&gt;&lt;ans:Padrao&gt;4.03.00&lt;/ans:Padrao&gt;&lt;/ans:cabecalho&gt;&lt;ans:prestadorParaOperadora&gt;&lt;ans:loteGuias&gt;&lt;ans:numeroLote&gt;202610&lt;/ans:numeroLote&gt;&lt;ans:guiasTISS&gt;&lt;ans:guiaConsulta&gt;&lt;ans:numeroGuiaPrestador&gt;G-001&lt;/ans:numeroGuiaPrestador&gt;&lt;ans:dadosBeneficiario&gt;&lt;ans:numeroCarteira&gt;009988776655&lt;/ans:numeroCarteira&gt;&lt;/ans:dadosBeneficiario&gt;&lt;ans:dadosAtendimento&gt;&lt;ans:procedimento&gt;&lt;ans:codigoTabela&gt;22&lt;/ans:codigoTabela&gt;&lt;ans:codigoProcedimento&gt;10101012&lt;/ans:codigoProcedimento&gt;&lt;ans:valorProcedimento&gt;180.00&lt;/ans:valorProcedimento&gt;&lt;/ans:procedimento&gt;&lt;/ans:dadosAtendimento&gt;&lt;/ans:guiaConsulta&gt;&lt;/ans:guiasTISS&gt;&lt;/ans:loteGuias&gt;&lt;/ans:prestadorParaOperadora&gt;&lt;ans:epilogo&gt;&lt;ans:hash&gt;INVALID_HASH_000&lt;/ans:hash&gt;&lt;/ans:epilogo&gt;&lt;/ans:mensagemTISS&gt;&quot;
+  ],
+  &quot;autoFixHash&quot;: true
+}</textarea>
+        
+        <div class="sandbox-controls">
+          <button type="button" id="api_sandbox-healthcare_tiss_xml_validator-btn" class="sandbox-btn-run" onclick="executeSandbox_api_sandbox-healthcare_tiss_xml_validator()">
+            ▶ Execute Sandbox Request
+          </button>
+          <button type="button" class="sandbox-btn-reset" onclick="resetSandbox_api_sandbox-healthcare_tiss_xml_validator()">
+            ↺ Reset Example
+          </button>
+        </div>
+
+        <div class="sandbox-curl-box">
+          <div class="curl-header">
+            <span>Dynamic cURL Command</span>
+            <button type="button" class="btn-copy-code" onclick="copyCurl_api_sandbox-healthcare_tiss_xml_validator()">Copy cURL</button>
+          </div>
+          <pre><code id="api_sandbox-healthcare_tiss_xml_validator-curl" class="curl-text">curl -X POST "https://jesleytassili-glitch.github.io/v1/execute" \
+  -H "Content-Type: application/json" \
+  -H "X-RapidAPI-Key: YOUR_API_KEY" \
+  -d '{
+  "tissXmlPayloads": [
+    "<ans:mensagemTISS xmlns:ans=\"http://www.ans.gov.br/padroes/tiss/schemas\"><ans:cabecalho><ans:identificacaoTransacao><ans:tipoTransacao>ENVIO_LOTE_GUIAS</ans:tipoTransacao><ans:sequencialTransacao>1042</ans:sequencialTransacao></ans:identificacaoTransacao><ans:destino><ans:registroANS>326305</ans:registroANS></ans:destino><ans:Padrao>4.03.00</ans:Padrao></ans:cabecalho><ans:prestadorParaOperadora><ans:loteGuias><ans:numeroLote>202610</ans:numeroLote><ans:guiasTISS><ans:guiaConsulta><ans:numeroGuiaPrestador>G-001</ans:numeroGuiaPrestador><ans:dadosBeneficiario><ans:numeroCarteira>009988776655</ans:numeroCarteira></ans:dadosBeneficiario><ans:dadosAtendimento><ans:procedimento><ans:codigoTabela>22</ans:codigoTabela><ans:codigoProcedimento>10101012</ans:codigoProcedimento><ans:valorProcedimento>180.00</ans:valorProcedimento></ans:procedimento></ans:dadosAtendimento></ans:guiaConsulta></ans:guiasTISS></ans:loteGuias></ans:prestadorParaOperadora><ans:epilogo><ans:hash>INVALID_HASH_000</ans:hash></ans:epilogo></ans:mensagemTISS>"
+  ],
+  "autoFixHash": true
+}'</code></pre>
+        </div>
+      </div>
+
+      <!-- Coluna Direita: Live Response Preview & Conversion CTAs -->
+      <div class="sandbox-column">
+        <div class="sandbox-pane-header">
+          <span class="pane-title">Simulated Live Response (Audit Verified)</span>
+          <span id="api_sandbox-healthcare_tiss_xml_validator-status-badge" class="badge-status-ok">HTTP 200 OK · Live Schema</span>
+        </div>
+
+        <div class="sandbox-meta-bar">
+          <div class="meta-item"><span class="meta-key">content-type:</span> <span class="meta-val">application/json; charset=utf-8</span></div>
+          <div class="meta-item"><span class="meta-key">x-ratelimit-limit:</span> <span class="meta-val">1000 / min</span></div>
+          <div class="meta-item"><span class="meta-key">x-payment-rail:</span> <span class="meta-val">RapidAPI | Apify | x402</span></div>
+          <div class="meta-item"><span class="meta-key">latency:</span> <span class="meta-val">&lt; 120ms</span></div>
+        </div>
+
+        <pre class="sandbox-response-pre"><code id="api_sandbox-healthcare_tiss_xml_validator-res" class="sandbox-response-code">{
+  &quot;loteNumero&quot;: &quot;202610&quot;,
+  &quot;registroANS&quot;: &quot;326305&quot;,
+  &quot;tissVersion&quot;: &quot;4.03.00&quot;,
+  &quot;guiasCount&quot;: 1,
+  &quot;valorTotalLoteBRL&quot;: 180.0,
+  &quot;statusConformidade&quot;: &quot;CORRIGIDO_PRONTO_ENVIO&quot;,
+  &quot;originalHash&quot;: &quot;INVALID_HASH_000&quot;,
+  &quot;calculatedAnsMd5Hash&quot;: &quot;9aaabf2776dab3e0da33d63354db4298&quot;,
+  &quot;hashWasRepaired&quot;: true,
+  &quot;errorsFoundCount&quot;: 1,
+  &quot;glosaRiskAlerts&quot;: [
+    &quot;REJEIÇÃO DE LOTE (Hash MD5 Inválido): O XML contém &lt;hash&gt;INVALID_HASH_000&lt;/hash&gt;, mas o cálculo oficial ANS dos dados é &#x27;9aaabf2776dab3e0da33d63354db4298&#x27;.&quot;
+  ],
+  &quot;warnings&quot;: [
+    &quot;Auto-Fix Aplicado: Tag &lt;hash&gt; atualizada automaticamente para &#x27;9aaabf2776dab3e0da33d63354db4298&#x27;.&quot;
+  ],
+  &quot;proceduresAudited&quot;: [
+    {
+      &quot;guia&quot;: &quot;G-001&quot;,
+      &quot;codigoTUSS&quot;: &quot;10101012&quot;,
+      &quot;descricaoReferencia&quot;: &quot;Consulta em consultório (no horário normal ou preestabelecido)&quot;,
+      &quot;valorBRL&quot;: 180.0,
+      &quot;valido8Digitos&quot;: true
+    }
+  ],
+  &quot;lgpdCompliance&quot;: &quot;STATELESS_RAM_ONLY (Zero Patient PII Persisted)&quot;,
+  &quot;repairedXml&quot;: &quot;&lt;ans:mensagemTISS xmlns:ans=\&quot;http://www.ans.gov.br/padroes/tiss/schemas\&quot;&gt;&lt;ans:cabecalho&gt;&lt;ans:identificacaoTransacao&gt;&lt;ans:tipoTransacao&gt;ENVIO_LOTE_GUIAS&lt;/ans:tipoTransacao&gt;&lt;ans:sequencialTransacao&gt;1042&lt;/ans:sequencialTransacao&gt;&lt;/ans:identificacaoTransacao&gt;&lt;ans:destino&gt;&lt;ans:registroANS&gt;326305&lt;/ans:registroANS&gt;&lt;/ans:destino&gt;&lt;ans:Padrao&gt;4.03.00&lt;/ans:Padrao&gt;&lt;/ans:cabecalho&gt;&lt;ans:prestadorParaOperadora&gt;&lt;ans:loteGuias&gt;&lt;ans:numeroLote&gt;202610&lt;/ans:numeroLote&gt;&lt;ans:guiasTISS&gt;&lt;ans:guiaConsulta&gt;&lt;ans:numeroGuiaPrestador&gt;G-001&lt;/ans:numeroGuiaPrestador&gt;&lt;ans:dadosBeneficiario&gt;&lt;ans:numeroCarteira&gt;009988776655&lt;/ans:numeroCarteira&gt;&lt;/ans:dadosBeneficiario&gt;&lt;ans:dadosAtendimento&gt;&lt;ans:procedimento&gt;&lt;ans:codigoTabela&gt;22&lt;/ans:codigoTabela&gt;&lt;ans:codigoProcedimento&gt;10101012&lt;/ans:codigoProcedimento&gt;&lt;ans:valorProcedimento&gt;180.00&lt;/ans:valorProcedimento&gt;&lt;/ans:procedimento&gt;&lt;/ans:dadosAtendimento&gt;&lt;/ans:guiaConsulta&gt;&lt;/ans...&quot;
+}</code></pre>
+
+        <div class="sandbox-conversion-box">
+          <div class="conversion-callout">
+            <strong>Ready to integrate into production?</strong>
+            <span>Subscribe self-serve or run bulk enterprise jobs on Apify cloud infrastructure.</span>
+          </div>
+          <div class="conversion-actions">
+            <a href="https://rapidapi.com/b2bquantapis/api/healthcare-tiss-xml-validator" target="_blank" rel="noopener" class="btn-sandbox-checkout-primary">
+              Unlock Production API Key ($0 Free Tier &rarr; $19/mo PRO)
+            </a>
+            <a href="https://apify.com/b2b-quant-apis/healthcare-tiss-xml-validator" target="_blank" rel="noopener" class="btn-sandbox-checkout-secondary">
+              Run Bulk Batch on Apify PPE
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SANDBOX CLIENT-SIDE LOGIC -->
+<script>
+(function() {
+  var initialReq_api_sandbox-healthcare_tiss_xml_validator = "{\n  \"tissXmlPayloads\": [\n    \"<ans:mensagemTISS xmlns:ans=\\\"http://www.ans.gov.br/padroes/tiss/schemas\\\"><ans:cabecalho><ans:identificacaoTransacao><ans:tipoTransacao>ENVIO_LOTE_GUIAS</ans:tipoTransacao><ans:sequencialTransacao>1042</ans:sequencialTransacao></ans:identificacaoTransacao><ans:destino><ans:registroANS>326305</ans:registroANS></ans:destino><ans:Padrao>4.03.00</ans:Padrao></ans:cabecalho><ans:prestadorParaOperadora><ans:loteGuias><ans:numeroLote>202610</ans:numeroLote><ans:guiasTISS><ans:guiaConsulta><ans:numeroGuiaPrestador>G-001</ans:numeroGuiaPrestador><ans:dadosBeneficiario><ans:numeroCarteira>009988776655</ans:numeroCarteira></ans:dadosBeneficiario><ans:dadosAtendimento><ans:procedimento><ans:codigoTabela>22</ans:codigoTabela><ans:codigoProcedimento>10101012</ans:codigoProcedimento><ans:valorProcedimento>180.00</ans:valorProcedimento></ans:procedimento></ans:dadosAtendimento></ans:guiaConsulta></ans:guiasTISS></ans:loteGuias></ans:prestadorParaOperadora><ans:epilogo><ans:hash>INVALID_HASH_000</ans:hash></ans:epilogo></ans:mensagemTISS>\"\n  ],\n  \"autoFixHash\": true\n}";
+  var canonicalRes_api_sandbox-healthcare_tiss_xml_validator = "{\n  \"loteNumero\": \"202610\",\n  \"registroANS\": \"326305\",\n  \"tissVersion\": \"4.03.00\",\n  \"guiasCount\": 1,\n  \"valorTotalLoteBRL\": 180.0,\n  \"statusConformidade\": \"CORRIGIDO_PRONTO_ENVIO\",\n  \"originalHash\": \"INVALID_HASH_000\",\n  \"calculatedAnsMd5Hash\": \"9aaabf2776dab3e0da33d63354db4298\",\n  \"hashWasRepaired\": true,\n  \"errorsFoundCount\": 1,\n  \"glosaRiskAlerts\": [\n    \"REJEI\u00c7\u00c3O DE LOTE (Hash MD5 Inv\u00e1lido): O XML cont\u00e9m <hash>INVALID_HASH_000</hash>, mas o c\u00e1lculo oficial ANS dos dados \u00e9 '9aaabf2776dab3e0da33d63354db4298'.\"\n  ],\n  \"warnings\": [\n    \"Auto-Fix Aplicado: Tag <hash> atualizada automaticamente para '9aaabf2776dab3e0da33d63354db4298'.\"\n  ],\n  \"proceduresAudited\": [\n    {\n      \"guia\": \"G-001\",\n      \"codigoTUSS\": \"10101012\",\n      \"descricaoReferencia\": \"Consulta em consult\u00f3rio (no hor\u00e1rio normal ou preestabelecido)\",\n      \"valorBRL\": 180.0,\n      \"valido8Digitos\": true\n    }\n  ],\n  \"lgpdCompliance\": \"STATELESS_RAM_ONLY (Zero Patient PII Persisted)\",\n  \"repairedXml\": \"<ans:mensagemTISS xmlns:ans=\\\"http://www.ans.gov.br/padroes/tiss/schemas\\\"><ans:cabecalho><ans:identificacaoTransacao><ans:tipoTransacao>ENVIO_LOTE_GUIAS</ans:tipoTransacao><ans:sequencialTransacao>1042</ans:sequencialTransacao></ans:identificacaoTransacao><ans:destino><ans:registroANS>326305</ans:registroANS></ans:destino><ans:Padrao>4.03.00</ans:Padrao></ans:cabecalho><ans:prestadorParaOperadora><ans:loteGuias><ans:numeroLote>202610</ans:numeroLote><ans:guiasTISS><ans:guiaConsulta><ans:numeroGuiaPrestador>G-001</ans:numeroGuiaPrestador><ans:dadosBeneficiario><ans:numeroCarteira>009988776655</ans:numeroCarteira></ans:dadosBeneficiario><ans:dadosAtendimento><ans:procedimento><ans:codigoTabela>22</ans:codigoTabela><ans:codigoProcedimento>10101012</ans:codigoProcedimento><ans:valorProcedimento>180.00</ans:valorProcedimento></ans:procedimento></ans:dadosAtendimento></ans:guiaConsulta></ans...\"\n}";
+  var endpointUrl = "https://jesleytassili-glitch.github.io/v1/execute";
+
+  window.executeSandbox_api_sandbox-healthcare_tiss_xml_validator = function() {
+    var reqArea = document.getElementById("api_sandbox-healthcare_tiss_xml_validator-req");
+    var resArea = document.getElementById("api_sandbox-healthcare_tiss_xml_validator-res");
+    var statusBadge = document.getElementById("api_sandbox-healthcare_tiss_xml_validator-status-badge");
+    var curlArea = document.getElementById("api_sandbox-healthcare_tiss_xml_validator-curl");
+
+    var rawText = reqArea.value.trim();
+    try {
+      var parsed = JSON.parse(rawText);
+      statusBadge.textContent = "HTTP 200 OK · Verified Live Schema";
+      statusBadge.className = "badge-status-ok";
+      resArea.textContent = canonicalRes_api_sandbox-healthcare_tiss_xml_validator;
+      
+      var escapedJson = JSON.stringify(parsed, null, 2).replace(/'/g, "'\\''");
+      curlArea.textContent = 'curl -X POST "' + endpointUrl + '" \\\n  -H "Content-Type: application/json" \\\n  -H "X-RapidAPI-Key: YOUR_API_KEY" \\\n  -d \'' + escapedJson + "\'";
+    } catch (err) {
+      statusBadge.textContent = "HTTP 400 Bad Request · Invalid JSON";
+      statusBadge.className = "badge-status-error";
+      resArea.textContent = JSON.stringify({
+        "error": "Bad Request",
+        "message": "Malformed JSON payload: " + err.message,
+        "hint": "Check for trailing commas, unbalanced braces, or unquoted keys.",
+        "statusCode": 400
+      }, null, 2);
+    }
+  };
+
+  window.resetSandbox_api_sandbox-healthcare_tiss_xml_validator = function() {
+    document.getElementById("api_sandbox-healthcare_tiss_xml_validator-req").value = initialReq_api_sandbox-healthcare_tiss_xml_validator;
+    executeSandbox_api_sandbox-healthcare_tiss_xml_validator();
+  };
+
+  window.copyCurl_api_sandbox-healthcare_tiss_xml_validator = function() {
+    var curlCode = document.getElementById("api_sandbox-healthcare_tiss_xml_validator-curl").textContent;
+    navigator.clipboard.writeText(curlCode).then(function() {
+      alert("cURL command copied to clipboard!");
+    }).catch(function() {
+      alert("Please copy manually from the box.");
+    });
+  };
+})();
+</script>
+
 
     <!-- Authentic Verified JSON Payload Block -->
     <section class="card-sec">

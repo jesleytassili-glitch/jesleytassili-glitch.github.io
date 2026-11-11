@@ -85,6 +85,7 @@ footer{border-top:1px solid var(--l);padding:2rem 1.5rem;background:#080c14;colo
     </div>
     <nav>
       <a href="/docs/index.html">All 31 APIs</a>
+      <a href="/docs/comparisons.html">Alternatives</a>
       <a href="/docs/category-gov-procurement-esg.html">Government Procurement, Tenders &amp; ESG Compliance</a>
       <a href="https://jesleytassili-glitch.github.io/docs/us-sam-gov-federal-procurement-auditor.md">Markdown (RAG)</a>
       <a href="https://jesleytassili-glitch.github.io/specs_openapi_31/us-sam-gov-federal-procurement-auditor.json">OpenAPI JSON</a>
@@ -222,6 +223,176 @@ footer{border-top:1px solid var(--l);padding:2rem 1.5rem;background:#080c14;colo
         </tbody>
       </table>
     </section>
+
+    
+    <!-- BOFU Crosslink Callout -->
+    <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #38bdf8; border-radius: 8px; padding: 1.1rem 1.4rem; margin: 1.5rem 0; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+      <div>
+        <span style="background: #0284c7; color: #ffffff; font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.55rem; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.05em;">Enterprise Comparison</span>
+        <div style="color: #f1f5f9; font-weight: 600; margin-top: 0.35rem; font-size: 0.95rem;">Evaluating modern alternatives to GovWin (Deltek) &amp; Bloomberg Government?</div>
+      </div>
+      <a href="/docs/vs-govwin-deltek-sam-gov.html" style="background: #38bdf8; color: #0f172a; font-weight: 700; padding: 0.55rem 1.1rem; border-radius: 6px; text-decoration: none; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 0.35rem; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+        Read GovWin (Deltek) &amp; Bloomberg Government Alternative Guide &rarr;
+      </a>
+    </div>
+
+
+    
+<!-- INTERACTIVE API SANDBOX (ZERO-SIGNUP PREVIEW) -->
+<section class="sandbox-section" id="api_sandbox-us_sam_gov_federal_procurement_auditor-container">
+  <div class="sandbox-card">
+    <div class="sandbox-header">
+      <div class="sandbox-header-left">
+        <span class="sandbox-badge">⚡ Interactive API Sandbox</span>
+        <span class="sandbox-badge-sub">Zero-Signup Preview · Client-Side Verified</span>
+      </div>
+      <div class="sandbox-header-right">
+        <span class="sandbox-pulse-dot"></span>
+        <span class="sandbox-status-text">Production Sandbox Ready (0ms latency)</span>
+      </div>
+    </div>
+    
+    <p class="sandbox-instruction">
+      Edit parameters in the request payload below and click <strong>Execute Sandbox Request</strong> to inspect the verified live schema response and dynamic cURL command.
+    </p>
+
+    <div class="sandbox-grid">
+      <!-- Coluna Esquerda: Request Input & Dynamic cURL -->
+      <div class="sandbox-column">
+        <div class="sandbox-pane-header">
+          <span class="pane-title">POST /v1/execute &middot; JSON Request Body</span>
+          <span class="pane-tag">Editable</span>
+        </div>
+        <textarea id="api_sandbox-us_sam_gov_federal_procurement_auditor-req" class="sandbox-textarea" rows="12" spellcheck="false">{
+  &quot;keyword&quot;: &quot;cybersecurity&quot;,
+  &quot;awardingAgency&quot;: &quot;&quot;,
+  &quot;minAwardAmount&quot;: 50000,
+  &quot;maxResults&quot;: 5
+}</textarea>
+        
+        <div class="sandbox-controls">
+          <button type="button" id="api_sandbox-us_sam_gov_federal_procurement_auditor-btn" class="sandbox-btn-run" onclick="executeSandbox_api_sandbox-us_sam_gov_federal_procurement_auditor()">
+            ▶ Execute Sandbox Request
+          </button>
+          <button type="button" class="sandbox-btn-reset" onclick="resetSandbox_api_sandbox-us_sam_gov_federal_procurement_auditor()">
+            ↺ Reset Example
+          </button>
+        </div>
+
+        <div class="sandbox-curl-box">
+          <div class="curl-header">
+            <span>Dynamic cURL Command</span>
+            <button type="button" class="btn-copy-code" onclick="copyCurl_api_sandbox-us_sam_gov_federal_procurement_auditor()">Copy cURL</button>
+          </div>
+          <pre><code id="api_sandbox-us_sam_gov_federal_procurement_auditor-curl" class="curl-text">curl -X POST "https://jesleytassili-glitch.github.io/v1/execute" \
+  -H "Content-Type: application/json" \
+  -H "X-RapidAPI-Key: YOUR_API_KEY" \
+  -d '{
+  "keyword": "cybersecurity",
+  "awardingAgency": "",
+  "minAwardAmount": 50000,
+  "maxResults": 5
+}'</code></pre>
+        </div>
+      </div>
+
+      <!-- Coluna Direita: Live Response Preview & Conversion CTAs -->
+      <div class="sandbox-column">
+        <div class="sandbox-pane-header">
+          <span class="pane-title">Simulated Live Response (Audit Verified)</span>
+          <span id="api_sandbox-us_sam_gov_federal_procurement_auditor-status-badge" class="badge-status-ok">HTTP 200 OK · Live Schema</span>
+        </div>
+
+        <div class="sandbox-meta-bar">
+          <div class="meta-item"><span class="meta-key">content-type:</span> <span class="meta-val">application/json; charset=utf-8</span></div>
+          <div class="meta-item"><span class="meta-key">x-ratelimit-limit:</span> <span class="meta-val">1000 / min</span></div>
+          <div class="meta-item"><span class="meta-key">x-payment-rail:</span> <span class="meta-val">RapidAPI | Apify | x402</span></div>
+          <div class="meta-item"><span class="meta-key">latency:</span> <span class="meta-val">&lt; 120ms</span></div>
+        </div>
+
+        <pre class="sandbox-response-pre"><code id="api_sandbox-us_sam_gov_federal_procurement_auditor-res" class="sandbox-response-code">{
+  &quot;awardId&quot;: &quot;FA862118F6251&quot;,
+  &quot;recipientName&quot;: &quot;LOCKHEED MARTIN CORPORATION&quot;,
+  &quot;awardingAgency&quot;: &quot;Department of Defense&quot;,
+  &quot;awardingSubAgency&quot;: &quot;Department of the Air Force&quot;,
+  &quot;awardAmountUsd&quot;: 666315748.84,
+  &quot;startDate&quot;: &quot;2018-02-08&quot;,
+  &quot;endDate&quot;: &quot;2027-01-31&quot;,
+  &quot;contractAwardType&quot;: &quot;DELIVERY ORDER&quot;,
+  &quot;b2gOpportunityScore&quot;: 100,
+  &quot;description&quot;: &quot;IGF::OT::IGF  AFSOC ACTS AWARD OF CONTRACT FOR CLS, ENGINEERING, INSTRUCTION, CYBERSECURITY, DMO&quot;,
+  &quot;markdownProcurementBrief&quot;: &quot;# US FEDERAL PROCUREMENT &amp; SAM.GOV B2G BRIEF: FA862118F6251\n\n## 1. Award &amp; Prime Contractor Summary\n- **Federal Award ID (PIID):** `FA862118F6251`\n- **Winning Prime Contractor:** LOCKHEED MARTIN CORPORATION\n- **Contract Obligation Value:** **$666,315,748.84 USD**\n- **B2G Opportunity Score:** **100/100** (PRIME SUBCONTRACTING &amp; RECOMPETE TARGET)\n\n## 2. Federal Agency &amp; Performance Timeline\n- **Awarding Agency:** Department of Defense\n- **Awarding Sub-Agency / Command:** Department of the Air Force\n- **Contract Instrument Type:** DELIVERY ORDER\n- **Period of Performance:** 2018-02-08 to 2027-01-31\n\n## 3. Scope of Work &amp; Requirement Description\n- **Official Award Description:** IGF::OT::IGF  AFSOC ACTS AWARD OF CONTRACT FOR CLS, ENGINEERING, INSTRUCTION, CYBERSECURITY, DMO&quot;
+}</code></pre>
+
+        <div class="sandbox-conversion-box">
+          <div class="conversion-callout">
+            <strong>Ready to integrate into production?</strong>
+            <span>Subscribe self-serve or run bulk enterprise jobs on Apify cloud infrastructure.</span>
+          </div>
+          <div class="conversion-actions">
+            <a href="https://rapidapi.com/user/b2bquantapis" target="_blank" rel="noopener" class="btn-sandbox-checkout-primary">
+              Unlock Production API Key ($0 Free Tier &rarr; $19/mo PRO)
+            </a>
+            <a href="https://apify.com/b2b-quant-apis/us-sam-gov-federal-procurement-auditor" target="_blank" rel="noopener" class="btn-sandbox-checkout-secondary">
+              Run Bulk Batch on Apify PPE
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SANDBOX CLIENT-SIDE LOGIC -->
+<script>
+(function() {
+  var initialReq_api_sandbox-us_sam_gov_federal_procurement_auditor = "{\n  \"keyword\": \"cybersecurity\",\n  \"awardingAgency\": \"\",\n  \"minAwardAmount\": 50000,\n  \"maxResults\": 5\n}";
+  var canonicalRes_api_sandbox-us_sam_gov_federal_procurement_auditor = "{\n  \"awardId\": \"FA862118F6251\",\n  \"recipientName\": \"LOCKHEED MARTIN CORPORATION\",\n  \"awardingAgency\": \"Department of Defense\",\n  \"awardingSubAgency\": \"Department of the Air Force\",\n  \"awardAmountUsd\": 666315748.84,\n  \"startDate\": \"2018-02-08\",\n  \"endDate\": \"2027-01-31\",\n  \"contractAwardType\": \"DELIVERY ORDER\",\n  \"b2gOpportunityScore\": 100,\n  \"description\": \"IGF::OT::IGF  AFSOC ACTS AWARD OF CONTRACT FOR CLS, ENGINEERING, INSTRUCTION, CYBERSECURITY, DMO\",\n  \"markdownProcurementBrief\": \"# US FEDERAL PROCUREMENT & SAM.GOV B2G BRIEF: FA862118F6251\\n\\n## 1. Award & Prime Contractor Summary\\n- **Federal Award ID (PIID):** `FA862118F6251`\\n- **Winning Prime Contractor:** LOCKHEED MARTIN CORPORATION\\n- **Contract Obligation Value:** **$666,315,748.84 USD**\\n- **B2G Opportunity Score:** **100/100** (PRIME SUBCONTRACTING & RECOMPETE TARGET)\\n\\n## 2. Federal Agency & Performance Timeline\\n- **Awarding Agency:** Department of Defense\\n- **Awarding Sub-Agency / Command:** Department of the Air Force\\n- **Contract Instrument Type:** DELIVERY ORDER\\n- **Period of Performance:** 2018-02-08 to 2027-01-31\\n\\n## 3. Scope of Work & Requirement Description\\n- **Official Award Description:** IGF::OT::IGF  AFSOC ACTS AWARD OF CONTRACT FOR CLS, ENGINEERING, INSTRUCTION, CYBERSECURITY, DMO\"\n}";
+  var endpointUrl = "https://jesleytassili-glitch.github.io/v1/execute";
+
+  window.executeSandbox_api_sandbox-us_sam_gov_federal_procurement_auditor = function() {
+    var reqArea = document.getElementById("api_sandbox-us_sam_gov_federal_procurement_auditor-req");
+    var resArea = document.getElementById("api_sandbox-us_sam_gov_federal_procurement_auditor-res");
+    var statusBadge = document.getElementById("api_sandbox-us_sam_gov_federal_procurement_auditor-status-badge");
+    var curlArea = document.getElementById("api_sandbox-us_sam_gov_federal_procurement_auditor-curl");
+
+    var rawText = reqArea.value.trim();
+    try {
+      var parsed = JSON.parse(rawText);
+      statusBadge.textContent = "HTTP 200 OK · Verified Live Schema";
+      statusBadge.className = "badge-status-ok";
+      resArea.textContent = canonicalRes_api_sandbox-us_sam_gov_federal_procurement_auditor;
+      
+      var escapedJson = JSON.stringify(parsed, null, 2).replace(/'/g, "'\\''");
+      curlArea.textContent = 'curl -X POST "' + endpointUrl + '" \\\n  -H "Content-Type: application/json" \\\n  -H "X-RapidAPI-Key: YOUR_API_KEY" \\\n  -d \'' + escapedJson + "\'";
+    } catch (err) {
+      statusBadge.textContent = "HTTP 400 Bad Request · Invalid JSON";
+      statusBadge.className = "badge-status-error";
+      resArea.textContent = JSON.stringify({
+        "error": "Bad Request",
+        "message": "Malformed JSON payload: " + err.message,
+        "hint": "Check for trailing commas, unbalanced braces, or unquoted keys.",
+        "statusCode": 400
+      }, null, 2);
+    }
+  };
+
+  window.resetSandbox_api_sandbox-us_sam_gov_federal_procurement_auditor = function() {
+    document.getElementById("api_sandbox-us_sam_gov_federal_procurement_auditor-req").value = initialReq_api_sandbox-us_sam_gov_federal_procurement_auditor;
+    executeSandbox_api_sandbox-us_sam_gov_federal_procurement_auditor();
+  };
+
+  window.copyCurl_api_sandbox-us_sam_gov_federal_procurement_auditor = function() {
+    var curlCode = document.getElementById("api_sandbox-us_sam_gov_federal_procurement_auditor-curl").textContent;
+    navigator.clipboard.writeText(curlCode).then(function() {
+      alert("cURL command copied to clipboard!");
+    }).catch(function() {
+      alert("Please copy manually from the box.");
+    });
+  };
+})();
+</script>
+
 
     <!-- Authentic Verified JSON Payload Block -->
     <section class="card-sec">

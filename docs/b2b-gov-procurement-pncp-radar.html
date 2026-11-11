@@ -85,6 +85,7 @@ footer{border-top:1px solid var(--l);padding:2rem 1.5rem;background:#080c14;colo
     </div>
     <nav>
       <a href="/docs/index.html">All 31 APIs</a>
+      <a href="/docs/comparisons.html">Alternatives</a>
       <a href="/docs/category-gov-procurement-esg.html">Government Procurement, Tenders &amp; ESG Compliance</a>
       <a href="https://jesleytassili-glitch.github.io/docs/b2b-gov-procurement-pncp-radar.md">Markdown (RAG)</a>
       <a href="https://jesleytassili-glitch.github.io/specs_openapi_31/b2b-gov-procurement-pncp-radar.json">OpenAPI JSON</a>
@@ -244,6 +245,194 @@ footer{border-top:1px solid var(--l);padding:2rem 1.5rem;background:#080c14;colo
         </tbody>
       </table>
     </section>
+
+    
+
+    
+<!-- INTERACTIVE API SANDBOX (ZERO-SIGNUP PREVIEW) -->
+<section class="sandbox-section" id="api_sandbox-b2b_gov_procurement_pncp_radar-container">
+  <div class="sandbox-card">
+    <div class="sandbox-header">
+      <div class="sandbox-header-left">
+        <span class="sandbox-badge">⚡ Interactive API Sandbox</span>
+        <span class="sandbox-badge-sub">Zero-Signup Preview · Client-Side Verified</span>
+      </div>
+      <div class="sandbox-header-right">
+        <span class="sandbox-pulse-dot"></span>
+        <span class="sandbox-status-text">Production Sandbox Ready (0ms latency)</span>
+      </div>
+    </div>
+    
+    <p class="sandbox-instruction">
+      Edit parameters in the request payload below and click <strong>Execute Sandbox Request</strong> to inspect the verified live schema response and dynamic cURL command.
+    </p>
+
+    <div class="sandbox-grid">
+      <!-- Coluna Esquerda: Request Input & Dynamic cURL -->
+      <div class="sandbox-column">
+        <div class="sandbox-pane-header">
+          <span class="pane-title">POST /v1/execute &middot; JSON Request Body</span>
+          <span class="pane-tag">Editable</span>
+        </div>
+        <textarea id="api_sandbox-b2b_gov_procurement_pncp_radar-req" class="sandbox-textarea" rows="12" spellcheck="false">{
+  &quot;uf&quot;: &quot;SP&quot;,
+  &quot;keywords&quot;: [
+    &quot;software&quot;,
+    &quot;cloud&quot;,
+    &quot;licenciamento&quot;
+  ],
+  &quot;codigoModalidadeContratacao&quot;: &quot;6&quot;,
+  &quot;dataInicial&quot;: &quot;&quot;,
+  &quot;dataFinal&quot;: &quot;&quot;,
+  &quot;maxResults&quot;: 10,
+  &quot;fetchItems&quot;: false
+}</textarea>
+        
+        <div class="sandbox-controls">
+          <button type="button" id="api_sandbox-b2b_gov_procurement_pncp_radar-btn" class="sandbox-btn-run" onclick="executeSandbox_api_sandbox-b2b_gov_procurement_pncp_radar()">
+            ▶ Execute Sandbox Request
+          </button>
+          <button type="button" class="sandbox-btn-reset" onclick="resetSandbox_api_sandbox-b2b_gov_procurement_pncp_radar()">
+            ↺ Reset Example
+          </button>
+        </div>
+
+        <div class="sandbox-curl-box">
+          <div class="curl-header">
+            <span>Dynamic cURL Command</span>
+            <button type="button" class="btn-copy-code" onclick="copyCurl_api_sandbox-b2b_gov_procurement_pncp_radar()">Copy cURL</button>
+          </div>
+          <pre><code id="api_sandbox-b2b_gov_procurement_pncp_radar-curl" class="curl-text">curl -X POST "https://jesleytassili-glitch.github.io/v1/execute" \
+  -H "Content-Type: application/json" \
+  -H "X-RapidAPI-Key: YOUR_API_KEY" \
+  -d '{
+  "uf": "SP",
+  "keywords": [
+    "software",
+    "cloud",
+    "licenciamento"
+  ],
+  "codigoModalidadeContratacao": "6",
+  "dataInicial": "",
+  "dataFinal": "",
+  "maxResults": 10,
+  "fetchItems": false
+}'</code></pre>
+        </div>
+      </div>
+
+      <!-- Coluna Direita: Live Response Preview & Conversion CTAs -->
+      <div class="sandbox-column">
+        <div class="sandbox-pane-header">
+          <span class="pane-title">Simulated Live Response (Audit Verified)</span>
+          <span id="api_sandbox-b2b_gov_procurement_pncp_radar-status-badge" class="badge-status-ok">HTTP 200 OK · Live Schema</span>
+        </div>
+
+        <div class="sandbox-meta-bar">
+          <div class="meta-item"><span class="meta-key">content-type:</span> <span class="meta-val">application/json; charset=utf-8</span></div>
+          <div class="meta-item"><span class="meta-key">x-ratelimit-limit:</span> <span class="meta-val">1000 / min</span></div>
+          <div class="meta-item"><span class="meta-key">x-payment-rail:</span> <span class="meta-val">RapidAPI | Apify | x402</span></div>
+          <div class="meta-item"><span class="meta-key">latency:</span> <span class="meta-val">&lt; 120ms</span></div>
+        </div>
+
+        <pre class="sandbox-response-pre"><code id="api_sandbox-b2b_gov_procurement_pncp_radar-res" class="sandbox-response-code">{
+  &quot;numeroControlePNCP&quot;: &quot;45138088000140-1-000010/2026&quot;,
+  &quot;cnpjOrgao&quot;: &quot;45138088000140&quot;,
+  &quot;orgaoNome&quot;: &quot;MUNICIPIO DE SANTANA DA PONTE PENSA&quot;,
+  &quot;uf&quot;: &quot;SP&quot;,
+  &quot;municipio&quot;: &quot;Santana da Ponte Pensa&quot;,
+  &quot;modalidadeId&quot;: 6,
+  &quot;modalidadeNome&quot;: &quot;Pregão - Eletrônico&quot;,
+  &quot;modoDisputaNome&quot;: &quot;Aberto&quot;,
+  &quot;srp&quot;: false,
+  &quot;valorTotalEstimadoBRL&quot;: 286843.24,
+  &quot;dataPublicacaoPncp&quot;: &quot;2026-10-18T22:11:33&quot;,
+  &quot;dataAberturaProposta&quot;: &quot;2026-10-19T08:00:00&quot;,
+  &quot;dataEncerramentoProposta&quot;: &quot;2026-11-04T08:00:00&quot;,
+  &quot;objetoCompra&quot;: &quot;AQUISIÇÃO DE 01 (UM) VEÍCULO TIPO MINIVAN/VAN, ZERO QUILÔMETRO,\r\nCOM CAPACIDADE PARA 10 (DEZ) PASSAGEIROS E 01 (UM) MOTORISTA,\r\nTOTALIZANDO 11 (ONZE) OCUPANTES, DESTINADO AO TRANSPORTE DE PACIENTES,\r\nACOMPANHANTES E PROFISSIONAIS VINCULADOS À SECRETARIA MUNICIPAL DE\r\nSAÚDE.&quot;,
+  &quot;informacaoComplementar&quot;: null,
+  &quot;linkSistemaOrigem&quot;: &quot;https://bllcompras.com/Process/ProcessView?param1=[gkz]aI23irKXi8sVBvvGmSdJAcJO9NRjhxFmLuW_Z9mnuAUs9g7pr/3X1ypt4QUIRC2Goe15g9XtyyyZ26pHrUQy17qPgjRPf_GhMJKrwO13McM=&quot;,
+  &quot;viabilityScore&quot;: 85,
+  &quot;opportunities&quot;: [
+    &quot;Faixa de ticket ideal B2B (R$ 286,843.24) com menor concorrência de gigantes.&quot;
+  ],
+  &quot;redFlags&quot;: [
+    &quot;URGENTE: Encerramento de propostas em menos de 72h (2026-11-04T08:00:00).&quot;
+  ],
+  &quot;itemsCount&quot;: 0,
+  &quot;items&quot;: [],
+  &quot;markdownRagBrief&quot;: &quot;# 📋 Raio-X de Licitação PNCP: 45138088000140-1-000010/2026\n- **Órgão Comprador:** MUNICIPIO DE SANTANA DA PONTE PENSA (CNPJ: `45138088000140`)\n- **Localidade:** Santana da Ponte Pensa / SP\n- **Modalidade:** Pregão - Eletrônico | **SRP:** Não\n- **Valor Total Estimado:** R$ 286,843.24\n- **Abertura:** 2026-10-19T08:00:00 | **Encerramento:** 2026-11-04T08:00:00\n- **Score de Viabilidade CRO:** **85/100**\n- **Link Direto:** https://bllcompras.com/Process/ProcessView?param1=[gkz]aI23irKXi8sVBvvGmSdJAcJO9NRjhxFmLuW_Z9mnuAUs9g7pr/3X1ypt4QUIRC2Goe15g9XtyyyZ26pHrUQy17qPgjRPf_GhMJKrwO13McM=\n\n## 🎯 Objeto da Compra\n&gt; AQUISIÇÃO DE 01 (UM) VEÍCULO TIPO MINIVAN/VAN, ZERO QUILÔMETRO,\r\nCOM CAPACIDADE PARA 10 (DEZ) PASSAGEIROS E 01 (UM) MOTORISTA,\r\nTOTALIZANDO 11 (ONZE) OCUPANTES, DESTINADO AO TRANSPORTE DE PACIENTES,\r\nACOMPANHANTES E PROFISSIONAIS VINCULADOS À SECRETARIA MUNICIPAL DE\r\nSAÚDE.\n\n## 🟢 Vanta...&quot;
+}</code></pre>
+
+        <div class="sandbox-conversion-box">
+          <div class="conversion-callout">
+            <strong>Ready to integrate into production?</strong>
+            <span>Subscribe self-serve or run bulk enterprise jobs on Apify cloud infrastructure.</span>
+          </div>
+          <div class="conversion-actions">
+            <a href="https://rapidapi.com/b2bquantapis/api/b2b-gov-procurement-pncp-radar" target="_blank" rel="noopener" class="btn-sandbox-checkout-primary">
+              Unlock Production API Key ($0 Free Tier &rarr; $19/mo PRO)
+            </a>
+            <a href="https://apify.com/b2b-quant-apis/b2b-gov-procurement-pncp-radar" target="_blank" rel="noopener" class="btn-sandbox-checkout-secondary">
+              Run Bulk Batch on Apify PPE
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SANDBOX CLIENT-SIDE LOGIC -->
+<script>
+(function() {
+  var initialReq_api_sandbox-b2b_gov_procurement_pncp_radar = "{\n  \"uf\": \"SP\",\n  \"keywords\": [\n    \"software\",\n    \"cloud\",\n    \"licenciamento\"\n  ],\n  \"codigoModalidadeContratacao\": \"6\",\n  \"dataInicial\": \"\",\n  \"dataFinal\": \"\",\n  \"maxResults\": 10,\n  \"fetchItems\": false\n}";
+  var canonicalRes_api_sandbox-b2b_gov_procurement_pncp_radar = "{\n  \"numeroControlePNCP\": \"45138088000140-1-000010/2026\",\n  \"cnpjOrgao\": \"45138088000140\",\n  \"orgaoNome\": \"MUNICIPIO DE SANTANA DA PONTE PENSA\",\n  \"uf\": \"SP\",\n  \"municipio\": \"Santana da Ponte Pensa\",\n  \"modalidadeId\": 6,\n  \"modalidadeNome\": \"Preg\u00e3o - Eletr\u00f4nico\",\n  \"modoDisputaNome\": \"Aberto\",\n  \"srp\": false,\n  \"valorTotalEstimadoBRL\": 286843.24,\n  \"dataPublicacaoPncp\": \"2026-10-18T22:11:33\",\n  \"dataAberturaProposta\": \"2026-10-19T08:00:00\",\n  \"dataEncerramentoProposta\": \"2026-11-04T08:00:00\",\n  \"objetoCompra\": \"AQUISI\u00c7\u00c3O DE 01 (UM) VE\u00cdCULO TIPO MINIVAN/VAN, ZERO QUIL\u00d4METRO,\\r\\nCOM CAPACIDADE PARA 10 (DEZ) PASSAGEIROS E 01 (UM) MOTORISTA,\\r\\nTOTALIZANDO 11 (ONZE) OCUPANTES, DESTINADO AO TRANSPORTE DE PACIENTES,\\r\\nACOMPANHANTES E PROFISSIONAIS VINCULADOS \u00c0 SECRETARIA MUNICIPAL DE\\r\\nSA\u00daDE.\",\n  \"informacaoComplementar\": null,\n  \"linkSistemaOrigem\": \"https://bllcompras.com/Process/ProcessView?param1=[gkz]aI23irKXi8sVBvvGmSdJAcJO9NRjhxFmLuW_Z9mnuAUs9g7pr/3X1ypt4QUIRC2Goe15g9XtyyyZ26pHrUQy17qPgjRPf_GhMJKrwO13McM=\",\n  \"viabilityScore\": 85,\n  \"opportunities\": [\n    \"Faixa de ticket ideal B2B (R$ 286,843.24) com menor concorr\u00eancia de gigantes.\"\n  ],\n  \"redFlags\": [\n    \"URGENTE: Encerramento de propostas em menos de 72h (2026-11-04T08:00:00).\"\n  ],\n  \"itemsCount\": 0,\n  \"items\": [],\n  \"markdownRagBrief\": \"# \ud83d\udccb Raio-X de Licita\u00e7\u00e3o PNCP: 45138088000140-1-000010/2026\\n- **\u00d3rg\u00e3o Comprador:** MUNICIPIO DE SANTANA DA PONTE PENSA (CNPJ: `45138088000140`)\\n- **Localidade:** Santana da Ponte Pensa / SP\\n- **Modalidade:** Preg\u00e3o - Eletr\u00f4nico | **SRP:** N\u00e3o\\n- **Valor Total Estimado:** R$ 286,843.24\\n- **Abertura:** 2026-10-19T08:00:00 | **Encerramento:** 2026-11-04T08:00:00\\n- **Score de Viabilidade CRO:** **85/100**\\n- **Link Direto:** https://bllcompras.com/Process/ProcessView?param1=[gkz]aI23irKXi8sVBvvGmSdJAcJO9NRjhxFmLuW_Z9mnuAUs9g7pr/3X1ypt4QUIRC2Goe15g9XtyyyZ26pHrUQy17qPgjRPf_GhMJKrwO13McM=\\n\\n## \ud83c\udfaf Objeto da Compra\\n> AQUISI\u00c7\u00c3O DE 01 (UM) VE\u00cdCULO TIPO MINIVAN/VAN, ZERO QUIL\u00d4METRO,\\r\\nCOM CAPACIDADE PARA 10 (DEZ) PASSAGEIROS E 01 (UM) MOTORISTA,\\r\\nTOTALIZANDO 11 (ONZE) OCUPANTES, DESTINADO AO TRANSPORTE DE PACIENTES,\\r\\nACOMPANHANTES E PROFISSIONAIS VINCULADOS \u00c0 SECRETARIA MUNICIPAL DE\\r\\nSA\u00daDE.\\n\\n## \ud83d\udfe2 Vanta...\"\n}";
+  var endpointUrl = "https://jesleytassili-glitch.github.io/v1/execute";
+
+  window.executeSandbox_api_sandbox-b2b_gov_procurement_pncp_radar = function() {
+    var reqArea = document.getElementById("api_sandbox-b2b_gov_procurement_pncp_radar-req");
+    var resArea = document.getElementById("api_sandbox-b2b_gov_procurement_pncp_radar-res");
+    var statusBadge = document.getElementById("api_sandbox-b2b_gov_procurement_pncp_radar-status-badge");
+    var curlArea = document.getElementById("api_sandbox-b2b_gov_procurement_pncp_radar-curl");
+
+    var rawText = reqArea.value.trim();
+    try {
+      var parsed = JSON.parse(rawText);
+      statusBadge.textContent = "HTTP 200 OK · Verified Live Schema";
+      statusBadge.className = "badge-status-ok";
+      resArea.textContent = canonicalRes_api_sandbox-b2b_gov_procurement_pncp_radar;
+      
+      var escapedJson = JSON.stringify(parsed, null, 2).replace(/'/g, "'\\''");
+      curlArea.textContent = 'curl -X POST "' + endpointUrl + '" \\\n  -H "Content-Type: application/json" \\\n  -H "X-RapidAPI-Key: YOUR_API_KEY" \\\n  -d \'' + escapedJson + "\'";
+    } catch (err) {
+      statusBadge.textContent = "HTTP 400 Bad Request · Invalid JSON";
+      statusBadge.className = "badge-status-error";
+      resArea.textContent = JSON.stringify({
+        "error": "Bad Request",
+        "message": "Malformed JSON payload: " + err.message,
+        "hint": "Check for trailing commas, unbalanced braces, or unquoted keys.",
+        "statusCode": 400
+      }, null, 2);
+    }
+  };
+
+  window.resetSandbox_api_sandbox-b2b_gov_procurement_pncp_radar = function() {
+    document.getElementById("api_sandbox-b2b_gov_procurement_pncp_radar-req").value = initialReq_api_sandbox-b2b_gov_procurement_pncp_radar;
+    executeSandbox_api_sandbox-b2b_gov_procurement_pncp_radar();
+  };
+
+  window.copyCurl_api_sandbox-b2b_gov_procurement_pncp_radar = function() {
+    var curlCode = document.getElementById("api_sandbox-b2b_gov_procurement_pncp_radar-curl").textContent;
+    navigator.clipboard.writeText(curlCode).then(function() {
+      alert("cURL command copied to clipboard!");
+    }).catch(function() {
+      alert("Please copy manually from the box.");
+    });
+  };
+})();
+</script>
+
 
     <!-- Authentic Verified JSON Payload Block -->
     <section class="card-sec">

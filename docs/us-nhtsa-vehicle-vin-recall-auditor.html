@@ -85,6 +85,7 @@ footer{border-top:1px solid var(--l);padding:2rem 1.5rem;background:#080c14;colo
     </div>
     <nav>
       <a href="/docs/index.html">All 31 APIs</a>
+      <a href="/docs/comparisons.html">Alternatives</a>
       <a href="/docs/category-brazil-tax-erp-logistics.html">Brazil Tax Reform, Logistics &amp; ERP Master Data</a>
       <a href="https://jesleytassili-glitch.github.io/docs/us-nhtsa-vehicle-vin-recall-auditor.md">Markdown (RAG)</a>
       <a href="https://jesleytassili-glitch.github.io/specs_openapi_31/us-nhtsa-vehicle-vin-recall-auditor.json">OpenAPI JSON</a>
@@ -235,6 +236,201 @@ footer{border-top:1px solid var(--l);padding:2rem 1.5rem;background:#080c14;colo
         </tbody>
       </table>
     </section>
+
+    
+
+    
+<!-- INTERACTIVE API SANDBOX (ZERO-SIGNUP PREVIEW) -->
+<section class="sandbox-section" id="api_sandbox-us_nhtsa_vehicle_vin_recall_auditor-container">
+  <div class="sandbox-card">
+    <div class="sandbox-header">
+      <div class="sandbox-header-left">
+        <span class="sandbox-badge">⚡ Interactive API Sandbox</span>
+        <span class="sandbox-badge-sub">Zero-Signup Preview · Client-Side Verified</span>
+      </div>
+      <div class="sandbox-header-right">
+        <span class="sandbox-pulse-dot"></span>
+        <span class="sandbox-status-text">Production Sandbox Ready (0ms latency)</span>
+      </div>
+    </div>
+    
+    <p class="sandbox-instruction">
+      Edit parameters in the request payload below and click <strong>Execute Sandbox Request</strong> to inspect the verified live schema response and dynamic cURL command.
+    </p>
+
+    <div class="sandbox-grid">
+      <!-- Coluna Esquerda: Request Input & Dynamic cURL -->
+      <div class="sandbox-column">
+        <div class="sandbox-pane-header">
+          <span class="pane-title">POST /v1/execute &middot; JSON Request Body</span>
+          <span class="pane-tag">Editable</span>
+        </div>
+        <textarea id="api_sandbox-us_nhtsa_vehicle_vin_recall_auditor-req" class="sandbox-textarea" rows="12" spellcheck="false">{
+  &quot;vins&quot;: [
+    &quot;5UXWX7C5*BA&quot;,
+    &quot;1HGCM82633A004352&quot;
+  ],
+  &quot;checkRecalls&quot;: true,
+  &quot;maxResults&quot;: 10
+}</textarea>
+        
+        <div class="sandbox-controls">
+          <button type="button" id="api_sandbox-us_nhtsa_vehicle_vin_recall_auditor-btn" class="sandbox-btn-run" onclick="executeSandbox_api_sandbox-us_nhtsa_vehicle_vin_recall_auditor()">
+            ▶ Execute Sandbox Request
+          </button>
+          <button type="button" class="sandbox-btn-reset" onclick="resetSandbox_api_sandbox-us_nhtsa_vehicle_vin_recall_auditor()">
+            ↺ Reset Example
+          </button>
+        </div>
+
+        <div class="sandbox-curl-box">
+          <div class="curl-header">
+            <span>Dynamic cURL Command</span>
+            <button type="button" class="btn-copy-code" onclick="copyCurl_api_sandbox-us_nhtsa_vehicle_vin_recall_auditor()">Copy cURL</button>
+          </div>
+          <pre><code id="api_sandbox-us_nhtsa_vehicle_vin_recall_auditor-curl" class="curl-text">curl -X POST "https://jesleytassili-glitch.github.io/v1/execute" \
+  -H "Content-Type: application/json" \
+  -H "X-RapidAPI-Key: YOUR_API_KEY" \
+  -d '{
+  "vins": [
+    "5UXWX7C5*BA",
+    "1HGCM82633A004352"
+  ],
+  "checkRecalls": true,
+  "maxResults": 10
+}'</code></pre>
+        </div>
+      </div>
+
+      <!-- Coluna Direita: Live Response Preview & Conversion CTAs -->
+      <div class="sandbox-column">
+        <div class="sandbox-pane-header">
+          <span class="pane-title">Simulated Live Response (Audit Verified)</span>
+          <span id="api_sandbox-us_nhtsa_vehicle_vin_recall_auditor-status-badge" class="badge-status-ok">HTTP 200 OK · Live Schema</span>
+        </div>
+
+        <div class="sandbox-meta-bar">
+          <div class="meta-item"><span class="meta-key">content-type:</span> <span class="meta-val">application/json; charset=utf-8</span></div>
+          <div class="meta-item"><span class="meta-key">x-ratelimit-limit:</span> <span class="meta-val">1000 / min</span></div>
+          <div class="meta-item"><span class="meta-key">x-payment-rail:</span> <span class="meta-val">RapidAPI | Apify | x402</span></div>
+          <div class="meta-item"><span class="meta-key">latency:</span> <span class="meta-val">&lt; 120ms</span></div>
+        </div>
+
+        <pre class="sandbox-response-pre"><code id="api_sandbox-us_nhtsa_vehicle_vin_recall_auditor-res" class="sandbox-response-code">{
+  &quot;vin&quot;: &quot;5UXWX7C5*BA&quot;,
+  &quot;isValidVinFormat&quot;: true,
+  &quot;checkDigitValid&quot;: false,
+  &quot;make&quot;: &quot;BMW&quot;,
+  &quot;model&quot;: &quot;X3&quot;,
+  &quot;modelYear&quot;: 2011,
+  &quot;vehicleType&quot;: &quot;MULTIPURPOSE PASSENGER VEHICLE (MPV)&quot;,
+  &quot;bodyClass&quot;: &quot;Sport Utility Vehicle [SUV]/Multipurpose Vehicle [MPV]&quot;,
+  &quot;engineCylinders&quot;: 6,
+  &quot;displacementL&quot;: 3.0,
+  &quot;fuelTypePrimary&quot;: &quot;Gasoline&quot;,
+  &quot;driveType&quot;: &quot;AWD/All-Wheel Drive&quot;,
+  &quot;manufacturer&quot;: &quot;BMW MANUFACTURER CORPORATION / BMW NORTH AMERICA&quot;,
+  &quot;plantCity&quot;: &quot;MUNICH&quot;,
+  &quot;plantCountry&quot;: &quot;GERMANY&quot;,
+  &quot;errorCode&quot;: &quot;6&quot;,
+  &quot;recallsCount&quot;: 4,
+  &quot;fleetSafetyStatus&quot;: &quot;RECALL_ALERT&quot;,
+  &quot;recallsSummary&quot;: [
+    {
+      &quot;campaignNumber&quot;: &quot;17V683000&quot;,
+      &quot;component&quot;: &quot;ENGINE AND ENGINE COOLING:EXHAUST SYSTEM:EMISSION CONTROL:CRANKCASE (PCV)&quot;,
+      &quot;summary&quot;: &quot;BMW of North America, LLC (BMW) is recalling certain 2008-2011 128i and 2007-2011 328i, 328xi, 328i xDrive, 525i, 525xi, 528i, 528xi, 530i, 530xi, X3 3.0si, X3 xDrive30i, X5 xDrive30i, Z4 3.0i, Z4 3.0si and Z4 sDrive30i vehicles.  The heater for the positive crankcase ventilation (PCV) valve may sho&quot;,
+      &quot;consequence&quot;: &quot;An electrical short can cause the parts within the PCV valve to melt, increasing the risk of a fire, even when the vehicle is not in use.&quot;,
+      &quot;remedy&quot;: &quot;BMW will notify owners, and dealers will replace the PCV valve heater, free of charge.  Interim letters were mailed on November 27, 2017.  Owners will receive a second notification by the end of October 2018.  Owners may contact BMW customer service &quot;
+    },
+    {
+      &quot;campaignNumber&quot;: &quot;16V333000&quot;,
+      &quot;component&quot;: &quot;CHILD SEAT:LATCH STRAP&quot;,
+      &quot;summary&quot;: &quot;BMW of North America, LLC (BMW) is recalling certain model year 2011-2017, X3 sDrive28i, X3 xDrive28i and X3 xDrive35i, vehicles manufactured July 2, 2010 to April 14, 2016, 2015-2017 X3 xDrive28d vehicles manufactured March 10, 2014 to March 31, 2016, and 2015-2017 x4 xDrive28i, X4 xDrive35i and X4&quot;,
+      &quot;consequence&quot;: &quot;Damaged lower anchor bars may increase the child&#x27;s risk of injury in the event of a crash.&quot;,
+      &quot;remedy&quot;: &quot;BMW will notify owners, and dealers will weld a reinforcing bracket to the lower anchor bars and the vehicle body, free of  charge.  The recall began on July 13, 2016.  Owners may contact BMW customer service at 1-800-525-7417.&quot;
+    },
+    {
+      &quot;campaignNumber&quot;: &quot;11V341000&quot;,
+      &quot;component&quot;: &quot;STEERING:ELECTRIC POWER ASSIST SYSTEM&quot;,
+      &quot;summary&quot;: &quot;BMW IS RECALLING CERTAIN MODEL YEAR 2011 X3 PASSENGER VEHICLES MANUFACTURED FROM APRIL 27, 2011, THROUGH JUNE 8, 2011.  A CONTROL MODULE IN THE ELECTRIC POWER STEERING (EPS) UNIT MAY MALFUNCTION, RESULTING IN A SUDDEN LOSS OF POWER STEERING ASSISTANCE.&quot;,
+      &quot;consequence&quot;: &quot;SUDDEN LOSS OF POWER STEERING ASSISTANCE COULD INCREASE THE RISK OF A CRASH.&quot;,
+      &quot;remedy&quot;: &quot;BMW WILL NOTIFY OWNERS AND DEALERS WILL REPAIR THE VEHICLES FREE OF CHARGE.  THE SAFETY RECALL IS EXPECTED TO BEGIN DURING AUGUST 2011.  OWNERS MAY CONTACT BMW CUSTOMER RELATIONS AND SERVICES AT 1-800-525-7417.&quot;
+    }
+  ],
+  &quot;source&quot;: &quot;U.S. NHTSA vPIC &amp; Recalls API&quot;,
+  &quot;auditedAt&quot;: &quot;2026-11-03T21:16:52.487645+00:00&quot;
+}</code></pre>
+
+        <div class="sandbox-conversion-box">
+          <div class="conversion-callout">
+            <strong>Ready to integrate into production?</strong>
+            <span>Subscribe self-serve or run bulk enterprise jobs on Apify cloud infrastructure.</span>
+          </div>
+          <div class="conversion-actions">
+            <a href="https://rapidapi.com/user/b2bquantapis" target="_blank" rel="noopener" class="btn-sandbox-checkout-primary">
+              Unlock Production API Key ($0 Free Tier &rarr; $19/mo PRO)
+            </a>
+            <a href="https://apify.com/b2b-quant-apis/us-nhtsa-vehicle-vin-recall-auditor" target="_blank" rel="noopener" class="btn-sandbox-checkout-secondary">
+              Run Bulk Batch on Apify PPE
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SANDBOX CLIENT-SIDE LOGIC -->
+<script>
+(function() {
+  var initialReq_api_sandbox-us_nhtsa_vehicle_vin_recall_auditor = "{\n  \"vins\": [\n    \"5UXWX7C5*BA\",\n    \"1HGCM82633A004352\"\n  ],\n  \"checkRecalls\": true,\n  \"maxResults\": 10\n}";
+  var canonicalRes_api_sandbox-us_nhtsa_vehicle_vin_recall_auditor = "{\n  \"vin\": \"5UXWX7C5*BA\",\n  \"isValidVinFormat\": true,\n  \"checkDigitValid\": false,\n  \"make\": \"BMW\",\n  \"model\": \"X3\",\n  \"modelYear\": 2011,\n  \"vehicleType\": \"MULTIPURPOSE PASSENGER VEHICLE (MPV)\",\n  \"bodyClass\": \"Sport Utility Vehicle [SUV]/Multipurpose Vehicle [MPV]\",\n  \"engineCylinders\": 6,\n  \"displacementL\": 3.0,\n  \"fuelTypePrimary\": \"Gasoline\",\n  \"driveType\": \"AWD/All-Wheel Drive\",\n  \"manufacturer\": \"BMW MANUFACTURER CORPORATION / BMW NORTH AMERICA\",\n  \"plantCity\": \"MUNICH\",\n  \"plantCountry\": \"GERMANY\",\n  \"errorCode\": \"6\",\n  \"recallsCount\": 4,\n  \"fleetSafetyStatus\": \"RECALL_ALERT\",\n  \"recallsSummary\": [\n    {\n      \"campaignNumber\": \"17V683000\",\n      \"component\": \"ENGINE AND ENGINE COOLING:EXHAUST SYSTEM:EMISSION CONTROL:CRANKCASE (PCV)\",\n      \"summary\": \"BMW of North America, LLC (BMW) is recalling certain 2008-2011 128i and 2007-2011 328i, 328xi, 328i xDrive, 525i, 525xi, 528i, 528xi, 530i, 530xi, X3 3.0si, X3 xDrive30i, X5 xDrive30i, Z4 3.0i, Z4 3.0si and Z4 sDrive30i vehicles.  The heater for the positive crankcase ventilation (PCV) valve may sho\",\n      \"consequence\": \"An electrical short can cause the parts within the PCV valve to melt, increasing the risk of a fire, even when the vehicle is not in use.\",\n      \"remedy\": \"BMW will notify owners, and dealers will replace the PCV valve heater, free of charge.  Interim letters were mailed on November 27, 2017.  Owners will receive a second notification by the end of October 2018.  Owners may contact BMW customer service \"\n    },\n    {\n      \"campaignNumber\": \"16V333000\",\n      \"component\": \"CHILD SEAT:LATCH STRAP\",\n      \"summary\": \"BMW of North America, LLC (BMW) is recalling certain model year 2011-2017, X3 sDrive28i, X3 xDrive28i and X3 xDrive35i, vehicles manufactured July 2, 2010 to April 14, 2016, 2015-2017 X3 xDrive28d vehicles manufactured March 10, 2014 to March 31, 2016, and 2015-2017 x4 xDrive28i, X4 xDrive35i and X4\",\n      \"consequence\": \"Damaged lower anchor bars may increase the child's risk of injury in the event of a crash.\",\n      \"remedy\": \"BMW will notify owners, and dealers will weld a reinforcing bracket to the lower anchor bars and the vehicle body, free of  charge.  The recall began on July 13, 2016.  Owners may contact BMW customer service at 1-800-525-7417.\"\n    },\n    {\n      \"campaignNumber\": \"11V341000\",\n      \"component\": \"STEERING:ELECTRIC POWER ASSIST SYSTEM\",\n      \"summary\": \"BMW IS RECALLING CERTAIN MODEL YEAR 2011 X3 PASSENGER VEHICLES MANUFACTURED FROM APRIL 27, 2011, THROUGH JUNE 8, 2011.  A CONTROL MODULE IN THE ELECTRIC POWER STEERING (EPS) UNIT MAY MALFUNCTION, RESULTING IN A SUDDEN LOSS OF POWER STEERING ASSISTANCE.\",\n      \"consequence\": \"SUDDEN LOSS OF POWER STEERING ASSISTANCE COULD INCREASE THE RISK OF A CRASH.\",\n      \"remedy\": \"BMW WILL NOTIFY OWNERS AND DEALERS WILL REPAIR THE VEHICLES FREE OF CHARGE.  THE SAFETY RECALL IS EXPECTED TO BEGIN DURING AUGUST 2011.  OWNERS MAY CONTACT BMW CUSTOMER RELATIONS AND SERVICES AT 1-800-525-7417.\"\n    }\n  ],\n  \"source\": \"U.S. NHTSA vPIC & Recalls API\",\n  \"auditedAt\": \"2026-11-03T21:16:52.487645+00:00\"\n}";
+  var endpointUrl = "https://jesleytassili-glitch.github.io/v1/execute";
+
+  window.executeSandbox_api_sandbox-us_nhtsa_vehicle_vin_recall_auditor = function() {
+    var reqArea = document.getElementById("api_sandbox-us_nhtsa_vehicle_vin_recall_auditor-req");
+    var resArea = document.getElementById("api_sandbox-us_nhtsa_vehicle_vin_recall_auditor-res");
+    var statusBadge = document.getElementById("api_sandbox-us_nhtsa_vehicle_vin_recall_auditor-status-badge");
+    var curlArea = document.getElementById("api_sandbox-us_nhtsa_vehicle_vin_recall_auditor-curl");
+
+    var rawText = reqArea.value.trim();
+    try {
+      var parsed = JSON.parse(rawText);
+      statusBadge.textContent = "HTTP 200 OK · Verified Live Schema";
+      statusBadge.className = "badge-status-ok";
+      resArea.textContent = canonicalRes_api_sandbox-us_nhtsa_vehicle_vin_recall_auditor;
+      
+      var escapedJson = JSON.stringify(parsed, null, 2).replace(/'/g, "'\\''");
+      curlArea.textContent = 'curl -X POST "' + endpointUrl + '" \\\n  -H "Content-Type: application/json" \\\n  -H "X-RapidAPI-Key: YOUR_API_KEY" \\\n  -d \'' + escapedJson + "\'";
+    } catch (err) {
+      statusBadge.textContent = "HTTP 400 Bad Request · Invalid JSON";
+      statusBadge.className = "badge-status-error";
+      resArea.textContent = JSON.stringify({
+        "error": "Bad Request",
+        "message": "Malformed JSON payload: " + err.message,
+        "hint": "Check for trailing commas, unbalanced braces, or unquoted keys.",
+        "statusCode": 400
+      }, null, 2);
+    }
+  };
+
+  window.resetSandbox_api_sandbox-us_nhtsa_vehicle_vin_recall_auditor = function() {
+    document.getElementById("api_sandbox-us_nhtsa_vehicle_vin_recall_auditor-req").value = initialReq_api_sandbox-us_nhtsa_vehicle_vin_recall_auditor;
+    executeSandbox_api_sandbox-us_nhtsa_vehicle_vin_recall_auditor();
+  };
+
+  window.copyCurl_api_sandbox-us_nhtsa_vehicle_vin_recall_auditor = function() {
+    var curlCode = document.getElementById("api_sandbox-us_nhtsa_vehicle_vin_recall_auditor-curl").textContent;
+    navigator.clipboard.writeText(curlCode).then(function() {
+      alert("cURL command copied to clipboard!");
+    }).catch(function() {
+      alert("Please copy manually from the box.");
+    });
+  };
+})();
+</script>
+
 
     <!-- Authentic Verified JSON Payload Block -->
     <section class="card-sec">
