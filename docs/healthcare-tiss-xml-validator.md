@@ -46,25 +46,21 @@ Stateless (100% LGPD compliant) ANS TISS 4.03.00 XML medical billing validator, 
 ## Verified Authentic Response Example
 ```json
 {
-  "loteNumero": "202610",
+  "loteNumero": "202611",
   "registroANS": "326305",
   "tissVersion": "4.03.00",
   "guiasCount": 1,
   "valorTotalLoteBRL": 180.0,
-  "statusConformidade": "CORRIGIDO_PRONTO_ENVIO",
-  "originalHash": "INVALID_HASH_000",
-  "calculatedAnsMd5Hash": "9aaabf2776dab3e0da33d63354db4298",
-  "hashWasRepaired": true,
-  "errorsFoundCount": 1,
-  "glosaRiskAlerts": [
-    "REJEIÇÃO DE LOTE (Hash MD5 Inválido): O XML contém <hash>INVALID_HASH_000</hash>, mas o cálculo oficial ANS dos dados é '9aaabf2776dab3e0da33d63354db4298'."
-  ],
-  "warnings": [
-    "Auto-Fix Aplicado: Tag <hash> atualizada automaticamente para '9aaabf2776dab3e0da33d63354db4298'."
-  ],
+  "statusConformidade": "CONFORME_PRONTO_ENVIO",
+  "originalHash": "f89e5b088ff5e85056a1d5f41f67eb4c",
+  "calculatedAnsMd5Hash": "f89e5b088ff5e85056a1d5f41f67eb4c",
+  "hashWasRepaired": false,
+  "errorsFoundCount": 0,
+  "glosaRiskAlerts": [],
+  "warnings": [],
   "proceduresAudited": [
     {
-      "guia": "G-001",
+      "guia": "GC-2026-0842",
       "codigoTUSS": "10101012",
       "descricaoReferencia": "Consulta em consultório (no horário normal ou preestabelecido)",
       "valorBRL": 180.0,
@@ -72,7 +68,7 @@ Stateless (100% LGPD compliant) ANS TISS 4.03.00 XML medical billing validator, 
     }
   ],
   "lgpdCompliance": "STATELESS_RAM_ONLY (Zero Patient PII Persisted)",
-  "repairedXml": "<ans:mensagemTISS xmlns:ans=\"http://www.ans.gov.br/padroes/tiss/schemas\"><ans:cabecalho><ans:identificacaoTransacao><ans:tipoTransacao>ENVIO_LOTE_GUIAS</ans:tipoTransacao><ans:sequencialTransacao>1042</ans:sequencialTransacao></ans:identificacaoTransacao><ans:destino><ans:registroANS>326305</ans:registroANS></ans:destino><ans:Padrao>4.03.00</ans:Padrao></ans:cabecalho><ans:prestadorParaOperadora><ans:loteGuias><ans:numeroLote>202610</ans:numeroLote><ans:guiasTISS><ans:guiaConsulta><ans:numeroGuiaPrestador>G-001</ans:numeroGuiaPrestador><ans:dadosBeneficiario><ans:numeroCarteira>009988776655</ans:numeroCarteira></ans:dadosBeneficiario><ans:dadosAtendimento><ans:procedimento><ans:codigoTabela>22</ans:codigoTabela><ans:codigoProcedimento>10101012</ans:codigoProcedimento><ans:valorProcedimento>180.00</ans:valorProcedimento></ans:procedimento></ans:dadosAtendimento></ans:guiaConsulta></ans..."
+  "repairedXml": "<mensagemTISS xmlns=\"http://www.ans.gov.br/padroes/tiss/schemas\"><cabecalho><identificacaoTransacao><tipoTransacao>ENVIO_LOTE_GUIAS</tipoTransacao><sequencialTransacao>8421</sequencialTransacao></identificacaoTransacao><destino><registroANS>326305</registroANS></destino><Padrao>4.03.00</Padrao></cabecalho><prestadorParaOperadora><loteGuias><numeroLote>202611</numeroLote><guiasTISS><guiaConsulta><numeroGuiaPrestador>GC-2026-0842</numeroGuiaPrestador><dadosBeneficiario><numeroCarteira>008877665544</numeroCarteira></dadosBeneficiario><dadosAtendimento><procedimento><codigoTabela>22</codigoTabela><codigoProcedimento>10101012</codigoProcedimento><valorProcedimento>180.00</valorProcedimento></procedimento></dadosAtendimento></guiaConsulta></guiasTISS></loteGuias></prestadorParaOperadora><epilogo><hash>f89e5b088ff5e85056a1d5f41f67eb4c</hash></epilogo></mensagemTISS>"
 }
 ```
 
