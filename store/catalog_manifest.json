@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-11-22T12:57:00.170101+00:00",
+  "currency": "USD",
+  "mor_platforms": [
+    "Polar.sh",
+    "Gumroad",
+    "Lemon Squeezy"
+  ],
+  "payout_destination": "Wise #890361113",
+  "total_kits": 3,
+  "kits": [
+    {
+      "kit_id": "kit_01_brazil_tax_tiss_compliance",
+      "title": "Brazil Tax (LC 214 NCM) & TISS/ANTT Compliance FastAPI Kit",
+      "price_usd": 49,
+      "headline": "Ship Brazilian Tax Reform (LC 214) & Healthcare TISS Validation in Minutes",
+      "tagline": "Production FastAPI microservice with deterministic NCM LC 214, ANS TISS XML, and ANTT RNTRC validators.",
+      "sales_copy_en": "Stop spending weeks parsing Brazilian tax reform rules and ANS TISS XML schemas. This production-ready FastAPI boilerplate gives engineering teams deterministic LC 214 NCM IBS/CBS classification, TISS XML structural/epilogo validation, ANTT RNTRC + Mercosul plate verification, Dockerfile, .env.example, and automated pytest suite\u2014ready to deploy on day one.",
+      "features": [
+        "LC 214/2025 NCM 8-digit validator with IBS/CBS effective rate & CST mapping",
+        "ANS TISS XML parser verifying cabecalho, body, and epilogo MD5 hash",
+        "ANTT RNTRC + Mod-11 CNPJ + Mercosul/Legacy plate validator",
+        "Dockerfile, .env.example & pytest test suite included"
+      ],
+      "mor_channels": [
+        "Polar.sh",
+        "Gumroad",
+        "Lemon Squeezy"
+      ],
+      "payout_account": "Wise #890361113",
+      "zip_filename": "kit_01_brazil_tax_tiss_compliance.zip",
+      "zip_relative_path": "dist/kit_01_brazil_tax_tiss_compliance.zip",
+      "size_bytes": 6059,
+      "sha256": "9006c0ec814a2759d9e03b48e811178a90244bb236a2219f8d0faec3cbca00f5",
+      "file_count": 8
+    },
+    {
+      "kit_id": "kit_02_x402_solana_mcp_paywall",
+      "title": "x402 Solana USDC MCP Paywall Boilerplate",
+      "price_usd": 59,
+      "headline": "Monetize Any AI MCP Server with HTTP 402 & Instant Solana USDC Micropayments",
+      "tagline": "Turnkey Model Context Protocol (MCP) gateway with HTTP 402 challenges and anti-replay protection.",
+      "sales_copy_en": "Charge AI agents per tool call with zero middlemen. Built on the HTTP 402 x402 standard and Solana USDC, this FastAPI MCP server issues cryptographic payment challenges, verifies Base58 signatures and recipient amounts, and blocks replay attacks with single-use TTL nonces. Ships with Dockerfile and pytest coverage.",
+      "features": [
+        "Standard x402 HTTP 402 response with base64 PAYMENT-REQUIRED header",
+        "Solana USDC mint & Base58 transaction signature validation",
+        "Atomic single-use nonce & signature anti-replay store",
+        "Dockerfile, .env.example & pytest end-to-end paywall tests"
+      ],
+      "mor_channels": [
+        "Polar.sh",
+        "Gumroad",
+        "Lemon Squeezy"
+      ],
+      "payout_account": "Wise #890361113",
+      "zip_filename": "kit_02_x402_solana_mcp_paywall.zip",
+      "zip_relative_path": "dist/kit_02_x402_solana_mcp_paywall.zip",
+      "size_bytes": 5570,
+      "sha256": "8434f25e99822501b83b3099ee5d113825036c09bdaa32b656f35b275c1c4e3f",
+      "file_count": 8
+    },
+    {
+      "kit_id": "kit_03_enterprise_kyb_ofac_pipeline",
+      "title": "Enterprise KYB / OFAC / GLEIF Compliance Pipeline",
+      "price_usd": 79,
+      "headline": "Automate B2B KYB Onboarding with ISO 17442 LEI, OFAC Screening & n8n",
+      "tagline": "Full-stack compliance pipeline combining FastAPI screeners, n8n workflow automation, and Docker Compose.",
+      "sales_copy_en": "Accelerate enterprise B2B customer onboarding while staying audit-ready. This kit bundles a FastAPI ISO 17442 GLEIF LEI Mod-97-10 validator, fuzzy OFAC sanctions screener, risk decision engine, a ready-to-import n8n workflow JSON, and multi-container Docker Compose orchestration.",
+      "features": [
+        "ISO 17442 GLEIF LEI Mod-97-10 deterministic check-digit validator",
+        "OFAC SDN normalized fuzzy screener with risk scoring",
+        "Ready-to-import n8n KYB webhook orchestration workflow JSON",
+        "Docker Compose (FastAPI + n8n) & automated pytest suite"
+      ],
+      "mor_channels": [
+        "Polar.sh",
+        "Gumroad",
+        "Lemon Squeezy"
+      ],
+      "payout_account": "Wise #890361113",
+      "zip_filename": "kit_03_enterprise_kyb_ofac_pipeline.zip",
+      "zip_relative_path": "dist/kit_03_enterprise_kyb_ofac_pipeline.zip",
+      "size_bytes": 6109,
+      "sha256": "ad34e833a230681c5107b2aed9176a665512449cb4ebb45487b92c36292a9236",
+      "file_count": 10
+    }
+  ]
+}
