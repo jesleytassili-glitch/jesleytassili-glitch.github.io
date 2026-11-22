@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAtUtc": "2026-11-22T12:57:45.534799+00:00",
+  "baseUrl": "https://jesleytassili-glitch.github.io/tools",
+  "portalOrigin": "https://jesleytassili-glitch.github.io",
+  "apifyStoreUrl": "https://apify.com/b2b-quant-apis",
+  "serverCostUsd": 0.0,
+  "hubPage": {
+    "filename": "index.html",
+    "url": "https://jesleytassili-glitch.github.io/tools/index.html",
+    "title": "Hub de 5 Micro-Ferramentas Gratuitas B2B (Client-Side)"
+  },
+  "tools": [
+    {
+      "slug": "calculadora-reforma-tributaria-lc214",
+      "filename": "calculadora-reforma-tributaria-lc214.html",
+      "title": "Calculadora Reforma Tributária LC 214/2025 (IBS, CBS & Split Payment)",
+      "short_title": "Calculadora LC 214 (IBS/CBS)",
+      "category": "FinanceApplication",
+      "badge": "Fiscal & ERP",
+      "description": "Simule alíquotas de IBS, CBS, Imposto Seletivo, cClassTrib por NCM e impacto de fluxo de caixa do Split Payment segundo a LC 214/2025 diretamente no navegador.",
+      "apify_slug": "brazil-tax-reform-ncm-classtrib-auditor",
+      "url": "https://jesleytassili-glitch.github.io/tools/calculadora-reforma-tributaria-lc214.html",
+      "apifyUrl": "https://apify.com/b2b-quant-apis/brazil-tax-reform-ncm-classtrib-auditor"
+    },
+    {
+      "slug": "validador-xml-tiss-ans",
+      "filename": "validador-xml-tiss-ans.html",
+      "title": "Validador e Formatador XML TISS ANS (Padrão 4.01.00)",
+      "short_title": "Validador XML TISS ANS",
+      "category": "DeveloperApplication",
+      "badge": "HealthTech",
+      "description": "Valide estrutura de guias XML TISS ANS, cabeçalho, epílogo hash e tags obrigatórias sem enviar dados de pacientes para fora do seu navegador.",
+      "apify_slug": "healthcare-tiss-xml-validator",
+      "url": "https://jesleytassili-glitch.github.io/tools/validador-xml-tiss-ans.html",
+      "apifyUrl": "https://apify.com/b2b-quant-apis/healthcare-tiss-xml-validator"
+    },
+    {
+      "slug": "calculadora-frete-minimo-antt",
+      "filename": "calculadora-frete-minimo-antt.html",
+      "title": "Calculadora Piso Mínimo de Frete ANTT (Res. 5.867/2020 & 6.067/2025)",
+      "short_title": "Calculadora Frete ANTT",
+      "category": "BusinessApplication",
+      "badge": "Logística & CT-e",
+      "description": "Calcule o Piso Mínimo Rodoviário ANTT por eixos, distância em km e tipo de carga (Tabela A: CCD × km + CC) e audite risco de multa antes de emitir CT-e.",
+      "apify_slug": "brazil-antt-freight-cte-auditor",
+      "url": "https://jesleytassili-glitch.github.io/tools/calculadora-frete-minimo-antt.html",
+      "apifyUrl": "https://apify.com/b2b-quant-apis/brazil-antt-freight-cte-auditor"
+    },
+    {
+      "slug": "decodificador-boleto-pix-emv",
+      "filename": "decodificador-boleto-pix-emv.html",
+      "title": "Decodificador Boleto FEBRABAN & Gerador/Validador Pix EMV (CRC16-CCITT)",
+      "short_title": "Boleto FEBRABAN & Pix EMV",
+      "category": "FinanceApplication",
+      "badge": "Pagamentos & Pix",
+      "description": "Valide linha digitável de boleto bancário (Módulo 10/11, fator de vencimento pós-2025) e gere ou decodifique BR Code Pix EMV com checksum CRC16-CCITT real.",
+      "apify_slug": "brazil-pix-ispb-cvm-financial-kyb-auditor",
+      "url": "https://jesleytassili-glitch.github.io/tools/decodificador-boleto-pix-emv.html",
+      "apifyUrl": "https://apify.com/b2b-quant-apis/brazil-pix-ispb-cvm-financial-kyb-auditor"
+    },
+    {
+      "slug": "auditor-spf-dmarc-headers",
+      "filename": "auditor-spf-dmarc-headers.html",
+      "title": "Auditor DNS SPF/DMARC & HTTP Security Headers",
+      "short_title": "Auditor SPF/DMARC & Headers",
+      "category": "SecurityApplication",
+      "badge": "DevSecOps",
+      "description": "Analise registros SPF (limite de 10 lookups RFC 7208), políticas DMARC (p=reject/quarantine) e headers HTTP de segurança (HSTS, CSP, X-Frame-Options) 100% client-side.",
+      "apify_slug": "global-b2b-email-domain-security-auditor",
+      "url": "https://jesleytassili-glitch.github.io/tools/auditor-spf-dmarc-headers.html",
+      "apifyUrl": "https://apify.com/b2b-quant-apis/global-b2b-email-domain-security-auditor"
+    }
+  ]
+}

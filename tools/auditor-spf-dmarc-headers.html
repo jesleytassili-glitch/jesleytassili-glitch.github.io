@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Auditor DNS SPF/DMARC &amp; HTTP Security Headers</title>
+  <meta name="description" content="Analise registros SPF (limite de 10 lookups RFC 7208), políticas DMARC (p=reject/quarantine) e headers HTTP de segurança (HSTS, CSP, X-Frame-Options) 100% client-side.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://jesleytassili-glitch.github.io/tools/auditor-spf-dmarc-headers.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="B2B Quant &amp; Compliance Tools">
+  <meta property="og:title" content="Auditor DNS SPF/DMARC &amp; HTTP Security Headers">
+  <meta property="og:description" content="Analise registros SPF (limite de 10 lookups RFC 7208), políticas DMARC (p=reject/quarantine) e headers HTTP de segurança (HSTS, CSP, X-Frame-Options) 100% client-side.">
+  <meta property="og:url" content="https://jesleytassili-glitch.github.io/tools/auditor-spf-dmarc-headers.html">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Auditor DNS SPF/DMARC & HTTP Security Headers",
+  "description": "Analise registros SPF (limite de 10 lookups RFC 7208), políticas DMARC (p=reject/quarantine) e headers HTTP de segurança (HSTS, CSP, X-Frame-Options) 100% client-side.",
+  "url": "https://jesleytassili-glitch.github.io/tools/auditor-spf-dmarc-headers.html",
+  "applicationCategory": "SecurityApplication",
+  "operatingSystem": "Web Browser",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "B2B Quant & Compliance APIs",
+    "url": "https://jesleytassili-glitch.github.io"
+  }
+}
+  </script>
+  <style>
+:root {
+  --bg: #0b1020;
+  --surface: #131a2e;
+  --surface-alt: #1b2440;
+  --border: #283558;
+  --text: #e6ecf8;
+  --muted: #9aa8c7;
+  --accent: #38bdf8;
+  --accent-2: #34d399;
+  --warn: #fbbf24;
+  --danger: #f87171;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container { max-width: 1080px; margin: 0 auto; padding: 20px 18px 48px; }
+.topbar {
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
+  gap: 12px; padding: 14px 18px; border-bottom: 1px solid var(--border);
+  background: rgba(19, 26, 46, 0.92); position: sticky; top: 0; z-index: 20;
+}
+.brand { font-weight: 700; color: var(--text); font-size: 1rem; letter-spacing: -0.01em; }
+.nav-links { display: flex; flex-wrap: wrap; gap: 14px; font-size: 0.9rem; }
+.hero {
+  background: linear-gradient(135deg, #131a2e 0%, #172546 100%);
+  border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin: 18px 0;
+}
+.hero h1 { margin: 0 0 8px; font-size: 1.65rem; line-height: 1.25; }
+.hero p { margin: 0; color: var(--muted); }
+.badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+.badge {
+  display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 0.78rem;
+  font-weight: 600; background: rgba(56, 189, 248, 0.14); color: var(--accent);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+}
+.badge-green { background: rgba(52, 211, 153, 0.14); color: var(--accent-2); border-color: rgba(52, 211, 153, 0.35); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 16px; }
+.card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  padding: 18px; display: flex; flex-direction: column; gap: 10px;
+}
+.panel {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  padding: 20px; margin-bottom: 18px;
+}
+label { display: block; font-size: 0.88rem; color: var(--muted); margin-bottom: 5px; font-weight: 600; }
+input, select, textarea {
+  width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--border);
+  background: var(--surface-alt); color: var(--text); font-size: 0.95rem; font-family: inherit;
+}
+textarea { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; min-height: 150px; }
+.form-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 14px; }
+.btn-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+button, .btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  padding: 10px 16px; border-radius: 8px; border: 1px solid transparent; cursor: pointer;
+  font-weight: 600; font-size: 0.92rem; background: var(--accent); color: #07111f;
+}
+button.secondary, .btn.secondary {
+  background: var(--surface-alt); color: var(--text); border-color: var(--border);
+}
+.result-box {
+  background: #0d1426; border: 1px solid var(--border); border-radius: 10px;
+  padding: 16px; margin-top: 14px;
+}
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-top: 10px; }
+.kpi { background: var(--surface-alt); border: 1px solid var(--border); border-radius: 8px; padding: 12px; }
+.kpi .label { font-size: 0.78rem; color: var(--muted); }
+.kpi .val { font-size: 1.2rem; font-weight: 700; margin-top: 4px; }
+.status-ok { color: var(--accent-2); font-weight: 700; }
+.status-warn { color: var(--warn); font-weight: 700; }
+.status-err { color: var(--danger); font-weight: 700; }
+.cta-banner {
+  background: linear-gradient(135deg, #102a38 0%, #17213d 100%);
+  border: 1px solid #2b4f6e; border-radius: 12px; padding: 20px; margin-top: 22px;
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 14px;
+}
+.ad-slot {
+  border: 1px dashed var(--border); border-radius: 10px; padding: 12px 16px;
+  margin: 16px 0; color: var(--muted); font-size: 0.84rem; text-align: center;
+  background: rgba(19, 26, 46, 0.5);
+}
+.tabs { display: flex; gap: 8px; margin-bottom: 14px; }
+.tab-btn { background: var(--surface-alt); color: var(--text); border: 1px solid var(--border); }
+.tab-btn.active { background: var(--accent); color: #07111f; }
+pre {
+  background: #080d1a; border: 1px solid var(--border); border-radius: 8px;
+  padding: 12px; overflow-x: auto; font-size: 0.85rem; color: #cbd5e1;
+}
+footer { margin-top: 34px; padding-top: 18px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">B2B Compliance &amp; Quant Tools</a>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="index.html">Todas as Ferramentas</a>
+      <a href="calculadora-reforma-tributaria-lc214.html">LC 214</a>
+      <a href="validador-xml-tiss-ans.html">XML TISS</a>
+      <a href="calculadora-frete-minimo-antt.html">Frete ANTT</a>
+      <a href="decodificador-boleto-pix-emv.html">Boleto/Pix</a>
+      <a href="auditor-spf-dmarc-headers.html">SPF/DMARC</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="badges">
+        <span class="badge">DevSecOps</span>
+        <span class="badge badge-green">100% Client-Side &bull; Zero Envio ao Servidor</span>
+      </div>
+      <h1>Auditor DNS SPF/DMARC &amp; HTTP Security Headers</h1>
+      <p>Analise registros SPF (limite de 10 lookups RFC 7208), políticas DMARC (p=reject/quarantine) e headers HTTP de segurança (HSTS, CSP, X-Frame-Options) 100% client-side.</p>
+    </section>
+
+    <div class="ad-slot" data-slot="b2b-sponsor-top">
+      Espaço Patrocinado B2B / APIs Determinísticas — Precisa processar 10.000+ registros via REST ou MCP?
+      <a href="https://apify.com/b2b-quant-apis/global-b2b-email-domain-security-auditor" target="_blank" rel="noopener noreferrer">Automatizar na Apify Store</a>
+    </div>
+
+    <section class="panel">
+      <div class="form-row">
+        <div>
+          <label for="spfInput">Registro DNS SPF (TXT)</label>
+          <input id="spfInput" value="v=spf1 include:_spf.google.com include:sendgrid.net ~all">
+        </div>
+        <div>
+          <label for="dmarcInput">Registro DNS DMARC (_dmarc TXT)</label>
+          <input id="dmarcInput" value="v=DMARC1; p=reject; pct=100; rua=mailto:dmarc@empresa.com; adkim=s; aspf=s">
+        </div>
+      </div>
+      <label for="headersInput">Headers HTTP de Resposta (um por linha):</label>
+      <textarea id="headersInput" style="min-height:110px;">Strict-Transport-Security: max-age=31536000; includeSubDomains
+Content-Security-Policy: default-src 'self'
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Referrer-Policy: strict-origin-when-cross-origin</textarea>
+      <div class="btn-row">
+        <button type="button" id="btnAuditarSec">Auditar SPF / DMARC &amp; Headers</button>
+        <button type="button" class="secondary" id="btnExemploVuln">Carregar Cenário Vulnerável</button>
+      </div>
+      <div class="result-box" id="secResult"></div>
+    </section>
+
+    <section class="cta-banner">
+      <div>
+        <strong>Precisa de escala em lote, CI/CD ou integração ERP?</strong>
+        <div style="color: var(--muted); font-size: 0.92rem; margin-top: 4px;">
+          Execute esta mesma engine determinística em API REST, MCP Server, Apify Actor ou GitHub Action.
+        </div>
+      </div>
+      <div class="btn-row" style="margin-top: 0;">
+        <a class="btn" href="https://apify.com/b2b-quant-apis/global-b2b-email-domain-security-auditor" target="_blank" rel="noopener noreferrer">Apify Store (B2B APIs)</a>
+        <a class="btn secondary" href="https://rapidapi.com/user/jesleytassili" target="_blank" rel="noopener noreferrer">RapidAPI Hub</a>
+        <a class="btn secondary" href="https://jesleytassili-glitch.github.io" target="_blank" rel="noopener noreferrer">Portal &amp; Docs</a>
+      </div>
+    </section>
+
+    <footer>
+      <div>100% Client-Side HTML/JS (US$ 0,00 de servidor). Nenhum dado inserido sai do seu navegador.</div>
+      <div style="margin-top: 4px;">
+        <a href="https://jesleytassili-glitch.github.io">https://jesleytassili-glitch.github.io</a> &bull;
+        <a href="https://apify.com/b2b-quant-apis">https://apify.com/b2b-quant-apis</a> &bull;
+        <a href="sitemap.xml">sitemap.xml</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+function auditarSpfDmarc(spfRaw, dmarcRaw) {
+  const spf = String(spfRaw || "").trim();
+  const dmarc = String(dmarcRaw || "").trim();
+  const findings = [];
+  let score = 100;
+
+  if (!spf.toLowerCase().startsWith("v=spf1")) {
+    score -= 35;
+    findings.push("CRÍTICO: Registro SPF ausente ou sem prefixo v=spf1.");
+  } else {
+    const tokens = spf.split(/\s+/);
+    const lookupTokens = tokens.filter((t) => /^(?:include:|a\b|mx\b|ptr\b|exists:|redirect=)/i.test(t));
+    if (lookupTokens.length > 10) {
+      score -= 25;
+      findings.push(`CRÍTICO: SPF excede o limite RFC 7208 de 10 DNS lookups (${lookupTokens.length} encontrados).`);
+    }
+    if (tokens.some((t) => t.toLowerCase() === "+all")) {
+      score -= 40;
+      findings.push("CRÍTICO: SPF termina com +all (permite spoofing irrestrito).");
+    } else if (tokens.some((t) => t.toLowerCase() === "?all")) {
+      score -= 15;
+      findings.push("AVISO: SPF usa ?all (neutro). Prefira ~all ou -all.");
+    }
+  }
+
+  if (!dmarc.toUpperCase().startsWith("V=DMARC1")) {
+    score -= 35;
+    findings.push("CRÍTICO: Registro DMARC ausente ou sem v=DMARC1.");
+  } else {
+    const pMatch = dmarc.match(/\bp=(none|quarantine|reject)\b/i);
+    const policy = pMatch ? pMatch[1].toLowerCase() : "missing";
+    if (policy === "none") {
+      score -= 20;
+      findings.push("AVISO: Política DMARC p=none apenas monitora sem bloquear spoofing.");
+    } else if (policy === "missing") {
+      score -= 30;
+      findings.push("CRÍTICO: Tag p= ausente no registro DMARC.");
+    }
+    if (!/\brua=/i.test(dmarc)) {
+      score -= 10;
+      findings.push("AVISO: Tag rua= ausente (sem relatórios agregados DMARC).");
+    }
+  }
+
+  return { score: Math.max(0, score), findings };
+}
+
+function auditarHttpHeaders(rawHeaders) {
+  const lines = String(rawHeaders || "").split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
+  const map = {};
+  for (const line of lines) {
+    const idx = line.indexOf(":");
+    if (idx > 0) map[line.slice(0, idx).trim().toLowerCase()] = line.slice(idx + 1).trim();
+  }
+  const required = [
+    ["strict-transport-security", 25],
+    ["content-security-policy", 25],
+    ["x-content-type-options", 15],
+    ["x-frame-options", 15],
+    ["referrer-policy", 10],
+    ["permissions-policy", 10],
+  ];
+  let score = 0;
+  const missing = [];
+  for (const [hdr, pts] of required) {
+    if (map[hdr]) score += pts;
+    else missing.push(hdr);
+  }
+  const leaky = ["server", "x-powered-by"].filter((h) => Boolean(map[h]));
+  score = Math.max(0, score - leaky.length * 5);
+  const grade = score >= 90 ? "A+" : score >= 75 ? "B" : score >= 50 ? "C" : "F";
+  return { score, grade, missing, leaky };
+}
+
+function renderSec() {
+  const box = document.getElementById("secResult");
+  if (!box) return;
+  const dns = auditarSpfDmarc(document.getElementById("spfInput").value, document.getElementById("dmarcInput").value);
+  const http = auditarHttpHeaders(document.getElementById("headersInput").value);
+  const dnsFindings = dns.findings.length ? "<ul>" + dns.findings.map((f) => `<li class="status-warn">${f}</li>`).join("") + "</ul>" : "<p class='status-ok'>SPF &amp; DMARC em conformidade estrita.</p>";
+  box.innerHTML = `
+    <div class="kpi-grid">
+      <div class="kpi"><div class="label">Score DNS Email Auth</div><div class="val">${dns.score}/100</div></div>
+      <div class="kpi"><div class="label">Score HTTP Headers</div><div class="val">${http.score}/100 (Grade ${http.grade})</div></div>
+      <div class="kpi"><div class="label">Headers Ausentes</div><div class="val" style="font-size:0.9rem;">${http.missing.join(", ") || "Nenhum"}</div></div>
+    </div>
+    ${dnsFindings}`;
+}
+
+if (typeof document !== "undefined") {
+  const btn = document.getElementById("btnAuditarSec");
+  if (btn) {
+    btn.addEventListener("click", renderSec);
+    document.getElementById("btnExemploVuln").addEventListener("click", () => {
+      document.getElementById("spfInput").value = "v=spf1 include:a.com include:b.com +all";
+      document.getElementById("dmarcInput").value = "v=DMARC1; p=none";
+      document.getElementById("headersInput").value = "Server: Apache/2.4\nX-Powered-By: PHP/8.1";
+      renderSec();
+    });
+    renderSec();
+  }
+}
+  </script>
+</body>
+</html>

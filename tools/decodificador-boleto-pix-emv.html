@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Decodificador Boleto FEBRABAN &amp; Gerador/Validador Pix EMV (CRC16-CCITT)</title>
+  <meta name="description" content="Valide linha digitável de boleto bancário (Módulo 10/11, fator de vencimento pós-2025) e gere ou decodifique BR Code Pix EMV com checksum CRC16-CCITT real.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://jesleytassili-glitch.github.io/tools/decodificador-boleto-pix-emv.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="B2B Quant &amp; Compliance Tools">
+  <meta property="og:title" content="Decodificador Boleto FEBRABAN &amp; Gerador/Validador Pix EMV (CRC16-CCITT)">
+  <meta property="og:description" content="Valide linha digitável de boleto bancário (Módulo 10/11, fator de vencimento pós-2025) e gere ou decodifique BR Code Pix EMV com checksum CRC16-CCITT real.">
+  <meta property="og:url" content="https://jesleytassili-glitch.github.io/tools/decodificador-boleto-pix-emv.html">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Decodificador Boleto FEBRABAN & Gerador/Validador Pix EMV (CRC16-CCITT)",
+  "description": "Valide linha digitável de boleto bancário (Módulo 10/11, fator de vencimento pós-2025) e gere ou decodifique BR Code Pix EMV com checksum CRC16-CCITT real.",
+  "url": "https://jesleytassili-glitch.github.io/tools/decodificador-boleto-pix-emv.html",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web Browser",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "B2B Quant & Compliance APIs",
+    "url": "https://jesleytassili-glitch.github.io"
+  }
+}
+  </script>
+  <style>
+:root {
+  --bg: #0b1020;
+  --surface: #131a2e;
+  --surface-alt: #1b2440;
+  --border: #283558;
+  --text: #e6ecf8;
+  --muted: #9aa8c7;
+  --accent: #38bdf8;
+  --accent-2: #34d399;
+  --warn: #fbbf24;
+  --danger: #f87171;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container { max-width: 1080px; margin: 0 auto; padding: 20px 18px 48px; }
+.topbar {
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
+  gap: 12px; padding: 14px 18px; border-bottom: 1px solid var(--border);
+  background: rgba(19, 26, 46, 0.92); position: sticky; top: 0; z-index: 20;
+}
+.brand { font-weight: 700; color: var(--text); font-size: 1rem; letter-spacing: -0.01em; }
+.nav-links { display: flex; flex-wrap: wrap; gap: 14px; font-size: 0.9rem; }
+.hero {
+  background: linear-gradient(135deg, #131a2e 0%, #172546 100%);
+  border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin: 18px 0;
+}
+.hero h1 { margin: 0 0 8px; font-size: 1.65rem; line-height: 1.25; }
+.hero p { margin: 0; color: var(--muted); }
+.badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+.badge {
+  display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 0.78rem;
+  font-weight: 600; background: rgba(56, 189, 248, 0.14); color: var(--accent);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+}
+.badge-green { background: rgba(52, 211, 153, 0.14); color: var(--accent-2); border-color: rgba(52, 211, 153, 0.35); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 16px; }
+.card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  padding: 18px; display: flex; flex-direction: column; gap: 10px;
+}
+.panel {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  padding: 20px; margin-bottom: 18px;
+}
+label { display: block; font-size: 0.88rem; color: var(--muted); margin-bottom: 5px; font-weight: 600; }
+input, select, textarea {
+  width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--border);
+  background: var(--surface-alt); color: var(--text); font-size: 0.95rem; font-family: inherit;
+}
+textarea { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; min-height: 150px; }
+.form-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 14px; }
+.btn-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+button, .btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  padding: 10px 16px; border-radius: 8px; border: 1px solid transparent; cursor: pointer;
+  font-weight: 600; font-size: 0.92rem; background: var(--accent); color: #07111f;
+}
+button.secondary, .btn.secondary {
+  background: var(--surface-alt); color: var(--text); border-color: var(--border);
+}
+.result-box {
+  background: #0d1426; border: 1px solid var(--border); border-radius: 10px;
+  padding: 16px; margin-top: 14px;
+}
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-top: 10px; }
+.kpi { background: var(--surface-alt); border: 1px solid var(--border); border-radius: 8px; padding: 12px; }
+.kpi .label { font-size: 0.78rem; color: var(--muted); }
+.kpi .val { font-size: 1.2rem; font-weight: 700; margin-top: 4px; }
+.status-ok { color: var(--accent-2); font-weight: 700; }
+.status-warn { color: var(--warn); font-weight: 700; }
+.status-err { color: var(--danger); font-weight: 700; }
+.cta-banner {
+  background: linear-gradient(135deg, #102a38 0%, #17213d 100%);
+  border: 1px solid #2b4f6e; border-radius: 12px; padding: 20px; margin-top: 22px;
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 14px;
+}
+.ad-slot {
+  border: 1px dashed var(--border); border-radius: 10px; padding: 12px 16px;
+  margin: 16px 0; color: var(--muted); font-size: 0.84rem; text-align: center;
+  background: rgba(19, 26, 46, 0.5);
+}
+.tabs { display: flex; gap: 8px; margin-bottom: 14px; }
+.tab-btn { background: var(--surface-alt); color: var(--text); border: 1px solid var(--border); }
+.tab-btn.active { background: var(--accent); color: #07111f; }
+pre {
+  background: #080d1a; border: 1px solid var(--border); border-radius: 8px;
+  padding: 12px; overflow-x: auto; font-size: 0.85rem; color: #cbd5e1;
+}
+footer { margin-top: 34px; padding-top: 18px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">B2B Compliance &amp; Quant Tools</a>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="index.html">Todas as Ferramentas</a>
+      <a href="calculadora-reforma-tributaria-lc214.html">LC 214</a>
+      <a href="validador-xml-tiss-ans.html">XML TISS</a>
+      <a href="calculadora-frete-minimo-antt.html">Frete ANTT</a>
+      <a href="decodificador-boleto-pix-emv.html">Boleto/Pix</a>
+      <a href="auditor-spf-dmarc-headers.html">SPF/DMARC</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="badges">
+        <span class="badge">Pagamentos &amp; Pix</span>
+        <span class="badge badge-green">100% Client-Side &bull; Zero Envio ao Servidor</span>
+      </div>
+      <h1>Decodificador Boleto FEBRABAN &amp; Gerador/Validador Pix EMV (CRC16-CCITT)</h1>
+      <p>Valide linha digitável de boleto bancário (Módulo 10/11, fator de vencimento pós-2025) e gere ou decodifique BR Code Pix EMV com checksum CRC16-CCITT real.</p>
+    </section>
+
+    <div class="ad-slot" data-slot="b2b-sponsor-top">
+      Espaço Patrocinado B2B / APIs Determinísticas — Precisa processar 10.000+ registros via REST ou MCP?
+      <a href="https://apify.com/b2b-quant-apis/brazil-pix-ispb-cvm-financial-kyb-auditor" target="_blank" rel="noopener noreferrer">Automatizar na Apify Store</a>
+    </div>
+
+    <section class="panel">
+      <div class="tabs">
+        <button type="button" class="tab-btn active" id="tabBtnPix">Pix EMV (BR Code + CRC16)</button>
+        <button type="button" class="tab-btn" id="tabBtnBoleto">Boleto FEBRABAN (47 dígitos)</button>
+      </div>
+
+      <div id="panelPix">
+        <div class="form-row">
+          <div><label for="pixChave">Chave Pix</label><input id="pixChave" value="financeiro@empresa.com.br"></div>
+          <div><label for="pixNome">Nome Recebedor</label><input id="pixNome" value="EMPRESA B2B LTDA"></div>
+          <div><label for="pixCidade">Cidade</label><input id="pixCidade" value="SAO PAULO"></div>
+          <div><label for="pixValor">Valor (R$)</label><input id="pixValor" type="number" step="0.01" value="149.90"></div>
+          <div><label for="pixTxid">TXID</label><input id="pixTxid" value="FATURA202601"></div>
+        </div>
+        <div class="btn-row">
+          <button type="button" id="btnGerarPix">Gerar Pix EMV + CRC16</button>
+          <button type="button" class="secondary" id="btnValidarPix">Validar / Decodificar BR Code</button>
+        </div>
+        <label for="pixPayloadInput" style="margin-top:12px;">BR Code Pix EMV (Copia e Cola):</label>
+        <textarea id="pixPayloadInput" style="min-height:90px;"></textarea>
+        <div class="result-box" id="pixResult"></div>
+      </div>
+
+      <div id="panelBoleto" style="display:none;">
+        <label for="boletoLinha">Linha Digitável do Boleto Bancário (47 dígitos):</label>
+        <input id="boletoLinha" value="00190.00009 01234.567892 12345.678903 1 10000000015000">
+        <div class="btn-row">
+          <button type="button" id="btnValidarBoleto">Validar &amp; Decodificar Boleto</button>
+        </div>
+        <div class="result-box" id="boletoResult"></div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div>
+        <strong>Precisa de escala em lote, CI/CD ou integração ERP?</strong>
+        <div style="color: var(--muted); font-size: 0.92rem; margin-top: 4px;">
+          Execute esta mesma engine determinística em API REST, MCP Server, Apify Actor ou GitHub Action.
+        </div>
+      </div>
+      <div class="btn-row" style="margin-top: 0;">
+        <a class="btn" href="https://apify.com/b2b-quant-apis/brazil-pix-ispb-cvm-financial-kyb-auditor" target="_blank" rel="noopener noreferrer">Apify Store (B2B APIs)</a>
+        <a class="btn secondary" href="https://rapidapi.com/user/jesleytassili" target="_blank" rel="noopener noreferrer">RapidAPI Hub</a>
+        <a class="btn secondary" href="https://jesleytassili-glitch.github.io" target="_blank" rel="noopener noreferrer">Portal &amp; Docs</a>
+      </div>
+    </section>
+
+    <footer>
+      <div>100% Client-Side HTML/JS (US$ 0,00 de servidor). Nenhum dado inserido sai do seu navegador.</div>
+      <div style="margin-top: 4px;">
+        <a href="https://jesleytassili-glitch.github.io">https://jesleytassili-glitch.github.io</a> &bull;
+        <a href="https://apify.com/b2b-quant-apis">https://apify.com/b2b-quant-apis</a> &bull;
+        <a href="sitemap.xml">sitemap.xml</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+function crc16Ccitt(str) {
+  let crc = 0xFFFF;
+  for (let i = 0; i < str.length; i++) {
+    crc ^= (str.charCodeAt(i) & 0xFF) << 8;
+    for (let j = 0; j < 8; j++) {
+      crc = (crc & 0x8000) ? ((crc << 1) ^ 0x1021) & 0xFFFF : (crc << 1) & 0xFFFF;
+    }
+  }
+  return crc.toString(16).toUpperCase().padStart(4, "0");
+}
+
+function tlv(id, val) {
+  const s = String(val);
+  return id + String(s.length).padStart(2, "0") + s;
+}
+
+function gerarPixEmv({ chave, nome, cidade, valor, txid }) {
+  const gui = tlv("00", "br.gov.bcb.pix") + tlv("01", String(chave || "").trim());
+  const merchantInfo = tlv("26", gui);
+  const amountVal = Number(valor) > 0 ? tlv("54", Number(valor).toFixed(2)) : "";
+  const cleanNome = String(nome || "RECEBEDOR").trim().slice(0, 25);
+  const cleanCidade = String(cidade || "SAO PAULO").trim().slice(0, 15);
+  const cleanTxid = String(txid || "***").replace(/[^A-Za-z0-9*]/g, "").slice(0, 25) || "***";
+  const body =
+    tlv("00", "01") +
+    merchantInfo +
+    tlv("52", "0000") +
+    tlv("53", "986") +
+    amountVal +
+    tlv("58", "BR") +
+    tlv("59", cleanNome) +
+    tlv("60", cleanCidade) +
+    tlv("62", tlv("05", cleanTxid)) +
+    "6304";
+  return body + crc16Ccitt(body);
+}
+
+function decodificarPixEmv(payload) {
+  const raw = String(payload || "").trim();
+  if (raw.length < 12) return { validCrc: false, error: "Payload muito curto", tags: {} };
+  const idxCrc = raw.lastIndexOf("6304");
+  let validCrc = false;
+  let expectedCrc = "";
+  let providedCrc = raw.slice(-4).toUpperCase();
+  if (idxCrc !== -1 && idxCrc + 8 === raw.length) {
+    expectedCrc = crc16Ccitt(raw.slice(0, idxCrc + 4));
+    validCrc = expectedCrc === providedCrc;
+  }
+  const tags = {};
+  let pos = 0;
+  while (pos + 4 <= raw.length) {
+    const id = raw.slice(pos, pos + 2);
+    const len = parseInt(raw.slice(pos + 2, pos + 4), 10);
+    if (Number.isNaN(len) || pos + 4 + len > raw.length) break;
+    tags[id] = raw.slice(pos + 4, pos + 4 + len);
+    pos += 4 + len;
+  }
+  return { validCrc, expectedCrc, providedCrc, tags };
+}
+
+function mod10Febraban(numStr) {
+  let sum = 0;
+  let weight = 2;
+  for (let i = numStr.length - 1; i >= 0; i--) {
+    let prod = parseInt(numStr[i], 10) * weight;
+    if (prod > 9) prod = Math.floor(prod / 10) + (prod % 10);
+    sum += prod;
+    weight = weight === 2 ? 1 : 2;
+  }
+  const rem = sum % 10;
+  return rem === 0 ? 0 : 10 - rem;
+}
+
+function mod11Febraban(numStr) {
+  let sum = 0;
+  let weight = 2;
+  for (let i = numStr.length - 1; i >= 0; i--) {
+    sum += parseInt(numStr[i], 10) * weight;
+    weight = weight >= 9 ? 2 : weight + 1;
+  }
+  const dv = 11 - (sum % 11);
+  return (dv === 0 || dv === 10 || dv === 11) ? 1 : dv;
+}
+
+function validarBoletoFebraban(linhaRaw) {
+  const digits = String(linhaRaw || "").replace(/\D/g, "");
+  if (digits.length !== 47) {
+    return { valid: false, error: `Esperados 47 dígitos bancários, recebidos ${digits.length}.`, digits };
+  }
+  const dv1Ok = mod10Febraban(digits.slice(0, 9)) === parseInt(digits[9], 10);
+  const dv2Ok = mod10Febraban(digits.slice(10, 20)) === parseInt(digits[20], 10);
+  const dv3Ok = mod10Febraban(digits.slice(21, 31)) === parseInt(digits[31], 10);
+  const banco = digits.slice(0, 3);
+  const moeda = digits[3];
+  const dac = digits[32];
+  const fator = parseInt(digits.slice(33, 37), 10);
+  const valorCentavos = parseInt(digits.slice(37, 47), 10);
+  const barcode = banco + moeda + dac + digits.slice(33, 37) + digits.slice(37, 47) + digits.slice(4, 9) + digits.slice(10, 20) + digits.slice(21, 31);
+  const dacCalc = mod11Febraban(barcode.slice(0, 4) + barcode.slice(5));
+  const dacOk = dacCalc === parseInt(dac, 10);
+  const baseDate = fator >= 1000 ? new Date(Date.UTC(2025, 1, 22)) : new Date(Date.UTC(1997, 9, 7));
+  const offsetDays = fator >= 1000 ? (fator - 1000) : fator;
+  const vencDate = fator > 0 ? new Date(baseDate.getTime() + offsetDays * 86400000).toISOString().slice(0, 10) : "Sem vencimento";
+  return {
+    valid: dv1Ok && dv2Ok && dv3Ok && dacOk,
+    dv1Ok, dv2Ok, dv3Ok, dacOk,
+    banco, valorReais: Number((valorCentavos / 100).toFixed(2)), fator, vencimento: vencDate, barcode
+  };
+}
+
+if (typeof document !== "undefined") {
+  const pPix = document.getElementById("panelPix");
+  const pBol = document.getElementById("panelBoleto");
+  const bPix = document.getElementById("tabBtnPix");
+  const bBol = document.getElementById("tabBtnBoleto");
+  if (bPix && bBol) {
+    bPix.addEventListener("click", () => { pPix.style.display = "block"; pBol.style.display = "none"; bPix.classList.add("active"); bBol.classList.remove("active"); });
+    bBol.addEventListener("click", () => { pPix.style.display = "none"; pBol.style.display = "block"; bBol.classList.add("active"); bPix.classList.remove("active"); });
+  }
+  const renderPix = () => {
+    const dec = decodificarPixEmv(document.getElementById("pixPayloadInput").value);
+    document.getElementById("pixResult").innerHTML = `
+      <div><strong>CRC16-CCITT:</strong> ${dec.validCrc ? '<span class="status-ok">VÁLIDO (' + dec.providedCrc + ')</span>' : '<span class="status-err">INVÁLIDO (esperado ' + dec.expectedCrc + ')</span>'}</div>
+      <pre>${JSON.stringify(dec.tags, null, 2)}</pre>`;
+  };
+  const genPix = () => {
+    document.getElementById("pixPayloadInput").value = gerarPixEmv({
+      chave: document.getElementById("pixChave").value,
+      nome: document.getElementById("pixNome").value,
+      cidade: document.getElementById("pixCidade").value,
+      valor: document.getElementById("pixValor").value,
+      txid: document.getElementById("pixTxid").value,
+    });
+    renderPix();
+  };
+  const renderBol = () => {
+    const r = validarBoletoFebraban(document.getElementById("boletoLinha").value);
+    document.getElementById("boletoResult").innerHTML = r.error
+      ? `<span class="status-err">${r.error}</span>`
+      : `<div><strong>Status:</strong> ${r.valid ? '<span class="status-ok">LINHA DIGITÁVEL VÁLIDA</span>' : '<span class="status-err">DV / DAC INVÁLIDO</span>'} | <strong>Banco:</strong> ${r.banco} | <strong>Valor:</strong> R$ ${r.valorReais.toFixed(2)} | <strong>Vencimento:</strong> ${r.vencimento}</div>`;
+  };
+  const btnGen = document.getElementById("btnGerarPix");
+  if (btnGen) {
+    btnGen.addEventListener("click", genPix);
+    document.getElementById("btnValidarPix").addEventListener("click", renderPix);
+    document.getElementById("btnValidarBoleto").addEventListener("click", renderBol);
+    genPix();
+  }
+}
+  </script>
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora Reforma Tributária LC 214/2025 (IBS, CBS &amp; Split Payment)</title>
+  <meta name="description" content="Simule alíquotas de IBS, CBS, Imposto Seletivo, cClassTrib por NCM e impacto de fluxo de caixa do Split Payment segundo a LC 214/2025 diretamente no navegador.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://jesleytassili-glitch.github.io/tools/calculadora-reforma-tributaria-lc214.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="B2B Quant &amp; Compliance Tools">
+  <meta property="og:title" content="Calculadora Reforma Tributária LC 214/2025 (IBS, CBS &amp; Split Payment)">
+  <meta property="og:description" content="Simule alíquotas de IBS, CBS, Imposto Seletivo, cClassTrib por NCM e impacto de fluxo de caixa do Split Payment segundo a LC 214/2025 diretamente no navegador.">
+  <meta property="og:url" content="https://jesleytassili-glitch.github.io/tools/calculadora-reforma-tributaria-lc214.html">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Calculadora Reforma Tributária LC 214/2025 (IBS, CBS & Split Payment)",
+  "description": "Simule alíquotas de IBS, CBS, Imposto Seletivo, cClassTrib por NCM e impacto de fluxo de caixa do Split Payment segundo a LC 214/2025 diretamente no navegador.",
+  "url": "https://jesleytassili-glitch.github.io/tools/calculadora-reforma-tributaria-lc214.html",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web Browser",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "B2B Quant & Compliance APIs",
+    "url": "https://jesleytassili-glitch.github.io"
+  }
+}
+  </script>
+  <style>
+:root {
+  --bg: #0b1020;
+  --surface: #131a2e;
+  --surface-alt: #1b2440;
+  --border: #283558;
+  --text: #e6ecf8;
+  --muted: #9aa8c7;
+  --accent: #38bdf8;
+  --accent-2: #34d399;
+  --warn: #fbbf24;
+  --danger: #f87171;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container { max-width: 1080px; margin: 0 auto; padding: 20px 18px 48px; }
+.topbar {
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
+  gap: 12px; padding: 14px 18px; border-bottom: 1px solid var(--border);
+  background: rgba(19, 26, 46, 0.92); position: sticky; top: 0; z-index: 20;
+}
+.brand { font-weight: 700; color: var(--text); font-size: 1rem; letter-spacing: -0.01em; }
+.nav-links { display: flex; flex-wrap: wrap; gap: 14px; font-size: 0.9rem; }
+.hero {
+  background: linear-gradient(135deg, #131a2e 0%, #172546 100%);
+  border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin: 18px 0;
+}
+.hero h1 { margin: 0 0 8px; font-size: 1.65rem; line-height: 1.25; }
+.hero p { margin: 0; color: var(--muted); }
+.badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+.badge {
+  display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 0.78rem;
+  font-weight: 600; background: rgba(56, 189, 248, 0.14); color: var(--accent);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+}
+.badge-green { background: rgba(52, 211, 153, 0.14); color: var(--accent-2); border-color: rgba(52, 211, 153, 0.35); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 16px; }
+.card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  padding: 18px; display: flex; flex-direction: column; gap: 10px;
+}
+.panel {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  padding: 20px; margin-bottom: 18px;
+}
+label { display: block; font-size: 0.88rem; color: var(--muted); margin-bottom: 5px; font-weight: 600; }
+input, select, textarea {
+  width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--border);
+  background: var(--surface-alt); color: var(--text); font-size: 0.95rem; font-family: inherit;
+}
+textarea { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; min-height: 150px; }
+.form-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 14px; }
+.btn-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+button, .btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  padding: 10px 16px; border-radius: 8px; border: 1px solid transparent; cursor: pointer;
+  font-weight: 600; font-size: 0.92rem; background: var(--accent); color: #07111f;
+}
+button.secondary, .btn.secondary {
+  background: var(--surface-alt); color: var(--text); border-color: var(--border);
+}
+.result-box {
+  background: #0d1426; border: 1px solid var(--border); border-radius: 10px;
+  padding: 16px; margin-top: 14px;
+}
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-top: 10px; }
+.kpi { background: var(--surface-alt); border: 1px solid var(--border); border-radius: 8px; padding: 12px; }
+.kpi .label { font-size: 0.78rem; color: var(--muted); }
+.kpi .val { font-size: 1.2rem; font-weight: 700; margin-top: 4px; }
+.status-ok { color: var(--accent-2); font-weight: 700; }
+.status-warn { color: var(--warn); font-weight: 700; }
+.status-err { color: var(--danger); font-weight: 700; }
+.cta-banner {
+  background: linear-gradient(135deg, #102a38 0%, #17213d 100%);
+  border: 1px solid #2b4f6e; border-radius: 12px; padding: 20px; margin-top: 22px;
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 14px;
+}
+.ad-slot {
+  border: 1px dashed var(--border); border-radius: 10px; padding: 12px 16px;
+  margin: 16px 0; color: var(--muted); font-size: 0.84rem; text-align: center;
+  background: rgba(19, 26, 46, 0.5);
+}
+.tabs { display: flex; gap: 8px; margin-bottom: 14px; }
+.tab-btn { background: var(--surface-alt); color: var(--text); border: 1px solid var(--border); }
+.tab-btn.active { background: var(--accent); color: #07111f; }
+pre {
+  background: #080d1a; border: 1px solid var(--border); border-radius: 8px;
+  padding: 12px; overflow-x: auto; font-size: 0.85rem; color: #cbd5e1;
+}
+footer { margin-top: 34px; padding-top: 18px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">B2B Compliance &amp; Quant Tools</a>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="index.html">Todas as Ferramentas</a>
+      <a href="calculadora-reforma-tributaria-lc214.html">LC 214</a>
+      <a href="validador-xml-tiss-ans.html">XML TISS</a>
+      <a href="calculadora-frete-minimo-antt.html">Frete ANTT</a>
+      <a href="decodificador-boleto-pix-emv.html">Boleto/Pix</a>
+      <a href="auditor-spf-dmarc-headers.html">SPF/DMARC</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="badges">
+        <span class="badge">Fiscal &amp; ERP</span>
+        <span class="badge badge-green">100% Client-Side &bull; Zero Envio ao Servidor</span>
+      </div>
+      <h1>Calculadora Reforma Tributária LC 214/2025 (IBS, CBS &amp; Split Payment)</h1>
+      <p>Simule alíquotas de IBS, CBS, Imposto Seletivo, cClassTrib por NCM e impacto de fluxo de caixa do Split Payment segundo a LC 214/2025 diretamente no navegador.</p>
+    </section>
+
+    <div class="ad-slot" data-slot="b2b-sponsor-top">
+      Espaço Patrocinado B2B / APIs Determinísticas — Precisa processar 10.000+ registros via REST ou MCP?
+      <a href="https://apify.com/b2b-quant-apis/brazil-tax-reform-ncm-classtrib-auditor" target="_blank" rel="noopener noreferrer">Automatizar na Apify Store</a>
+    </div>
+
+    <section class="panel">
+      <div class="form-row">
+        <div>
+          <label for="valorOp">Valor da Operação (R$)</label>
+          <input id="valorOp" type="number" step="0.01" min="0" value="10000">
+        </div>
+        <div>
+          <label for="ncmInput">NCM (8 dígitos)</label>
+          <input id="ncmInput" type="text" maxlength="10" value="84713012">
+        </div>
+        <div>
+          <label for="anoSelect">Ano de Transição</label>
+          <select id="anoSelect">
+            <option value="2026">2026 (Teste: CBS 0,9% + IBS 0,1%)</option>
+            <option value="2027">2027 (CBS cheia 8,8% + IBS 0,1%)</option>
+            <option value="2033" selected>2033 (Regime Pleno: CBS 8,8% + IBS 17,7%)</option>
+          </select>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button type="button" id="btnCalcularLc214">Simular IBS / CBS / Split Payment</button>
+        <button type="button" class="secondary" onclick="setNcmPreset('10063021')">Preset: Arroz (Cesta Básica 0%)</button>
+        <button type="button" class="secondary" onclick="setNcmPreset('30049099')">Preset: Medicamento (-60%)</button>
+        <button type="button" class="secondary" onclick="setNcmPreset('49019900')">Preset: Livro (Imune)</button>
+        <button type="button" class="secondary" onclick="setNcmPreset('22021000')">Preset: Bebida Açucarada (IS)</button>
+      </div>
+      <div class="result-box" id="lc214Result"></div>
+    </section>
+
+    <section class="cta-banner">
+      <div>
+        <strong>Precisa de escala em lote, CI/CD ou integração ERP?</strong>
+        <div style="color: var(--muted); font-size: 0.92rem; margin-top: 4px;">
+          Execute esta mesma engine determinística em API REST, MCP Server, Apify Actor ou GitHub Action.
+        </div>
+      </div>
+      <div class="btn-row" style="margin-top: 0;">
+        <a class="btn" href="https://apify.com/b2b-quant-apis/brazil-tax-reform-ncm-classtrib-auditor" target="_blank" rel="noopener noreferrer">Apify Store (B2B APIs)</a>
+        <a class="btn secondary" href="https://rapidapi.com/user/jesleytassili" target="_blank" rel="noopener noreferrer">RapidAPI Hub</a>
+        <a class="btn secondary" href="https://jesleytassili-glitch.github.io" target="_blank" rel="noopener noreferrer">Portal &amp; Docs</a>
+      </div>
+    </section>
+
+    <footer>
+      <div>100% Client-Side HTML/JS (US$ 0,00 de servidor). Nenhum dado inserido sai do seu navegador.</div>
+      <div style="margin-top: 4px;">
+        <a href="https://jesleytassili-glitch.github.io">https://jesleytassili-glitch.github.io</a> &bull;
+        <a href="https://apify.com/b2b-quant-apis">https://apify.com/b2b-quant-apis</a> &bull;
+        <a href="sitemap.xml">sitemap.xml</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+const CESTA_BASICA = ["1006", "07133", "0401", "0402", "0901", "1701", "0201", "0202", "0207", "040721"];
+const REDUCAO_60 = ["3001", "3002", "3003", "3004", "3005", "3006", "9018", "9019", "9021", "3101", "3102", "3808"];
+const IMUNIDADE_LIVROS = ["4901", "4902", "4903", "4904"];
+const IMPOSTO_SELETIVO = ["220210", "2203", "2204", "2208", "2401", "2402"];
+
+function classificarNcmLc214(ncmRaw) {
+  const digits = String(ncmRaw || "").replace(/\D/g, "").padEnd(8, "0").slice(0, 8);
+  if (CESTA_BASICA.some((p) => digits.startsWith(p))) {
+    return { ncm: digits, cst: "200", cClassTrib: "200003", regime: "Cesta Básica Nacional (Alíquota Zero)", fatorReducao: 1.0, aliqIs: 0.0 };
+  }
+  if (IMUNIDADE_LIVROS.some((p) => digits.startsWith(p))) {
+    return { ncm: digits, cst: "410", cClassTrib: "410001", regime: "Imunidade Constitucional (Livros/Periódicos)", fatorReducao: 1.0, aliqIs: 0.0 };
+  }
+  if (REDUCAO_60.some((p) => digits.startsWith(p))) {
+    return { ncm: digits, cst: "200", cClassTrib: "200028", regime: "Redução de 60% (Saúde / Agro / Insumos)", fatorReducao: 0.60, aliqIs: 0.0 };
+  }
+  if (IMPOSTO_SELETIVO.some((p) => digits.startsWith(p))) {
+    return { ncm: digits, cst: "000", cClassTrib: "000001", regime: "Tributação Padrão + Imposto Seletivo (IS)", fatorReducao: 0.0, aliqIs: 0.05 };
+  }
+  return { ncm: digits, cst: "000", cClassTrib: "000001", regime: "Tributação Integral Padrão (IVA Dual)", fatorReducao: 0.0, aliqIs: 0.0 };
+}
+
+function calcularReformaLC214(valorOperacao, ncmRaw, ano) {
+  const valor = Math.max(0, Number(valorOperacao) || 0);
+  const year = Number(ano) || 2033;
+  const ratesByYear = {
+    2026: { cbs: 0.009, ibs: 0.001 },
+    2027: { cbs: 0.088, ibs: 0.001 },
+    2033: { cbs: 0.088, ibs: 0.177 },
+  };
+  const baseRates = ratesByYear[year] || ratesByYear[2033];
+  const cls = classificarNcmLc214(ncmRaw);
+  const fatorEfetivo = 1.0 - cls.fatorReducao;
+  const valorCbs = Number((valor * baseRates.cbs * fatorEfetivo).toFixed(2));
+  const valorIbs = Number((valor * baseRates.ibs * fatorEfetivo).toFixed(2));
+  const valorIs = year >= 2027 ? Number((valor * cls.aliqIs).toFixed(2)) : 0.0;
+  const totalTributos = Number((valorCbs + valorIbs + valorIs).toFixed(2));
+  const liquidoSplitPayment = Number((valor - totalTributos).toFixed(2));
+  const aliquotaEfetivaPct = valor > 0 ? Number(((totalTributos / valor) * 100).toFixed(2)) : 0;
+
+  return {
+    ...cls,
+    ano: year,
+    valorOperacao: valor,
+    valorCbs,
+    valorIbs,
+    valorIs,
+    totalTributos,
+    liquidoSplitPayment,
+    aliquotaEfetivaPct,
+  };
+}
+
+function setNcmPreset(ncm) {
+  const el = document.getElementById("ncmInput");
+  if (el) { el.value = ncm; renderLc214(); }
+}
+
+function renderLc214() {
+  const box = document.getElementById("lc214Result");
+  if (!box) return;
+  const val = document.getElementById("valorOp").value;
+  const ncm = document.getElementById("ncmInput").value;
+  const ano = document.getElementById("anoSelect").value;
+  const res = calcularReformaLC214(val, ncm, ano);
+  box.innerHTML = `
+    <div><strong>Classificação:</strong> ${res.regime} | <strong>CST:</strong> ${res.cst} | <strong>cClassTrib:</strong> ${res.cClassTrib}</div>
+    <div class="kpi-grid">
+      <div class="kpi"><div class="label">CBS (Federal)</div><div class="val">R$ ${res.valorCbs.toFixed(2)}</div></div>
+      <div class="kpi"><div class="label">IBS (Est./Mun.)</div><div class="val">R$ ${res.valorIbs.toFixed(2)}</div></div>
+      <div class="kpi"><div class="label">Imposto Seletivo</div><div class="val">R$ ${res.valorIs.toFixed(2)}</div></div>
+      <div class="kpi"><div class="label">Retido Split Payment</div><div class="val status-warn">R$ ${res.totalTributos.toFixed(2)} (${res.aliquotaEfetivaPct}%)</div></div>
+      <div class="kpi"><div class="label">Líquido no Caixa</div><div class="val status-ok">R$ ${res.liquidoSplitPayment.toFixed(2)}</div></div>
+    </div>`;
+}
+if (typeof document !== "undefined") {
+  const btn = document.getElementById("btnCalcularLc214");
+  if (btn) { btn.addEventListener("click", renderLc214); renderLc214(); }
+}
+  </script>
+</body>
+</html>

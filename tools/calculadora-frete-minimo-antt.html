@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora Piso Mínimo de Frete ANTT (Res. 5.867/2020 &amp; 6.067/2025)</title>
+  <meta name="description" content="Calcule o Piso Mínimo Rodoviário ANTT por eixos, distância em km e tipo de carga (Tabela A: CCD × km + CC) e audite risco de multa antes de emitir CT-e.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://jesleytassili-glitch.github.io/tools/calculadora-frete-minimo-antt.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="B2B Quant &amp; Compliance Tools">
+  <meta property="og:title" content="Calculadora Piso Mínimo de Frete ANTT (Res. 5.867/2020 &amp; 6.067/2025)">
+  <meta property="og:description" content="Calcule o Piso Mínimo Rodoviário ANTT por eixos, distância em km e tipo de carga (Tabela A: CCD × km + CC) e audite risco de multa antes de emitir CT-e.">
+  <meta property="og:url" content="https://jesleytassili-glitch.github.io/tools/calculadora-frete-minimo-antt.html">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Calculadora Piso Mínimo de Frete ANTT (Res. 5.867/2020 & 6.067/2025)",
+  "description": "Calcule o Piso Mínimo Rodoviário ANTT por eixos, distância em km e tipo de carga (Tabela A: CCD × km + CC) e audite risco de multa antes de emitir CT-e.",
+  "url": "https://jesleytassili-glitch.github.io/tools/calculadora-frete-minimo-antt.html",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web Browser",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "B2B Quant & Compliance APIs",
+    "url": "https://jesleytassili-glitch.github.io"
+  }
+}
+  </script>
+  <style>
+:root {
+  --bg: #0b1020;
+  --surface: #131a2e;
+  --surface-alt: #1b2440;
+  --border: #283558;
+  --text: #e6ecf8;
+  --muted: #9aa8c7;
+  --accent: #38bdf8;
+  --accent-2: #34d399;
+  --warn: #fbbf24;
+  --danger: #f87171;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container { max-width: 1080px; margin: 0 auto; padding: 20px 18px 48px; }
+.topbar {
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
+  gap: 12px; padding: 14px 18px; border-bottom: 1px solid var(--border);
+  background: rgba(19, 26, 46, 0.92); position: sticky; top: 0; z-index: 20;
+}
+.brand { font-weight: 700; color: var(--text); font-size: 1rem; letter-spacing: -0.01em; }
+.nav-links { display: flex; flex-wrap: wrap; gap: 14px; font-size: 0.9rem; }
+.hero {
+  background: linear-gradient(135deg, #131a2e 0%, #172546 100%);
+  border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin: 18px 0;
+}
+.hero h1 { margin: 0 0 8px; font-size: 1.65rem; line-height: 1.25; }
+.hero p { margin: 0; color: var(--muted); }
+.badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+.badge {
+  display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 0.78rem;
+  font-weight: 600; background: rgba(56, 189, 248, 0.14); color: var(--accent);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+}
+.badge-green { background: rgba(52, 211, 153, 0.14); color: var(--accent-2); border-color: rgba(52, 211, 153, 0.35); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 16px; }
+.card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  padding: 18px; display: flex; flex-direction: column; gap: 10px;
+}
+.panel {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  padding: 20px; margin-bottom: 18px;
+}
+label { display: block; font-size: 0.88rem; color: var(--muted); margin-bottom: 5px; font-weight: 600; }
+input, select, textarea {
+  width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--border);
+  background: var(--surface-alt); color: var(--text); font-size: 0.95rem; font-family: inherit;
+}
+textarea { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; min-height: 150px; }
+.form-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 14px; }
+.btn-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+button, .btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  padding: 10px 16px; border-radius: 8px; border: 1px solid transparent; cursor: pointer;
+  font-weight: 600; font-size: 0.92rem; background: var(--accent); color: #07111f;
+}
+button.secondary, .btn.secondary {
+  background: var(--surface-alt); color: var(--text); border-color: var(--border);
+}
+.result-box {
+  background: #0d1426; border: 1px solid var(--border); border-radius: 10px;
+  padding: 16px; margin-top: 14px;
+}
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-top: 10px; }
+.kpi { background: var(--surface-alt); border: 1px solid var(--border); border-radius: 8px; padding: 12px; }
+.kpi .label { font-size: 0.78rem; color: var(--muted); }
+.kpi .val { font-size: 1.2rem; font-weight: 700; margin-top: 4px; }
+.status-ok { color: var(--accent-2); font-weight: 700; }
+.status-warn { color: var(--warn); font-weight: 700; }
+.status-err { color: var(--danger); font-weight: 700; }
+.cta-banner {
+  background: linear-gradient(135deg, #102a38 0%, #17213d 100%);
+  border: 1px solid #2b4f6e; border-radius: 12px; padding: 20px; margin-top: 22px;
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 14px;
+}
+.ad-slot {
+  border: 1px dashed var(--border); border-radius: 10px; padding: 12px 16px;
+  margin: 16px 0; color: var(--muted); font-size: 0.84rem; text-align: center;
+  background: rgba(19, 26, 46, 0.5);
+}
+.tabs { display: flex; gap: 8px; margin-bottom: 14px; }
+.tab-btn { background: var(--surface-alt); color: var(--text); border: 1px solid var(--border); }
+.tab-btn.active { background: var(--accent); color: #07111f; }
+pre {
+  background: #080d1a; border: 1px solid var(--border); border-radius: 8px;
+  padding: 12px; overflow-x: auto; font-size: 0.85rem; color: #cbd5e1;
+}
+footer { margin-top: 34px; padding-top: 18px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">B2B Compliance &amp; Quant Tools</a>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="index.html">Todas as Ferramentas</a>
+      <a href="calculadora-reforma-tributaria-lc214.html">LC 214</a>
+      <a href="validador-xml-tiss-ans.html">XML TISS</a>
+      <a href="calculadora-frete-minimo-antt.html">Frete ANTT</a>
+      <a href="decodificador-boleto-pix-emv.html">Boleto/Pix</a>
+      <a href="auditor-spf-dmarc-headers.html">SPF/DMARC</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="badges">
+        <span class="badge">Logística &amp; CT-e</span>
+        <span class="badge badge-green">100% Client-Side &bull; Zero Envio ao Servidor</span>
+      </div>
+      <h1>Calculadora Piso Mínimo de Frete ANTT (Res. 5.867/2020 &amp; 6.067/2025)</h1>
+      <p>Calcule o Piso Mínimo Rodoviário ANTT por eixos, distância em km e tipo de carga (Tabela A: CCD × km + CC) e audite risco de multa antes de emitir CT-e.</p>
+    </section>
+
+    <div class="ad-slot" data-slot="b2b-sponsor-top">
+      Espaço Patrocinado B2B / APIs Determinísticas — Precisa processar 10.000+ registros via REST ou MCP?
+      <a href="https://apify.com/b2b-quant-apis/brazil-antt-freight-cte-auditor" target="_blank" rel="noopener noreferrer">Automatizar na Apify Store</a>
+    </div>
+
+    <section class="panel">
+      <div class="form-row">
+        <div>
+          <label for="anttCarga">Tipo de Carga (Tabela A ANTT)</label>
+          <select id="anttCarga">
+            <option value="carga_geral">Carga Geral</option>
+            <option value="granel_solido">Granel Sólido</option>
+            <option value="frigorificada">Carga Frigorificada / Resfriada</option>
+            <option value="perigosa">Carga Perigosa</option>
+          </select>
+        </div>
+        <div>
+          <label for="anttEixos">Quantidade de Eixos</label>
+          <select id="anttEixos">
+            <option value="2">2 eixos</option>
+            <option value="3">3 eixos</option>
+            <option value="4">4 eixos</option>
+            <option value="5">5 eixos</option>
+            <option value="6" selected>6 eixos</option>
+            <option value="7">7 eixos</option>
+            <option value="9">9 eixos (Rodotrem)</option>
+          </select>
+        </div>
+        <div>
+          <label for="anttKm">Distância Total (km)</label>
+          <input id="anttKm" type="number" min="1" step="1" value="850">
+        </div>
+        <div>
+          <label for="anttOferta">Frete Ofertado no CT-e (R$, opcional)</label>
+          <input id="anttOferta" type="number" min="0" step="0.01" value="6200">
+        </div>
+      </div>
+      <div class="btn-row">
+        <button type="button" id="btnCalcularAntt">Calcular Piso Mínimo ANTT</button>
+      </div>
+      <div class="result-box" id="anttResult"></div>
+    </section>
+
+    <section class="cta-banner">
+      <div>
+        <strong>Precisa de escala em lote, CI/CD ou integração ERP?</strong>
+        <div style="color: var(--muted); font-size: 0.92rem; margin-top: 4px;">
+          Execute esta mesma engine determinística em API REST, MCP Server, Apify Actor ou GitHub Action.
+        </div>
+      </div>
+      <div class="btn-row" style="margin-top: 0;">
+        <a class="btn" href="https://apify.com/b2b-quant-apis/brazil-antt-freight-cte-auditor" target="_blank" rel="noopener noreferrer">Apify Store (B2B APIs)</a>
+        <a class="btn secondary" href="https://rapidapi.com/user/jesleytassili" target="_blank" rel="noopener noreferrer">RapidAPI Hub</a>
+        <a class="btn secondary" href="https://jesleytassili-glitch.github.io" target="_blank" rel="noopener noreferrer">Portal &amp; Docs</a>
+      </div>
+    </section>
+
+    <footer>
+      <div>100% Client-Side HTML/JS (US$ 0,00 de servidor). Nenhum dado inserido sai do seu navegador.</div>
+      <div style="margin-top: 4px;">
+        <a href="https://jesleytassili-glitch.github.io">https://jesleytassili-glitch.github.io</a> &bull;
+        <a href="https://apify.com/b2b-quant-apis">https://apify.com/b2b-quant-apis</a> &bull;
+        <a href="sitemap.xml">sitemap.xml</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+const ANTT_TABLE_A = {
+  carga_geral: { 2: [3.6025, 421.18], 3: [4.5582, 514.40], 4: [5.2210, 565.80], 5: [5.9245, 622.15], 6: [6.6780, 681.90], 7: [7.2390, 758.10], 9: [8.1650, 824.50] },
+  granel_solido: { 2: [3.6510, 432.50], 3: [4.6190, 526.80], 4: [5.2950, 581.20], 5: [6.0120, 638.90], 6: [6.7840, 702.40], 7: [7.3610, 781.30], 9: [8.3120, 851.00] },
+  frigorificada: { 2: [4.1850, 498.20], 3: [5.2840, 608.50], 4: [6.0910, 678.40], 5: [6.9120, 742.10], 6: [7.7890, 819.60], 7: [8.4620, 912.40], 9: [9.5410, 998.80] },
+  perigosa: { 2: [4.3920, 542.10], 3: [5.5120, 658.40], 4: [6.3450, 731.90], 5: [7.1980, 799.50], 6: [8.0950, 882.30], 7: [8.7910, 978.60], 9: [9.9120, 1072.40] }
+};
+
+function calcularPisoAntt(distanciaKm, eixos, tipoCarga, freteOfertado) {
+  const km = Math.max(0, Number(distanciaKm) || 0);
+  const ax = Number(eixos) || 6;
+  const table = ANTT_TABLE_A[tipoCarga] || ANTT_TABLE_A.carga_geral;
+  const coef = table[ax] || table[6];
+  const ccd = coef[0];
+  const cc = coef[1];
+  const pisoMinimo = Number(((ccd * km) + cc).toFixed(2));
+  const ofertado = Number(freteOfertado) || 0;
+  const diferenca = Number((ofertado - pisoMinimo).toFixed(2));
+  const conforme = ofertado <= 0 ? null : ofertado >= pisoMinimo;
+  return { ccd, cc, km, eixos: ax, tipoCarga, pisoMinimo, ofertado, diferenca, conforme };
+}
+
+function renderAntt() {
+  const box = document.getElementById("anttResult");
+  if (!box) return;
+  const res = calcularPisoAntt(
+    document.getElementById("anttKm").value,
+    document.getElementById("anttEixos").value,
+    document.getElementById("anttCarga").value,
+    document.getElementById("anttOferta").value
+  );
+  let statusHtml = "<span class='badge'>Informe valor ofertado para auditar</span>";
+  if (res.conforme === true) statusHtml = `<span class="status-ok">CONFORME (+R$ ${res.diferenca.toFixed(2)} acima do piso)</span>`;
+  if (res.conforme === false) statusHtml = `<span class="status-err">ABAIXO DO PISO (-R$ ${Math.abs(res.diferenca).toFixed(2)} | Risco de Multa ANTT)</span>`;
+  box.innerHTML = `
+    <div><strong>Auditoria:</strong> ${statusHtml}</div>
+    <div class="kpi-grid">
+      <div class="kpi"><div class="label">Piso Mínimo ANTT</div><div class="val">R$ ${res.pisoMinimo.toFixed(2)}</div></div>
+      <div class="kpi"><div class="label">CCD (R$/km)</div><div class="val">R$ ${res.ccd.toFixed(4)}</div></div>
+      <div class="kpi"><div class="label">CC (Carga/Descarga)</div><div class="val">R$ ${res.cc.toFixed(2)}</div></div>
+      <div class="kpi"><div class="label">Fórmula</div><div class="val" style="font-size:0.95rem;">(${res.ccd} × ${res.km}) + ${res.cc}</div></div>
+    </div>`;
+}
+if (typeof document !== "undefined") {
+  const btn = document.getElementById("btnCalcularAntt");
+  if (btn) { btn.addEventListener("click", renderAntt); renderAntt(); }
+}
+  </script>
+</body>
+</html>

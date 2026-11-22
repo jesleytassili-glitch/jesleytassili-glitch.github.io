@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hub de 5 Micro-Ferramentas Gratuitas B2B (Client-Side)</title>
+  <meta name="description" content="Calculadoras e auditores gratuitos para Reforma Tributária LC 214, XML TISS ANS, Frete Mínimo ANTT, Boleto FEBRABAN/Pix EMV e DNS SPF/DMARC — 100% no navegador.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://jesleytassili-glitch.github.io/tools/index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="B2B Quant &amp; Compliance Tools">
+  <meta property="og:title" content="Hub de 5 Micro-Ferramentas Gratuitas B2B (Client-Side)">
+  <meta property="og:description" content="Calculadoras e auditores gratuitos para Reforma Tributária LC 214, XML TISS ANS, Frete Mínimo ANTT, Boleto FEBRABAN/Pix EMV e DNS SPF/DMARC — 100% no navegador.">
+  <meta property="og:url" content="https://jesleytassili-glitch.github.io/tools/index.html">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Hub de 5 Micro-Ferramentas Gratuitas B2B (Client-Side)",
+  "description": "Calculadoras e auditores gratuitos para Reforma Tributária LC 214, XML TISS ANS, Frete Mínimo ANTT, Boleto FEBRABAN/Pix EMV e DNS SPF/DMARC — 100% no navegador.",
+  "url": "https://jesleytassili-glitch.github.io/tools/index.html",
+  "applicationCategory": "WebApplication",
+  "operatingSystem": "Web Browser",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "B2B Quant & Compliance APIs",
+    "url": "https://jesleytassili-glitch.github.io"
+  }
+}
+  </script>
+  <style>
+:root {
+  --bg: #0b1020;
+  --surface: #131a2e;
+  --surface-alt: #1b2440;
+  --border: #283558;
+  --text: #e6ecf8;
+  --muted: #9aa8c7;
+  --accent: #38bdf8;
+  --accent-2: #34d399;
+  --warn: #fbbf24;
+  --danger: #f87171;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container { max-width: 1080px; margin: 0 auto; padding: 20px 18px 48px; }
+.topbar {
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
+  gap: 12px; padding: 14px 18px; border-bottom: 1px solid var(--border);
+  background: rgba(19, 26, 46, 0.92); position: sticky; top: 0; z-index: 20;
+}
+.brand { font-weight: 700; color: var(--text); font-size: 1rem; letter-spacing: -0.01em; }
+.nav-links { display: flex; flex-wrap: wrap; gap: 14px; font-size: 0.9rem; }
+.hero {
+  background: linear-gradient(135deg, #131a2e 0%, #172546 100%);
+  border: 1px solid var(--border); border-radius: 14px; padding: 24px; margin: 18px 0;
+}
+.hero h1 { margin: 0 0 8px; font-size: 1.65rem; line-height: 1.25; }
+.hero p { margin: 0; color: var(--muted); }
+.badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+.badge {
+  display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 0.78rem;
+  font-weight: 600; background: rgba(56, 189, 248, 0.14); color: var(--accent);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+}
+.badge-green { background: rgba(52, 211, 153, 0.14); color: var(--accent-2); border-color: rgba(52, 211, 153, 0.35); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 16px; }
+.card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  padding: 18px; display: flex; flex-direction: column; gap: 10px;
+}
+.panel {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  padding: 20px; margin-bottom: 18px;
+}
+label { display: block; font-size: 0.88rem; color: var(--muted); margin-bottom: 5px; font-weight: 600; }
+input, select, textarea {
+  width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--border);
+  background: var(--surface-alt); color: var(--text); font-size: 0.95rem; font-family: inherit;
+}
+textarea { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; min-height: 150px; }
+.form-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 14px; }
+.btn-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+button, .btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  padding: 10px 16px; border-radius: 8px; border: 1px solid transparent; cursor: pointer;
+  font-weight: 600; font-size: 0.92rem; background: var(--accent); color: #07111f;
+}
+button.secondary, .btn.secondary {
+  background: var(--surface-alt); color: var(--text); border-color: var(--border);
+}
+.result-box {
+  background: #0d1426; border: 1px solid var(--border); border-radius: 10px;
+  padding: 16px; margin-top: 14px;
+}
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-top: 10px; }
+.kpi { background: var(--surface-alt); border: 1px solid var(--border); border-radius: 8px; padding: 12px; }
+.kpi .label { font-size: 0.78rem; color: var(--muted); }
+.kpi .val { font-size: 1.2rem; font-weight: 700; margin-top: 4px; }
+.status-ok { color: var(--accent-2); font-weight: 700; }
+.status-warn { color: var(--warn); font-weight: 700; }
+.status-err { color: var(--danger); font-weight: 700; }
+.cta-banner {
+  background: linear-gradient(135deg, #102a38 0%, #17213d 100%);
+  border: 1px solid #2b4f6e; border-radius: 12px; padding: 20px; margin-top: 22px;
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 14px;
+}
+.ad-slot {
+  border: 1px dashed var(--border); border-radius: 10px; padding: 12px 16px;
+  margin: 16px 0; color: var(--muted); font-size: 0.84rem; text-align: center;
+  background: rgba(19, 26, 46, 0.5);
+}
+.tabs { display: flex; gap: 8px; margin-bottom: 14px; }
+.tab-btn { background: var(--surface-alt); color: var(--text); border: 1px solid var(--border); }
+.tab-btn.active { background: var(--accent); color: #07111f; }
+pre {
+  background: #080d1a; border: 1px solid var(--border); border-radius: 8px;
+  padding: 12px; overflow-x: auto; font-size: 0.85rem; color: #cbd5e1;
+}
+footer { margin-top: 34px; padding-top: 18px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">B2B Compliance &amp; Quant Tools</a>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="index.html">Todas as Ferramentas</a>
+      <a href="calculadora-reforma-tributaria-lc214.html">LC 214</a>
+      <a href="validador-xml-tiss-ans.html">XML TISS</a>
+      <a href="calculadora-frete-minimo-antt.html">Frete ANTT</a>
+      <a href="decodificador-boleto-pix-emv.html">Boleto/Pix</a>
+      <a href="auditor-spf-dmarc-headers.html">SPF/DMARC</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="badges">
+        <span class="badge">Hub B2B Gratuito</span>
+        <span class="badge badge-green">100% Client-Side &bull; Zero Envio ao Servidor</span>
+      </div>
+      <h1>Hub de 5 Micro-Ferramentas Gratuitas B2B (Client-Side)</h1>
+      <p>Calculadoras e auditores gratuitos para Reforma Tributária LC 214, XML TISS ANS, Frete Mínimo ANTT, Boleto FEBRABAN/Pix EMV e DNS SPF/DMARC — 100% no navegador.</p>
+    </section>
+
+    <div class="ad-slot" data-slot="b2b-sponsor-top">
+      Espaço Patrocinado B2B / APIs Determinísticas — Precisa processar 10.000+ registros via REST ou MCP?
+      <a href="https://apify.com/b2b-quant-apis" target="_blank" rel="noopener noreferrer">Automatizar na Apify Store</a>
+    </div>
+
+    <section class="panel">
+      <label for="toolFilter">Filtrar ferramentas por domínio (ex: fiscal, TISS, frete, Pix, SPF):</label>
+      <input id="toolFilter" type="search" placeholder="Digite para filtrar instantaneamente...">
+    </section>
+    <section class="grid" id="toolsGrid">
+      <article class="card tool-card" data-search="calculadora reforma tributária lc 214/2025 (ibs, cbs &amp; split payment) fiscal &amp; erp simule alíquotas de ibs, cbs, imposto seletivo, cclasstrib por ncm e impacto de fluxo de caixa do split payment segundo a lc 214/2025 diretamente no navegador.">
+        <div class="badges"><span class="badge">Fiscal &amp; ERP</span></div>
+        <h2 style="margin:0; font-size:1.12rem;">Calculadora LC 214 (IBS/CBS)</h2>
+        <p style="margin:0; color:var(--muted); font-size:0.92rem; flex:1;">Simule alíquotas de IBS, CBS, Imposto Seletivo, cClassTrib por NCM e impacto de fluxo de caixa do Split Payment segundo a LC 214/2025 diretamente no navegador.</p>
+        <div class="btn-row">
+          <a class="btn" href="calculadora-reforma-tributaria-lc214.html">Abrir Ferramenta</a>
+          <a class="btn secondary" href="https://apify.com/b2b-quant-apis/brazil-tax-reform-ncm-classtrib-auditor" target="_blank" rel="noopener noreferrer">API / Lote</a>
+        </div>
+      </article>
+      <article class="card tool-card" data-search="validador e formatador xml tiss ans (padrão 4.01.00) healthtech valide estrutura de guias xml tiss ans, cabeçalho, epílogo hash e tags obrigatórias sem enviar dados de pacientes para fora do seu navegador.">
+        <div class="badges"><span class="badge">HealthTech</span></div>
+        <h2 style="margin:0; font-size:1.12rem;">Validador XML TISS ANS</h2>
+        <p style="margin:0; color:var(--muted); font-size:0.92rem; flex:1;">Valide estrutura de guias XML TISS ANS, cabeçalho, epílogo hash e tags obrigatórias sem enviar dados de pacientes para fora do seu navegador.</p>
+        <div class="btn-row">
+          <a class="btn" href="validador-xml-tiss-ans.html">Abrir Ferramenta</a>
+          <a class="btn secondary" href="https://apify.com/b2b-quant-apis/healthcare-tiss-xml-validator" target="_blank" rel="noopener noreferrer">API / Lote</a>
+        </div>
+      </article>
+      <article class="card tool-card" data-search="calculadora piso mínimo de frete antt (res. 5.867/2020 &amp; 6.067/2025) logística &amp; ct-e calcule o piso mínimo rodoviário antt por eixos, distância em km e tipo de carga (tabela a: ccd × km + cc) e audite risco de multa antes de emitir ct-e.">
+        <div class="badges"><span class="badge">Logística &amp; CT-e</span></div>
+        <h2 style="margin:0; font-size:1.12rem;">Calculadora Frete ANTT</h2>
+        <p style="margin:0; color:var(--muted); font-size:0.92rem; flex:1;">Calcule o Piso Mínimo Rodoviário ANTT por eixos, distância em km e tipo de carga (Tabela A: CCD × km + CC) e audite risco de multa antes de emitir CT-e.</p>
+        <div class="btn-row">
+          <a class="btn" href="calculadora-frete-minimo-antt.html">Abrir Ferramenta</a>
+          <a class="btn secondary" href="https://apify.com/b2b-quant-apis/brazil-antt-freight-cte-auditor" target="_blank" rel="noopener noreferrer">API / Lote</a>
+        </div>
+      </article>
+      <article class="card tool-card" data-search="decodificador boleto febraban &amp; gerador/validador pix emv (crc16-ccitt) pagamentos &amp; pix valide linha digitável de boleto bancário (módulo 10/11, fator de vencimento pós-2025) e gere ou decodifique br code pix emv com checksum crc16-ccitt real.">
+        <div class="badges"><span class="badge">Pagamentos &amp; Pix</span></div>
+        <h2 style="margin:0; font-size:1.12rem;">Boleto FEBRABAN &amp; Pix EMV</h2>
+        <p style="margin:0; color:var(--muted); font-size:0.92rem; flex:1;">Valide linha digitável de boleto bancário (Módulo 10/11, fator de vencimento pós-2025) e gere ou decodifique BR Code Pix EMV com checksum CRC16-CCITT real.</p>
+        <div class="btn-row">
+          <a class="btn" href="decodificador-boleto-pix-emv.html">Abrir Ferramenta</a>
+          <a class="btn secondary" href="https://apify.com/b2b-quant-apis/brazil-pix-ispb-cvm-financial-kyb-auditor" target="_blank" rel="noopener noreferrer">API / Lote</a>
+        </div>
+      </article>
+      <article class="card tool-card" data-search="auditor dns spf/dmarc &amp; http security headers devsecops analise registros spf (limite de 10 lookups rfc 7208), políticas dmarc (p=reject/quarantine) e headers http de segurança (hsts, csp, x-frame-options) 100% client-side.">
+        <div class="badges"><span class="badge">DevSecOps</span></div>
+        <h2 style="margin:0; font-size:1.12rem;">Auditor SPF/DMARC &amp; Headers</h2>
+        <p style="margin:0; color:var(--muted); font-size:0.92rem; flex:1;">Analise registros SPF (limite de 10 lookups RFC 7208), políticas DMARC (p=reject/quarantine) e headers HTTP de segurança (HSTS, CSP, X-Frame-Options) 100% client-side.</p>
+        <div class="btn-row">
+          <a class="btn" href="auditor-spf-dmarc-headers.html">Abrir Ferramenta</a>
+          <a class="btn secondary" href="https://apify.com/b2b-quant-apis/global-b2b-email-domain-security-auditor" target="_blank" rel="noopener noreferrer">API / Lote</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="cta-banner">
+      <div>
+        <strong>Precisa de escala em lote, CI/CD ou integração ERP?</strong>
+        <div style="color: var(--muted); font-size: 0.92rem; margin-top: 4px;">
+          Execute esta mesma engine determinística em API REST, MCP Server, Apify Actor ou GitHub Action.
+        </div>
+      </div>
+      <div class="btn-row" style="margin-top: 0;">
+        <a class="btn" href="https://apify.com/b2b-quant-apis" target="_blank" rel="noopener noreferrer">Apify Store (B2B APIs)</a>
+        <a class="btn secondary" href="https://rapidapi.com/user/jesleytassili" target="_blank" rel="noopener noreferrer">RapidAPI Hub</a>
+        <a class="btn secondary" href="https://jesleytassili-glitch.github.io" target="_blank" rel="noopener noreferrer">Portal &amp; Docs</a>
+      </div>
+    </section>
+
+    <footer>
+      <div>100% Client-Side HTML/JS (US$ 0,00 de servidor). Nenhum dado inserido sai do seu navegador.</div>
+      <div style="margin-top: 4px;">
+        <a href="https://jesleytassili-glitch.github.io">https://jesleytassili-glitch.github.io</a> &bull;
+        <a href="https://apify.com/b2b-quant-apis">https://apify.com/b2b-quant-apis</a> &bull;
+        <a href="sitemap.xml">sitemap.xml</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+function filterTools(query) {
+  const q = (query || "").trim().toLowerCase();
+  const cards = document.querySelectorAll(".tool-card");
+  let visible = 0;
+  cards.forEach((card) => {
+    const hay = card.getAttribute("data-search") || "";
+    const match = !q || hay.includes(q);
+    card.style.display = match ? "flex" : "none";
+    if (match) visible += 1;
+  });
+  return visible;
+}
+const filterInput = document.getElementById("toolFilter");
+if (filterInput) {
+  filterInput.addEventListener("input", (e) => filterTools(e.target.value));
+}
+  </script>
+</body>
+</html>
