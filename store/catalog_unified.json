@@ -1,0 +1,151 @@
+{
+  "schema_version": "2.0.0",
+  "generated_at": "2026-11-22T13:15:00.379695+00:00",
+  "currency": "USD",
+  "price_range_usd": {
+    "min": 49,
+    "max": 129
+  },
+  "mor_platforms": [
+    "Polar.sh",
+    "Gumroad",
+    "Stripe"
+  ],
+  "payout_destination": "Wise #890361113",
+  "total_products": 5,
+  "products": [
+    {
+      "product_id": "kit_01_brazil_tax_tiss_compliance",
+      "category": "Boilerplate Kit",
+      "title": "Brazil Tax (LC 214 NCM) & TISS/ANTT Compliance FastAPI Kit",
+      "price_usd": 49,
+      "headline": "Ship Brazilian Tax Reform (LC 214) & Healthcare TISS Validation in Minutes",
+      "tagline": "Production FastAPI microservice with deterministic NCM LC 214, ANS TISS XML, and ANTT RNTRC validators.",
+      "sales_copy_en": "Stop spending weeks parsing Brazilian tax reform rules and ANS TISS XML schemas. This production-ready FastAPI boilerplate gives engineering teams deterministic LC 214 NCM IBS/CBS classification, TISS XML structural/epilogo validation, ANTT RNTRC + Mercosul plate verification, Dockerfile, .env.example, and automated pytest suite\u2014ready to deploy on day one.",
+      "features": [
+        "LC 214/2025 NCM 8-digit validator with IBS/CBS effective rate & CST mapping",
+        "ANS TISS XML parser verifying cabecalho, body, and epilogo MD5 hash",
+        "ANTT RNTRC + Mod-11 CNPJ + Mercosul/Legacy plate validator",
+        "Dockerfile, .env.example & pytest test suite included"
+      ],
+      "mor_channels": [
+        "Polar.sh",
+        "Gumroad",
+        "Lemon Squeezy",
+        "Stripe"
+      ],
+      "payout_account": "Wise #890361113",
+      "zip_filename": "kit_01_brazil_tax_tiss_compliance.zip",
+      "zip_relative_path": "digital_boilerplates_store/dist/kit_01_brazil_tax_tiss_compliance.zip",
+      "size_bytes": 6059,
+      "sha256": "9006c0ec814a2759d9e03b48e811178a90244bb236a2219f8d0faec3cbca00f5",
+      "file_count": 8
+    },
+    {
+      "product_id": "kit_02_x402_solana_mcp_paywall",
+      "category": "Boilerplate Kit",
+      "title": "x402 Solana USDC MCP Paywall Boilerplate",
+      "price_usd": 59,
+      "headline": "Monetize Any AI MCP Server with HTTP 402 & Instant Solana USDC Micropayments",
+      "tagline": "Turnkey Model Context Protocol (MCP) gateway with HTTP 402 challenges and anti-replay protection.",
+      "sales_copy_en": "Charge AI agents per tool call with zero middlemen. Built on the HTTP 402 x402 standard and Solana USDC, this FastAPI MCP server issues cryptographic payment challenges, verifies Base58 signatures and recipient amounts, and blocks replay attacks with single-use TTL nonces. Ships with Dockerfile and pytest coverage.",
+      "features": [
+        "Standard x402 HTTP 402 response with base64 PAYMENT-REQUIRED header",
+        "Solana USDC mint & Base58 transaction signature validation",
+        "Atomic single-use nonce & signature anti-replay store",
+        "Dockerfile, .env.example & pytest end-to-end paywall tests"
+      ],
+      "mor_channels": [
+        "Polar.sh",
+        "Gumroad",
+        "Lemon Squeezy",
+        "Stripe"
+      ],
+      "payout_account": "Wise #890361113",
+      "zip_filename": "kit_02_x402_solana_mcp_paywall.zip",
+      "zip_relative_path": "digital_boilerplates_store/dist/kit_02_x402_solana_mcp_paywall.zip",
+      "size_bytes": 5570,
+      "sha256": "8434f25e99822501b83b3099ee5d113825036c09bdaa32b656f35b275c1c4e3f",
+      "file_count": 8
+    },
+    {
+      "product_id": "kit_03_enterprise_kyb_ofac_pipeline",
+      "category": "Boilerplate Kit",
+      "title": "Enterprise KYB / OFAC / GLEIF Compliance Pipeline",
+      "price_usd": 79,
+      "headline": "Automate B2B KYB Onboarding with ISO 17442 LEI, OFAC Screening & n8n",
+      "tagline": "Full-stack compliance pipeline combining FastAPI screeners, n8n workflow automation, and Docker Compose.",
+      "sales_copy_en": "Accelerate enterprise B2B customer onboarding while staying audit-ready. This kit bundles a FastAPI ISO 17442 GLEIF LEI Mod-97-10 validator, fuzzy OFAC sanctions screener, risk decision engine, a ready-to-import n8n workflow JSON, and multi-container Docker Compose orchestration.",
+      "features": [
+        "ISO 17442 GLEIF LEI Mod-97-10 deterministic check-digit validator",
+        "OFAC SDN normalized fuzzy screener with risk scoring",
+        "Ready-to-import n8n KYB webhook orchestration workflow JSON",
+        "Docker Compose (FastAPI + n8n) & automated pytest suite"
+      ],
+      "mor_channels": [
+        "Polar.sh",
+        "Gumroad",
+        "Lemon Squeezy",
+        "Stripe"
+      ],
+      "payout_account": "Wise #890361113",
+      "zip_filename": "kit_03_enterprise_kyb_ofac_pipeline.zip",
+      "zip_relative_path": "digital_boilerplates_store/dist/kit_03_enterprise_kyb_ofac_pipeline.zip",
+      "size_bytes": 6109,
+      "sha256": "ad34e833a230681c5107b2aed9176a665512449cb4ebb45487b92c36292a9236",
+      "file_count": 10
+    },
+    {
+      "product_id": "saas_01_ai_compliance_copilot",
+      "category": "Micro-SaaS Pro",
+      "title": "AI Compliance Copilot \u2014 Fiscal LC 214 & KYB/OFAC SaaS",
+      "price_usd": 99,
+      "headline": "Launch a Turnkey B2B Fiscal & KYB Compliance Micro-SaaS in Minutes",
+      "tagline": "Full-stack FastAPI + Tailwind dashboard automating LC 214 NCM tax audits, CNPJ Mod-11, ISO 17442 LEI, and OFAC screening.",
+      "sales_copy_en": "Skip months of compliance engineering and sell recurring B2B licenses immediately. Includes an async FastAPI backend, responsive Tailwind/JS executive dashboard, deterministic fiscal LC 214 NCM + CNPJ validators, ISO 17442 GLEIF LEI + fuzzy OFAC screening endpoints, Dockerfile, docker-compose.yml, and automated pytest suite.",
+      "features": [
+        "FastAPI async backend with Fiscal LC 214 & KYB/OFAC audit endpoints",
+        "Responsive Tailwind CSS + JS interactive compliance dashboard",
+        "Deterministic CNPJ Mod-11, NCM IBS/CBS & ISO 17442 LEI Mod-97-10 validators",
+        "Dockerfile, docker-compose.yml, .env.example & pytest suite included"
+      ],
+      "mor_channels": [
+        "Polar.sh",
+        "Gumroad",
+        "Stripe"
+      ],
+      "payout_account": "Wise #890361113",
+      "zip_filename": "saas_01_ai_compliance_copilot.zip",
+      "zip_relative_path": "b2b_micro_saas_templates_pro/dist/saas_01_ai_compliance_copilot.zip",
+      "size_bytes": 9229,
+      "sha256": "96157db90639b92f73a9ee3010c9bab3572ff73b965c19f9e6ba3411acb75368",
+      "file_count": 10
+    },
+    {
+      "product_id": "saas_02_crypto_x402_api_gateway",
+      "category": "Micro-SaaS Pro",
+      "title": "Crypto x402 API & MCP Monetization Gateway (Solana / Base USDC)",
+      "price_usd": 129,
+      "headline": "Monetize APIs & AI MCP Tools with HTTP 402 & Dual-Chain USDC Settlements",
+      "tagline": "Production x402 paywall SaaS with Solana/Base USDC verification, SQLite anti-replay ledger, rate-limiter, and live revenue console.",
+      "sales_copy_en": "Turn any API or Model Context Protocol (MCP) server into a pay-per-call crypto revenue stream. Ships with an HTTP 402 challenge engine supporting Solana and Base USDC, atomic SQLite nonce/signature anti-replay persistence, sliding-window rate limiting, live HTML/JS revenue console, Docker Compose, and end-to-end pytest coverage.",
+      "features": [
+        "x402 HTTP 402 paywall issuing Base64 PAYMENT-REQUIRED challenges (Solana & Base USDC)",
+        "Atomic SQLite anti-replay store blocking duplicate nonces and tx signatures (409 Conflict)",
+        "Sliding-window per-client rate limiter & live HTML/JS USDC revenue console",
+        "Dockerfile, docker-compose.yml, .env.example & automated pytest suite"
+      ],
+      "mor_channels": [
+        "Polar.sh",
+        "Gumroad",
+        "Stripe"
+      ],
+      "payout_account": "Wise #890361113",
+      "zip_filename": "saas_02_crypto_x402_api_gateway.zip",
+      "zip_relative_path": "b2b_micro_saas_templates_pro/dist/saas_02_crypto_x402_api_gateway.zip",
+      "size_bytes": 10777,
+      "sha256": "1207d7c60265f906c20fbc99c242dd692437ba8c40f5010079c9e8be9371667f",
+      "file_count": 11
+    }
+  ]
+}
